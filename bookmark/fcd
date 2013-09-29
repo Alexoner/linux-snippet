@@ -1,0 +1,21 @@
+#to goto the specified directory
+fcd ()
+{
+    TPATH=`~/Documents/prac/bookmark/readmark $1`
+    CPATH=`pwd`
+    if [ -z $1 ]
+    then
+        cat <~/.bkmk/bkmk.dat
+        echo the shell is to goto a directory quickly
+    else
+        if [ "path" = "" ]
+        then
+            echo the bookmark is not added 
+        else
+            echo "current path is $CPATH"
+        echo "enter  $TPATH"
+        cd $TPATH
+        fi
+    fi
+}
+

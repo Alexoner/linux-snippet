@@ -1,0 +1,16 @@
+syn keyword CTagsStructure buffer vdIn video_param bridge_list frame_t
+syn keyword CTagsMember hdrwidth grabImgThrdId colors gc framelock screenNumber chg_para hdrheight autobright acknowledge isstreaming window formatIn format name h bright channel grabMethod videowin num videochan event tmp palette sizeothers grabmutex rb contrast windowAttributes colormap mem screen videocap sharedPixmap s16 grabmethod length bppIn height header Blist vmmap quality size shmInfo ptframe seqtimes width fmt start isShared time_interval norme getPict nbframe visual frame_cour framebuffer buf
+syn keyword CTagsMember cameraname cameratype cap pFramebuffer value signalquit bridge mmapsize formatOut tilt pictName atomWMDeleteWindow videopict videombuf wakeup pan status w videoIn videodevice framesizeIn fd videoparam exposure toggleAvi sizenative tmpbuffer xImage depth deltatimes sa
+syn keyword CTagsUnion pantilt
+syn keyword CTagsGlobalVariable force_format fbfd fbp run n_buffers long_options screensize vinfo time_in_sec_capture dev_name fd out_buf io pantilt debug finfo frame_count frame_number buffers dht_data
+syn keyword CTagsConstant long_options version short_options
+syn keyword CTagsEnumeratorName io_method
+syn keyword CTagsEnumerationValue BRIDGE_SN9CXXX IO_METHOD_MMAP BRIDGE_ZC3XX SN9C BRIDGE_SONIX BRIDGE_TV8532 PIX_FMT_RGB565 BRIDGE_SPCA500 BRIDGE_SPCA501 BRIDGE_SPCA506 BRIDGE_SPCA504 BRIDGE_SPCA505 BRIDGE_SPCA561 BRIDGE_SPCA508 GREY IO_METHOD_USERPTR BRIDGE_SPCA504C BRIDGE_SPCA504B PIX_FMT_YUV420P MAX_BRIDGE BRIDGE_CX11646 GBRG UNOW BRIDGE_UNKNOW BRIDGE_MR97311 GBGR JPEG BRIDGE_SPCA533 BRIDGE_SPCA536 YYUV YUYV IO_METHOD_READ BRIDGE_ZR364XX PIX_FMT_RGB32 BRIDGE_ETOMS YUVY
+syn keyword CTagsFunction convertframe init_v4l enum_inputs init_device start_capturing clip ms_time v4l2ResetControl mainloop VisualClassName spcaPrintParam query_cap readFrame ByteOrderName v4l2GetControl get_jpegsize v4l2SetControl Camera xioctl openCamera set_std uninit_device GetDepth sigcatch set_fmt set_input process_image_rgb565 closeCamera init_videoIn v4L2UpDownTilt image_width yuv_to_rgb_24 video_enable init_read spawn compress_yuyv_to_jpeg image_destroy close_v4l v4L2UpDownPan GetStreamId
+syn keyword CTagsFunction close_device enum_standards main image_create usage sigchld_handler initBlist downbright get_dv_timings run close_v4l2 stop_capturing set_standard upbright uvcGrab read_frame SetVideoPict query_crop process_image process_image_rgb32 isSpcaChip v4l2DownControl isv4l2Control init_v4l2 init_mmap upcontrast downcontrast exit_fatal image_put video_disable v4l2ToggleControl v4l2ResetPanTilt GetVideoPict init_userp set_rate errno_exit image_height process_image_yuv420 v4l2UpControl grab
+syn keyword CTagsFunction v4lGrab open_device yuv_to_rgb_16
+syn keyword CTagsType pix_fmt image_context
+syn keyword CTagsDefinedName NB_BUFFER V4L2_CID_FOCUS_ABSOLUTE VIDEO_PALETTE_JPEG defaultDev CHGTINTER SPCAGVIDIOPARAM methodMmap MAX_NORM V4L2_CID_PANTILT_RESET V4L2_CID_HUE_AUTO MAX_INPUT CHGABRIGHT HEADERFRAME1 V4L_H V4L2_CID_FOCUS_RELATIVE SPCASVIDIOPARAM DHT_SIZE CAMERA_H methodRead CLEAR V4L2_CID_SHARPNESS V4L2_CID_PANTILT_RELATIVE V4L2_PIX_FMT_H264 OUTFRMNUMB CHGQUALITY V4L2_CID_POWER_LINE_FREQUENCY V4L2_CID_FOCUS_AUTO V4L2_CID_BACKLIGHT_COMPENSATION debug
+syn keyword CTagsClass Camera
+
+syn match CTagsMember /display/

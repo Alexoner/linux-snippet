@@ -1,0 +1,134 @@
+#!/bin/sh
+#This shell script is programmed to bookmark a direcory and to navigate to
+#it quickly
+D=`pwd`
+FILE=~/.bkmk/bkmk.dat
+READMARK=~/.bkmk/readmark
+DELETE=~/.bkmk/deletemark
+usage ()
+{
+    echo bkmk is used to bookmark the current directory 
+    echo arguments are:
+    echo -a        to add a bookmark
+    echo -d        to delete a bookmark
+    echo -l        to list all the bookmark
+    echo -c        to clear all bookmarks set
+    echo -h        to display the help text
+    echo -g       to navigate to a directory quickly
+    echo fcd        to navigate to a directory quicklly
+}
+
+init ()
+{
+    if [ -e $FILE ]
+    then :
+    else
+        echo bookmark file has been created successfully!
+        echo '#'bookmark:path>$FILE
+    fi
+}
+
+list ()
+{
+    cat <$FILE
+}
+
+delete ()
+{
+    TPATH=`$READMARK $1`
+    if [ -z $TPATH ]
+    then
+        echo the bookmark is not added yet,no need to remove
+        $DELETE $1
+    else
+        $DELETE $1
+    fi
+}
+
+
+#there is a case control with read to confirm
+clear ()
+{
+    echo are you serious?
+    read ANS
+    case $ANS in
+        y) echo '#'bookmark:path>$FILE
+            ;;
+        Y) echo >$FILE
+            ;;
+        n) echo operation aborted
+            ;;
+        N) echo operation aborted
+    esac
+}
+
+#watch for the argument passing
+mark ()
+{
+    TPATH=`$READMARK $1`
+    if [ -n "$TPATH" ]
+    then
+        echo a previous bookmark was added,overwrite?
+        read ANS
+        case $ANS in
+            y*|Y*)
+                delete $1
+                echo $1:$D>>$FILE
+                echo the new bookmark is added!
+                ;;
+            n*|N*)
+                echo operation aborted!
+                exit
+                ;;
+        esac
+    else
+        echo $1:$D>>$FILE
+        echo the bookmark is added
+    fi
+}
+
+goto ()
+{
+    path=`$READMARK $1<bkmk.dat`
+    echo entering $1        $path
+    cd $path
+}
+
+init 
+
+if [ "$1" = "-a" ]
+then
+    if [ "$2" = "" ]
+    then
+        echo please define the bookmark\'s name
+        exit 1
+    else
+        mark $2
+    fi
+elif [ "$1" = "-l" ]
+then
+    list
+elif [ "$1" = "-g" ]
+then
+    echo enter directory $2
+    goto $2
+elif [ "$1" = "-c" ]
+then
+    clear
+elif [ "$1" = "-d" ]
+then 
+    if [ "$2" = "" ]
+    then
+        echo please define the name of the bookmark you want to delete
+        exit 1
+    else
+        delete $2
+    fi
+else
+    usage
+fi
+
+
+
+
+

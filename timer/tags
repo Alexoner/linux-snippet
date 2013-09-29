@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CLOCKID	timer_create.c	/^#define CLOCKID /;"	d	file:
+SIG	timer_create.c	/^#define SIG /;"	d	file:
+count	setitimer.c	/^int count = 0;$/;"	v
+errExit	timer_create.c	/^#define errExit(/;"	d	file:
+handler	timer_create.c	/^handler(int sig, siginfo_t *si, void *uc)$/;"	f	file:	signature:(int sig, siginfo_t *si, void *uc)
+main	alarm.c	/^int main(int argc,char **argv)$/;"	f	signature:(int argc,char **argv)
+main	setitimer.c	/^int main()$/;"	f
+main	timer_create.c	/^main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+my_alarm_handler	alarm.c	/^void my_alarm_handler(int sig)$/;"	f	signature:(int sig)
+print_siginfo	timer_create.c	/^print_siginfo(siginfo_t *si)$/;"	f	file:	signature:(siginfo_t *si)
+set_timer	setitimer.c	/^void set_timer()$/;"	f
+sigalrm_handler	setitimer.c	/^void sigalrm_handler(int sig)$/;"	f	signature:(int sig)

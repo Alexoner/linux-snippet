@@ -1,0 +1,9 @@
+video4linux tutorial
+TO CAPTURE A FRAME:
+    set input
+    set standards
+    set digital video timings
+    set data format
+    init,enqueue,dequeue buffer
+
+

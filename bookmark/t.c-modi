@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+    int a;
+    printf("please input the number!\n");
+    scanf("%d",&a);
+    if(a)
+        printf("the input is true\n");
+    else
+        printf("the input is false\n");
+    return 0;
+}

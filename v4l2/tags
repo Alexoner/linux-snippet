@@ -1,0 +1,445 @@
+	Session.vim	/^cnoremap  <Home>$/;"	m
+	Session.vim	/^cnoremap  <End>$/;"	m
+	Session.vim	/^map  h$/;"	m
+		Session.vim	/^imap 	 <Plug>SuperTabForward$/;"	m
+	Session.vim	/^map   \/$/;"	m
+	Session.vim	/^cnoremap  $/;"	m
+	Session.vim	/^map  k$/;"	m
+	Session.vim	/^map  l$/;"	m
+	Session.vim	/^cnoremap  <Down>$/;"	m
+	Session.vim	/^imap  <Plug>SuperTabForward$/;"	m
+	Session.vim	/^cnoremap  <Up>$/;"	m
+	Session.vim	/^imap  <Plug>SuperTabBackward$/;"	m
+	Session.vim	/^inoremap  u$/;"	m
+	Session.vim	/^inoremap <expr>  omni#cpp#maycomplete#Complete()$/;"	m
+c	Session.vim	/^nmap c :cs find c =expand("<cword>")$/;"	m
+d	Session.vim	/^nmap d :cs find d =expand("<cword>")$/;"	m
+e	Session.vim	/^nmap e :cs find e =expand("<cword>")$/;"	m
+f	Session.vim	/^nmap f :cs find f =expand("<cfile>")$/;"	m
+g	Session.vim	/^nmap g :cs find g =expand("<cword>")$/;"	m
+i	Session.vim	/^nmap i :cs find i ^=expand("<cfile>")$/;"	m
+s	Session.vim	/^nmap s :cs find s =expand("<cword>")$/;"	m
+t	Session.vim	/^nmap t :cs find t =expand("<cword>")$/;"	m
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+$c	Session.vim	/^cnoremap $c e eCurrentFileDir("e")$/;"	m
+$d	Session.vim	/^cnoremap $d e ~\/Desktop\/$/;"	m
+$h	Session.vim	/^cnoremap $h e ~\/$/;"	m
+$j	Session.vim	/^cnoremap $j e .\/$/;"	m
+$q	Session.vim	/^cnoremap $q eDeleteTillSlash()$/;"	m
+(	Session.vim	/^inoremap <buffer> <silent> ( (=EchoFunc()$/;"	m
+)	Session.vim	/^inoremap <buffer> <silent> ) =EchoFuncClear()$/;"	m
+,e	Session.vim	/^map ,e :e =expand("%:p:h") . "\/" $/;"	m
+.	Session.vim	/^inoremap <expr> . omni#cpp#maycomplete#Dot()$/;"	m
+0	Session.vim	/^normal! 0$/;"	m
+02l	Session.vim	/^normal! 02l$/;"	m
+:	Session.vim	/^inoremap <expr> : omni#cpp#maycomplete#Scope()$/;"	m
+<C-F10>	Session.vim	/^map <C-F10> :vsp$/;"	m
+<C-F12>	Session.vim	/^map <C-F12> :!ctags -R --sort=yes  --c++-kinds=+p --fields=+iaS --extra=+q .$/;"	m
+<C-F2>	Session.vim	/^map <C-F2> <Plug>Vm_toggle_sign$/;"	m
+<C-Left>	Session.vim	/^map <C-Left> :bp$/;"	m
+<C-Right>	Session.vim	/^map <C-Right> :bn$/;"	m
+<C-Space>	Session.vim	/^map <C-Space> ?$/;"	m
+<C-Tab>	Session.vim	/^inoremap <C-Tab> 	$/;"	m
+<F11>	Session.vim	/^nnoremap <silent> <F11> :call conque_term#exec_file()$/;"	m
+<F12>:!cscope	Session.vim	/^map <F12>:!cscope -R $/;"	m
+<F2>	Session.vim	/^map <F2> <Plug>Vm_goto_next_sign$/;"	m
+<F3>	Session.vim	/^map <F3> :WMToggle$/;"	m
+<F5>	Session.vim	/^map <F5> :call CompileRunGcc()$/;"	m
+<F6>	Session.vim	/^map <F6> :TlistToggle$/;"	m
+<F7>	Session.vim	/^map <F7> <Plug>ShowFunc$/;"	m
+<F7>	Session.vim	/^map! <F7> <Plug>ShowFunc$/;"	m
+<F8>	Session.vim	/^map <F8> :call Rungdb()$/;"	m
+<NL>	Session.vim	/^map <NL> j$/;"	m
+<Nul><Nul>c	Session.vim	/^nmap <Nul><Nul>c :vert scs find c =expand("<cword>")$/;"	m
+<Nul><Nul>d	Session.vim	/^nmap <Nul><Nul>d :vert scs find d =expand("<cword>")$/;"	m
+<Nul><Nul>e	Session.vim	/^nmap <Nul><Nul>e :vert scs find e =expand("<cword>")$/;"	m
+<Nul><Nul>f	Session.vim	/^nmap <Nul><Nul>f :vert scs find f =expand("<cfile>")$/;"	m
+<Nul><Nul>g	Session.vim	/^nmap <Nul><Nul>g :vert scs find g =expand("<cword>")$/;"	m
+<Nul><Nul>i	Session.vim	/^nmap <Nul><Nul>i :vert scs find i ^=expand("<cfile>")$/;"	m
+<Nul><Nul>s	Session.vim	/^nmap <Nul><Nul>s :vert scs find s =expand("<cword>")$/;"	m
+<Nul><Nul>t	Session.vim	/^nmap <Nul><Nul>t :vert scs find t =expand("<cword>")$/;"	m
+<Nul>c	Session.vim	/^nmap <Nul>c :scs find c =expand("<cword>")$/;"	m
+<Nul>d	Session.vim	/^nmap <Nul>d :scs find d =expand("<cword>")$/;"	m
+<Nul>e	Session.vim	/^nmap <Nul>e :scs find e =expand("<cword>")$/;"	m
+<Nul>f	Session.vim	/^nmap <Nul>f :scs find f =expand("<cfile>")$/;"	m
+<Nul>g	Session.vim	/^nmap <Nul>g :scs find g =expand("<cword>")$/;"	m
+<Nul>i	Session.vim	/^nmap <Nul>i :scs find i ^=expand("<cfile>")$/;"	m
+<Nul>s	Session.vim	/^nmap <Nul>s :scs find s =expand("<cword>")$/;"	m
+<Nul>t	Session.vim	/^nmap <Nul>t :scs find t =expand("<cword>")$/;"	m
+<Plug>NetrwBrowseX	Session.vim	/^nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)$/;"	m
+<Plug>RestoreWinPosn	Session.vim	/^nmap <silent> <Plug>RestoreWinPosn :call RestoreWinPosn()$/;"	m
+<Plug>SaveWinPosn	Session.vim	/^nmap <silent> <Plug>SaveWinPosn :call SaveWinPosn()$/;"	m
+<S-F2>	Session.vim	/^map <S-F2> <Plug>Vm_goto_prev_sign$/;"	m
+<S-Tab>	Session.vim	/^imap <S-Tab> <Plug>SuperTabBackward$/;"	m
+>	Session.vim	/^inoremap <expr> > omni#cpp#maycomplete#Arrow()$/;"	m
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-g -Wall$/;"	m
+CLEAR	capture_raw_frames.c	/^#define CLEAR(/;"	d	file:
+CLEAR	fb-v4l.c	/^#define CLEAR(/;"	d	file:
+CLEAR	source/capture_raw_frames.c	/^#define CLEAR(/;"	d	file:
+CLEAR	source/fb-v4l.c	/^#define CLEAR(/;"	d	file:
+CLEAR	source/videoCapture.c	/^#define CLEAR(/;"	d	file:
+CLEAR	src/info_input.c	/^#define CLEAR(/;"	d	file:
+CLEAR	v4l-main.c	/^#define CLEAR(/;"	d	file:
+CLEAR	v4l.h	/^#define CLEAR(/;"	d
+CLEAR	videoCapture.c	/^#define CLEAR(/;"	d	file:
+GTKFLAGS	Makefile	/^GTKFLAGS=`pkg-config gtk+-2.0 --libs --cflags`$/;"	m
+IO_METHOD_MMAP	capture_raw_frames.c	/^        IO_METHOD_MMAP,$/;"	e	enum:io_method	file:
+IO_METHOD_MMAP	source/capture_raw_frames.c	/^        IO_METHOD_MMAP,$/;"	e	enum:io_method	file:
+IO_METHOD_MMAP	source/videoCapture.c	/^        IO_METHOD_MMAP,$/;"	e	enum:io_method	file:
+IO_METHOD_MMAP	v4l.h	/^    IO_METHOD_MMAP,$/;"	e	enum:io_method
+IO_METHOD_MMAP	videoCapture.c	/^    IO_METHOD_MMAP,$/;"	e	enum:io_method	file:
+IO_METHOD_READ	capture_raw_frames.c	/^        IO_METHOD_READ,$/;"	e	enum:io_method	file:
+IO_METHOD_READ	source/capture_raw_frames.c	/^        IO_METHOD_READ,$/;"	e	enum:io_method	file:
+IO_METHOD_READ	source/videoCapture.c	/^        IO_METHOD_READ,$/;"	e	enum:io_method	file:
+IO_METHOD_READ	v4l.h	/^    IO_METHOD_READ,$/;"	e	enum:io_method
+IO_METHOD_READ	videoCapture.c	/^    IO_METHOD_READ,$/;"	e	enum:io_method	file:
+IO_METHOD_USERPTR	capture_raw_frames.c	/^        IO_METHOD_USERPTR,$/;"	e	enum:io_method	file:
+IO_METHOD_USERPTR	source/capture_raw_frames.c	/^        IO_METHOD_USERPTR,$/;"	e	enum:io_method	file:
+IO_METHOD_USERPTR	source/videoCapture.c	/^        IO_METHOD_USERPTR,$/;"	e	enum:io_method	file:
+IO_METHOD_USERPTR	v4l.h	/^    IO_METHOD_USERPTR,$/;"	e	enum:io_method
+IO_METHOD_USERPTR	videoCapture.c	/^    IO_METHOD_USERPTR,$/;"	e	enum:io_method	file:
+Q	Session.vim	/^map Q gq$/;"	m
+SessionLoad	Session.vim	/^let SessionLoad = 1$/;"	v
+V4L2_PIX_FMT_H264	capture_raw_frames.c	/^#define V4L2_PIX_FMT_H264 /;"	d	file:
+V4L2_PIX_FMT_H264	source/capture_raw_frames.c	/^#define V4L2_PIX_FMT_H264 /;"	d	file:
+V4L2_PIX_FMT_H264	v4l-main.c	/^#define V4L2_PIX_FMT_H264 /;"	d	file:
+V4L_H	v4l.h	/^#define V4L_H$/;"	d
+\	Session.vim	/^map <buffer> \\  :w$/;"	m
+\	Session.vim	/^map <silent> \\$/;"	m
+\ba	Session.vim	/^map \\ba :1,300 bd!$/;"	m
+\bd	Session.vim	/^map \\bd :Bclose$/;"	m
+\e	Session.vim	/^map \\e :e! ~\/.vim_runtime\/vimrc$/;"	m
+\ih	Session.vim	/^imap \\ih :IHS$/;"	m
+\ih	Session.vim	/^nmap \\ih :IHS$/;"	m
+\ihn	Session.vim	/^imap \\ihn :IHN$/;"	m
+\ihn	Session.vim	/^nmap \\ihn :IHN$/;"	m
+\is	Session.vim	/^imap \\is :IHS$/;"	m
+\is	Session.vim	/^nmap \\is :IHS$/;"	m
+\m	Session.vim	/^noremap \\m mmHmt:%s\/$/;"	m
+\rwp	Session.vim	/^map \\rwp <Plug>RestoreWinPosn$/;"	m
+\swp	Session.vim	/^map \\swp <Plug>SaveWinPosn$/;"	m
+buffer	capture_raw_frames.c	/^struct buffer {$/;"	s	file:
+buffer	fb-v4l.c	/^struct buffer {$/;"	s	file:
+buffer	source/capture_raw_frames.c	/^struct buffer {$/;"	s	file:
+buffer	source/fb-v4l.c	/^struct buffer {$/;"	s	file:
+buffer	source/videoCapture.c	/^struct buffer {$/;"	s	file:
+buffer	v4l.h	/^struct buffer$/;"	s
+buffer	videoCapture.c	/^struct buffer {$/;"	s	file:
+buffer::length	capture_raw_frames.c	/^        size_t  length;$/;"	m	struct:buffer	file:	access:public
+buffer::length	fb-v4l.c	/^    size_t length;$/;"	m	struct:buffer	file:	access:public
+buffer::length	source/capture_raw_frames.c	/^        size_t  length;$/;"	m	struct:buffer	file:	access:public
+buffer::length	source/fb-v4l.c	/^    size_t length;$/;"	m	struct:buffer	file:	access:public
+buffer::length	source/videoCapture.c	/^        size_t  length;$/;"	m	struct:buffer	file:	access:public
+buffer::length	v4l.h	/^    size_t length;$/;"	m	struct:buffer	access:public
+buffer::length	videoCapture.c	/^    size_t  length;$/;"	m	struct:buffer	file:	access:public
+buffer::start	capture_raw_frames.c	/^        void   *start;$/;"	m	struct:buffer	file:	access:public
+buffer::start	fb-v4l.c	/^    void * start;$/;"	m	struct:buffer	file:	access:public
+buffer::start	source/capture_raw_frames.c	/^        void   *start;$/;"	m	struct:buffer	file:	access:public
+buffer::start	source/fb-v4l.c	/^    void * start;$/;"	m	struct:buffer	file:	access:public
+buffer::start	source/videoCapture.c	/^        void   *start;$/;"	m	struct:buffer	file:	access:public
+buffer::start	v4l.h	/^    void *start;$/;"	m	struct:buffer	access:public
+buffer::start	videoCapture.c	/^    void   *start;$/;"	m	struct:buffer	file:	access:public
+buffers	capture_raw_frames.c	/^struct buffer          *buffers;$/;"	v	typeref:struct:buffer
+buffers	fb-v4l.c	/^struct buffer * buffers = NULL;$/;"	v	typeref:struct:buffer
+buffers	source/capture_raw_frames.c	/^struct buffer          *buffers;$/;"	v	typeref:struct:buffer
+buffers	source/fb-v4l.c	/^struct buffer * buffers = NULL;$/;"	v	typeref:struct:buffer
+buffers	source/videoCapture.c	/^struct buffer          *buffers;$/;"	v	typeref:struct:buffer
+buffers	v4l.h	/^  struct buffer *buffers;$/;"	m	struct:head_buffer	typeref:struct:head_buffer::buffer	access:public
+buffers	v4l2_video_capture.c	/^    struct cap_buffer *buffers;$/;"	m	struct:head_buffer	typeref:struct:head_buffer::cap_buffer	file:	access:public
+buffers	videoCapture.c	/^struct buffer          *buffers;$/;"	v	typeref:struct:buffer
+cap_buffer	source/v4l2_video_capture.c	/^struct cap_buffer {$/;"	s	file:
+cap_buffer	v4l2_video_capture.c	/^struct cap_buffer {$/;"	s	file:
+cap_buffer::length	source/v4l2_video_capture.c	/^	size_t length;$/;"	m	struct:cap_buffer	file:	access:public
+cap_buffer::length	v4l2_video_capture.c	/^	size_t length;$/;"	m	struct:cap_buffer	file:	access:public
+cap_buffer::start	source/v4l2_video_capture.c	/^	void *start;$/;"	m	struct:cap_buffer	file:	access:public
+cap_buffer::start	v4l2_video_capture.c	/^	void *start;$/;"	m	struct:cap_buffer	file:	access:public
+clip	fb-v4l.c	/^inline int clip(int value, int min, int max) {$/;"	f	signature:(int value, int min, int max)
+clip	source/fb-v4l.c	/^inline int clip(int value, int min, int max) {$/;"	f	signature:(int value, int min, int max)
+close_device	capture_raw_frames.c	/^static void close_device(void)$/;"	f	file:	signature:(void)
+close_device	fb-v4l.c	/^static void close_device (void)$/;"	f	file:	signature:(void)
+close_device	source/capture_raw_frames.c	/^static void close_device(void)$/;"	f	file:	signature:(void)
+close_device	source/fb-v4l.c	/^static void close_device (void)$/;"	f	file:	signature:(void)
+close_device	source/videoCapture.c	/^static void close_device(void)$/;"	f	file:	signature:(void)
+close_device	videoCapture.c	/^static void close_device(void)$/;"	f	file:	signature:(void)
+csa	Session.vim	/^cnoreabbr csa cs add$/;"	m
+csf	Session.vim	/^cnoreabbr csf cs find$/;"	m
+csh	Session.vim	/^cnoreabbr csh cs help$/;"	m
+csk	Session.vim	/^cnoreabbr csk cs kill$/;"	m
+csr	Session.vim	/^cnoreabbr csr cs reset$/;"	m
+css	Session.vim	/^cnoreabbr css cs show$/;"	m
+dev_name	capture_raw_frames.c	/^static char            *dev_name;$/;"	v	file:
+dev_name	fb-v4l.c	/^static char * dev_name = NULL;$/;"	v	file:
+dev_name	source/capture_raw_frames.c	/^static char            *dev_name;$/;"	v	file:
+dev_name	source/fb-v4l.c	/^static char * dev_name = NULL;$/;"	v	file:
+dev_name	source/videoCapture.c	/^static char            *dev_name;$/;"	v	file:
+dev_name	videoCapture.c	/^static char            *dev_name;$/;"	v	file:
+device	source/v4l2_video_capture.c	/^static const char *device = "\/dev\/video0";$/;"	v	file:
+device	v4l2_video_capture.c	/^static const char *device = "\/dev\/video0";$/;"	v	file:
+dv_timings_cap	source/v4l2_video_capture.c	/^static int dv_timings_cap = 0;$/;"	v	file:
+dv_timings_cap	v4l2_video_capture.c	/^static int dv_timings_cap = 0;$/;"	v	file:
+errno_exit	capture_raw_frames.c	/^static void errno_exit(const char *s)$/;"	f	file:	signature:(const char *s)
+errno_exit	fb-v4l.c	/^static void errno_exit (const char * s)$/;"	f	file:	signature:(const char * s)
+errno_exit	source/capture_raw_frames.c	/^static void errno_exit(const char *s)$/;"	f	file:	signature:(const char *s)
+errno_exit	source/fb-v4l.c	/^static void errno_exit (const char * s)$/;"	f	file:	signature:(const char * s)
+errno_exit	source/videoCapture.c	/^static void errno_exit(const char *s)$/;"	f	file:	signature:(const char *s)
+errno_exit	videoCapture.c	/^static void errno_exit(const char *s)$/;"	f	file:	signature:(const char *s)
+fbfd	fb-v4l.c	/^static int fbfd = -1;$/;"	v	file:
+fbfd	source/fb-v4l.c	/^static int fbfd = -1;$/;"	v	file:
+fbp	fb-v4l.c	/^static char *fbp=NULL;$/;"	v	file:
+fbp	source/fb-v4l.c	/^static char *fbp=NULL;$/;"	v	file:
+fd	capture_raw_frames.c	/^static int              fd = -1;$/;"	v	file:
+fd	fb-v4l.c	/^static int fd = -1;$/;"	v	file:
+fd	source/capture_raw_frames.c	/^static int              fd = -1;$/;"	v	file:
+fd	source/fb-v4l.c	/^static int fd = -1;$/;"	v	file:
+fd	source/videoCapture.c	/^static int              fd = -1;$/;"	v	file:
+fd	videoCapture.c	/^static int              fd = -1;$/;"	v	file:
+file	source/v4l2_video_capture.c	/^static const char *file = "\/1.yuv";$/;"	v	file:
+file	v4l2_video_capture.c	/^static const char *file = ".\/1.yuv";$/;"	v	file:
+finfo	fb-v4l.c	/^static struct fb_fix_screeninfo finfo;$/;"	v	typeref:struct:fb_fix_screeninfo	file:
+finfo	source/fb-v4l.c	/^static struct fb_fix_screeninfo finfo;$/;"	v	typeref:struct:fb_fix_screeninfo	file:
+force_format	capture_raw_frames.c	/^static int              force_format;$/;"	v	file:
+force_format	source/capture_raw_frames.c	/^static int              force_format;$/;"	v	file:
+force_format	source/videoCapture.c	/^static int              force_format;$/;"	v	file:
+force_format	videoCapture.c	/^static int              force_format;$/;"	v	file:
+frame_count	capture_raw_frames.c	/^static int              frame_count = 200;$/;"	v	file:
+frame_count	source/capture_raw_frames.c	/^static int              frame_count = 200;$/;"	v	file:
+frame_count	source/videoCapture.c	/^static int              frame_count = 70;$/;"	v	file:
+frame_count	videoCapture.c	/^static int              frame_count = 70;$/;"	v	file:
+frame_number	capture_raw_frames.c	/^static int              frame_number = 0;$/;"	v	file:
+frame_number	source/capture_raw_frames.c	/^static int              frame_number = 0;$/;"	v	file:
+get_dv_timings	source/v4l2_video_capture.c	/^static int get_dv_timings(int fd)$/;"	f	file:	signature:(int fd)
+get_dv_timings	v4l.c	/^int get_dv_timings(int fd)$/;"	f	signature:(int fd)
+get_dv_timings	v4l.h	/^int get_dv_timings(int fd);$/;"	p	signature:(int fd)
+get_dv_timings	v4l2_video_capture.c	/^static int get_dv_timings(int fd)$/;"	f	file:	signature:(int fd)
+gx	Session.vim	/^nmap gx <Plug>NetrwBrowseX$/;"	m
+head_buffer	v4l.h	/^struct head_buffer$/;"	s
+head_buffer	v4l2_video_capture.c	/^struct head_buffer$/;"	s	file:
+head_buffer::buffers	v4l.h	/^  struct buffer *buffers;$/;"	m	struct:head_buffer	typeref:struct:head_buffer::buffer	access:public
+head_buffer::buffers	v4l2_video_capture.c	/^    struct cap_buffer *buffers;$/;"	m	struct:head_buffer	typeref:struct:head_buffer::cap_buffer	file:	access:public
+head_buffer::n_buffers	v4l.h	/^  int n_buffers;$/;"	m	struct:head_buffer	access:public
+head_buffer::n_buffers	v4l2_video_capture.c	/^    int n_buffers;$/;"	m	struct:head_buffer	file:	access:public
+height	source/v4l2_video_capture.c	/^static int height = 480;$/;"	v	file:
+height	v4l2_video_capture.c	/^static int height = 480;$/;"	v	file:
+image_size	source/v4l2_video_capture.c	/^static int image_size;$/;"	v	file:
+image_size	v4l2_video_capture.c	/^static int image_size;$/;"	v	file:
+init_device	capture_raw_frames.c	/^static void init_device(void)$/;"	f	file:	signature:(void)
+init_device	fb-v4l.c	/^static void init_device (void)$/;"	f	file:	signature:(void)
+init_device	source/capture_raw_frames.c	/^static void init_device(void)$/;"	f	file:	signature:(void)
+init_device	source/fb-v4l.c	/^static void init_device (void)$/;"	f	file:	signature:(void)
+init_device	source/videoCapture.c	/^static void init_device(void)$/;"	f	file:	signature:(void)
+init_device	v4l.c	/^int init_device(int fd)$/;"	f	signature:(int fd)
+init_device	videoCapture.c	/^static void init_device(void)$/;"	f	file:	signature:(void)
+init_mmap	capture_raw_frames.c	/^static void init_mmap(void)$/;"	f	file:	signature:(void)
+init_mmap	fb-v4l.c	/^static void init_mmap (void)$/;"	f	file:	signature:(void)
+init_mmap	source/capture_raw_frames.c	/^static void init_mmap(void)$/;"	f	file:	signature:(void)
+init_mmap	source/fb-v4l.c	/^static void init_mmap (void)$/;"	f	file:	signature:(void)
+init_mmap	source/videoCapture.c	/^static void init_mmap(void)$/;"	f	file:	signature:(void)
+init_mmap	v4l.c	/^void * init_mmap(int fd,struct head_buffer *hbuffer)$/;"	f	signature:(int fd,struct head_buffer *hbuffer)
+init_mmap	v4l.h	/^void * init_mmap(int fd,struct head_buffer *hbuffer);$/;"	p	signature:(int fd,struct head_buffer *hbuffer)
+init_mmap	videoCapture.c	/^static void init_mmap(void)$/;"	f	file:	signature:(void)
+init_read	capture_raw_frames.c	/^static void init_read(unsigned int buffer_size)$/;"	f	file:	signature:(unsigned int buffer_size)
+init_read	source/capture_raw_frames.c	/^static void init_read(unsigned int buffer_size)$/;"	f	file:	signature:(unsigned int buffer_size)
+init_read	source/videoCapture.c	/^static void init_read(unsigned int buffer_size)$/;"	f	file:	signature:(unsigned int buffer_size)
+init_read	v4l.c	/^void * init_read(int fd,unsigned int buffer_size)$/;"	f	signature:(int fd,unsigned int buffer_size)
+init_read	v4l.h	/^void * init_read(int fd,unsigned int buffer_size);$/;"	p	signature:(int fd,unsigned int buffer_size)
+init_read	videoCapture.c	/^static void init_read(unsigned int buffer_size)$/;"	f	file:	signature:(unsigned int buffer_size)
+init_userp	capture_raw_frames.c	/^static void init_userp(unsigned int buffer_size)$/;"	f	file:	signature:(unsigned int buffer_size)
+init_userp	source/capture_raw_frames.c	/^static void init_userp(unsigned int buffer_size)$/;"	f	file:	signature:(unsigned int buffer_size)
+init_userp	source/videoCapture.c	/^static void init_userp(unsigned int buffer_size)$/;"	f	file:	signature:(unsigned int buffer_size)
+init_userp	v4l.c	/^void init_userp(int fd,unsigned int buffer_size)$/;"	f	signature:(int fd,unsigned int buffer_size)
+init_userp	v4l.h	/^void init_userp(int fd,unsigned int buffer_size);$/;"	p	signature:(int fd,unsigned int buffer_size)
+init_userp	videoCapture.c	/^static void init_userp(unsigned int buffer_size)$/;"	f	file:	signature:(unsigned int buffer_size)
+input	source/v4l2_video_capture.c	/^static int input = 0;$/;"	v	file:
+input	v4l2_video_capture.c	/^static int input = 0;$/;"	v	file:
+io	capture_raw_frames.c	/^static enum io_method   io = IO_METHOD_MMAP;$/;"	v	typeref:enum:io_method	file:
+io	source/capture_raw_frames.c	/^static enum io_method   io = IO_METHOD_MMAP;$/;"	v	typeref:enum:io_method	file:
+io	source/videoCapture.c	/^static enum io_method   io = IO_METHOD_MMAP;$/;"	v	typeref:enum:io_method	file:
+io	videoCapture.c	/^static enum io_method   io = IO_METHOD_MMAP;$/;"	v	typeref:enum:io_method	file:
+io_method	capture_raw_frames.c	/^enum io_method {$/;"	g	file:
+io_method	source/capture_raw_frames.c	/^enum io_method {$/;"	g	file:
+io_method	source/videoCapture.c	/^enum io_method {$/;"	g	file:
+io_method	v4l.h	/^enum io_method$/;"	g
+io_method	videoCapture.c	/^enum io_method {$/;"	g	file:
+length	capture_raw_frames.c	/^        size_t  length;$/;"	m	struct:buffer	file:	access:public
+length	fb-v4l.c	/^    size_t length;$/;"	m	struct:buffer	file:	access:public
+length	source/capture_raw_frames.c	/^        size_t  length;$/;"	m	struct:buffer	file:	access:public
+length	source/fb-v4l.c	/^    size_t length;$/;"	m	struct:buffer	file:	access:public
+length	source/v4l2_video_capture.c	/^	size_t length;$/;"	m	struct:cap_buffer	file:	access:public
+length	source/videoCapture.c	/^        size_t  length;$/;"	m	struct:buffer	file:	access:public
+length	v4l.h	/^    size_t length;$/;"	m	struct:buffer	access:public
+length	v4l2_video_capture.c	/^	size_t length;$/;"	m	struct:cap_buffer	file:	access:public
+length	videoCapture.c	/^    size_t  length;$/;"	m	struct:buffer	file:	access:public
+long_options	capture_raw_frames.c	/^long_options[] = {$/;"	v	typeref:struct:option	file:
+long_options	fb-v4l.c	/^static const struct option long_options [] = {$/;"	v	typeref:struct:option	file:
+long_options	source/capture_raw_frames.c	/^long_options[] = {$/;"	v	typeref:struct:option	file:
+long_options	source/fb-v4l.c	/^static const struct option long_options [] = {$/;"	v	typeref:struct:option	file:
+long_options	source/videoCapture.c	/^long_options[] = {$/;"	v	typeref:struct:option	file:
+long_options	videoCapture.c	/^        long_options[] = {$/;"	v	typeref:struct:option	file:
+main	capture_raw_frames.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	fb-v4l.c	/^int main (int argc,char ** argv)$/;"	f	signature:(int argc,char ** argv)
+main	gtkv4l.c	/^int main(int argc,char **argv)$/;"	f	signature:(int argc,char **argv)
+main	source/capture_raw_frames.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	source/fb-v4l.c	/^int main (int argc,char ** argv)$/;"	f	signature:(int argc,char ** argv)
+main	source/v4l2_video_capture.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	source/videoCapture.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	src/info_input.c	/^int main(int argc,char **argv)$/;"	f	signature:(int argc,char **argv)
+main	src/info_vstd.c	/^int main(int argc,char **argv)$/;"	f	signature:(int argc,char **argv)
+main	src/list_std.c	/^int main(int argc,char **argv)$/;"	f	signature:(int argc,char **argv)
+main	test.c	/^int main()$/;"	f
+main	v4l-main.c	/^int main(int argc,char **argv)$/;"	f	signature:(int argc,char **argv)
+main	v4l2_video_capture.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	videoCapture.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+mainloop	capture_raw_frames.c	/^static void mainloop(void)$/;"	f	file:	signature:(void)
+mainloop	source/capture_raw_frames.c	/^static void mainloop(void)$/;"	f	file:	signature:(void)
+mainloop	source/videoCapture.c	/^static void mainloop(void)$/;"	f	file:	signature:(void)
+mainloop	videoCapture.c	/^static void mainloop(void)$/;"	f	file:	signature:(void)
+mm	Session.vim	/^map <silent> mm <Plug>Vm_toggle_sign $/;"	m
+n_buffers	capture_raw_frames.c	/^static unsigned int     n_buffers;$/;"	v	file:
+n_buffers	fb-v4l.c	/^static unsigned int n_buffers = 0;$/;"	v	file:
+n_buffers	source/capture_raw_frames.c	/^static unsigned int     n_buffers;$/;"	v	file:
+n_buffers	source/fb-v4l.c	/^static unsigned int n_buffers = 0;$/;"	v	file:
+n_buffers	source/videoCapture.c	/^static unsigned int     n_buffers;$/;"	v	file:
+n_buffers	v4l.h	/^  int n_buffers;$/;"	m	struct:head_buffer	access:public
+n_buffers	v4l2_video_capture.c	/^    int n_buffers;$/;"	m	struct:head_buffer	file:	access:public
+n_buffers	videoCapture.c	/^static unsigned int     n_buffers;$/;"	v	file:
+number	source/v4l2_video_capture.c	/^static int number = 1;$/;"	v	file:
+number	v4l2_video_capture.c	/^static int number = 1;$/;"	v	file:
+open_device	capture_raw_frames.c	/^static void open_device(void)$/;"	f	file:	signature:(void)
+open_device	fb-v4l.c	/^static void open_device (void)$/;"	f	file:	signature:(void)
+open_device	source/capture_raw_frames.c	/^static void open_device(void)$/;"	f	file:	signature:(void)
+open_device	source/fb-v4l.c	/^static void open_device (void)$/;"	f	file:	signature:(void)
+open_device	source/videoCapture.c	/^static void open_device(void)$/;"	f	file:	signature:(void)
+open_device	videoCapture.c	/^static void open_device(void)$/;"	f	file:	signature:(void)
+out_buf	capture_raw_frames.c	/^static int              out_buf;$/;"	v	file:
+out_buf	source/capture_raw_frames.c	/^static int              out_buf;$/;"	v	file:
+out_buf	source/videoCapture.c	/^static int              out_buf;$/;"	v	file:
+out_buf	videoCapture.c	/^static int              out_buf;$/;"	v	file:
+parse_opts	source/v4l2_video_capture.c	/^static void parse_opts(int argc, char *argv[])$/;"	f	file:	signature:(int argc, char *argv[])
+parse_opts	v4l2_video_capture.c	/^static void parse_opts(int argc, char *argv[])$/;"	f	file:	signature:(int argc, char *argv[])
+pbuffer	source/v4l2_video_capture.c	/^static struct cap_buffer *pbuffer;$/;"	v	typeref:struct:cap_buffer	file:
+pbuffer	v4l2_video_capture.c	/^static struct cap_buffer *pbuffer;$/;"	v	typeref:struct:cap_buffer	file:
+process_image	capture_raw_frames.c	/^static void process_image(const void *p, int size)$/;"	f	file:	signature:(const void *p, int size)
+process_image	fb-v4l.c	/^static void process_image (const void * p) {$/;"	f	file:	signature:(const void * p)
+process_image	source/capture_raw_frames.c	/^static void process_image(const void *p, int size)$/;"	f	file:	signature:(const void *p, int size)
+process_image	source/fb-v4l.c	/^static void process_image (const void * p) {$/;"	f	file:	signature:(const void * p)
+process_image	source/videoCapture.c	/^static void process_image(const void *p, int size)$/;"	f	file:	signature:(const void *p, int size)
+process_image	v4l.c	/^void process_image(const void *p,int size)$/;"	f	signature:(const void *p,int size)
+process_image	v4l.h	/^void process_image(const void *p,int size);$/;"	p	signature:(const void *p,int size)
+process_image	videoCapture.c	/^static void process_image(const void *p, int size)$/;"	f	file:	signature:(const void *p, int size)
+query_cap	source/v4l2_video_capture.c	/^static int query_cap(int fd)$/;"	f	file:	signature:(int fd)
+query_cap	v4l.c	/^int query_cap(int fd)$/;"	f	signature:(int fd)
+query_cap	v4l.h	/^int query_cap(int fd);$/;"	p	signature:(int fd)
+query_cap	v4l2_video_capture.c	/^static int query_cap(int fd)$/;"	f	file:	signature:(int fd)
+query_crop	v4l.c	/^int query_crop(int fd)$/;"	f	signature:(int fd)
+query_crop	v4l.h	/^int query_crop(int fd);$/;"	p	signature:(int fd)
+rate	source/v4l2_video_capture.c	/^static int rate = 0;$/;"	v	file:
+rate	v4l2_video_capture.c	/^static int rate = 0;$/;"	v	file:
+read_frame	capture_raw_frames.c	/^static int read_frame(void)$/;"	f	file:	signature:(void)
+read_frame	fb-v4l.c	/^static int read_frame (void)$/;"	f	file:	signature:(void)
+read_frame	source/capture_raw_frames.c	/^static int read_frame(void)$/;"	f	file:	signature:(void)
+read_frame	source/fb-v4l.c	/^static int read_frame (void)$/;"	f	file:	signature:(void)
+read_frame	source/videoCapture.c	/^static int read_frame(void)$/;"	f	file:	signature:(void)
+read_frame	v4l-main.c	/^extern read_frame(int fd,int io);$/;"	p	file:	signature:(int fd,int io)
+read_frame	v4l.c	/^int read_frame(int fd,int io)$/;"	f	signature:(int fd,int io)
+read_frame	v4l.h	/^int read_frame(int fd,int io);$/;"	p	signature:(int fd,int io)
+read_frame	videoCapture.c	/^static int read_frame(void)$/;"	f	file:	signature:(void)
+run	fb-v4l.c	/^static void run (void)$/;"	f	file:	signature:(void)
+run	source/fb-v4l.c	/^static void run (void)$/;"	f	file:	signature:(void)
+s:cpo_save	Session.vim	/^let s:cpo_save=&cpo$/;"	v
+s:l	Session.vim	/^let s:l = 288 - ((22 * winheight(0) + 11) \/ 23)$/;"	v
+s:l	Session.vim	/^let s:l = 325 - ((6 * winheight(0) + 11) \/ 23)$/;"	v
+s:so_save	Session.vim	/^let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0$/;"	v
+s:sx	Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:wipebuf	Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+screensize	fb-v4l.c	/^static long screensize=0;$/;"	v	file:
+screensize	source/fb-v4l.c	/^static long screensize=0;$/;"	v	file:
+set_control	source/v4l2_video_capture.c	/^static int set_control(int fd)$/;"	f	file:	signature:(int fd)
+set_control	v4l2_video_capture.c	/^static int set_control(int fd)$/;"	f	file:	signature:(int fd)
+set_fmt	source/v4l2_video_capture.c	/^static int set_fmt(int fd)$/;"	f	file:	signature:(int fd)
+set_fmt	v4l.c	/^int set_fmt(int fd)$/;"	f	signature:(int fd)
+set_fmt	v4l.h	/^int set_fmt(int fd);$/;"	p	signature:(int fd)
+set_fmt	v4l2_video_capture.c	/^static int set_fmt(int fd)$/;"	f	file:	signature:(int fd)
+set_input	source/v4l2_video_capture.c	/^static int set_input(int fd)$/;"	f	file:	signature:(int fd)
+set_input	v4l.c	/^int set_input(int fd)$/;"	f	signature:(int fd)
+set_input	v4l.h	/^int set_input(int fd);$/;"	p	signature:(int fd)
+set_input	v4l2_video_capture.c	/^static int set_input(int fd)$/;"	f	file:	signature:(int fd)
+set_rate	source/v4l2_video_capture.c	/^static int set_rate(int fd)$/;"	f	file:	signature:(int fd)
+set_rate	v4l.c	/^int set_rate(int fd,int rate)$/;"	f	signature:(int fd,int rate)
+set_rate	v4l.h	/^int  set_rate(int fd,int rate);$/;"	p	signature:(int fd,int rate)
+set_rate	v4l2_video_capture.c	/^static int set_rate(int fd)$/;"	f	file:	signature:(int fd)
+set_std	source/v4l2_video_capture.c	/^static int set_std(int fd)$/;"	f	file:	signature:(int fd)
+set_std	v4l.c	/^int set_std(int fd)$/;"	f	signature:(int fd)
+set_std	v4l.h	/^int set_std(int fd);$/;"	p	signature:(int fd)
+set_std	v4l2_video_capture.c	/^static int set_std(int fd)$/;"	f	file:	signature:(int fd)
+short_options	capture_raw_frames.c	/^static const char short_options[] = "d:hmruofc:";$/;"	v	file:
+short_options	fb-v4l.c	/^static const char short_options [] = "d:ht:";$/;"	v	file:
+short_options	source/capture_raw_frames.c	/^static const char short_options[] = "d:hmruofc:";$/;"	v	file:
+short_options	source/fb-v4l.c	/^static const char short_options [] = "d:ht:";$/;"	v	file:
+short_options	source/videoCapture.c	/^static const char short_options[] = "d:hmruofc:";$/;"	v	file:
+short_options	videoCapture.c	/^static const char short_options[] = "d:hmruofc:";$/;"	v	file:
+start	capture_raw_frames.c	/^        void   *start;$/;"	m	struct:buffer	file:	access:public
+start	fb-v4l.c	/^    void * start;$/;"	m	struct:buffer	file:	access:public
+start	source/capture_raw_frames.c	/^        void   *start;$/;"	m	struct:buffer	file:	access:public
+start	source/fb-v4l.c	/^    void * start;$/;"	m	struct:buffer	file:	access:public
+start	source/v4l2_video_capture.c	/^	void *start;$/;"	m	struct:cap_buffer	file:	access:public
+start	source/videoCapture.c	/^        void   *start;$/;"	m	struct:buffer	file:	access:public
+start	v4l.h	/^    void *start;$/;"	m	struct:buffer	access:public
+start	v4l2_video_capture.c	/^	void *start;$/;"	m	struct:cap_buffer	file:	access:public
+start	videoCapture.c	/^    void   *start;$/;"	m	struct:buffer	file:	access:public
+start_capturing	capture_raw_frames.c	/^static void start_capturing(void)$/;"	f	file:	signature:(void)
+start_capturing	fb-v4l.c	/^static void start_capturing (void)$/;"	f	file:	signature:(void)
+start_capturing	source/capture_raw_frames.c	/^static void start_capturing(void)$/;"	f	file:	signature:(void)
+start_capturing	source/fb-v4l.c	/^static void start_capturing (void)$/;"	f	file:	signature:(void)
+start_capturing	source/videoCapture.c	/^static void start_capturing(void)$/;"	f	file:	signature:(void)
+start_capturing	v4l.c	/^void start_capturing(int fd,int io)$/;"	f	signature:(int fd,int io)
+start_capturing	v4l.h	/^void start_capturing(int fd,int io);$/;"	p	signature:(int fd,int io)
+start_capturing	videoCapture.c	/^static void start_capturing(void)$/;"	f	file:	signature:(void)
+std_cap	source/v4l2_video_capture.c	/^static int std_cap = 0;$/;"	v	file:
+std_cap	v4l2_video_capture.c	/^static int std_cap = 0;$/;"	v	file:
+stop_capturing	capture_raw_frames.c	/^static void stop_capturing(void)$/;"	f	file:	signature:(void)
+stop_capturing	fb-v4l.c	/^static void stop_capturing (void)$/;"	f	file:	signature:(void)
+stop_capturing	source/capture_raw_frames.c	/^static void stop_capturing(void)$/;"	f	file:	signature:(void)
+stop_capturing	source/fb-v4l.c	/^static void stop_capturing (void)$/;"	f	file:	signature:(void)
+stop_capturing	source/videoCapture.c	/^static void stop_capturing(void)$/;"	f	file:	signature:(void)
+stop_capturing	v4l.c	/^void stop_capturing(int fd,int io)$/;"	f	signature:(int fd,int io)
+stop_capturing	v4l.h	/^void stop_capturing(int fd,int io);$/;"	p	signature:(int fd,int io)
+stop_capturing	videoCapture.c	/^static void stop_capturing(void)$/;"	f	file:	signature:(void)
+time_in_sec_capture	fb-v4l.c	/^static int time_in_sec_capture=5;$/;"	v	file:
+time_in_sec_capture	source/fb-v4l.c	/^static int time_in_sec_capture=5;$/;"	v	file:
+uninit_device	capture_raw_frames.c	/^static void uninit_device(void)$/;"	f	file:	signature:(void)
+uninit_device	fb-v4l.c	/^static void uninit_device (void)$/;"	f	file:	signature:(void)
+uninit_device	source/capture_raw_frames.c	/^static void uninit_device(void)$/;"	f	file:	signature:(void)
+uninit_device	source/fb-v4l.c	/^static void uninit_device (void)$/;"	f	file:	signature:(void)
+uninit_device	source/videoCapture.c	/^static void uninit_device(void)$/;"	f	file:	signature:(void)
+uninit_device	v4l.c	/^int uninit_device(int fd,enum io_method io,$/;"	f	signature:(int fd,enum io_method io, struct head_buffer *hbuffer)
+uninit_device	videoCapture.c	/^static void uninit_device(void)$/;"	f	file:	signature:(void)
+usage	capture_raw_frames.c	/^static void usage(FILE *fp, int argc, char **argv)$/;"	f	file:	signature:(FILE *fp, int argc, char **argv)
+usage	fb-v4l.c	/^static void usage (FILE * fp,int argc,char ** argv)$/;"	f	file:	signature:(FILE * fp,int argc,char ** argv)
+usage	source/capture_raw_frames.c	/^static void usage(FILE *fp, int argc, char **argv)$/;"	f	file:	signature:(FILE *fp, int argc, char **argv)
+usage	source/fb-v4l.c	/^static void usage (FILE * fp,int argc,char ** argv)$/;"	f	file:	signature:(FILE * fp,int argc,char ** argv)
+usage	source/v4l2_video_capture.c	/^static void usage(const char *prog)$/;"	f	file:	signature:(const char *prog)
+usage	source/videoCapture.c	/^static void usage(FILE *fp, int argc, char **argv)$/;"	f	file:	signature:(FILE *fp, int argc, char **argv)
+usage	v4l2_video_capture.c	/^static void usage(const char *prog)$/;"	f	file:	signature:(const char *prog)
+usage	videoCapture.c	/^static void usage(FILE *fp, int argc, char **argv)$/;"	f	file:	signature:(FILE *fp, int argc, char **argv)
+vinfo	fb-v4l.c	/^static struct fb_var_screeninfo vinfo;$/;"	v	typeref:struct:fb_var_screeninfo	file:
+vinfo	source/fb-v4l.c	/^static struct fb_var_screeninfo vinfo;$/;"	v	typeref:struct:fb_var_screeninfo	file:
+width	source/v4l2_video_capture.c	/^static int width = 640;$/;"	v	file:
+width	v4l2_video_capture.c	/^static int width = 640;$/;"	v	file:
+xioctl	capture_raw_frames.c	/^static int xioctl(int fh, int request, void *arg)$/;"	f	file:	signature:(int fh, int request, void *arg)
+xioctl	fb-v4l.c	/^static int xioctl (int fd,int request,void * arg)$/;"	f	file:	signature:(int fd,int request,void * arg)
+xioctl	source/capture_raw_frames.c	/^static int xioctl(int fh, int request, void *arg)$/;"	f	file:	signature:(int fh, int request, void *arg)
+xioctl	source/fb-v4l.c	/^static int xioctl (int fd,int request,void * arg)$/;"	f	file:	signature:(int fd,int request,void * arg)
+xioctl	source/videoCapture.c	/^static int xioctl(int fh, int request, void *arg)$/;"	f	file:	signature:(int fh, int request, void *arg)
+xioctl	v4l.c	/^int xioctl(int fd,int request,void *arg)$/;"	f	signature:(int fd,int request,void *arg)
+xioctl	v4l.h	/^int xioctl(int fd,int request,void *arg);$/;"	p	signature:(int fd,int request,void *arg)
+xioctl	videoCapture.c	/^static int xioctl(int fh, int request, void *arg)$/;"	f	file:	signature:(int fh, int request, void *arg)
+zo	Session.vim	/^normal zo$/;"	m
+zt	Session.vim	/^normal! zt$/;"	m
+­	Session.vim	/^inoremap <buffer> <silent> ­ =EchoFuncP()$/;"	m
+½	Session.vim	/^inoremap <buffer> <silent> ½ =EchoFuncN()$/;"	m
