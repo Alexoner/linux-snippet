@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.8">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY applet "Geyes">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Mar 12, 2002  
+-->
+<article id="index" lang="ast">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Manual de Geyes</title> 
+	 <abstract role="description">
+	   <para>Geyes apurre un mou entreteníu de siguir el punteru del mur na pantalla al traviés d'un par de güeyos que se mueve.</para>
+	 </abstract>
+	 <copyright> 
+		<year>2002</year>
+		<year>2003</year> 
+		<year>2004</year> 
+		<holder>Sun Microsystems</holder> 
+	 </copyright>  
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Telsa Gwynne</holder> 
+	 </copyright>
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Arjan Scherpenisse</holder> 
+	 </copyright><copyright><year>2010</year><holder>Xandru Armesto (xandru@softastur.org)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+	 <publisher role="maintainer"> 
+		<publishername>Proyeutu de Documentación de GNOME</publishername> 
+	 </publisher> 
+   <legalnotice id="legalnotice">
+         <para>Garantízase'l permisu a copiar, distribuir y/o camudar esti documentu embaxo los términos de la Llicencia Llibre de Documentación de GNU (GFDL), Versión 1.1 u otra versión posterior espublizada pola Free Software Foundation con Seiciones Invariantes, ensin testos de cubierta delanterops y traseros. Pues atopar una copia de la GFDL nesti enllaz <ulink type="help" url="ghelp:fdl">enllaz</ulink> o nel ficheru COPYING-DOCS distribuíu con esti manual.</para>
+          <para>Esti manual ye parte d'una colección de manuales de GNOME distribuyíu so la GFDL. Si quier distribuyir esti manual por dixebráu de la colección, puede faelo añediendo una copia de la llicencia al manual, tal como se describi na sección 6 de la llicencia.</para>
+ 
+         <para>Munchos de los nomes utilizaos poles empreses pa estremar los sos productos y servicios considérense marques comerciales. Cuando estos nomes apaezan na documentación de GNOME, y siempres que s'informara a los miembros del Proyectu de documentación de GNOME de diches marques comerciales, los nomes van apaecer en mayúscules o coles iniciales en mayúscules.</para>
+ 
+         <para>ESTI DOCUMENTU Y LES VERSIONES MODIFICAES DEL MESMU APÚRRENSE SEGÚN LES CONDICIONES ESTABLECÍES NA LLICENCIA DE DOCUMENTACIÓN LLIBRE DE GNU (GFDL) Y TENIENDO EN CUENTA QUE: <orderedlist>
+                 <listitem>
+                   <para>EL DOCUMENTU APÚRRESE "TALO COMO", ENSIN GARANTÍA DE NENGÚN TIPU, NIN ESPLÍCITA NIN IMPLÍCITA INCLUYENDO, ENSIN LLIMITACIÓN, GARANTÍA DE QUE'L DOCUMENTU O VERSIÓN MODIFICADA D'ÉSTI ESCAREZA DE DEFECTOS COMERCIALES, SÍA AFECHU A UN FIN CONCRETU O INCUMPLA DALGUNA NORMATIVA. TOL RIESGU RELATIVU A LA CALIDÁ, PRECISIÓN Y UTILIDÁ DEL DOCUMENTU O LA SO VERSIÓN MODIFICADA RECAI N'USTÉ. SI CUALESQUIER DOCUMENTU O VERSIÓN MODIFICADA D'AQUÉL RESULTARA DEFEUTUOSU EN CUALESQUIER ASPEUTU, USTÉ (Y NON EL REDACTOR INICIAL, AUTOR O CONTRIBUYENTE) VA ASUMIR LOS COSTOS DE TOU ARREGLU, CALTENIMIENTU O CORREICIÓN NECESARIOS. ESTI ARRENUNCIU DE GARANTÍA YE UNA PARTE ESENCIAL D'ESTA LLICENCIA. NUN S'AUTORIZA L'USU DE NENGÚN DOCUMENTU NIN VERSIÓN MODIFICADA D'ÉSTI POL PRESENTE, SALVO DIENTRO DEL CUMPLIMIENTU DEL ARRENUNCIU;Y</para>
+                 </listitem>
+                 <listitem>
+                   <para>EN NENGUNA CIRCUNSTANCIA NIN SEGÚN NENGÚN ARGUMENTU LLEGAL, SÍA POR MOTIVOS CULPOSOS (INCLUYIDA LA NEGLIXENCIA), CONTRACTUALES O D'OTRU TIPU, NIN EL AUTOR, NIN EL REDACTOR INICIAL, NIN CUALESQUIER COLLABORADOR, NIN CUALESQUIER DISTRIBUIDOR DEL DOCUMENTU O VERSIÓN MODIFICADA DEL MESMU, NIN CUALESQUIER PROVISOR DE CUALESQUIER DE DICHES PARTES, VAN SER RESPONSABLES, ÉNTE NENGÚN TERCERU, DE NENGÚN DAÑU O PREXUICIU DIREUTU, INDIREUTU, ESPECIAL, INCIDENTAL O CONSIGUIENTE DE NENGÚN TIPU, INCLUYÍOS, ENSIN LLIMITACIÓN, LOS DAÑOS POR PERDA DE FONDU DE COMERCIU, INTERRUPCIÓN DEL TRABAYU, FALLU O MAL FUNCIONAMIENTU INFORMÁTICU, NIN CUALESQUIER OTRU DAÑU O PERDA DERIVAOS DEL USU DEL DOCUMENTU Y LES VERSIONES MODIFICAES DEL MESMU, O RELLACIONÁU CON ELLO, INCLUSIVE SI SE COMUNICARA A AQUELLA PARTE LA POSIBILIDÁ DE TALOS DAÑOS.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+ 
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>Equipu de Documentación de GNOME</surname> 
+		  <affiliation> 
+			 <orgname>Sun Microsystems</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Telsa</firstname> 
+		  <surname>Gwynne</surname> 
+		  <affiliation> 
+			 <orgname>Proyeutu de Documentación de GNOME</orgname> 
+			 <address> <email>hobbit@aloss.ukuu.org.uk</email> </address> 
+		  </affiliation> 
+		</author>
+		<author> 
+		  <firstname>Arjan</firstname> 
+		  <surname>Scherpenisse</surname> 
+		  <affiliation> 
+			 <orgname>Proyeutu de Documentación de GNOME</orgname> 
+			 <address> <email>acscherp@wins.uva.nl</email> </address> 
+		  </affiliation> 
+		</author> 
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	 <releaseinfo revision="2.26" role="review"/>
+
+	 <revhistory>
+	   <revision>
+	     <revnumber>Versión 2.8</revnumber>
+	     <date>Setiembre de 2004</date>
+	     <revdescription>
+	       <para role="author">Equipu de Documentación de GNOME</para>
+	       <para role="publisher">Proyeutu de Documentación de GNOME</para>
+	     </revdescription>
+	   </revision>
+		<revision> 
+		  <revnumber>Manual del Applet Geyes V2.6</revnumber> 
+		  <date>Febreru de 2004</date> 
+		  <revdescription> 
+			 <para role="author">Equipu de Documentación de Sun de GNOME</para> 
+			 <para role="publisher">Proyeutu de Documentación de GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual del Applet Geyes V2.5</revnumber> 
+		  <date>Setiembre de 2003</date> 
+		  <revdescription> 
+			 <para role="author">Equipu de Documentación de Sun de GNOME</para> 
+			 <para role="publisher">Proyeutu de Documentación de GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual del Applet Geyes V2.4</revnumber> 
+		  <date>Agostu 2003</date> 
+		  <revdescription> 
+			 <para role="author">Equipu de Documentación de Sun de GNOME</para> 
+			 <para role="publisher">Proyeutu de Documentación de GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual del Applet Geyes V2.3</revnumber> 
+		  <date>Xineru 2003</date> 
+		  <revdescription> 
+			 <para role="author">Equipu de Documentación de Sun de GNOME</para> 
+			 <para role="publisher">Proyeutu de Documentación de GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual del Applet Geyes V2.2</revnumber> 
+		  <date>Agostu 2002</date> 
+		  <revdescription> 
+			 <para role="author">Equipu de Documentación de Sun de GNOME</para> 
+			 <para role="publisher">Proyeutu de Documentación de GNOME</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Manual del Applet Geyes V2.1</revnumber> 
+		  <date>Xunu 2002</date> 
+		  <revdescription> 
+			 <para role="author">Equipu de Documentación de Sun de GNOME</para> 
+			 <para role="publisher">Proyeutu de Documentación de GNOME</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Manual del Applet Geyes V2.0</revnumber> 
+		  <date>Marzu 2002</date> 
+		  <revdescription> 
+			 <para role="author">Equipu de Documentación de Sun de GNOME</para> 
+			 <para role="publisher">Proyeutu de Documentación de GNOME</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Applet gEyes</revnumber> 
+		  <date>2000</date> 
+		  <revdescription> 
+			 <para role="author">Telsa Gwynne <email>hobbit@aloss.ukuu.org.uk</email></para> 
+			 <para role="author">Arjan Scherpenisse <email>acscherp@wins.uva.nl</email></para>
+			 <para role="publisher">Proyeutu de Documentación de GNOME</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>Esti manual describe la versión 2.8 de Geyes.</releaseinfo> 
+	 <legalnotice> 
+		<title>Comentarios</title> 
+		<para>Pa informar d'un problema o facer una suxerencia tocante al applet Geyes o a esti manual, sigui les instrucciones na <ulink url="ghelp:gnome-feedback" type="help">Páxina de Comentarios de GNOME</ulink>.</para>
+		
+	 </legalnotice> 
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Geyes</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="geyes-introduction">
+<title>Introducción</title>
+<!-- ==== Figure ============================================= -->
+	 <figure id="geyes-fig"> 
+		<title>Applet Geyes</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/geyes_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Amosar applet Geyes.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>L'aplet <application>Geyes</application> apurre un mou entreteníu de siguir el movimientu del punteru del mur na pantalla. L'applet consiste nuna imaxe d'un o más güeyos que siguen el punteru del mur pela pantalla.</para>
+<para>P'amestar <application>Geyes</application> al panel, fai click drechu nel panel, entós escueyi <guimenuitem>Amestar al Panel</guimenuitem>. Seleiciona <application>Geyes</application> nel diálogu <application>Amestar al panel</application>, dempués calca en <guibutton>OK</guibutton>.</para>
+</sect1>
+<!-- ============= Preferences  ================================ -->
+<sect1 id="geyes-settings">
+<title>Preferencies</title>
+<para>Pa configurar <application>Geyes</application>, fai click drechu nel applet <application>Geyes</application>, dempués escueyi <guimenuitem>Preferencies</guimenuitem>. Pues escoyer ente dellos temes. Cada tema afecta a cómo mira'l güeyu.</para>
+</sect1>
+</article>

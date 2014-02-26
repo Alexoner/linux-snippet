@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.8">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "August 2004">
+<!ENTITY applet "Volume Control">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Mar 12, 2002
+  
+-->
+<article id="index" lang="zh_CN">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>音量控制器手册</title> 
+	 <abstract role="description">
+	   <para>音量控制器允许您控制系统的音量，并提供当前音量大小的视觉反馈。</para>
+	 </abstract>
+	 <copyright> 
+		<year>2002</year> 
+		<year>2003</year> 
+		<year>2004</year> 
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Dan Mueth</holder> 
+	 </copyright><copyright><year>2009, 2010</year><holder>TeliuTe (teliute@163.com)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+	 <publisher role="maintainer"> 
+		<publishername>GNOME 文档项目</publishername> 
+	 </publisher> 
+
+  <legalnotice id="legalnotice">
+	<para>对于本文档的复制、分发和/或修改必须遵循自由软件基金会 (Free Software Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本， 该许可证没有固定的部分、没有封面和背页文本。您可以在此<ulink type="help" url="ghelp:fdl">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副本。</para>
+         <para>本手册是在 GFDL 许可之下分发的 GNOME 手册集合的一部分。如果想要单独分发此手册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6 部分所述。</para>
+
+	<para>各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而表明它们是商标。</para>
+
+	<para>本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有以下含义：<orderedlist>
+		<listitem>
+		  <para>文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，那么您就没有权利使用任何文档或文档的修改版本；并且</para>
+		</listitem>
+		<listitem>
+		  <para>无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损失，即使这些方已被告知存在出现此类损失的可能性时也是如此。</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Angela</firstname> 
+		  <surname>Boyle</surname> 
+		  <affiliation> 
+			 <address><email>aboyle@aboyle.com</email></address> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Dan</firstname> 
+		  <surname>Mueth</surname> 
+		  <affiliation> 
+			 <orgname>GNOME 文档项目</orgname> 
+			 <address> <email>d-mueth@uchicago.edu</email> </address> 
+		  </affiliation> 
+		</author>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	 <releaseinfo revision="2.26" role="review"/>
+
+	 <revhistory>
+		<revision> 
+		  <revnumber>音量控制器手册 V2.8</revnumber> 
+		  <date>2004年8月</date> 
+		  <revdescription> 
+			 <para role="author">Angela Boyle</para> 
+			 <para role="publisher">GNOME 文档项目</para> 
+		  </revdescription> 
+		</revision>  
+		<revision> 
+		  <revnumber>音量控制器手册 V2.6</revnumber> 
+		  <date>2004年2月</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Documentation Team</para> 
+			 <para role="publisher">GNOME 文档项目</para> 
+		  </revdescription> 
+		</revision>  
+		<revision> 
+		  <revnumber>音量控制器手册 V2.5</revnumber> 
+		  <date>2003年9月</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Documentation Team</para> 
+			 <para role="publisher">GNOME 文档项目</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>音量控制器手册 V2.4</revnumber> 
+		  <date>2003年8月</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Documentation Team</para> 
+			 <para role="publisher">GNOME 文档项目</para> 
+		  </revdescription> 
+		</revision>  
+		<revision> 
+		  <revnumber>音量控制器手册 V2.3</revnumber> 
+		  <date>2003年3月</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Documentation Team</para> 
+			 <para role="publisher">GNOME 文档项目</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>音量控制器手册 V2.2</revnumber> 
+		  <date>2003年1月</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Documentation Team</para> 
+			 <para role="publisher">GNOME 文档项目</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>音量控制器手册 V2.1</revnumber> 
+		  <date>2002年8月</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Documentation Team</para> 
+			 <para role="publisher">GNOME 文档项目</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>音量控制器手册 V2.0</revnumber> 
+		  <date>2002年4月</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Documentation Team</para> 
+			 <para role="publisher">GNOME 文档项目</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>混音器小程序</revnumber> 
+		  <date>2000</date> 
+		  <revdescription> 
+			 <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para> 
+			 <para role="publisher">GNOME 文档项目</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>本手册讲述的是音量控制器手册 2.8 版。</releaseinfo> 
+	 <legalnotice> 
+		<title>反馈</title> 
+		<para>要报告关于音量控制器或使用手册中的缺陷，或者提出建议，请参照 <ulink url="ghelp:gnome-feedback" type="help">GNOME 反馈页</ulink>上的指导。</para>
+		
+	 </legalnotice> 
+  </articleinfo> 
+  <indexterm> 
+	 <primary>音量控制器</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="volumecontrol-introduction">
+<title>介绍</title>
+<!-- ==== Figure ============================================= -->
+	 <figure id="volumecontrol-fig"> 
+		<title>音量控制小程序</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/volumecontrol_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>显示音量控制小程序，包含一个小喇叭图像。</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para><application>音量控制</application>小程序允许您控制系统音量大小。小程序上图标的改变，取决于您选择的音量级别，例如，您选择的是较小的音量，图标上的喇叭只发出一条音波线，如果您增大音量，喇叭上会显示较多的音波线。</para>
+
+    <sect2 id="volumecontrol-introduction-add">
+      <title>要添加音量控制器到一个面板上</title>
+      <para>要将<application>音量控制</application>添加面板上，请在面板上单击右键，然后选择<guimenuitem>添加到面板</guimenuitem>。在 <application>添加到</application>对话框里，选择<application>音量控制</application>，然后点击<guibutton>确定</guibutton>。</para>
+    </sect2>
+</sect1>
+
+<sect1 id="volumecontrol-usage">
+<title>使用音量控制</title>
+
+	<sect2 id="volumecontrol-adjust">
+	<title>要调整音量</title>
+	<para>单击小程序以显示滑块控制。要增加音量，向上移动滑块，要降低音量，向下拖动滑块。</para>
+	</sect2>
+	
+	<sect2 id="volumecontrol-off">
+	<title>要切换音量的开关</title>
+	<para>要让音量关闭，在小程序上单击右键，然后选择<guimenuitem>静音</guimenuitem>。</para>
+	</sect2>
+	
+	<sect2 id="volumecontrol-add">
+	<title>要访问额外的特性</title>
+	<para>要访问音量控制的其它功能，请在小程序上单击右键，然后选择<guimenuitem>打开音量控制</guimenuitem>。接着会出现音量控制程序，您可以使用该程序为播放和录制音频控制音量和声道平衡。</para>
+	</sect2>
+
+</sect1>
+
+<sect1 id="volumecontrol-prefs">
+<title>自定义音量控制</title>
+<para>要配置<application>音量控制</application>，请在小程序上单击右键，然后选择<guimenuitem>首选项</guimenuitem>。</para> 
+    <note>
+      <para><application>音量控制</application>会弹出一个<guilabel>首选项</guilabel> 对话框，功能的多少取决于您的声卡类型。</para>
+    </note>
+
+<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>声道</guilabel></term> 
+			 <listitem> 
+			 <para>选择您想控制的音频输出声道：</para> 
+			 <itemizedlist>
+			 	<listitem><para><guilabel>音量</guilabel></para></listitem>
+			 	<listitem><para><guilabel>PCM</guilabel></para></listitem>
+			 	<listitem><para><guilabel>喇叭</guilabel></para></listitem>
+				<listitem><para><guilabel>线路输入(Line-in)</guilabel></para></listitem>
+				<listitem><para><guilabel>麦克风(Microphone)</guilabel></para></listitem>
+				<listitem><para><guilabel>CD</guilabel></para></listitem>
+				<listitem><para><guilabel>录音(Record)</guilabel></para></listitem>
+				<listitem><para><guilabel>Line-1</guilabel></para></listitem>
+				<listitem><para><guilabel>Line-2</guilabel></para></listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry> 
+		</variablelist> 
+
+<para>单击<guibutton>关闭</guibutton>可关闭<guilabel>音量控制首选项</guilabel>对话框。</para>
+
+</sect1>
+</article>

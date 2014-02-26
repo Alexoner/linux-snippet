@@ -1,8 +1,10 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include <dirent.h>
-#include <unistd.h>
-#include <stdlib.h>
+#include <sys/types.h>
 #include <sys/stat.h>
+#include <unistd.h>
+#include <string.h>
 
 void printdir(char *dir,int depth)
 {

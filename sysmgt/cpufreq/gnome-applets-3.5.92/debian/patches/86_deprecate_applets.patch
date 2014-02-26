@@ -1,0 +1,19 @@
+Index: gnome-applets-3.1.2/null_applet/null_applet.c
+===================================================================
+--- gnome-applets-3.1.2.orig/null_applet/null_applet.c	2011-06-28 21:45:33.180955188 -0400
++++ gnome-applets-3.1.2/null_applet/null_applet.c	2011-06-28 21:47:09.123370828 -0400
+@@ -57,6 +57,14 @@
+ 			     "OAFIID:GNOME_MixerApplet", _("Volume Control"));
+ 	g_hash_table_insert (hash_table,
+ 			     "OAFIID:GNOME_KeyboardApplet", _("Keyboard Indicator"));
++	g_hash_table_insert (hash_table,
++			     "OAFIID:GNOME_BattstatApplet", _("Battery Charge Monitor"));
++	g_hash_table_insert (hash_table,
++			     "OAFIID:GNOME_ModemLightsApplet", _("Modem Monitor"));
++	g_hash_table_insert (hash_table,
++			     "OAFIID:TomboyApplet", _("Tomboy"));
++	g_hash_table_insert (hash_table,
++			     "OAFIID:GNOME_FastUserSwitchAppletGdm", _("User Switcher"));
+ }
+ 
+ /*

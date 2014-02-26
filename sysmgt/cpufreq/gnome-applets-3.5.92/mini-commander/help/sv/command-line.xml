@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- -*- indent-tabs-mode: nil -*- -->
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.12">
+<!ENTITY applet "Command Line">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp 
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sv">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo> 
+  <title>Handbok för Kommandorad</title> 
+  <abstract role="description">
+    <para>Kommandorad låter dig köra kommandon från en panel, och inkluderar snabb åtkomst till en filbläddrare och kommandohistorik.</para>
+  </abstract>
+  <copyright>
+    <year>2005</year>
+    <holder>Davyd Madeley</holder>
+  </copyright>
+  <copyright>
+    <year>2004</year>
+    <holder>Angela Boyle</holder>
+  </copyright>
+  <copyright> 
+    <year>2002</year>
+    <year>2003</year> 
+    <year>2004</year> 
+    <holder>Sun Microsystems</holder> 
+  </copyright>    
+  <copyright> 
+    <year>1998</year> 
+    <holder>Oliver Maruhn</holder> 
+  </copyright>
+  <copyright> 
+    <year>1998</year> 
+    <holder>Dan Mueth</holder> 
+  </copyright><copyright><year>2006</year><holder>Daniel Nylander (po@danielnylander.se)</holder></copyright>
+  <!-- translators: uncomment this:
+       <copyright>
+       <year>2003</year>
+       <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+       </copyright>
+  -->
+  <publisher role="maintainer"> 
+    <publishername>Dokumentationsprojekt för GNOME</publishername> 
+  </publisher>
+
+     <legalnotice id="legalnotice">
+         <para>Tillstånd att kopiera, distribuera och/eller modifiera detta dokument ges under villkoren i GNU Free Documentation License (GFDL), version 1.1 eller senare, utgivet av Free Software Foundation utan standardavsnitt och omslagstexter.  En kopia av GFDL finns att hämta på denna <ulink type="help" url="ghelp:fdl">länk</ulink> eller i filen COPYING-DOCS som medföljer denna handbok.</para>
+          <para>Denna handbok utgör en av flera GNOME-handböcker som distribueras under villkoren i GFDL.  Om du vill distribuera denna handbok separat från övriga handböcker kan du göra detta genom att lägga till en kopia av licensavtalet i handboken enligt instruktionerna i avsnitt 6 i licensavtalet.</para>
+ 
+         <para>Flera namn på produkter och tjänster är registrerade varumärken. I de fall dessa namn förekommer i GNOME-dokumentation - och medlemmarna i GNOME-dokumentationsprojektet är medvetna om dessa varumärken - är de skrivna med versaler eller med inledande versal.</para>
+ 
+         <para>DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET TILLHANDAHÅLLS UNDER VILLKOREN I GNU FREE DOCUMENTATION LICENSE ENDAST UNDER FÖLJANDE FÖRUTSÄTTNINGAR: <orderedlist>
+                 <listitem>
+                   <para>DOKUMENTET TILLHANDAHÅLLS I "BEFINTLIGT SKICK" UTAN NÅGRA SOM HELST GARANTIER, VARE SIG UTTRYCKLIGA ELLER UNDERFÖRSTÅDDA, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, GARANTIER ATT DOKUMENTET ELLER EN MODIFIERAD VERSION AV DOKUMENTET INTE INNEHÅLLER NÅGRA FELAKTIGHETER, ÄR LÄMPLIGT FÖR ETT VISST ÄNDAMÅL ELLER INTE STRIDER MOT LAG. HELA RISKEN VAD GÄLLER KVALITET, EXAKTHET OCH UTFÖRANDE AV DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET LIGGER HELT OCH HÅLLET PÅ ANVÄNDAREN. OM ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT SKULLE VISA SIG INNEHÅLLA FELAKTIGHETER I NÅGOT HÄNSEENDE ÄR DET DU (INTE DEN URSPRUNGLIGA SKRIBENTEN, FÖRFATTAREN ELLER NÅGON ANNAN MEDARBETARE) SOM FÅR STÅ FÖR ALLA EVENTUELLA KOSTNADER FÖR SERVICE, REPARATIONER ELLER KORRIGERINGAR. DENNA GARANTIFRISKRIVNING UTGÖR EN VÄSENTLIG DEL AV DETTA LICENSAVTAL. DETTA INNEBÄR ATT ALL ANVÄNDNING AV ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT BEVILJAS ENDAST UNDER DENNA ANSVARSFRISKRIVNING;</para>
+                 </listitem>
+                 <listitem>
+                   <para>UNDER INGA OMSTÄNDIGHETER ELLER INOM RAMEN FÖR NÅGON LAGSTIFTNING, OAVSETT OM DET GÄLLER KRÄNKNING (INKLUSIVE VÅRDSLÖSHET), KONTRAKT ELLER DYLIKT, SKA FÖRFATTAREN, DEN URSPRUNGLIGA SKRIBENTEN ELLER ANNAN MEDARBETARE ELLER ÅTERFÖRSÄLJARE AV DOKUMENTET ELLER AV EN MODIFIERAD VERSION AV DOKUMENTET ELLER NÅGON LEVERANTÖR TILL NÅGON AV NÄMNDA PARTER STÄLLAS ANSVARIG GENTEMOT NÅGON FÖR NÅGRA DIREKTA, INDIREKTA, SÄRSKILDA ELLER OFÖRUTSEDDA SKADOR ELLER FÖLJDSKADOR AV NÅGOT SLAG, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, SKADOR BETRÄFFANDE FÖRLORAD GOODWILL, HINDER I ARBETET, DATORHAVERI ELLER NÅGRA ANDRA TÄNKBARA SKADOR ELLER FÖRLUSTER SOM KAN UPPKOMMA PÅ GRUND AV ELLER RELATERAT TILL ANVÄNDNINGEN AV DOKUMENTET ELLER MODIFIERADE VERSIONER AV DOKUMENTET, ÄVEN OM PART SKA HA BLIVIT INFORMERAD OM MÖJLIGHETEN TILL SÅDANA SKADOR.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+ 
+
+  <authorgroup>
+    <author>
+      <firstname>Suns</firstname>
+      <surname>GNOME-dokumentationsteam</surname>
+      <affiliation>
+        <orgname>Sun Microsystems</orgname>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Oliver</firstname>
+      <surname>Maruhn</surname>
+      <affiliation>
+        <orgname>Dokumentationsprojekt för GNOME</orgname>
+	<address><email>oliver@maruhn.com</email></address>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Dan</firstname>
+      <surname>Mueth</surname>
+      <affiliation>
+        <orgname>Dokumentationsprojekt för GNOME</orgname>
+	<address><email>d-mueth@uchicago.edu</email></address>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Angela</firstname>
+      <surname>Boyle</surname>
+      <affiliation>
+        <orgname>Dokumentationsprojekt för GNOME</orgname>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Davyd</firstname><surname>Madeley</surname>
+      <affiliation>
+        <orgname>GNOME-projektet</orgname>
+	<address><email>davyd@madeley.id.au</email></address>
+      </affiliation>
+    </author>
+    <!-- This is appropriate place for other contributors: translators,
+         maintainers,  etc. Commented out by default.
+         <othercredit role="translator">
+         <firstname>Latin</firstname> 
+         <surname>Translator 1</surname> 
+         <affiliation> 
+         <orgname>Latin Translation Team</orgname> 
+         <address> <email>translator@gnome.org</email> </address> 
+         </affiliation>
+         <contrib>Latin translation</contrib>
+         </othercredit>
+    -->
+  </authorgroup> 
+  <revhistory>
+    <revision>
+      <revnumber>Version 2.12</revnumber>
+      <date>September 2005</date>
+      <revdescription>
+        <para role="author">Davyd Madeley</para>
+      </revdescription>
+    </revision>
+    <revision>
+      <revnumber>Version 2.10</revnumber>
+      <date>Mars 2005</date>
+      <revdescription>
+        <para role="author">Davyd Madeley</para>
+      </revdescription>
+    </revision>
+    <revision>
+      <revnumber>Version 2.8</revnumber>
+      <date>September 2004</date>
+      <revdescription>
+        <para role="author">Angela Boyle</para>
+        <para role="publisher">Dokumentationsprojekt för GNOME</para>
+      </revdescription>
+    </revision>
+    <revision> 
+      <revnumber>Handbok för panelprogrammet Kommandorad v2.7</revnumber> 
+      <date>Augusti 2004</date> 
+      <revdescription> 
+        <para role="author">Sun Microsystems</para>
+        <para role="publisher">Dokumentationsprojekt för GNOME</para>
+      </revdescription> 
+    </revision>
+    <revision> 
+      <revnumber>Handbok för panelprogrammet Kommandorad v2.6</revnumber> 
+      <date>September 2003</date> 
+      <revdescription> 
+        <para role="author">Sun Microsystems</para>
+        <para role="publisher">Dokumentationsprojekt för GNOME</para>
+      </revdescription> 
+    </revision>
+    <revision> 
+      <revnumber>Handbok för panelprogrammet Kommandorad v2.5</revnumber> 
+      <date>Augusti 2003</date> 
+      <revdescription> 
+        <para role="author">Sun Microsystems</para>
+        <para role="publisher">Dokumentationsprojekt för GNOME</para>
+      </revdescription> 
+    </revision>
+    <revision> 
+      <revnumber>Handbok för panelprogrammet Kommandorad v2.4</revnumber> 
+          <date>April 2003</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Dokumentationsprojekt för GNOME</para>
+          </revdescription> 
+        </revision>
+        
+			<revision> 
+          <revnumber>Handbok för panelprogrammet Kommandorad v2.3</revnumber> 
+          <date>Januari 2003</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Dokumentationsprojekt för GNOME</para>
+          </revdescription> 
+        </revision> 
+
+        <revision> 
+          <revnumber>Handbok för panelprogrammet Kommandorad v2.2</revnumber> 
+          <date>Augusti 2002</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Dokumentationsprojekt för GNOME</para>
+          </revdescription> 
+        </revision> 
+        
+         
+        <revision> 
+          <revnumber>Handbok för panelprogrammet Kommandorad v2.1</revnumber> 
+          <date>Juli 2002</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Dokumentationsprojekt för GNOME</para>
+          </revdescription> 
+        </revision> 
+        <revision> 
+          <revnumber>Handbok för panelprogrammet Kommandorad v2.0</revnumber> 
+          <date>Mars 2002</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Dokumentationsprojekt för GNOME</para>
+          </revdescription> 
+        </revision> 
+        <revision> 
+          <revnumber>Handbok för panelprogrammet Mini-Commander</revnumber> 
+          <date>1998</date> 
+          <revdescription> 
+             <para role="author">Oliver Maruhn <email>oliver@maruhn.com</email></para>
+             <para role="publisher">Dokumentationsprojekt för GNOME</para>
+             <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para>
+             <para role="publisher">Dokumentationsprojekt för GNOME</para>
+          </revdescription> 
+        </revision> 
+     </revhistory> 
+     <releaseinfo>Denna handbok beskriver version 2.12 av Kommandorad.</releaseinfo> 
+     <legalnotice> 
+        <title>Återkoppling</title> 
+        <para>För att rapportera ett fel eller komma med förslag angående panelprogrammet Kommandorad eller denna handbok, följ anvisningarna på <ulink url="ghelp:gnome-feedback" type="help">GNOME:s återkopplingssida</ulink>.</para>
+     </legalnotice> 
+  </articleinfo> 
+  <indexterm zone="index"> 
+     <primary>Kommandorad</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+     <primary>panelprogrammet kommandorad</primary> 
+  </indexterm>
+
+<!-- ============= Introduction =====-->
+  <sect1 id="command-line-introduction"> 
+     <title>Introduktion</title> 
+     
+     <!-- ==== Figure ==================-->
+     <figure id="applet-fig"> 
+        <title>Kommandorad</title> 
+        <screenshot> 
+          <mediaobject> 
+             <imageobject><imagedata fileref="figures/command-line.png" format="PNG"/> 
+             </imageobject> 
+             <textobject> 
+                <phrase>Visar kommadorad.</phrase> 
+             </textobject> 
+          </mediaobject> 
+        </screenshot> 
+     </figure> 
+     <para><application>Kommandorad</application> tillhandahåller en kommandorad som du kan använda i en panel på skrivbordet.</para>
+     <para><application>Kommandorad</application> innehåller följande interaktiva element:</para>
+        
+        <variablelist>
+          <varlistentry>
+             <term><guilabel>Inmatningsfältet</guilabel></term>
+             <listitem>
+                <para>Du kan ange kommandon, makron, och program i <guilabel>inmatningsfältet</guilabel>.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term><guilabel>Bläddrare</guilabel>-knappen &mdash; cirkeln</term>
+             <listitem>
+                <para>Du kan använda knappen <guibutton>Bläddrare</guibutton> för att leta igenom ditt filsystem efter program. En cirkelikon identifierar <guibutton>Bläddrare</guibutton>-knappen.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term><guibutton>Historik</guibutton>-knappen &mdash; nedåtpilen</term>
+             <listitem>
+                <para>Du kan använda <guibutton>Historik</guibutton>-knappen för att anropa tidigare kommandon. En nedåtpil identifierar <guibutton>Historik</guibutton>-knappen.</para>
+             </listitem>
+          </varlistentry>
+        </variablelist> 
+        <sect2 id="features">
+	<title>Funktioner</title>        
+        <variablelist>
+          <varlistentry>
+             <term>Historiklista över tidigare körda kommandon</term>
+             <listitem>
+                <para>Du kan köra kommandon direkt från historiklistan. Du kan även bläddra genom historiklistans innehåll i <guilabel>inmatningsfältet</guilabel> för att visa och sedan köra ett kommando. En vertikal rullist visas när fler än 20 kommandon finns i historiklistan. Se <xref linkend="command-line-histlist"/> för mer information.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Historikbaserade automatisk kompletteringsfunktion</term>
+             <listitem>
+                <para><application>Kommandorad</application> använder den historikbaserade automatisk kompletteringsfunktionen för att färdigställa kommandon i <guilabel>inmatningsfältet</guilabel>. Den här funktionen jämför innehållet i <guilabel>inmatningsfältet</guilabel> med historiklistan. Om <application>Kommandorad</application> hittar en sökträff kommer panelprogrammet att färdigställa kommandot. Se anteckningen i <xref linkend="command-line-histlist"/> för mer information.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Användarbegärd kommandokompletteringsfunktion</term>
+             <listitem>
+                <para>Den här kommandokompletteringsfunktionen jämför teckensträngar i <guilabel>inmatningsfältet</guilabel> med kommandon i användarens definierade sökvägar. Kommandokompletteringsfunktionen är användbar om du inte vet exakt vad kommandot heter eller hur det stavas. Efter att du har angivit de första bokstäverna av kommandonamnet, trycka på tangenten <keycap>Tab</keycap>. Om <application>Kommandorad</application> känner igen den unika teckensekvensen, kommer panelprogrammet att färdigställa kommandonamnet. Se <xref linkend="command-line-run"/> för mer information.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Makrofunktion</term>
+             <listitem>
+                <para>Makrofunktionen tillhandahåller upp till 99 genomvägskommandon. I tillägg till fördefinierade kommandon kan du skapa dina egna kommandon för användning i <application>Kommandorad</application>. Se <xref linkend="command-line-macros"/> för mer information.</para>
+             </listitem>
+          </varlistentry>
+        </variablelist>
+	</sect2>
+
+      <sect2 id="command-line-introduction-add">       
+        <title>Lägg till Kommandorad till en panel</title>
+        <para>För att lägga till <application>Kommandorad</application> till en panel, högerklicka på panelen, välj sedan <guimenuitem>Lägg till i panel</guimenuitem>. Välj <application>Kommandorad</application> i dialogrutan <application>Lägg till i panelen</application>, klicka sedan på <guibutton>OK</guibutton>.</para>
+      </sect2>
+
+  </sect1>
+<!-- ================ Running Commands =======-->
+  <sect1 id="command-line-usage"> 
+     <title>Kör kommandon</title>
+	<!-- ================ To Run Command =======-->
+     <sect2 id="command-line-run">
+        <title>Kör ett kommando från inmatningsfältet</title>
+        <para>Genomför följande steg för att köra ett kommando från <guilabel>inmatningsfältet</guilabel>:</para>
+        <orderedlist> 
+          <listitem>
+             <para>Skriv in kommandot i <guilabel>inmatningsfältet</guilabel>.</para>
+             <para>För att instruera <application>Kommandorad </application> att försöka komplettera kommandonamnet, tryck på tangenten <keycap>Tab</keycap>.</para>
+          </listitem> 
+          <listitem>
+             <para>Skriv in kommandoradsflaggor, om några, i <guilabel>inmatningsfältet</guilabel>.</para>
+          </listitem> 
+          <listitem>
+             <para>Tryck på <keycap>Return</keycap>.</para>
+          </listitem> 
+        </orderedlist>
+	<para>Om kommandot som du angivit inte kunde köras, kommer datorn att spela upp ett varningsljud och panelprogrammet kommer att indikera att kommandot inte kunde köras genom att visa ett frågetecken (?) före kommandot. Kontrollera att du angivit kommandot korrekt. Klicka på kommandoraden kommer att göra att frågetecknet automatiskt försvinner.</para>
+	<tip>
+        <para>Om alternativet för automatisk komplettering har valts, söker <application>Kommandorad</application> efter en träff i historiklistan under steg 1 och 2. Se <xref linkend="command-line-histauto"/> för mer information.</para>
+	</tip>
+	</sect2>
+<sect2 id="command-line-histauto">
+		<title>Historikbaserad automatisk komplettering</title>
+		<para>Du kan aktivera eller inaktivera det här alternativet under menyn <guimenu>Inställningar</guimenu> i fliken <guilabel>Allmänt</guilabel> under <guilabel>Automatisk komplettering</guilabel>. Välj <guilabel>Aktivera historikbaserad automatisk komplettering</guilabel> för att instruera <application>Kommandorad</application> att jämföra <guilabel>inmatningsfältet</guilabel> med historiklistan, och färdigställa kommandon när de stämmer överens.</para>
+	        <para>Om alternativet för automatisk komplettering är markerat, söker <application>Kommandorad</application> efter en träff i historiklistan under steg 1 och 2 i <xref linkend="command-line-run"/>. Om det finns en träff i historiklistan, kommer <application>Kommandorad</application> att färdigställa kommandot. För att acceptera kommandot, tryck på <keycap>Return</keycap>. Om du inte vill acceptera kommandot, skriv in ytterligare tecken i <guilabel>inmatningsfältet</guilabel>.</para>
+     </sect2>
+	<!-- ================ To Run Program =======-->
+     <sect2 id="command-line-filesys"> 
+        <title>Kör ett program från ditt filsystem</title> 
+        <para>Klicka på knappen <guibutton>Bläddrare</guibutton> för att visa filsystemet, dubbelklicka sedan på programmet som du vill köra.</para>
+        <para>Du kan använda <application>Kommandorad</application> för att köra skript, köra kommandon, eller köra andra program från ditt filsystem.</para>
+     </sect2> 
+     <sect2 id="command-line-histlist"> 
+        <title>Kör ett tidigare kommando, makro, eller program från historiklistan</title> 
+        <para>Du kan köra ett tidigare kört kommando, makro, eller program från historiklistan på ett av följande sätt: <itemizedlist> 
+             <listitem>
+                <para>Klicka på knappen <guibutton>Historik</guibutton> för att visa historiklistan. Klicka på en post i historiklistan för att köra kommandot, makrot, eller programmet som du önskar.</para>
+             </listitem> 
+             <listitem>
+                <para>Klicka på <guilabel>inmatningsfältet</guilabel>, använd sedan tangentbordets upp- och nedpilar för att bläddra genom historiklistan. Tryck på <keycap>Return</keycap> för att köra ett specifikt kommando, makro, eller program när posten i historiklistan visas i <guilabel>inmatningsfältet</guilabel>.</para>
+             </listitem> 
+          </itemizedlist></para>
+
+	<note>
+		<title>Historikbaserad automatisk komplettering</title>
+		<para>Du kan aktivera eller inaktivera det här alternativet under menyn <guimenu>Inställningar</guimenu> i fliken <guilabel>Allmänt</guilabel> under <guilabel>Automatisk komplettering</guilabel>. Välj <guilabel>Aktivera historikbaserad automatisk komplettering</guilabel> för att instruera <application>Kommandorad</application> att jämföra <guilabel>inmatningsfältet</guilabel> med historiklistan, och färdigställa kommandon när de stämmer överens.</para>
+	</note>
+     </sect2> 
+</sect1>
+<!-- ================ Using Macros =======-->
+<sect1 id="command-line-macros">
+	<title>Användning av genvägar eller makron</title>
+                <para>Makronfunktionen tillhandahåller upp till 99 genvägskommandon. I tillägg till fördefinierade kommandon kan du skapa dina egna kommandon för användning i <application>Kommandorad</application>.</para>
+     <sect2 id="command-line-runmacro"> 
+        <title>Kör ett makro från inmatningsfältet</title> 
+        <para>För att köra ett makro som finns definierat i listan <application>Kommandorad</application><xref linkend="command-line-prefs-2"/>, skriv in makrot i <guilabel>inmatningsfältet</guilabel>, tryck sedan på <keycap>Return</keycap>.</para>
+        <para>Funktionen <xref linkend="command-line-histauto"/> fungerar även för makron.</para>
+        <para>Följande lista visar några exempel på makron i <application>Kommandorad</application>:</para>
+        <informaltable frame="none"> 
+          <tgroup cols="2" colsep="0" rowsep="0"><colspec colwidth="29.29*"/><colspec colwidth="70.71*"/> 
+             <tbody> 
+                <row valign="top"> 
+                  <entry><para><userinput>http://</userinput> eller <userinput>www.</userinput></para></entry> 
+                  <entry><para>Någonting som börjar med <userinput>http://</userinput> eller <userinput>www.</userinput> kommer att behandlas som en url och läses in i din webbläsare.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>ftp://</userinput> eller <userinput>ftp.</userinput></para></entry> 
+                  <entry><para>Någonting som börjar med <userinput>ftp://</userinput> eller <userinput>ftp.</userinput> kommer att behandlas som en url och läses in i ditt standardprogram för FTP.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>dictionary:</userinput></para></entry> 
+                  <entry><para>Använd <userinput>dictionary:</userinput> för att slå upp ett ord med <application>GNOME-ordbok</application>.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>google:</userinput></para></entry> 
+                  <entry><para>Använd <userinput>google:</userinput> för att söka efter någonting med sökmotorn Google.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>av:</userinput></para></entry> 
+                  <entry><para>Använd <userinput>av:</userinput> för att söka efter någonting med sökmotorn Altavista.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>yahoo:</userinput></para></entry> 
+                  <entry><para>Använd makrot <userinput>yahoo:</userinput> för att söka efter saker med sökmotorn Yahoo.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>fm:</userinput></para></entry> 
+                  <entry><para>Använd <userinput>fm:</userinput> för att söka efter paket i Freshmeats paketdatabas.</para></entry> 
+                </row> 
+             </tbody> 
+          </tgroup> 
+        </informaltable>
+     </sect2> 
+    <sect2 id="command-line-prefs-2"> 
+        <title>Anpassning av dina makron</title> 
+     <figure id="applet-macro-fig"> 
+        <title>Konfigurering av makron</title> 
+        <screenshot> 
+          <mediaobject> 
+             <imageobject><imagedata fileref="figures/prefs-macros.png" format="PNG"/> 
+             </imageobject> 
+             <textobject> 
+                <phrase>Konfigurering av makron</phrase> 
+             </textobject> 
+          </mediaobject> 
+        </screenshot> 
+     </figure> 
+        <para>Den här flikade sektionen innehåller en lista över makron som du kan använda med <application>Kommandorad</application>. Listan innehåller följande information:</para>
+          <itemizedlist> 
+             <listitem>
+                <para>En lista över reguljära uttryck i kolumnen <guilabel>Mönster</guilabel>.</para>
+                <para>Ett reguljärt uttryck är ett mönster av tecken eller siffror som du använder för att matcha strängar. Se manualsidan för <command>regex</command> för ytterligare information om hur man bygger ett reguljärt uttryck.</para>
+             </listitem> 
+             <listitem>
+                <para>En lista över kommandon i kolumnen <guilabel>Kommando</guilabel>.</para>
+                <para>Ett kommando startas om om det motsvarande mönstret matchar texten som du anger i <guilabel>inmatningsfältet</guilabel>. Makron är kommandon som kan ta parametrar tolkade av det reguljära uttrycket.</para>
+             </listitem> 
+          </itemizedlist> 
+		<para>För att lägga till ett nytt makro, klicka på knappen <guibutton>Lägg till makro</guibutton>. För att ta bort ett makro, välja önskat makro, klicka sedan på knappen <guibutton>Ta bort makro</guibutton>.</para>
+     </sect2> 
+</sect1>
+
+<!-- ============= Appearance ============================= -->
+  <sect1 id="command-line-apperance"> 
+     <title>Anpassa utseendet</title> 
+     <para><figure id="applet-prefs-fig"> 
+        <title>Inställningar</title> 
+        <screenshot> 
+          <mediaobject> 
+             <imageobject><imagedata fileref="figures/prefs.png" format="PNG"/> 
+             </imageobject> 
+             <textobject> 
+                <phrase>Inställningsdialogrutan</phrase> 
+             </textobject> 
+          </mediaobject> 
+        </screenshot> 
+     </figure> För att konfigurera utseendet för <application>Kommandorad</application>, högerklicka på ett område i panelprogrammet utanför de interaktiva  elementen, välj sedan <guimenuitem>Inställningar</guimenuitem> och välj fliken <guilabel>Allmänt</guilabel>.</para>
+        <variablelist>
+		<varlistentry>
+		<term>För att flytta Kommandorad:</term>
+		<listitem>
+		<para>Välj <guilabel>Visa handtag</guilabel> för att fästa ett handtag på kanten av panelprogrammet. Du kan använda handtaget för att dra <application>Kommandorad</application> till valfri plats på ditt skrivbord.</para>
+		</listitem>
+		</varlistentry>
+		<varlistentry>
+		<term>För att lägga till en ram:</term>
+		<listitem>
+		<para>Välj det här alternativet för att visa en ram runt <application>Kommandorad</application>.</para>
+		</listitem>
+		</varlistentry>
+		<varlistentry>
+		<term>För att ändra bredden:</term>
+		<listitem>
+		<para>Använd väljaren <guilabel>Bredd . . . bildpunkter</guilabel> för att ange panelprogrammets bredd.</para>
+		</listitem>
+		</varlistentry>
+		<varlistentry>
+		<term>Justera färgtemat:</term>
+		<listitem>
+			<itemizedlist>
+				<listitem><para>Välj <guilabel>Använd standardtemafärger</guilabel> för att använda färgerna från standardtemat i GNOME.</para></listitem>
+				<listitem><para>Klicka på knappen <guilabel>Kommandoradsförgrund</guilabel> för att välja en färg för kommandoradstexten. Den här knappen finns inte tillgänglig om kryssrutan <guilabel>Använd standardtemafärger</guilabel> är markerad.</para></listitem>
+				<listitem><para>Klicka på knappen <guilabel>Kommandoradsbakgrund</guilabel> för att välja en färg för bakgrunden för <guilabel>inmatningsfältet</guilabel>. Den här knappen finns inte tillgänglig om kryssrutan <guilabel>Använd standardtemafärger</guilabel> är markerad.</para></listitem>
+			</itemizedlist>
+		</listitem>
+		</varlistentry>	
+	</variablelist>
+
+  </sect1> 
+</article>

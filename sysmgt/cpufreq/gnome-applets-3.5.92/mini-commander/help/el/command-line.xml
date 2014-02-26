@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- -*- indent-tabs-mode: nil -*- -->
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.12">
+<!ENTITY applet "Command Line">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp 
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo> 
+  <title>Εγχειρίδιο γραμμής εντολών</title> 
+  <abstract role="description">
+    <para>Η γραμμή εντολών επιτρέπει το τρέξιμο εντολών από ένα πάνελ και περιλαμβάνει γρήγορη πρόσβαση σε έναν περιηγητή αρχείων και ιστορία εντολών.</para>
+  </abstract>
+  <copyright>
+    <year>2005</year>
+    <holder>Davyd Madeley</holder>
+  </copyright>
+  <copyright>
+    <year>2004</year>
+    <holder>Angela Boyle</holder>
+  </copyright>
+  <copyright> 
+    <year>2002</year>
+    <year>2003</year> 
+    <year>2004</year> 
+    <holder>Sun Microsystems</holder> 
+  </copyright>    
+  <copyright> 
+    <year>1998</year> 
+    <holder>Oliver Maruhn</holder> 
+  </copyright>
+  <copyright> 
+    <year>1998</year> 
+    <holder>Dan Mueth</holder> 
+  </copyright>
+  <!-- translators: uncomment this:
+       <copyright>
+       <year>2003</year>
+       <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+       </copyright>
+  -->
+  <publisher role="maintainer"> 
+    <publishername>Έργο Τεκμηρίωσης GNOME</publishername> 
+  </publisher>
+
+     <legalnotice id="legalnotice">
+         <para>Δίνεται άδεια για αντιγραφή, διανομή και/ή τροποποίηση του εγγράφου υπό τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή μεταγενέστερη εκδιδόμενη από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Σταθερά Εδάφια, χωρίς Εξώφυλλα Κειμένου, και χωρίς Οπισθόφυλλα Κειμένου. Μπορείτε να βρείτε ένα αντίγραφο της GFDL σε αυτόν τον <ulink type="help" url="ghelp:fdl">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανεμήθηκε με αυτόν τον οδηγό.</para>
+          <para>Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του GNOME όπως διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτή την τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 της άδειας.</para>
+ 
+         <para>Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρίες για να ξεχωρίσουν τα προϊόντα και τις υπηρεσίες είναι σήματα κατατεθέν. Όπου αυτά τα ονόματα εμφανίζονται στην τεκμηρίωση GNOME, και τα μέλη της ομάδας τεκμηρίωσης GNOME έχουν γνώση αυτών, τότε αυτά αναγράφονται με κεφαλαίους χαρακτήρες ή με αρχικούς κεφαλαίους χαρακτήρες.</para>
+ 
+         <para>ΤΟ ΈΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΑΔΕΙΑΣ GNU FREE DOCUMENTATION ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <orderedlist>
+                 <listitem>
+                   <para>Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ "ΩΣ ΕΧΕΙ", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΟΤΙ ΜΠΟΡΕΙ ΝΑ ΕΞΥΠΗΡΕΤΗΣΕΙ ΚΑΠΟΙΟ ΣΚΟΠΟ Η ΟΤΙ ΕΙΝΑΙ ΧΩΡΙΣ ΣΦΑΛΜΑ. ΟΛΟΚΛΗΡΗ Η ΕΥΘΥΝΗ ΓΙΑ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ ΚΑΙ ΛΕΙΤΟΥΡΓΙΚΟΤΗΤΑ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ ΕΙΝΑΙ ΛΑΘΟΣ ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ.</para>
+                 </listitem>
+                 <listitem>
+                   <para>ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+ 
+
+  <authorgroup>
+    <author>
+      <firstname>Sun</firstname>
+      <surname>Ομάδα Τεκμηρίωσης GNOME</surname>
+      <affiliation>
+        <orgname>Sun Microsystems</orgname>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Oliver</firstname>
+      <surname>Maruhn</surname>
+      <affiliation>
+        <orgname>Έργο Τεκμηρίωσης GNOME</orgname>
+	<address><email>oliver@maruhn.com</email></address>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Dan</firstname>
+      <surname>Mueth</surname>
+      <affiliation>
+        <orgname>Έργο Τεκμηρίωσης GNOME</orgname>
+	<address><email>d-mueth@uchicago.edu</email></address>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Angela</firstname>
+      <surname>Boyle</surname>
+      <affiliation>
+        <orgname>Έργο Τεκμηρίωσης GNOME</orgname>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Davyd</firstname><surname>Madeley</surname>
+      <affiliation>
+        <orgname>Έργο GNOME</orgname>
+	<address><email>davyd@madeley.id.au</email></address>
+      </affiliation>
+    </author>
+    <!-- This is appropriate place for other contributors: translators,
+         maintainers,  etc. Commented out by default.
+         <othercredit role="translator">
+         <firstname>Latin</firstname> 
+         <surname>Translator 1</surname> 
+         <affiliation> 
+         <orgname>Latin Translation Team</orgname> 
+         <address> <email>translator@gnome.org</email> </address> 
+         </affiliation>
+         <contrib>Latin translation</contrib>
+         </othercredit>
+    -->
+  </authorgroup> 
+  <revhistory>
+    <revision>
+      <revnumber>Έκδοση 2.12</revnumber>
+      <date>Σεπτέμβριος 2005</date>
+      <revdescription>
+        <para role="author">Davyd Madeley</para>
+      </revdescription>
+    </revision>
+    <revision>
+      <revnumber>Έκδοση 2.10</revnumber>
+      <date>Μάρτιος 2005</date>
+      <revdescription>
+        <para role="author">Davyd Madeley</para>
+      </revdescription>
+    </revision>
+    <revision>
+      <revnumber>Έκδοση 2.8</revnumber>
+      <date>Σεπτέμβριος 2004</date>
+      <revdescription>
+        <para role="author">Angela Boyle</para>
+        <para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+      </revdescription>
+    </revision>
+    <revision> 
+      <revnumber>Εγχειρίδιο μικροεφαρμογής γραμμής εντολών V2.7</revnumber> 
+      <date>Αύγουστος 2004</date> 
+      <revdescription> 
+        <para role="author">Sun Microsystems</para>
+        <para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+      </revdescription> 
+    </revision>
+    <revision> 
+      <revnumber>Εγχειρίδιο μικροεφαρμογής γραμμής εντολών V2.6</revnumber> 
+      <date>Σεπτέμβριος 2003</date> 
+      <revdescription> 
+        <para role="author">Sun Microsystems</para>
+        <para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+      </revdescription> 
+    </revision>
+    <revision> 
+      <revnumber>Εγχειρίδιο μικροεφαρμογής γραμμής εντολών V2.5</revnumber> 
+      <date>Αύγουστος 2003</date> 
+      <revdescription> 
+        <para role="author">Sun Microsystems</para>
+        <para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+      </revdescription> 
+    </revision>
+    <revision> 
+      <revnumber>Εγχειρίδιο μικροεφαρμογής γραμμής εντολών V2.4</revnumber> 
+          <date>Απρίλιος 2003</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+          </revdescription> 
+        </revision>
+        
+			<revision> 
+          <revnumber>Εγχειρίδιο μικροεφαρμογής γραμμής εντολών V2.3</revnumber> 
+          <date>Ιανουάριος 2005</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+          </revdescription> 
+        </revision> 
+
+        <revision> 
+          <revnumber>Εγχειρίδιο μικροεφαρμογής γραμμής εντολών V2.2</revnumber> 
+          <date>Αύγουστος 2002</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+          </revdescription> 
+        </revision> 
+        
+         
+        <revision> 
+          <revnumber>Εγχειρίδιο μικροεφαρμογής γραμμής εντολών V2.1</revnumber> 
+          <date>Ιούλιος 2002</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+          </revdescription> 
+        </revision> 
+        <revision> 
+          <revnumber>Εγχειρίδιο μικροεφαρμογής γραμμής εντολών V2.0</revnumber> 
+          <date>Μάρτιος 2002</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+          </revdescription> 
+        </revision> 
+        <revision> 
+          <revnumber>Εγχειρίδιο μικροεφαρμογής Mini-commander</revnumber> 
+          <date>1998</date> 
+          <revdescription> 
+             <para role="author">Oliver Maruhn <email>oliver@maruhn.com</email></para>
+             <para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+             <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para>
+             <para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+          </revdescription> 
+        </revision> 
+     </revhistory> 
+     <releaseinfo>Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.12 της γραμμής εντολών.</releaseinfo> 
+     <legalnotice> 
+        <title>Ανάδραση</title> 
+        <para>Για αναφορά ενός σφάλματος ή μίας πρότασης που να αφορά την γραμμή εντολών ή το εγχειρίδιο αυτό, ακολουθήστε τις κατευθύνσεις στη <ulink url="ghelp:gnome-feedback" type="help">Σελίδα ανάδρασης GNOME</ulink>.</para>
+     </legalnotice> 
+  </articleinfo> 
+  <indexterm zone="index"> 
+     <primary>Γραμμή εντολών</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+     <primary>Μικροεφαρμογή γραμμής εντολών</primary> 
+  </indexterm>
+
+<!-- ============= Introduction =====-->
+  <sect1 id="command-line-introduction"> 
+     <title>Εισαγωγή</title> 
+     
+     <!-- ==== Figure ==================-->
+     <figure id="applet-fig"> 
+        <title>Γραμμή εντολών</title> 
+        <screenshot> 
+          <mediaobject> 
+             <imageobject><imagedata fileref="figures/command-line.png" format="PNG"/> 
+             </imageobject> 
+             <textobject> 
+                <phrase>Εμφάνιση της Γραμμής εντολών.</phrase> 
+             </textobject> 
+          </mediaobject> 
+        </screenshot> 
+     </figure> 
+     <para>Η <application>Γραμμή εντολών</application> παρέχει μία γραμμή εντολών για χρησιμοποίηση με οποιοδήποτε πάνελ της επιφάνειας εργασίας.</para>
+     <para>Η <application>Γραμμή εντολών</application> περιέχει τα ακόλουθα διαδραστικά στοιχεία:</para>
+        
+        <variablelist>
+          <varlistentry>
+             <term>πεδίο <guilabel>Kαταχώρηση</guilabel></term>
+             <listitem>
+                <para>Μπορείτε να εισάγετε εντολές, μακροεντολές και προγράμματα στο<guilabel>πεδίο καταχώρισης</guilabel>.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Πλήκτρο <guilabel>Εξερεύνηση</guilabel> &mdash; κουκκίδα</term>
+             <listitem>
+                <para>Μπορείτε να χρησιμοποιήσετε το κουμπί <guibutton>Εξερεύνηση</guibutton> για εξερεύνηση στο σύστημα αρχείων για προγράμματα. Ένα εικονίδιο συμπαγούς κύκλου αναπαριστά το κουμπί <guibutton>Εξερεύνηση</guibutton>.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Πλήκτρο <guibutton>Ιστορικό</guibutton> &mdash; κάτω βέλος</term>
+             <listitem>
+                <para>Μπορείτε να χρησιμοποιήσετε το πλήκτρο<guibutton> Ιστορικό</guibutton> για ανάκληση προηγουμένων εντολών. Ένα εικονίδιο με κάτω βέλος αναπαριστά το πλήκτρο<guibutton> Ιστορικό</guibutton>.</para>
+             </listitem>
+          </varlistentry>
+        </variablelist> 
+        <sect2 id="features">
+	<title>Χαρακτηριστικά</title>        
+        <variablelist>
+          <varlistentry>
+             <term>Λίστα ιστορικού από προηγούμενες εκτελεσθείσες εντολές</term>
+             <listitem>
+                <para>Μπορείτε να εκτελέσετε εντολές κατευθείαν από την λίστα ιστορικού. Μπορείτε να ανακυκλώσετε τα περιεχόμενα της λίστας μέσω του<guilabel> πεδίου καταχώρισης</guilabel> για να δείτε και να εκτελέσετε μία εντολή. Μία οριζόντια μπάρα κύλισης εμφανίζεται αν περισσότερες από 20 εντολές βρίσκονται στη λίστα ιστορικού. Βλέπε<xref linkend="command-line-histlist"/> για.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Λειτουργία αυτόματης συμπλήρωσης βασισμένη στο ιστορικό.</term>
+             <listitem>
+                <para>Η <application>Γραμμή εντολών</application> χρησιμοποιεί την λειτουργία αυτόματης συμπλήρωσης για συμπλήρωση εντολών στο πεδίο<guilabel>Καταχώριση</guilabel>. Αυτή η λειτουργία συγκρίνει τα περιεχόμενα του πεδίου <guilabel>Καταχώριση</guilabel> με τη λίστα ιστορικού. Αν η <application> Γραμμή εντολών</application> βρει ένα ταίριασμα τότε η μικροεφαρμογή συμπληρώνει την εντολή. Βλέπετε την σημείωση στο <xref linkend="command-line-histlist"/> για περισσότερες πληροφορίες.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Λειτουργία συμπλήρωσης κατόπιν επιβεβαίωσης του χρήστη</term>
+             <listitem>
+                <para>Αυτή η λειτουργία συμπλήρωσης συγκρίνει συμβολοσειρές χαρακτήρων στο πεδίο<guilabel>Καταχώριση</guilabel> με εντολές στο path του χρήστη. Η λειτουργία συμπλήρωσης εντολών είναι χρήσιμη αν δεν ξέρετε την ακριβή ορθογραφία του ονόματος μίας εντολής. Αφού πληκτρολογήσετε τα πρώτα γράμματα της εντολής, πατήστε το<keycap> Tab</keycap>. Αν η <application>Γραμμή εντολών</application> αναγνωρίσει την ακολουθία χαρακτήρων ως μοναδική, τότε η μικροεφαρμογή θα συμπληρώσει αυτόματα το όνομα της εντολής. Βλέπετε<xref linkend="command-line-run"/> για περισσότερες πληροφορίες.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Μονάδα μακροεντολών</term>
+             <listitem>
+                <para>Η μονάδα μακροεντολών παρέχει μέχρι και 99 συντομεύσεις εντολών. Επιπλέον των προκαθοριζόμενων εντολών, μπορείτε να δημιουργήσετε τις δικέςσας εντολές για χρήση με τη <application>Γραμμή εντολών</application> Βλέπετε<xref linkend="command-line-macros"/> για περισσότερες πληροφορίες.</para>
+             </listitem>
+          </varlistentry>
+        </variablelist>
+	</sect2>
+
+      <sect2 id="command-line-introduction-add">       
+        <title>Για να προσθέσετε γραμμή εντολών σε έναν πίνακα εφαρμογών</title>
+        <para>Για προσθήκη<application>Γραμμή εντολών</application> σε ένα πάνελ, δεξί κλικ στο πάνελ, μετά επιλογή <guimenuitem> Προσθήκη στον πίνακα εφαρμογών</guimenuitem> Επιλογή<application>Γραμμή εντολών</application> στο διαλογικό πλαίσιο<application> Προσθήκη στον πίνακα εφαρμογών</application> μετά κλικ<guibutton> Εντάξει</guibutton>.</para>
+      </sect2>
+
+  </sect1>
+<!-- ================ Running Commands =======-->
+  <sect1 id="command-line-usage"> 
+     <title>Εκτελούνται εντολές</title>
+	<!-- ================ To Run Command =======-->
+     <sect2 id="command-line-run">
+        <title>Για να εκτελέσετε μία εντολή από το πεδίο καταχώρησης</title>
+        <para>Για να εκτελέσετε μία εντολή από το πεδίο <guilabel>Καταχώριση</guilabel> ακολουθήστε τα επόμενα βήματα:</para>
+        <orderedlist> 
+          <listitem>
+             <para>Πληκτρολογήστε την εντολή στο πεδίο <guilabel> Καταχώριση</guilabel>.</para>
+             <para>Για καθοδήγηση της<application> γραμμής εντολών</application> στο να προσπαθήσει να συμπληρώσει την εντολή, πληκτρολογήστε <keycap> Tab</keycap>.</para>
+          </listitem> 
+          <listitem>
+             <para>Πληκτρολογήστε τις παραμέτρους της εντολής, εάν υπάρχουν, στο πεδίο <guilabel> καταχώριση</guilabel>.</para>
+          </listitem> 
+          <listitem>
+             <para>Πατήστε <keycap>Return</keycap>.</para>
+          </listitem> 
+        </orderedlist>
+	<para>Εάν η εντολή που πληκτρολογήσατε δεν μπορεί να τρέξει, ο υπολογιστής θα κάνει ένα μονό μπιπ προειδοποίησης και η μικροεφαρμογή θα δείξει ότι η εντολή δεν μπορεί να τρέξει δείχνοντας ένα ερωτηματικό (?) πριν την εντολή. Ελέγξτε ότι ορίσατε σωστά την εντολή. Κάνοντας κλικ στην εντολή θα προκαλέσει την αυτόματη εξαφάνιση του ερωτηματικού.</para>
+	<tip>
+        <para>Εάν η αυτόματη συμπλήρωση έχει επιλεχθεί, η <application>Γραμμή εντολών</application> αναζητά για ταίριασμα στη λίστα ιστορικού στη διάρκεια των βημάτων 1 και 2.  Βλέπε<xref linkend="command-line-histauto"/> για περισσότερες πληροφορίες.</para>
+	</tip>
+	</sect2>
+<sect2 id="command-line-histauto">
+		<title>Αυτόματη συμπλήρωση βασισμένη στο ιστορικό</title>
+		<para>Μπορείτε να ενεργοποιήσετε ή να απενεργοποιήσετε αυτή την επιλογή στο μενού<guimenu> Προτιμήσεις</guimenu> στη καρτέλα<guilabel> Γενικά</guilabel> <guilabel> Αυτόματη συμπλήρωση</guilabel> Επιλογή<guilabel> Ενεργοποίηση αυτόματης συμπλήρωσης βασισμένης  στο ιστορικό</guilabel> ώστε η<application> Γραμμή εντολών</application> να συγκρίνει την <guilabel> καταχώριση</guilabel> με την λίστα ιστορικού και συμπληρώσει εντολές αν υπάρξει ταίριασμα.</para>
+	        <para>Αν η αυτόματη συμπλήρωση είναι επιλεγμένη, η <application>Γραμμή εντολών</application> ψάχνει για ένα ταίριασμα στη λίστα ιστορικού στη διάρκεια των βημάτων 1 και 2 στο <xref linkend="command-line-run"/>. Αν υπάρξει ταίριασμα στη λίστα, η <application>Γραμμή εντολών</application> συμπληρώνει την εντολή. Για αποδοχή της εντολής, πιέστε<keycap> Return</keycap>. Αν δεν την αποδέχεστε, πληκτρολογήστε και άλλους χαρακτήρες στο πεδίο <guilabel>Καταχώριση</guilabel>.</para>
+     </sect2>
+	<!-- ================ To Run Program =======-->
+     <sect2 id="command-line-filesys"> 
+        <title>Για εκτέλεση ενός προγράμματος από το σύστημα αρχείων σας</title> 
+        <para>Κλικ στο πλήκτρο <guibutton> Εξερεύνηση</guibutton>για εμφάνιση του συστήματος αρχείων, μετά διπλό κλικ στο πρόγραμμα που θέλετε να εκτελέσετε.</para>
+        <para>Μπορείτε να χρησιμοποιήσετε την <application> Γραμμή εντολών </application> για εκτέλεση script, εντολών ή άλλων προγραμμάτων από το σύστημα αρχείων σας.</para>
+     </sect2> 
+     <sect2 id="command-line-histlist"> 
+        <title>Για εκτέλεση μιας προηγουμένης εντολής, μίας μακροεντολής η ενός προγράμματος από τη λίστα ιστορικού</title> 
+        <para>Μπορείτε να εκτελέσετε μία εντολή που εκτελέστηκε προηγουμένως, μακροεντολή ή πρόγραμμα από τη λίστα ιστορικού με έναν από τους παρακάτω τρόπους: <itemizedlist> 
+             <listitem>
+                <para>Κλικ στο πλήκτρο <guibutton> Ιστορικό</guibutton> για εμφάνιση της λίστας ιστορικού. Κλικ σε ένα στοιχείο της λίστας για εκτέλεση μίας εντολής, μίας μακροεντολής ή ενός πρόγραμματος που επιθυμείτε.</para>
+             </listitem> 
+             <listitem>
+                <para>Κλικ στο πεδίο<guilabel>Καταχώριση</guilabel>, μετά χρησιμοποιήστε τα πάνω και κάτω βέλη του πληκτρολογίου για ανακύκλωση της λίστας ιστορικού. Πατήστε (Press)<keycap>Return</keycap> για εκτέλεση μίας εντολής, μακροεντολής ή πρόγραμματος όταν το στοιχείο της  λίστας ιστορικού που θέλετε εμφανιστεί στη<guilabel> Καταχώριση</guilabel>.</para>
+             </listitem> 
+          </itemizedlist></para>
+
+	<note>
+		<title>Αυτόματη συμπλήρωση βασισμένη στο ιστορικό</title>
+		<para>Μπορείτε να ενεργοποιήσετε ή να απενεργοποιήσετε αυτή την επιλογή στο μενού<guimenu> Προτιμήσεις</guimenu> στη καρτέλα<guilabel> Γενικά</guilabel> <guilabel> Αυτόματη συμπλήρωση</guilabel> Επιλογή<guilabel> Ενεργοποίηση αυτόματης συμπλήρωσης βασισμένης  στο ιστορικό</guilabel> ώστε η<application> Γραμμή εντολών</application> να συγκρίνει την <guilabel> καταχώριση</guilabel> με την λίστα ιστορικού και συμπληρώσει εντολές αν υπάρξει ταίριασμα.</para>
+	</note>
+     </sect2> 
+</sect1>
+<!-- ================ Using Macros =======-->
+<sect1 id="command-line-macros">
+	<title>Χρησιμοποίηση συντομεύσεων ή μακροεντολών</title>
+                <para>Η μονάδα μακροεντολών παρέχει μέχρι 99 συντομεύσεις εντολών. Επιπλέον εκτός των προκαθοριζόμενων εντολών, μπορείτε να δημιουργήσετε τις δικές σας εντολές για χρήση με την <application> Γραμμή εντολών</application>.</para>
+     <sect2 id="command-line-runmacro"> 
+        <title>Για εκτέλεση μίας μακροεντολής από το πεδίο καταχώρησης</title> 
+        <para>Για εκτέλεση μίας μακροεντολής που έχει καθοριστεί στη λίστα<application>Γραμμή εντολών</application><xref linkend="command-line-prefs-2"/> πληκτρολογήστε την μακροεντολή στο πεδίο<guilabel>Καταχώριση</guilabel> μετά πατήστε<keycap>Return</keycap>.</para>
+        <para>Η λειτουργία <xref linkend="command-line-histauto"/> δουλεύει και για μακροεντολές.</para>
+        <para>Η ακόλουθη λίστα δείχνει κάποια παραδείγματα από μακροεντολές <application> Γραμμής εντολών</application>:</para>
+        <informaltable frame="none"> 
+          <tgroup cols="2" colsep="0" rowsep="0"><colspec colwidth="29.29*"/><colspec colwidth="70.71*"/> 
+             <tbody> 
+                <row valign="top"> 
+                  <entry><para><userinput>http://</userinput> ή <userinput>www.</userinput></para></entry> 
+                  <entry><para>Οτιδήποτε αρχίζει με <userinput>http://</userinput> ή <userinput>www.</userinput> θα εκλαμβάνεται ως URL και θα φορτώνεται στον περιηγητή ιστού.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>ftp://</userinput> ή <userinput>ftp.</userinput></para></entry> 
+                  <entry><para>Οτιδήποτε αρχίζει με <userinput>ftp://</userinput> ή <userinput>ftp.</userinput> θα εκλαμβάνεται ως URL και θα φορτώνεται στο προεπιλεγόμενο λογισμικό FTP.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>Λεξικό:</userinput></para></entry> 
+                  <entry><para>Χρησιμοποιήστε <userinput>λεξικό:</userinput> για να βρείτε μία λέξη χρησιμοποιώντας το<application> GNOME Λεξικό</application>.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>google:</userinput></para></entry> 
+                  <entry><para>Χρησιμοποιήστε <userinput>google:</userinput> για αναζήτηση χρησιμοποιώντας την μηχανή αναζήτησης του Google.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>av:</userinput></para></entry> 
+                  <entry><para>Χρησιμοποιήστε <userinput>av:</userinput> για αναζήτηση χρησιμοποιώντας την μηχανή αναζήτησης Altavista.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>yahoo:</userinput></para></entry> 
+                  <entry><para>Χρησιμοποίηση της μακροεντολής <userinput>yahoo:</userinput> για αναζήτηση χρησιμοποιώντας την μηχανή αναζήτησης Yahoo.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>fm:</userinput></para></entry> 
+                  <entry><para>Χρησιμοποιήστε <userinput>fm:</userinput> για αναζήτηση πακέτων στη βάση πακέτων του Freshmeat.</para></entry> 
+                </row> 
+             </tbody> 
+          </tgroup> 
+        </informaltable>
+     </sect2> 
+    <sect2 id="command-line-prefs-2"> 
+        <title>Παραμετροποίηση των μακροεντολών σας</title> 
+     <figure id="applet-macro-fig"> 
+        <title>Ρυθμίσεις των μακροεντολών</title> 
+        <screenshot> 
+          <mediaobject> 
+             <imageobject><imagedata fileref="figures/prefs-macros.png" format="PNG"/> 
+             </imageobject> 
+             <textobject> 
+                <phrase>Ρυθμίσεις των μακροεντολών</phrase> 
+             </textobject> 
+          </mediaobject> 
+        </screenshot> 
+     </figure> 
+        <para>Αυτή η ενότητα περιέχει μία λίστα από μακροεντολές που μπορείτε να χρησιμοποιήσετε με τη <application>Γραμμή εντολών</application>. Η λίστα περιέχει τις ακόλουθες πληροφορίες:</para>
+          <itemizedlist> 
+             <listitem>
+                <para>Μία λίστα από κανονικές εκφράσεις του UNIX στη στήλη <guilabel> Μοτίβο</guilabel>.</para>
+                <para>Μία κανονική έκφραση είναι ένα μοτίβο από χαρακτήρες που χρησιμοποιούνται για το ταίριασμα συμβολοσειρών. Βλέπετε την σελίδα man <command>regex</command> για περισσότερες πληροφορίες στο πως να φτιάξετε μία κανονική έκφραση.</para>
+             </listitem> 
+             <listitem>
+                <para>Μία λίστα από εντολές στη στήλη<guilabel> Εντολή</guilabel>.</para>
+                <para>Μία εντολή εκτελείται όταν το αντίστοιχο μοτίβο ταιριάζει επιτυχώς στο κείμενο που πληκτρολογείται στο πεδίο<guilabel>Καταχώριση</guilabel>. Οι μακροεντολές είναι εντολές που μπορούν να πάρουν παραμέτρους από την κανονική έκφραση.</para>
+             </listitem> 
+          </itemizedlist> 
+		<para>Για προσθήκη μίας νέας μακροεντολής, κλικ στο πλήκτρο<guibutton> Προσθήκη μακροεντολής</guibutton> Για διαγραφή μίας μακροεντολής, επιλέξτε την και μετά κλικ στο πλήκτρο<guibutton> Διαγραφή μακροεντολής</guibutton>.</para>
+     </sect2> 
+</sect1>
+
+<!-- ============= Appearance ============================= -->
+  <sect1 id="command-line-apperance"> 
+     <title>Παραμετροποίηση της εμφάνισης</title> 
+     <para><figure id="applet-prefs-fig"> 
+        <title>Προτιμήσεις</title> 
+        <screenshot> 
+          <mediaobject> 
+             <imageobject><imagedata fileref="figures/prefs.png" format="PNG"/> 
+             </imageobject> 
+             <textobject> 
+                <phrase>Διάλογος προτιμήσεων</phrase> 
+             </textobject> 
+          </mediaobject> 
+        </screenshot> 
+     </figure> Για παραμετροποίηση της εμφάνισης της<application>Γραμμή εντολών</application>, δεξιό κλικ σε μία περιοχή της μικροεφαρμογής έξω από διαδραστικά στοιχεία, μετά επιλογή<guimenuitem> Προτιμήσεις</guimenuitem> και επιλογή της ετικέτας<guilabel>Γενικά</guilabel>.</para>
+        <variablelist>
+		<varlistentry>
+		<term>Προς μετακίνηση Γραμμής εντολών:</term>
+		<listitem>
+		<para>Επιλογή<guilabel>Εμφάνιση χειριστηρίου </guilabel>για επισύναψη ενός χειριστηρίου στην άκρη της μικροεφαρμογής. Μπορείτε να χρησιμοποιήσετε το χειριστήριο για να σύρετε τη <application>Γραμμή εντολών</application> σε οποιαδήποτε θέση στην επιφάνεια εργασίας.</para>
+		</listitem>
+		</varlistentry>
+		<varlistentry>
+		<term>Για προσθήκη ενός ορίου:</term>
+		<listitem>
+		<para>Επιλογή για εμφάνιση ενός πλαισίου γύρω από τη <application>Γραμμή εντολών</application>.</para>
+		</listitem>
+		</varlistentry>
+		<varlistentry>
+		<term>Για αλλαγή του πλάτους:</term>
+		<listitem>
+		<para>Χρησιμοποίηση του spin box <guilabel> Πλάτος . . . εικονοστοιχεία</guilabel> για καθορισμό του πλάτους της μικροεφαρμογής.</para>
+		</listitem>
+		</varlistentry>
+		<varlistentry>
+		<term>Για καθορισμό του θέματος χρώματος:</term>
+		<listitem>
+			<itemizedlist>
+				<listitem><para>Επιλογή<guilabel>Χρησιμοποίηση προεπιλεγόμενου θέματος χρωμάτων</guilabel> για χρησιμοποίηση χρωμάτων από το προεπιλεγόμενο θέμα GNOME.</para></listitem>
+				<listitem><para>Κλικ στο πλήκτρο <guilabel>Γραμμή εντολών</guilabel> για επιλογή ενός χρώματος για τη γραμμή εντολών. Αυτό το πλήκτρο δεν είναι διαθέσιμο αν έχει επιλεγεί το check box <guilabel>Χρησιμοποίηση προεπιλεγόμενου θέματος χρωμάτων</guilabel>.</para></listitem>
+				<listitem><para>Κλικ στο πλήκτρο<guilabel>Φόντο γραμμής εντολών</guilabel> για επιλογή ενός χρώματος για το πεδίο<guilabel>Καταχώριση</guilabel>. Αυτό το πλήκτρο δεν είναι διαθέσιμο αν έχει επιλεγεί το check box <guilabel>Χρησιμοποίηση προεπιλεγόμενου θέματος χρωμάτων</guilabel>.</para></listitem>
+			</itemizedlist>
+		</listitem>
+		</varlistentry>	
+	</variablelist>
+
+  </sect1> 
+</article>

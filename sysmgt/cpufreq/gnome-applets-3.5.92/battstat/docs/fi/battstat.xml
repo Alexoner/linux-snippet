@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.12.0">
+<!ENTITY applet "Battery Charge Monitor">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fi">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Latausmittarin käyttöohje</title> 
+    <abstract role="description">
+      <para>Latausmittari näyttää tämän hetkisen akun varauksen ja hälyyttää, mikäli varaus putoaa alle tietyn kynnyksen</para>
+    </abstract>
+    <copyright>
+      <year>2005</year>
+      <holder>Davyd Madeley</holder>
+    </copyright>
+    <copyright>
+      <year>2004</year>
+      <holder>Angela Boyle</holder>
+    </copyright>
+    <copyright>
+      <year>2004</year>
+      <holder>Sun Microsystems</holder>
+    </copyright>
+    <copyright>
+      <year>2002</year>
+      <holder>Trevor Curtis</holder>
+    </copyright>
+    <copyright> 
+      <year>1999</year> 
+      <year>2000</year> 
+      <holder>Jorgen Pehrson</holder> 
+    </copyright><copyright><year>2008</year><holder>Jukka Heikkilä (jutsco@gmail.com)</holder></copyright>
+<!-- translators: uncomment this:
+
+    <copyright>
+     <year>2002</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+   -->
+
+    <publisher role="maintainer"> 
+      <publishername>Gnome dokumentointiprojekti</publishername> 
+    </publisher> 
+  
+      <legalnotice id="legalnotice">
+	<para>Tätä asiakirjaa saa kopioida, jakaa edelleen ja/tai muokata Free Software Foundationin julkaiseman GNU Free Documentation Licensen (GFDL) version 1.1 tai valinnaisesti myöhemmän version mukaisesti, ilman vaatimuksia muuttamattomista osioista ja etu- tai takakansiteksteistä. Kopion GFDL:stä voi nähdä napsauttamalla <ulink type="help" url="ghelp:fdl">tätä linkkiä</ulink>, tai lukemalla ohjeen mukana toimitetun COPYING-DOCS-nimisen tiedoston.</para>
+         <para>Tämä käyttöohje on osa Gnomen käyttöohjekokoelmaa, jota levitetään GFDL-lisenssin alaisena. Jos haluat levittää tätä käyttöohjetta erillään kokoelmasta, voit tehdä sen liittämällä lisenssin kopion ohjeen mukaan, kuten lisenssin luku 6 sanelee.</para>
+
+	<para>Monet nimistä, joita yhtiöt käyttävät tuotteistansa ja palveluistansa, ovat tuotemerkkejä. Gnomen dokumentointiprojektissa nämä nimet pyritään kirjoittamaan suuraakkosin tai isolla alkukirjaimella, sikäli kun projektin jäsenet tietävät kyseisistä tuotemerkeistä.</para>
+
+	<para>ASIAKIRJA SEKÄ MUOKATUT VERSIOT ASIAKIRJASTA TARJOTAAN GNU FREE DOCUMENTATION LICENSEN EHDOIN SEKÄ YMMÄRTÄEN ETTÄ: <orderedlist>
+		<listitem>
+		  <para>ASIAKIRJA TARJOTAAN SELLAISENAAN, ILMAN MINKÄÄNLAISTA KIRJATTUA TAI KONKLUDENTTISTA RAJATONTA TAKUUTA ASIAKIRJAN TAI SEN MUOKATUN VERSION VIRHEETTÖMYYDESTÄ, SOPIVUUDESTA KAUPALLISEEN KÄYTTÖÖN TAI TIETTYYN KÄYTTÖTARKOITUKSEEN TAI LOUKKAAMATTOMUUDESTA. TÄYSI VASTUU ASIAKIRJAN TAI SEN MUOKATUN VERSION LAADUSTA, TARKKUUDESTA JA TOIMIVUUDESTA ON KÄYTTÄJÄLLÄ. JOS ASIAKIRJA TAI SEN MUOKATTU VERSIO OSOITTAUTUU JOLLAKIN TAVALLA VIRHEELLISEKSI, KÄYTTÄJÄ (EI ALKUPERÄINEN KIRJOITTAJA TAI MUU TEKIJÄ) VASTAA PALVELUJEN, KORJAUSTEN TAI OIKAISUJEN KUSTANNUKSISTA. TÄMÄ VASTUUVAPAUSLAUSEKE ON EROTTAMATON OSA LISENSSIÄ. ASIAKIRJAN TAI SEN MUOKATTUJEN VERSIOIDEN KÄYTTÖ ON SALLITTUA VAIN TÄMÄN VASTUUVAPAUSLAUSEKKEEN NOJALLA; SEKÄ</para>
+		</listitem>
+		<listitem>
+		  <para>MISSÄÄN OLOSUHTEISSA TAI MINKÄÄN OIKEUSLAITOKSEN ALAISUUDESSA, NIIN OIKEUSLOUKKAUKSISSA (MUKAAN LUKIEN HUOLIMATTOMUUS), SOPIMUS TAI MUUTOIN, ASIAKIRJAN TAI SEN MUOKATUN VERSION TEKIJÄ, ALKUPERÄINEN KIRJOITTAJA, KUKAAN AVUSTAJAISTA, KUKAAN LEVITTÄJÄ TAIKKA KUKAAN TARJOAJA EI OLE VASTUUSSA KENELLEKKÄÄN SUORASTA, EPÄSUORASTA, ERITYISESTÄ, TAPATURMAISESTA TAI VÄLILLISESTÄ VAHINGOSTA SISÄLTÄEN RAJOITUKSETTA VAHINGOT LIIKEARVON MENETYKSESTÄ, TYÖN KESKEYTYMISESTÄ, TIETOKONEVIRHEESTÄ TAI -HÄIRIÖSTÄ TAIKKA MISTÄÄN MUUSTA VAHINGOSTA TAI MENETYKSESTÄ, JOKA ILMENEE TAI LIITTYY ASIAKIRJAN TAI SEN MUOKATUN VERSION KÄYTTÖÖN EDES SILLOIN KUN OSAPUOLTA ON OLLUT TIETOINEN TÄLLAISEN VAHINGON MAHDOLLISUUDESTA.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+    <authorgroup> 
+      <author>
+        <firstname>Sun</firstname>
+        <surname>Gnome dokumentointiryhmä</surname>
+        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
+      </author>
+      <author>
+        <firstname>Trevor</firstname>
+        <surname>Curtis</surname>
+        <affiliation>
+          <orgname>Gnome dokumentointiprojekti</orgname>
+          <address> <email>tcurtis@somaradio.ca</email> </address>
+        </affiliation>
+      </author>
+      <author> 
+        <firstname>Jorgen</firstname> 
+        <surname>Pehrson</surname> 
+        <affiliation> 
+          <orgname>Gnome dokumentointiprojekti</orgname> 
+          <address> <email>jp@spektr.eu.org</email> </address> 
+        </affiliation> 
+      </author> 
+      <author>
+	<firstname>Angela</firstname>
+	<surname>Boyle</surname>
+	<affiliation>
+	  <orgname>Gnome dokumentointiprojekti</orgname>
+	</affiliation>
+      </author>
+      <author>
+        <firstname>Davyd</firstname>
+	<surname>Madeley</surname>
+	<affiliation>
+	  <orgname>Gnome projekti</orgname>
+	</affiliation>
+      </author>
+        <!-- This is appropriate place for other contributors: translators,
+             maintainers,  etc. Commented out by default.
+             <othercredit role="translator">
+	       <firstname>Latin</firstname> 
+	       <surname>Translator 1</surname> 
+	       <affiliation> 
+	         <orgname>Latin Translation Team</orgname> 
+	         <address> <email>translator@gnome.org</email> </address> 
+	       </affiliation>
+	       <contrib>Latin translation</contrib>
+             </othercredit>
+-->
+
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>Versio 2.12</revnumber>
+	<date>Syyskuu 2005</date>
+	<revdescription>
+	  <para role="author">Davyd Madeley</para>
+	</revdescription>
+      </revision>
+      <revision>
+        <revnumber>Version 2.10</revnumber>
+	<date>Maaliskuu 2005</date>
+	<revdescription>
+	 <para role="author">Davyd Madeley</para>
+	</revdescription>
+      </revision>
+      <revision>
+	<revnumber>Versio 2.8</revnumber>
+	<date>Syyskuu 2004</date>
+	<revdescription>
+	  <para role="author">Angela Boyle</para>
+	  <para role="publisher">Gnome dokumentointiprojekti</para>
+	</revdescription>
+      </revision>
+      <revision>
+        <revnumber>Latausmittari -sovelluksen käyttöohje V2.2</revnumber>
+        <date>Elokuu 2004</date>
+        <revdescription>
+          <para role="author">Sun Gnome dokumentointiryhmä</para>
+          <para role="publisher">Gnome dokumentointiprojekti</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>Latausmittari -sovelluksen käyttöohje V2.0</revnumber>
+        <date>Toukokuu 2002</date>
+        <revdescription>
+          <para role="author">Trevor Curtis <email>tcurtis@somaradio.ca</email></para>
+          <para role="author">Jorgen Pehrson <email>jp@spektr.eu.org</email></para>
+          <para role="publisher">Gnome dokumentointiprojekti</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+                                                                                                  
+    <releaseinfo>Tämä käyttöohje kattaa Latausmittari -sovelluksen version 2.12.0</releaseinfo>
+                                                                                                  
+    <legalnotice>
+      <title>Palaute</title>
+      <para>Ilmoittaaksesi viasta tai tehdäksesi ehdotuksen koskien Latausmittari -sovelmaa tai tätä käyttöohjetta, seuraa ohjeita <ulink url="ghelp:gnome-feedback" type="help">Gnome palautesivulla</ulink>.</para>
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+	 <primary>Latausmittari -sovelma</primary> 
+  </indexterm> 
+
+  <indexterm zone="index"> 
+	 <primary>Battstat -sovelma</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="battstat-introduction"> 
+    <title>Johdanto</title> 
+
+    <figure id="battstat-applet-fig"> 
+      <title>Latausmittari -sovelma</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Latausmittari -sovelma</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+
+    <para><application>Latausmittari</application> näyttää kannettavasi akkujen tilan. Mittari näyttää jäljellä olevan varauksen visuaalisesti ja prosentuaalisesti, sekä tarjoaa aika-arvion perustuen sen hetkiseen käyttöasteeseen.</para>
+
+    <sect2 id="battstat-introduction-add">
+      <title>Latausmittarin lisääminen paneeliin</title>
+      <para>Lisätäksesi <application>Latausmittarin</application> paneeliin, paina hiiren oikeata näppäintä paneelin päällä ja valitse <guimenuitem>Lisää paneeliin</guimenuitem>. Valitse <application>Latausmittari</application>, <application>Lisää paneeliin</application> valintaikkunasta ja paina <guibutton>OK</guibutton>.</para>
+      <para>Latausmittarin -sovelman ulkoasu vaihtelee riippuen käytettävän paneelin koosta ja tyypistä.</para>
+    </sect2>
+
+    <sect2 id="battstat-power-backends">
+     <title>Virranhallinnan taustapalvelut</title>
+
+     <para>Latausmittari tukee lukuisia taustapalveluita. Jos se on käytettävissä, mittari yrittää käyttää freedesktop.org:n <ulink url="http://freedesktop.org/Software/hal">HAL:ia (Hardware Abstraction Layer)</ulink>. Mikäli se ei ole käytettävissä tai ei ole järjestelmässäsi tuettu, latausmittari yrittää käyttää suoraa pääsyä virranhallintajärjestelmään.</para>
+     <para>Kaikkien laitevalmistajien virranhallinnan taustapalvelut eivät ole käytettävissä, ja jotkut laitevalmistajat lisäävät omia täydentäviä taustapalveluita erikoisalustoilleen ja -laitteistoilleen. Jos latausmittari näyttää vääriä tietoja akustasi, katso käyttöohjeen kohta <xref linkend="battstat-troubleshooting"/></para>
+    </sect2>
+
+    <sect2 id="battstat-getting-help">
+      <title>Apua ongelmiin</title>
+      <para>Mikäli latausmittari ei toimi sinulla, katso lisää näistä lähteistä:</para>
+      <itemizedlist>
+       <listitem><para><xref linkend="battstat-troubleshooting"/></para></listitem>
+       <listitem><para>
+        <ulink url="http://mail.gnome.org/archives/">Gnome postituslistat</ulink>
+       </para></listitem>
+      </itemizedlist>
+    </sect2>
+
+</sect1>
+
+<!-- ================ Customizing the Appearance ========================= -->
+
+  <sect1 id="battstat-appearance">
+    <title>Asetukset</title>
+          <para>Avataksesi mittarin asetukset, paina hiiren oikeata näppäintä paneelissa olevan mittarin päällä ja valitse <guimenuitem>Asetukset</guimenuitem></para>
+    <figure id="battstat-applet-prefs-menu"> 
+      <title>Latausmittarin ponnahdusvalikko (hiiren oikea näppäin)</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/context-menu.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Latausmittarin ponnahdusvalikko</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+    <figure id="battstat-applet-prefs"> 
+      <title>Asetukset valintaikkuna</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-preferences.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Asetukset valintaikkuna</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Ulkoasu</guilabel></term>
+	  <listitem>
+	  <variablelist>
+	    <varlistentry>
+	      <term><guilabel>Tiivis näkymä</guilabel></term>
+	      <listitem><para>Tämä näkymä näyttää vain yksittäisen kuvan paneelissa, joko pystyssä olevan pariston osoittaakseen jäljellä olevaa varausta tai pistokkeen, joka osoittaa, että kannettavasi on liitetty ulkoiseen virtalähteeseen. <figure id="battstat-applet-compact"> 
+      <title>Tiivis näkymä</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Tiivis näkymä</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para>
+	      <para>Tiivis näkymä on oletusnäkymänä Gnomen 2.12. Latausmittarissa</para></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><guilabel>Laaja näkymä</guilabel></term>
+	      <listitem><para>Laajennettu näkymä on vanhanaikainen näkymä edellisistä Gnome -versioista. Siinä on iso kuva paristolle ja myös erillinen kuva osoittamaan, missä tilassassa akku on. <figure id="battstat-applet-expanded"> 
+      <title>Laaja näkymä</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet-expanded.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Laaja näkymä</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><guilabel>Näytä aika tai prosentti</guilabel></term>
+	      <listitem><para>Valitsemalla tämän vaihtoehdon, näytetään toinen kahdesta informaatiosta. <guilabel>Jäljellä oleva aika</guilabel> kertoo sen, kuinka monta tuntia ja minuuttia kestää, että akku on täysin tyhjentynyt tai uudelleen ladattu. <guilabel>Näytä jäljellä olevat prosentit</guilabel> kertoo sen, kuinka monta prosenttia akun varauksesta on jäljellä.</para></listitem>
+	    </varlistentry>
+	  </variablelist>
+	  </listitem>
+        </varlistentry>
+	<varlistentry>
+	 <term><guilabel>Huomautukset</guilabel></term>
+	  <listitem>
+	  <itemizedlist>
+	   <listitem><para><guilabel>Varoita akun latauksen laskiessa arvoon</guilabel></para>
+	   <para>Valitessasi tämän valinnan, näytetään varoitusikkuna, kun kannettavasi akun varaus laskee alle määritellyn prosentti- tai minuuttiarvon. Tämä arvo osoittaa akussasi jäljellä olevaa varauksen määrää, kun se on kriittisen alhainen. Voit ohittaa tämän varoitusikkunan itse, muutoin se häviää automaattisesti, kun kytket kannettavasi verkkovirtaan.</para>
+	   </listitem>
+	   <listitem>
+	    <para><guilabel>Huomauta, kun akku on ladattu täyteen</guilabel></para>
+	    <para>Valitessasi tämän valinnan sinulle ilmoitetaan, kun akku on täysin ladattu. Mikäli sinulla on käännetty Latausmittari libnotify tuella, näytetään mittarista paneelin kohdalta esiin ponnahtava ilmoitus.</para>
+	   </listitem>
+	  </itemizedlist>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+   </sect1>
+
+   <sect1 id="battstat-troubleshooting">
+    <title>Vianetsintä</title>
+    
+    <para>Johtuen virranhallinna monimutkaisuudesta ja suurista eroista jokaisessa erilaisessa käytössä olevassa virranhallintajärjestelmässä, virheiden jäljittäminen latausmittarissa voi olla hankalaa. Sinun täytyy määrittää onko virhe latausmittarissa vai onko se virhe laitteistosi tuottamassa informaatiossa.</para>
+    <para>Seuraava tieto voi olla tarpeellinen selvitettettäessä, mikä on latausmittarissa vikana. Se ei ole täydellinen. Jos löydät ohjelmavirheen Latausmittarista (joka ei aiheudu ACPI:n raportoimasta viallisesta informaatiosta) ole hyvä ja <ulink url="http://bugzilla.gnome.org/">raportoi siitä</ulink>.</para>
+
+    <sect2 id="battstat-troubleshooting-backends">
+     <title>Taustapalvelun määrittäminen</title>
+     <para>Jos käytät Hardware Abstraction Layer:ia (katso (see <xref linkend="battstat-power-backends"/>) on siitä merkintä Tietoja -ikkunassa. Kyseisen HAL -taustajärjestelmän tekijän nimen jälkeen on merkkinä tähti -symboli. <figure id="battstat-credits-hal"> 
+      <title>Tarkista käytätkö HAL -taustapalvelua</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-credits-hal.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Laaja näkymä</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para>
+
+     <para>Muut taustapalvelut eivät yleensä osoita, että ovat käytössä, joten sinun täytyy arvata oikea taustapalvelu perustuen laitteistotietoihisi. Uusimmat PC -kannettavat käyttävät ACPI -taustapalvelua. Tämä taustapalvelu omaa suuren määrän ristiriitoja</para>
+    </sect2>
+
+    <sect2 id="battstat-troubleshooting-acpi">
+      <title>ACPI tietojen tarkastaminen</title>
+      <para>Mikäli käytät ACPI -taustapalvelua latausmittarissa, on tärkeätä tarkistaa, että ACPI antaa sinulle oikeaa tietoa.</para>
+      <example><title>Esimerkki ACPI tulosteesta</title>
+       <screen>
+[rupert@laptop ~]$ cat /proc/acpi/battery/BAT1/info
+present:                 yes
+design capacity:         41040 mWh
+last full capacity:      37044 mWh
+battery technology:      rechargeable
+design voltage:          10800 mV
+design capacity warning: 745 mWh
+design capacity low:     0 mWh
+capacity granularity 1:  10 mWh
+capacity granularity 2:  10 mWh
+model number:            G71C00056110
+serial number:           0000000008
+battery type:            Li-ION
+OEM info:
+[rupert@laptop ~]$ cat /proc/acpi/battery/BAT1/state
+present:                 yes
+capacity state:          ok
+charging state:          discharging
+present rate:            11232 mW
+remaining capacity:      27140 mWh
+present voltage:         11400 mV
+[rupert@laptop ~]$</screen>
+      </example>
+      <para>Voit nopeasti laskea jäljellä olevan prosentin <guilabel>remaining capacity</guilabel> jaettuna <guilabel>last full capacity</guilabel>. Jäljellä olevan ajan saat laskettua <guilabel>remaining capacity</guilabel> jaettuna <guilabel>present rate</guilabel>.</para>
+    </sect2>
+
+    <sect2 id="battstat-troubleshooting-nohal">
+      <title>Hardware Abstraction Layer</title>
+      <para>Voit tarkistaa, että HAL tunnistaa akkusi komennolla <command>hal-device-manager</command>. Mikäli HAL ei ole tunnistanut akkuasi tai ilmoitetaan vääriä tietoja, voit yrittää ottaa HAL taustapalvelun pois käytöstä muuttamalla Asetusten muokkauksessa avainta.</para>
+      <para>Valitse <guimenu>Valikkopalkista</guimenu> <guimenuitem>Asetusten muokkaus</guimenuitem>, jonka löydät <guisubmenu>Ylläpito</guisubmenu> -valikosta</para>
+      <para>Oletetaan, että polku on <filename>/apps/panel/applets/applet_1</filename>. Siiryy siis polkuun <filename>/apps/panel/applets/applet_1/prefs</filename> ja lisää uusi avain painamalla hiiren oikeaa näppäintä ja avautuvasta valikosta paina <guimenuitem>Uusi avain...</guimenuitem>. Anna avaimelle nimeksi <guilabel>no_hal</guilabel> ja valitse tyypiksi <guilabel>Totuusarvo</guilabel> ja sen arvoksi <guilabel>Tosi</guilabel>. Tämä poistaa HAL:n käytöstä (katso <xref linkend="battstat-troubleshooting-backends"/>, oppiaksesi, kuinka tämä tarkistetaan)</para>
+    </sect2>
+    
+   </sect1>
+
+</article>

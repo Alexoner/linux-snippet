@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "3.2.0">
+<!ENTITY manrevision "1.0">
+<!ENTITY date "September 2011">
+<!ENTITY app "Invest">
+<!ENTITY panel-help SYSTEM "/usr/share/gnome/help/user-guide/C/user-guide.xml">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="de">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Börsenticker-Handbuch</title>       
+
+    <copyright>
+      <year>2004</year>
+      <year>2005</year>
+      <holder>Raphael Slinckx</holder>
+    </copyright>
+    <copyright> 
+      <year>2007</year>
+      <holder>Terrence Hall</holder> 
+    </copyright> 
+    <copyright>
+      <year>2010</year>
+      <year>2011</year>
+      <holder>Enrico Minack</holder>
+    </copyright><copyright><year>2009, 2011</year><holder>Mario Blättermann (mariobl@freenet.de)</holder></copyright><copyright><year>2010</year><holder>Christian Kirbach (Christian.Kirbach@googlemail.com)</holder></copyright><copyright><year>2010</year><holder>Jakob Kramer (jakob.kramer@gmx.de)</holder></copyright>
+
+
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+   -->
+
+    <publisher role="maintainer"> 
+      <publishername>GNOME-Dokumentationsprojekt</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Das vorliegende Dokument kann gemäß den Bedingungen der GNU Free Documentation License (GFDL), Version 1.1 oder jeder späteren, von der Free Software Foundation veröffentlichten Version ohne unveränderbare Abschnitte sowie ohne Texte auf dem vorderen und hinteren Buchdeckel kopiert, verteilt und/oder modifiziert werden. Eine Kopie der GFDL finden Sie unter diesem <ulink type="help" url="ghelp:fdl">Link</ulink> oder in der mit diesem Handbuch gelieferten Datei COPYING-DOCS.</para>
+         <para>Dieses Handbuch ist Teil einer Sammlung von GNOME-Handbüchern, die unter der GFDL veröffentlicht werden. Wenn Sie dieses Handbuch getrennt von der Sammlung weiterverbreiten möchten, können Sie das tun, indem Sie eine Kopie der Lizenz zum Handbuch hinzufügen, wie es in Abschnitt 6 der Lizenz beschrieben ist.</para>
+
+	<para>Viele der Namen, die von Unternehmen verwendet werden, um ihre Produkte und Dienstleistungen von anderen zu unterscheiden, sind eingetragene Warenzeichen. An den Stellen, an denen diese Namen in einer GNOME-Dokumentation erscheinen, werden die Namen in Großbuchstaben oder mit einem großen Anfangsbuchstaben geschrieben, wenn das GNOME-Dokumentationsprojekt auf diese Warenzeichen hingewiesen wird.</para>
+
+	<para>DAS DOKUMENT UND VERÄNDERTE FASSUNGEN DES DOKUMENTS WERDEN UNTER DEN BEDINGUNGEN DER GNU FREE DOCUMENTATION LICENSE ZUR VERFÜGUNG GESTELLT MIT DEM WEITERGEHENDEN VERSTÄNDNIS, DASS: <orderedlist>
+		<listitem>
+		  <para>DIESES DOKUMENT WIRD »WIE VORLIEGEND« GELIEFERT, OHNE GARANTIEN IRGENDEINER ART, SOWOHL AUSDRÜCKLICH GENANNTE ALS AUCH ANGEDEUTETE. DIES BEZIEHT SICH AUCH OHNE EINSCHRÄNKUNG AUF GARANTIEN, DASS DIESES DOKUMENT ODER VERÄNDERTE FASSUNGEN DIESES DOKUMENTS FREI VON HANDELSDEFEKTEN, FÜR EINEN BESTIMMTEN ZWECK GEEIGNET IST ODER DASS ES KEINE RECHTE DRITTER VERLETZT. DAS VOLLE RISIKO WAS QUALITÄT, GENAUIGKEIT UND LEISTUNG DES DOKUMENTS ODER VERÄNDERTE FASSUNGEN DES DOKUMENTS LIEGT BEI IHNEN. SOLLTE EIN DOKUMENT ODER EINE VERÄNDERTE FASSUNG DAVON FEHLER IRGENDEINER ART BEINHALTEN, TRAGEN SIE (NICHT DER URSPRUNGSAUTOR, DER AUTOR ODER EIN MITWIRKENDER) DIE KOSTEN FÜR NOTWENDIGE DIENSTLEISTUNGEN, REPARATUREN ODER FEHLERKORREKTUREN. DIESER HAFTUNGSAUSSCHLUSS IST EIN ESSENZIELLER TEIL DIESER LIZENZ. DIE VERWENDUNG EINES DOKUMENTS ODER EINER VERÄNDERTEN VERSION DES DOKUMENTS IST NICHT GESTATTET AUßER UNTER BEACHTUNG DIESES HAFTUNGSAUSSCHLUSSES UND</para>
+		</listitem>
+		<listitem>
+		  <para>UNTER KEINEN UMSTÄNDEN UND AUF BASIS KEINER RECHTSGRUNDLAGE, EGAL OB DURCH UNERLAUBTEN HANDLUNGEN (EINSCHLIEßLICH FAHRLÄSSIGKEIT), VERTRAG ODER ANDERWEITIG KANN DER AUTOR, URSPRUNGSAUTOR, EIN MITWIRKENDER ODER EIN VERTRIEBSPARTNER DIESES DOKUMENTS ODER EINER VERÄNDERTEN FASSUNG DES DOKUMENTS ODER EIN ZULIEFERER EINER DIESER PARTEIEN, HAFTBAR GEMACHT WERDEN FÜR DIREKTE, INDIREKTE, SPEZIELLE, VERSEHENTLICHE ODER FOLGESCHÄDEN JEGLICHER ART, EINSCHLIEßLICH UND OHNE EINSCHRÄNKUNGEN SCHÄDEN DURCH VERLUST VON KULANZ, ARBEITSAUSFALL, COMPUTERVERSAGEN ODER COMPUTERFEHLFUNKTIONEN ODER ALLE ANDEREN SCHÄDEN ODER VERLUSTE, DIE SICH AUS ODER IN VERBINDUNG MIT DER VERWENDUNG DES DOKUMENTS UND VERÄNDERTER FASSUNGEN DES DOKUMENTS ERGEBEN, AUCH WENN DIE OBEN GENANNTEN PARTEIEN ÜBER DIE MÖGLICHKEIT SOLCHER SCHÄDEN INFORMIERT WAREN.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+  <authorgroup> 
+    <author>
+      <firstname/>
+      <surname>GNOME-Dokumentationsteam</surname>
+    </author>
+    <author> 
+      <firstname>Terrence</firstname> 
+      <surname>Hall</surname> 
+      <affiliation><address><email>teebob21@gmail.com</email></address></affiliation> 
+    </author> 
+    <author>
+      <firstname>Enrico</firstname>
+      <surname>Minack</surname>
+      <affiliation><address><email>enrico-minack@gmx.de</email></address></affiliation>
+    </author>
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+    <othercredit role="translator">
+      <firstname>Latin</firstname> 
+      <surname>Translator 1</surname> 
+      <affiliation> 
+	<orgname>Latin Translation Team</orgname> 
+	<address> <email>translator@gnome.org</email> </address> 
+      </affiliation>
+      <contrib>Latin translation</contrib>
+    </othercredit>
+-->
+    </authorgroup>
+	
+    <revhistory>
+      <revision> 
+	<revnumber/>
+	<date/>
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Dieses Handbuch beschreibt Version 3.2.0 von Börsenticker.</releaseinfo> 
+
+    <legalnotice> 
+      <title>Rückmeldungen</title> 
+      <para>Um Fehler zu melden oder einen Vorschlag zur Anwendung <application>Börsenticker</application> oder zu diesem Handbuch zu machen, folgen Sie den Anweisungen auf der <ulink url="ghelp:gnome-feedback" type="help">GNOME-Seite für Rückmeldungen</ulink>.</para>
+
+<!-- Translators may also add here feedback address for translations -->
+
+    </legalnotice> 
+    <abstract role="description">
+      <para>Benutzerhandbuch für den Börsenticker</para>
+
+    </abstract>
+
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>Börsenticker</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>Börsenticker-Applet</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+ <!-- ============= Introduction ============================== -->
+
+  <sect1 id="invest-applet-intro">
+    <title>Einführung</title>
+
+    <para>Das GNOME Panel-Applet <application>Börsenticker</application> lädt aktuelle Kurse für Wertpapiere, Wertpapier-Indizes, Währungen und Edelmetalle von »Yahoo! Finance« herunter und zeigt diese in einer Ausklappliste an.</para>
+    <para>Der <application>Börsenticker</application> verfügt über folgende Funktionsmerkmale:</para>
+	<itemizedlist>
+            <listitem>
+              <para>Sie erhalten Kurse für alle Aktien, Aktienindizes, Währungen und Edelmetalle, die <ulink url="http://de.finance.yahoo.com">Yahoo! Finanzen</ulink> bekannt sind</para>
+            </listitem>
+            <listitem>
+              <para>Kurse werden automatisch alle 15 Minuten aktualisiert</para>
+            </listitem>
+            <listitem>
+              <para>Der derzeitige Preis, die Veränderung und eine Tabelle der heutigen Veränderungen werden dargestellt</para>
+            </listitem>
+            <listitem>
+              <para>Die Währung des Kurses wird angezeigt, und falls eingerichtet, in die Zielwährung umgerechnet</para>
+            </listitem>
+            <listitem>
+              <para>Den Wert der Kurssteigerung oder des Kursverfalls seit der Ausgabe, auch umrechenbar in die Zielwährung</para>
+            </listitem>
+            <listitem>
+              <para>Den Prozentsatz der Kurssteigerung oder des Kursverfalls seit der Ausgabe</para>
+            </listitem>
+	</itemizedlist>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="invest-applet-getting-started">
+    <title>Erste Schritte</title>
+
+                                                                                
+<!-- ============= To Start Invest ============================ -->
+    <sect2 id="invest-applet-to-add">
+      <title>Börsenticker zu einem Panel hinzufügen</title>
+      <para>Um den <application>Börsenticker</application> zu einem Panel hinzuzufügen, klicken Sie mit der rechten Maustaste auf das Panel und wählen Sie <guilabel>Zum Panel hinzufügen</guilabel>. Wählen Sie <application>Börsenticker</application> im Dialog <guilabel>Zum Panel hinzufügen</guilabel> und klicken Sie auf <guilabel>Hinzufügen</guilabel>. Klicken Sie auf <guilabel>Schließen</guilabel>, sobald Sie fertig sind.</para>
+    </sect2>
+    <sect2 id="invest-applet-to-remove">
+      <title>Entfernen des Börsentickers aus einem Panel</title>
+      <para>Um den <application>Börsenticker</application> aus einem Panel zu entfernen, klicken Sie mit der rechten Maustaste auf das Symbol und wählen Sie anschließend <guilabel>Aus dem Panel entfernen</guilabel>.</para>
+    </sect2>
+    <sect2 id="additional-applet-help">
+      <title>Mehr Information</title>
+      <para>Weitere Informationen über das GNOME-Panel finden Sie in der <ulink url="ghelp:user-guide?panels" type="help">GNOME Panel-Dokumentation</ulink>.</para>
+    </sect2>
+  </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="invest-applet-usage">
+    <title>Börsenticker benutzen</title>
+    <para>Bevor Börsenticker Ihnen aktuelle Kurse anzeigen kann, müssen Sie es konfigurieren. Die Kurse können von verschiedenen Börsenplätzen kommen, so dass die Preise verschiedene Währungen haben können. Die automatische Umrechnung der Währungen kann eingestellt werden, ebenso die Umrechnung Ihrer Einkäufe, die in verschiedenen Ländern getätigt wurden. Letztendlich: Es sind für alle eingestellten Kurse Diagramme vorhanden.</para>
+
+    <sect2 id="invest-applet-configure-quotes">
+      <title>Einrichten Ihrer Kurse</title>
+
+    <sect3 id="invest-applet-add-stocks">
+
+      <title>Neue Kurse zum Applet hinzufügen</title>
+
+      <para>Um Wertpapiere zum <application>Börsenticker</application> hinzuzufügen, gehen Sie wie folgt vor:</para>
+      <orderedlist>
+        <listitem>
+          <para>Klicken Sie mit der rechten Maustaste auf das Symbol und wählen Sie <guilabel>Einstellungen</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Klicken Sie auf <guilabel>Hinzufügen</guilabel>, um ein Wertpapier zum <application>Börsenticker</application> hinzuzufügen.</para>
+        </listitem>
+        <listitem>
+          <para>Das vorgegebene Wertpapier ist GOOG. Es ist vorausgewählt, so dass Sie es sofort ändern können. Geben Sie dort das <guilabel>Symbol</guilabel> des Wertpapiers ein. Wenn Sie das Symbol nicht kennen, dann schauen Sie weiter unten.</para>
+        </listitem>
+	<listitem>
+	  <para>Danach klicken Sie auf die <guilabel>Beschriftung</guilabel> des Wertpapiers und geben dort den richtigen Namen ein.</para>
+	</listitem>
+	<listitem>
+	  <para>Sie können auch die Anzahl Ihrer eigenen Anteile an Wertpapieren anpassen, den Ausgabepreis und die Provision.</para>
+	</listitem>
+        <listitem>
+          <para>Klicken Sie auf <guilabel>Schließen</guilabel>, wenn Sie mit dem Hinzufügen von Wertpapierkursen fertig sind.</para>
+        </listitem>
+      </orderedlist>
+	<para>Wenn Sie das Symbol ihres Wertpapiers nicht kennen, dann gehen Sie auf <ulink url="http://finance.yahoo.com/">http://finance.yahoo.com/</ulink>. Geben Sie den Namen des Wertpapierkurses in dem Textfeld oben links ein. Während Sie schreiben wird es Ihnen vorhandene Kurse vorschlagen. Die erste Spalte stellt das Symbol des Wertpapiers dar, die zweite Spalte zeigt den Namen und in der dritten Spalte wird der Aktientausch aufgelistet. Die Währung des Kurses kann bei unterschiedlichen Börsenplätzen unterschiedlich sein, abhängig vom jeweiligen Land. Weiter unten können Sie ein Bildschirmfoto sehen, das die Suche nach dem »Yahoo«-Kurs zeigt.</para>
+
+	<para><mediaobject><imageobject>
+	  <imagedata format="PNG" fileref="figures/symbol-search.png"/>
+	</imageobject></mediaobject> Bildschirmfoto von Yahoo! Finance bei der Suche nach einem Kurs.</para>
+
+	<para>Der Börsenticker unterstützt alle in <ulink url="http://finance.yahoo.com/">Yahoo! Finance</ulink> verfügbaren Kurse. Im einzelnen sind dies folgende Typen:</para>
+	<formalpara>
+	  <title>Aktien, Anleihen und Wertpapiere</title>
+          <para>Das ist der Großteil der verfügbaren Kurse. Suchen und durchstöbern Sie <ulink url="http://finance.yahoo.com/">Yahoo! Finance</ulink>, um herauszufinden, was dort alles gelistet wird.</para>
+	</formalpara>
+	<formalpara>
+	  <title>Aktienindizes</title>
+          <para>Alle mit einem ^ beginnenden Wertpapiere stellen Indizes dar, also einen die Wertentwicklung anderer Papiere zusammenfassenden Wert. Beispiele sind der Dow Jones Industrial Average (<ulink url="http://finance.yahoo.com/q?s=^DJI">^DJI</ulink>) und der NASDAQ Composite (<ulink url="http://finance.yahoo.com/q?s=^IXIC">^IXIC</ulink>).</para>
+	</formalpara>
+	<formalpara>
+	  <title>Währungskurse</title>
+          <para>Es sind auch Wechselkurse zwischen verschiedenen Währungen verfügbar. Das jeweilige Symbol wird folgendermaßen erstellt: Währung AAA in Währung BBB, oder anders ausgedrückt: Wieviel kostet die Währung AAA in der Währung BBB? Daraus ergibt sich das Symbol AAABBB=X. Wenn Sie wissen wollen, wieviele EUR Sie für einen USD erhalten, wählen Sie <ulink url="http://finance.yahoo.com/q?s=usdeur%3DX">USDEUR=X</ulink>. Weitere Informationen finden Sie auf der <ulink url="http://finance.yahoo.com/currency-investing">Währungsumrechner-Seite von Yahoo! Finance</ulink>. Währungen werden stets anhand deren <ulink url="http://de.wikipedia.org/wiki/ISO_4217">ISO-4217-Währungscodes</ulink> dargestellt.</para>
+	</formalpara>
+	<formalpara>
+	  <title>Edelmetalle</title>
+          <para>Der <ulink url="http://de.wikipedia.org/wiki/ISO_4217">ISO-4217-Währungscode</ulink> listet auch Edelmetalle als Währungen. Diese umfassen Gold, Silber, Palladium und Platin. Deren Währungscode beginnt mit einem X, gefolgt vom chemischen Symbol: XAU, XAG, XPD und XPT. Über diese Währungscodes sind wie oben beschrieben die Preise von Edelmetallen verfügbar. Beispielsweise hat Gold in US-Dollar das Symbol <ulink url="http://finance.yahoo.com/q?s=XAUUSD%3DX">XAUUSD=X</ulink>. Sie können auch die Rechnung umkehren (<ulink url="http://finance.yahoo.com/q?s=USDXAU%3DX">USDXAU=X</ulink>), d. h. wie viele Feinunzen Gold Sie für einen USD erhalten.</para>
+	</formalpara>
+    </sect3>
+    <sect3 id="invest-applet-to-view-stocks">
+      <title>Betrachten von eingerichteten Kursen</title>
+      <para>Um Ihre ausgewählten Wertpapierkurse anzuzeigen, klicken Sie auf das Symbol des <application>Börsentickers</application> im Panel. Eine Liste Ihrer Wertpapiere erscheint. Um die Liste wieder zu schließen, klicken Sie erneut auf das Symbol. Beachten Sie, dass die Kurse üblicherweise alle 15 Minuten aktualisiert werden.</para>
+    </sect3>
+
+    <sect3 id="invest-applet-to-refresh-stocks">
+
+      <title>Die Anzeige aktualisieren</title>
+      <para>Um die im Applet angezeigten Informationen sofort zu aktualisieren, klicken Sie mit der rechten Maustaste auf das Applet und wählen Sie anschließend <guilabel>Aktualisieren</guilabel>.</para>
+    </sect3>
+    <sect3 id="invest-applet-to-remove-stocks">
+       <title>Kurse aus dem Applet entfernen</title>
+      <para>Um Kurse aus dem <application>Börsenticker</application> zu entfernen, gehen Sie wie folgt vor:</para>
+      <orderedlist>
+        <listitem>
+          <para>Klicken Sie mit der rechten Maustaste auf das Symbol und wählen Sie <guilabel>Einstellungen</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Klicken Sie auf die Zeile, die den Kurs enthält, welches Sie entfernen wollen.</para>
+        </listitem>
+        <listitem>
+          <para>Klicken Sie auf <guilabel>Entfernen</guilabel>, um die Anzeige zu entfernen.</para>
+        </listitem>
+        <listitem>
+          <para>Klicken Sie auf <guilabel>Schließen</guilabel>, sobald Sie fertig sind.</para>
+        </listitem>
+      </orderedlist> 
+    </sect3>
+   </sect2>
+
+    <sect2 id="invest-applet-configure-currencies">
+      <title>Einrichten der Währungsumrechnung</title>
+      <para>Der Börsenticker zeigt alle Kurse in deren Originalwährung an, wie von Yahoo! Finance bereitgestellt. Falls Sie alle Kurse in einer Zielwährung anzeigen lassen wollen, kann dies im Einstellungsdialog eingerichtet werden.</para>
+      <orderedlist>
+        <listitem>
+          <para>Klicken Sie mit der rechten Maustaste auf das Symbol und wählen Sie <guilabel>Einstellungen</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Geben Sie die Zielwährung in das Textfeld <guilabel>Währung</guilabel> ein.</para>
+        </listitem>
+        <listitem>
+          <para>Während der Eingabe werden im Textfeld Währungen vorgeschlagen, die auf Ihre Eingabe passen könnten.</para>
+        </listitem>
+        <listitem>
+          <para>Wählen Sie Ihre Zielwährung.</para>
+        </listitem>
+        <listitem>
+          <para>Beachten Sie, dass in Ihrer Kursliste die neue Spalte <guilabel>Währungskurs</guilabel> erscheint.</para>
+        </listitem>
+        <listitem>
+          <para>Für alle Käufe, für die <guilabel>Preis</guilabel> und <guilabel>Provision</guilabel> in deren Originalwährung angegeben sind, muss der Wechselkurs zum Kaufzeitpunkt von der Originalwährung zur Zielwährung im Feld <guilabel>Wechselkurs</guilabel> eingegeben werden.</para>
+        </listitem>
+        <listitem>
+          <para>Klicken Sie auf <guilabel>Schließen</guilabel>, sobald Sie fertig sind.</para>
+        </listitem>
+      </orderedlist>
+      <para>Ein Beispiel dazu: Sie haben einen Yahoo!-Anteil (YHOO) für 10.00 USD bei einem Währungskurs von 0.75 EUR pro USD gekauft. Demzufolge kostet der Anteil 7.50 EUR. Außerdem haben sie 5.00 USD Kommission bezahlt, was 3.75 EUR entspricht. Wenn Sie die Zielwährung auf EUR setzen, müssen Sie entweder EUR (die Zielwährung) angeben und den <guilabel>Währungskurs</guilabel> auf 0.00 belassen oder Sie geben USD (die Ausgangswährung) an und geben den EUR-USD-Umrechnungskurs ein (<ulink url="http://finance.yahoo.com/q?s=eurusd%3DX">USDEUR=X</ulink>).</para>
+      <tip>
+        <para>Sowohl <guilabel>Preis</guilabel> als auch <guilabel>Kommission</guilabel> müssen in der gleichen Währung angegeben werden.</para>
+      </tip>
+      <para>Falls Sie die Zielwährung wieder löschen wollen, leeren Sie einfach das Textfeld <guilabel>Währung</guilabel>.</para>
+   </sect2>
+
+    <sect2 id="invest-applet-stock-charts-options">
+      <title>Diagrammoptionen</title>
+      <para>Für jedes Wertpapier in Ihrer Liste ist ein Diagramm verfügbar. Um die Diagramme zu verwenden, zeigen Sie die Liste der ausgewählten Wertpapiere an und doppelklicken Sie auf das Wertpapier, dessen Diagramm Sie darstellen lassen wollen. Die Diagrammparameter können Sie beeinflussen, indem Sie auf <guilabel>Optionen</guilabel> klicken.</para>
+	<sect3 id="invest-applet-stock-chart-options-date">
+	<title>Zeitbereich</title>
+              <para>Der Datumsbereich in der rechten oberen Ecke des Fensters bestimmt den Berichtszeitraum. Standardmäßig wird ein Tag zugrunde gelegt, außerdem können folgende Zeiträume gewählt werden: <guilabel>Heute</guilabel>, <guilabel>5 Tage</guilabel>, <guilabel>3 Monate</guilabel>, <guilabel>6 Monate</guilabel>, <guilabel>1 Jahr</guilabel>, <guilabel>5 Jahre</guilabel>, <guilabel>Maximum</guilabel>.</para>
+
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-graph">
+	<title>Diagrammstil</title>
+              <para>Die Preisentwicklung kann auf drei verschiedene Arten grafisch dargestellt werden. Sie können aus einem Liniendiagramm, einem Balkendiagramm oder einem Säulendiagramm wählen.</para>
+	  <itemizedlist>
+            <listitem>
+              <para><guilabel>Liniendiagramm</guilabel> (<guilabel>l</guilabel>)</para>
+	      <para>Dies ist die voreingestellte Option. Die vergangene Kursinformation wird in bekannter Weise in einem Diagramm dargestellt. Alle Schlusskurse werden mit einer Einzellinie mit jeder Aktie verbunden. Liniendiagramme sind zur Darstellung von Aktienkursen nützlich, wenn ein Analyst jeweils nur am Schlusskurs einer Aktie interessiert ist.</para>
+            </listitem>
+            <listitem>
+              <para><guilabel>Balkendiagramm</guilabel> (<guilabel>b</guilabel>)</para>
+	      <para>Ein Balkendiagramm stellt den gesamten Tagesverlauf mit einem einzigen vertikalen Balken dar. Die Spitze der vertikalen Linie zeigt den höchsten Kurs, mit dem ein registriertes Wertpapier während des Tages gehandelt wurde. Der Boden stellt den niedrigsten Kurs dar. Der Schlusskurs wird auf der rechten Seite des Balkens angezeigt, und der Eröffnungskurs auf der linken. Ein Balken repräsentiert einen Handelstag.</para>
+            </listitem>
+            <listitem>
+              <para><guilabel>Säulendiagramm</guilabel> (<guilabel>c</guilabel>)</para>
+	      <para>In einem Säulendiagramm werden Eröffnungs- und Schlusskurs als Ober- bzw. Unterseite eines Rechtecks dargestellt, das eine vertikale Linie umgibt, die die hohen und niedrigen Kurse verbindet. Das Rechteck ist gefüllt, wenn der Schlusskurs niedriger als der Eröffnungskurs ist, und ist leer, wenn der Schlusskurs höher als der Eröffnungskurs ist.</para>
+
+            </listitem>
+	</itemizedlist>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-ma">
+	<title>Gleitender Mittelwert</title>
+              <para>Ein gleitender Mittelwert ist eine statistische Datenreihe der Schlusskurse über mehrere folgende Handelstage. Er wird üblicherweise in dem gleichen Liniendiagramm dargestellt, um die Tendenz des Aktienwerts aufzuzeigen.</para>
+	</sect3>
+
+	<sect3 id="invest-applet-stock-chart-options-ema">
+	<title>Exponentieller gleitender Mittelwert</title>
+              <para>Der exponentielle gleitende Mittelwert (EMA) ist definiert als ein gleitender Mittelwert, bei dem die aktuellen Werte stärker gewichtet werden als die älteren Werte. Diese Art des gleitenden Mittelwerts reagiert schneller auf aktuelle Kursänderungen als ein gewöhnlicher gleitender Mittelwert. Die 12- und 26-tägigen EMAs sind populäre Kurzzeit-Mittelwerte, während über mehr als 50 Tage erfasste Mittelwerte zum Ermitteln von Langzeittrends geeignet sind.</para>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-overlays">
+	<title>Überlagerungen</title>
+              <para>Überlagerungen ermöglichen Ihnen, mehrere statistische Messwerte in einem einzigen Diagramm anzuzeigen. Beispielsweise können Sie so ein einzelnes Wertpapier mit einem Index wie NASDAQ oder DJIA vergleichen.</para>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-indicators">
+	<title>Indikatoren</title>
+              <para>Indikatoren werden verwendet, um zukünftige finanzielle Entwicklungen vorherzusagen. Eine saubere Anwendung von Marktindikatoren liegt allerdings außerhalb des Ziels dieses Handbuchs.</para>
+
+	</sect3>
+    </sect2>
+  </sect1>
+</article>

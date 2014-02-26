@@ -1,0 +1,97 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+#
+[encoding: UTF-8]
+accessx-status/applet.c
+[type: gettext/ini]accessx-status/org.gnome.applets.AccessxStatusApplet.panel-applet.in.in
+battstat/battstat_applet.c
+[type: gettext/glade]battstat/battstat_applet.ui
+battstat/battstat-hal.c
+battstat/battstat.schemas.in
+[type: gettext/ini]battstat/org.gnome.applets.BattstatApplet.panel-applet.in.in
+battstat/properties.c
+battstat/sounds/battstat_applet.soundlist.in
+charpick/charpick.c
+charpick/charpick.schemas.in
+[type: gettext/ini]charpick/org.gnome.applets.CharpickerApplet.panel-applet.in.in
+charpick/properties.c
+cpufreq/cpufreq-applet.schemas.in
+[type: gettext/glade]cpufreq/cpufreq-preferences.ui
+[type: gettext/ini]cpufreq/org.gnome.applets.CPUFreqApplet.panel-applet.in.in
+cpufreq/src/cpufreq-applet.c
+cpufreq/src/cpufreq-prefs.c
+cpufreq/src/cpufreq-monitor-cpuinfo.c
+cpufreq/src/cpufreq-monitor-factory.c
+cpufreq/src/cpufreq-monitor-procfs.c
+cpufreq/src/cpufreq-popup.c
+cpufreq/src/cpufreq-selector/org.gnome.cpufreqselector.policy.in
+drivemount/drive-button.c
+drivemount/drivemount.c
+drivemount/drivemount.schemas.in
+[type: gettext/ini]drivemount/org.gnome.applets.DriveMountApplet.panel-applet.in.in
+geyes/geyes.c
+geyes/geyes.schemas.in
+[type: gettext/ini]geyes/org.gnome.applets.GeyesApplet.panel-applet.in.in
+geyes/themes.c
+gweather/gweather-about.c
+gweather/gweather-applet.c
+gweather/gweather-dialog.c
+gweather/gweather-pref.c
+gweather/main.c
+[type: gettext/ini]gweather/org.gnome.applets.GWeatherApplet.panel-applet.in.in
+[type: gettext/ini]invest-applet/data/org.gnome.applets.InvestApplet.panel-applet.in.in
+[type: gettext/glade]invest-applet/data/financialchart.ui
+[type: gettext/glade]invest-applet/data/prefs-dialog.ui
+invest-applet/invest/about.py
+invest-applet/invest/applet.py
+invest-applet/invest/chart.py
+invest-applet/invest/invest-applet.py
+invest-applet/invest/preferences.py
+invest-applet/invest/quotes.py
+invest-applet/invest/widgets.py
+# NB. these are actually separate files
+mini-commander/GNOME_MiniCommanderApplet.server.in
+mini-commander/src/about.c
+mini-commander/src/cmd_completion.c
+mini-commander/src/command_line.c
+mini-commander/src/exec.c
+mini-commander/src/help.c
+mini-commander/src/history.c
+mini-commander/src/macro.c
+mini-commander/src/mc-install-default-macros.c
+mini-commander/src/mini-commander-global.schemas.in
+[type: gettext/glade]mini-commander/src/mini-commander.ui
+mini-commander/src/mini-commander.schemas.in
+mini-commander/src/mini-commander_applet.c
+[type: gettext/ini]mini-commander/src/org.gnome.applets.MiniCommanderApplet.panel-applet.in.in
+mini-commander/src/preferences.c
+mixer/applet.c
+mixer/dock.c
+mixer/load.c
+mixer/mixer.schemas.in
+[type: gettext/ini]mixer/org.gnome.applets.MixerApplet.panel-applet.in.in
+mixer/preferences.c
+modemlights/modem-applet.c
+[type: gettext/glade]modemlights/modemlights.ui
+[type: gettext/ini]modemlights/org.gnome.applets.ModemApplet.panel-applet.in.in
+multiload/linux-proc.c
+multiload/load-graph.c
+multiload/main.c
+multiload/multiload.schemas.in
+multiload/netspeed.c
+[type: gettext/ini]multiload/org.gnome.applets.MultiLoadApplet.panel-applet.in.in
+multiload/properties.c
+null_applet/null_applet.c
+# NB. these are actually separate files
+stickynotes/data/GNOME_StickyNotesApplet.server.in
+[type: gettext/ini]stickynotes/org.gnome.applets.StickyNotesApplet.panel-applet.in.in
+stickynotes/stickynotes.c
+[type: gettext/glade]stickynotes/stickynotes.ui
+stickynotes/stickynotes.schemas.in
+stickynotes/stickynotes_applet.c
+stickynotes/stickynotes_applet_callbacks.c
+stickynotes/stickynotes_callbacks.c
+[type: gettext/ini]trashapplet/org.gnome.applets.TrashApplet.panel-applet.in.in
+trashapplet/src/trashapplet.c
+trashapplet/src/trash-empty.c
+[type: gettext/glade]trashapplet/trashapplet-empty-progress.ui

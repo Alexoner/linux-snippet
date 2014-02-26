@@ -1,0 +1,7 @@
+mount /dev/sda15 /mnt/deepin
+mount -t proc none /mnt/deepin/proc
+mount -o bind /dev /mnt/deepin/dev
+mount --bind /var/lib/dbus /mnt/deepin/var/lib/dbus
+mount --bind /tmp /mnt/deepin/tmp
+
+mount  #check mounted file system hierarchy

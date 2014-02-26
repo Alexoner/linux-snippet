@@ -1,0 +1,2 @@
+play video in terminal:
+$ mplayer -ao alsa -vo fbdev2 -vf scale=1366:768 <filename>

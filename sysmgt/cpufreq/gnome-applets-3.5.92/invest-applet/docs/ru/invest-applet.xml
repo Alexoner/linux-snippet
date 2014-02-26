@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "3.2.0">
+<!ENTITY manrevision "1.0">
+<!ENTITY date "September 2011">
+<!ENTITY app "Invest">
+<!ENTITY panel-help SYSTEM "/usr/share/gnome/help/user-guide/C/user-guide.xml">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ru">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Руководство по апплету Invest</title>       
+
+    <copyright>
+      <year>2004</year>
+      <year>2005</year>
+      <holder>Raphael Slinckx</holder>
+    </copyright>
+    <copyright> 
+      <year>2007</year>
+      <holder>Terrence Hall</holder> 
+    </copyright> 
+    <copyright>
+      <year>2010</year>
+      <year>2011</year>
+      <holder>Enrico Minack</holder>
+    </copyright><copyright><year>2009</year><holder>Boris Egorov (jightuse@gmail.com)</holder></copyright><copyright><year>2011</year><holder>Юрий Козлов (yuray@komyakino.ru)</holder></copyright>
+
+
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+   -->
+
+    <publisher role="maintainer"> 
+      <publishername>Проект документации GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Следующим разрешается копировать и/или модифицировать этот документ при условии соблюдения GNU Free Documentation License (GFDL), версии 1.1 или любой более поздней опубликованной Фондом свободного программного обеспечения версией без неизменяемых частей, без текстов на обложках. Вы можете найти копию лицензии по этой <ulink type="help" url="ghelp:fdl">ссылке</ulink> или в файле COPYING-DOCS, распространяемом с этим документом.</para>
+         <para>Этот документ является частью документации GNOME, распространяемой под лицензией GFDL. Если вы хотите распространять этот документ отдельно от общей документации, вы должны приложить копию лицензии к документу, как написано в части 6 лицензии.</para>
+
+	<para>Многие имена и марки используются компаниями для различения их продуктов и услуг и являются торговыми марками. Эти марки присутствуют в любой части документации GNOME, и члены проекта документирования GNOME знают об этом. Имена выделяются заглавными буквами или начальной заглавной буквой.</para>
+
+	<para>ДОКУМЕНТ И ИЗМЕНЁННЫЕ ВЕРСИИ ДОКУМЕНТА ПРЕДСТАВЛЯЮТСЯ ПОЛЬЗОВАТЕЛЮ ПОД ЛИЦЕНЗИЕЙ GNU FREE DOCUMENTATION LICENSE С УВЕДОМЛЕНИЕМ О ТОМ, ЧТО <orderedlist>
+		<listitem>
+		  <para>ДОКУМЕНТ РАСПРОСТРАНЯЕТСЯ "КАК ЕСТЬ", БЕЗ ВСЯКИХ ГАРАНТИЙ, ПРИДУМАННЫХ ИЛИ УНАСЛЕДОВАННЫХ, БЕЗ ОГРАНИЧЕНИЙ, ГАРАНТИЙ ТОГО ЧТО ДОКУМЕНТ ИЛИ МОДИФИЦИРОВАННАЯ ВЕРСИЯ ДОКУМЕНТА СВОБОДНА ОТ ДЕФЕКТОВ, ТОЛЬКО ДЛЯ СПЕЦИАЛЬНОГО ИСПОЛЬЗОВАНИЯ НЕ ЗАКЛЮЧАЮЩЕГО В СЕБЕ РИСКИ КАЧЕСТВА, АККУРАТНОСТИ ИЛИ СООТВЕТСТВИЯ ДОКУМЕНТА ИЛИ ИЗМЕНЁННЫХ ВЕРСИЙ ДОКУМЕНТА ВАШИМ ТРЕБОВАНИЯМ. ЕСЛИ ДОКУМЕНТ ИЛИ МОДИФИЦИРОВАННАЯ ВЕРСИЯ ДОКУМЕНТА ИМЕЕТ НЕДОСТАТКИ, ВЫ (А НЕ АВТОР ДОКУМЕНТА ИЛИ ЕГО ПОМОЩНИК) ДОЛЖНЫ САМИ ПРИЛОЖИТЬ УСИЛИЯ К ЕГО ДОРАБОТКИ, КОРРЕКЦИИ ИЛИ ВОССТАНОВЛЕНИЮ. ЭТО ПРЕДУПРЕЖДЕНИЕ СОСТАВЛЯЕТ СУЩЕСТВЕННУЮ ЧАСТЬ ЛИЦЕНЗИИ. ДОКУМЕНТ НЕ ДОЛЖЕН ИСПОЛЬЗОВАТЬСЯ БЕЗ ДАННОГО ПРЕДУПРЕЖДЕНИЯ И</para>
+		</listitem>
+		<listitem>
+		  <para>НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ И НИ ПРИ КАКОМ ЗАКОННОМ СПОСОБЕ, НИ ПО КАКОМУ СОГЛАШЕНИЮ ИЛИ ДРУГОЙ ПРИЧИНЕ, АВТОР, СОЗДАТЕЛЬ ИЛИ ПОМОЩНИКИ НЕ НЕСУТ ОТВЕТСТВЕННОСТЬ ЗА ПРЯМОЕ, КОСВЕННОЕ, СПЕЦИАЛЬНОЕ, СЛУЧАЙНОЕ ИЛИ ПРЕДНАМЕРЕННОЕ ПОВРЕЖДЕНИЕ ЛЮБОГО СВОЙСТВА, ВКЛЮЧАЯ БЕЗ ОГРАНИЧЕНИЯ ПОТЕРЮ ЖЕЛАНИЯ, РАБОТОСПОСОБНОСТИ, КОМПЬЮТЕРНЫЕ СБОИ ИЛИ НЕПРАВИЛЬНОЕ ВЗАИМОДЕЙСТВИЕ, ВМЕСТЕ ИЛИ ПО-ОТДЕЛЬНОСТИ. НИКАКИЕ ПОВРЕЖДЕНИЯ И ПОТЕРИ НЕ МОГУТ БЫТЬ ВОЗЛОЖЕНЫ НА АВТОРА ДОКУМЕНТА ИЛИ МОДИФИЦИРОВАННОЙ ВЕРСИИ ДОКУМЕНТА, ДАЖЕ ЕСЛИ СТОРОНА БЫЛА ПРОИНФОРМИРОВАНА О ВОЗМОЖНОСТИ ТАКИХ ПОВРЕЖДЕНИЙ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+  <authorgroup> 
+    <author>
+      <firstname/>
+      <surname>Группа документирования GNOME</surname>
+    </author>
+    <author> 
+      <firstname>Terrence</firstname> 
+      <surname>Hall</surname> 
+      <affiliation><address><email>teebob21@gmail.com</email></address></affiliation> 
+    </author> 
+    <author>
+      <firstname>Enrico</firstname>
+      <surname>Minack</surname>
+      <affiliation><address><email>enrico-minack@gmx.de</email></address></affiliation>
+    </author>
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+    <othercredit role="translator">
+      <firstname>Latin</firstname> 
+      <surname>Translator 1</surname> 
+      <affiliation> 
+	<orgname>Latin Translation Team</orgname> 
+	<address> <email>translator@gnome.org</email> </address> 
+      </affiliation>
+      <contrib>Latin translation</contrib>
+    </othercredit>
+-->
+    </authorgroup>
+	
+    <revhistory>
+      <revision> 
+	<revnumber/>
+	<date/>
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>В этом руководстве описывается апплет Invest версии 3.2.0.</releaseinfo> 
+
+    <legalnotice> 
+      <title>Обратная связь</title> 
+      <para>Чтобы сообщить об ошибке или что-то предложить по апплету Invest или этому руководству, следуйте указаниям в документе <ulink url="ghelp:gnome-feedback" type="help">Обратная связь с GNOME</ulink>.</para>
+
+<!-- Translators may also add here feedback address for translations -->
+
+    </legalnotice> 
+    <abstract role="description">
+      <para>Руководство пользователя Invest</para>
+
+    </abstract>
+
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>Invest</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>invest-applet</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+ <!-- ============= Introduction ============================== -->
+
+  <sect1 id="invest-applet-intro">
+    <title>Введение</title>
+
+    <para>Апплет панели GNOME <application>Invest</application> загружает текущие котировки акций, биржевые индексы, стоимость валют и драгоценных металлов. Котировки загружаются из <ulink url="http://finance.yahoo.com"> Yahoo! Finance</ulink> и отображаются в выпадающем списке.</para>
+    <para><application>Invest</application> предоставляет следующие возможности:</para>
+	<itemizedlist>
+            <listitem>
+              <para>Получает котировки акций, биржевых индексов, стоимость валют и драгоценных металлов из <ulink url="http://finance.yahoo.com"> Yahoo! Finance</ulink></para>
+            </listitem>
+            <listitem>
+              <para>Котировки автоматически обновляются каждые 15 минут</para>
+            </listitem>
+            <listitem>
+              <para>Отображает текущую цену, изменения на сегодня и график сегодняшних изменений</para>
+            </listitem>
+            <listitem>
+              <para>Отображает котировку валюты и, если настроено, автоматически преобразует её в нужную валюту</para>
+            </listitem>
+            <listitem>
+              <para>Сумма увеличения или уменьшения цены со времени покупки также переводится в нужную валюту</para>
+            </listitem>
+            <listitem>
+              <para>Процентное увеличение или уменьшение цены со времени покупки</para>
+            </listitem>
+	</itemizedlist>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="invest-applet-getting-started">
+    <title>Начало работы</title>
+
+                                                                                
+<!-- ============= To Start Invest ============================ -->
+    <sect2 id="invest-applet-to-add">
+      <title>Добавление Invest на панель</title>
+      <para>Чтобы добавить <application>Invest</application> на панель GNOME, щёлкните правой кнопкой мыши на панели, затем выберите <guilabel>Добавить на панель</guilabel>. Выберите <application>Invest</application> в диалоговом окне <guilabel>Добавить на панель</guilabel>, затем нажмите <guilabel>OK</guilabel>. Нажмите <guilabel>Закрыть</guilabel> для завершения.</para>
+    </sect2>
+    <sect2 id="invest-applet-to-remove">
+      <title>Удаление Invest с панели</title>
+      <para>Чтобы удалить <application>Invest</application> с панели GNOME, щёлкните правой кнопкой на значке, затем выберите <guilabel>Удалить с панели</guilabel>.</para>
+    </sect2>
+    <sect2 id="additional-applet-help">
+      <title>Подробнее</title>
+      <para>Подробнее о панели GNOME можно узнать из <ulink url="ghelp:user-guide?panels" type="help">документации на панель GNOME</ulink>.</para>
+    </sect2>
+  </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="invest-applet-usage">
+    <title>Использование Invest</title>
+    <para>Перед тем как апплет начнёт выдавать новые котировки его нужно настроить. Котировки могут быть получены из различных фондовых бирж мира, поэтому цены могут быть в различной валюте. Можно настроить автоматическую конвертацию валюты, а также конвертацию ваших приобретений в различных странах. И, наконец, для каждой настроенной котировки доступны графики.</para>
+
+    <sect2 id="invest-applet-configure-quotes">
+      <title>Настройка котировок</title>
+
+    <sect3 id="invest-applet-add-stocks">
+
+      <title>Добавление новых котировок в апплет</title>
+
+      <para>Чтобы добавить новые котировки в <application>Invest</application>, выполните следующие действия:</para>
+      <orderedlist>
+        <listitem>
+          <para>Щёлкните правой кнопкой мыши на значке и выберите <guilabel>Параметры</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Нажмите <guilabel>Добавить</guilabel> для добавления котировки в <application>Invest</application>.</para>
+        </listitem>
+        <listitem>
+          <para>Котировкой по умолчанию является GOOG. Первоначально, он выбран уже выбран для изменения, поэтому сразу его измените. Введите здесь <guilabel>Символ</guilabel> котировки.Если вы не знаете какой символ нужно использовать, то читайте далее.</para>
+        </listitem>
+	<listitem>
+	  <para>Затем щёлкните по <guilabel>Метке</guilabel> котировки и введите её правильное имя.</para>
+	</listitem>
+	<listitem>
+	  <para>Также вы можете изменить размер вашей доли в акциях, цену покупки и комиссию.</para>
+	</listitem>
+        <listitem>
+          <para>Нажмите <guilabel>Закрыть</guilabel>, когда закончите добавление котировок.</para>
+        </listitem>
+      </orderedlist>
+	<para>Если вы не знаете какой символ используется для нужной котировки, то перейдите на <ulink url="http://finance.yahoo.com/">http://finance.yahoo.com/</ulink>. Введите имя котировки в текстовом поле и левом верхнем углу экрана. При наборе будет показан изменяющийся список подходящих котировок. В первой колонке отображается символ котировки, во второй — название, а в третьей — фондовая биржа. Валюта котировки на разных биржах может быть разной, в зависимости от страны нахождения. Ниже показан снимок экрана во время поиска котировки «yahoo».</para>
+
+	<para><mediaobject><imageobject>
+	  <imagedata format="PNG" fileref="figures/symbol-search.png"/>
+	</imageobject></mediaobject> Снимок Yahoo! Finance при поиске котировки.</para>
+
+	<para>Invest поддерживает все котировки, которые есть на <ulink url="http://finance.yahoo.com/">Yahoo! Finance</ulink>. В частности, имеются следующие типы.</para>
+	<formalpara>
+	  <title>Акции, облигации и ценные бумаги</title>
+          <para>Доступно несколько основных котировок. Все имеющиеся можно найти на <ulink url="http://finance.yahoo.com/">Yahoo! Finance</ulink>.</para>
+	</formalpara>
+	<formalpara>
+	  <title>Биржевые индексы</title>
+          <para>Все котировки, начинающиеся со знака ^, на самом деле являются индексами — котировками, предоставляющими степень эффективности других котировок. Пример: Dow Jones Industrial Average (<ulink url="http://finance.yahoo.com/q?s=^DJI">^DJI</ulink>) и NASDAQ Composite (<ulink url="http://finance.yahoo.com/q?s=^IXIC">^IXIC</ulink>).</para>
+	</formalpara>
+	<formalpara>
+	  <title>Валютные курсы</title>
+          <para>Также доступны курсы обмена двух валют. Соответствующий символ составляется следующим образом. Конвертация валюты AAA в валюту BBB, или, другими словами, сколько стоит валюта AAA в валюте BBB, будет записана как AAABBB=X. Если вы хотите знать сколько EUR стоит один USD (сколько за один USD дают EUR), выберите <ulink url="http://finance.yahoo.com/q?s=usdeur%3DX">USDEUR=X</ulink>. Подробней об этом можно найти на <ulink url="http://finance.yahoo.com/currency-investing">странице валют Yahoo! Finance</ulink>. Валюты обозначаются в соответствии с <ulink url="http://en.wikipedia.org/wiki/Currency_code">кодами валют в ISO 4217</ulink>.</para>
+	</formalpara>
+	<formalpara>
+	  <title>Драгоценные металлы</title>
+          <para>В <ulink url="http://en.wikipedia.org/wiki/Currency_code">кодах валют ISO 4217</ulink> также перечислены драгоценные металлы как валюты. Это золото, серебро, палладий и платина. Их коды валют начинаются с X, за которым указывается обозначение химического элемента: XAU, XAG, XPD и XPT, соответственно. С такими кодами валют курс драгоценных металлов можно получить в любой валюте, доступной через обменные курсы, описанные ранее. Например, золото в USD обозначается как <ulink url="http://finance.yahoo.com/q?s=XAUUSD%3DX">XAUUSD=X</ulink>. Вы даже можете получить обратную стоимость (<ulink url="http://finance.yahoo.com/q?s=USDXAU%3DX">USDXAU=X</ulink>): сколько золота в тройских унциях можно получить за один USD?</para>
+	</formalpara>
+    </sect3>
+    <sect3 id="invest-applet-to-view-stocks">
+      <title>Просмотр настроенных котировок</title>
+      <para>Для просмотра выбранных котировок нажмите на значок <application>Invest</application> на панели. Появится список ваших котировок. Чтобы закрыть список, снова щёлкните по значку. Заметим, что котировки обновляются с 15 минутной задержкой.</para>
+    </sect3>
+
+    <sect3 id="invest-applet-to-refresh-stocks">
+
+      <title>Обновление отображаемой информации</title>
+      <para>Для немедленного обновления информации, отображаемой апплетом, нажмите правой кнопкой мыши на апплете, затем выберите <guilabel>Обновить</guilabel>.</para>
+    </sect3>
+    <sect3 id="invest-applet-to-remove-stocks">
+       <title>Удаление котировок из апплета</title>
+      <para>Чтобы удалить котировки из <application>Invest</application>, выполните следующие действия:</para>
+      <orderedlist>
+        <listitem>
+          <para>Щёлкните правой кнопкой мыши на значке и выберите <guilabel>Параметры</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Нажмите на строку, содержащий символ котировки, который вы хотите удалить.</para>
+        </listitem>
+        <listitem>
+          <para>Нажмите <guilabel>Удалить</guilabel>, чтобы удалить строку.</para>
+        </listitem>
+        <listitem>
+          <para>Нажмите <guilabel>Закрыть</guilabel>, когда закончите.</para>
+        </listitem>
+      </orderedlist> 
+    </sect3>
+   </sect2>
+
+    <sect2 id="invest-applet-configure-currencies">
+      <title>Настройка конвертации валюты</title>
+      <para>Invest отображает все котировки в их изначальных валютах, полученных из Yahoo! Finance. Если вы хотите просматривать все котировки в какой-то определённой валюте, то это можно настроить в окне параметров.</para>
+      <orderedlist>
+        <listitem>
+          <para>Щёлкните правой кнопкой мыши на значке и выберите <guilabel>Параметры</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Введите нужную валюту в текстовое поле <guilabel>Валюта</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Во время наборе в текстовом поле вам будут предлагаться подходящие валюты.</para>
+        </listitem>
+        <listitem>
+          <para>Выберите нужную валюту.</para>
+        </listitem>
+        <listitem>
+          <para>Заметьте, что в вашем списке котировок появился новый столбец <guilabel>Курс валюты</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Для всех покупок, где в полях <guilabel>Цена</guilabel> и <guilabel>Комиссия</guilabel> указана в оригинальной валюте, то в поле <guilabel>Курс валюты</guilabel> на момент покупки должен быть указан обменный курс из валюты покупки в нужную валюту.</para>
+        </listitem>
+        <listitem>
+          <para>Нажмите <guilabel>Закрыть</guilabel>, когда закончите.</para>
+        </listitem>
+      </orderedlist>
+      <para>Пример: вы купили одну акцию Yahoo! (YHOO) за 10.00 USD при курсе валюты 0.75 EUR за USD. Другими словами стоимость акции равна 7.50 EUR. Также вы оплатили комиссию 5.00 USD, что равно 3.75 EUR. При установки нужной валюты в EUR, введите значение EUR (нужная валюта) и оставьте <guilabel>Курс валюты</guilabel> равным 0.00, или введите значение USD (оригинальная валюта) и введите обменный курс EUR к USD (<ulink url="http://finance.yahoo.com/q?s=eurusd%3DX">USDEUR=X</ulink>).</para>
+      <tip>
+        <para>Поля <guilabel>Цена</guilabel> и <guilabel>Комиссия</guilabel> указываются в той же валюте.</para>
+      </tip>
+      <para>Если вы хотите удалить нужную валюту, просто очистите текстовое поле <guilabel>Валюта</guilabel>.</para>
+   </sect2>
+
+    <sect2 id="invest-applet-stock-charts-options">
+      <title>Параметры графика</title>
+      <para>Для каждой котировки из вашего списка доступен финансовый график. Для его просмотра выберите нужную котировку из настроенного списка и щёлкните по ней двойным нажатием клавиши мыши. Параметры диаграммы могут быть изменены из пункта <guilabel>Параметры</guilabel>.</para>
+	<sect3 id="invest-applet-stock-chart-options-date">
+	<title>Временной диапазон</title>
+              <para>Временной диапазон в правом верхнем углу окна задаёт временной интервал для отчёта. По умолчанию показываются данные за один день, но это можно изменить на: <guilabel>Сегодня</guilabel>, <guilabel>5 дней</guilabel>, <guilabel>3 месяца</guilabel>, <guilabel>6 месяцев</guilabel>, <guilabel>1 год</guilabel>, <guilabel>5 лет</guilabel>, <guilabel>Максимальный</guilabel>.</para>
+
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-graph">
+	<title>Стиль графика</title>
+              <para>Информация о цене во времени может быть изображена тремя различными способами. Вы можете выбрать линейный график, гистограмму или свечной график.</para>
+	  <itemizedlist>
+            <listitem>
+              <para><guilabel>Линейный график</guilabel> (<guilabel>l</guilabel>)</para>
+	      <para>Используется по умолчанию. Отображает информацию о цене во времени в простой форме, соединяя каждую конечную цену дня отдельной линией. Линейные графики котировок полезны, если аналитика всегда интересует только цена на момент закрытия.</para>
+            </listitem>
+            <listitem>
+              <para><guilabel>Гистограмма</guilabel> (<guilabel>b</guilabel>)</para>
+	      <para>Гистограмма предоставляет активность за весь день в виде одного вертикального столбца. Верхушка вертикальной линии указывает наибольшую цену при торговле за весь день, а низ указывает наименьшую цену. Цена закрытия отображается на правом краю столбца, а цена открытия — на левом краю столбца. Один столбец показывает один день торговли.</para>
+            </listitem>
+            <listitem>
+              <para><guilabel>Свечной график</guilabel> (<guilabel>c</guilabel>)</para>
+	      <para>Свечной график, в которой цены открытия и закрытия представлены верхом и низом прямоугольника, окружённого вертикальными линиями, которые соединяют наибольшую и наименьшую цены. Тело прямоугольника заполнено, если цена закрытия ниже цены открытия, и пустое, если цена закрытия выше цены открытия.</para>
+
+            </listitem>
+	</itemizedlist>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-ma">
+	<title>Скользящее среднее</title>
+              <para>Скользящее среднее — статистические ряды цен закрытия на протяжении последовательности дней торговли. Обычно, оно отображается на графике, подобном линейной диаграмме, для показа направления изменения цены.</para>
+	</sect3>
+
+	<sect3 id="invest-applet-stock-chart-options-ema">
+	<title>Экспоненциальное скользящее среднее</title>
+              <para>Экспоненциальное скользящее среднее (EMA) определяется как скользящее среднее, вычисленное в весе последних величин, более тяжёлых чем старые величины. Этот тип скользящего среднего реагирует быстрее на последние изменения цен, чем обычное скользящее среднее. 12- и 26-дневные EMA — популярные краткосрочные средние, а EMA старше 50 дней используются для обозначения долгосрочных направлений изменений.</para>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-overlays">
+	<title>Оверлеи</title>
+              <para>Оверлеи позволяют вам изображать сложные статистические измерения на одной диаграмме. К примеру, вы можете сравнивать конкурентоспособность отдельной котировки и индекса, такого как NASDAQ или DJIA.</para>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-indicators">
+	<title>Индикаторы</title>
+              <para>Индикаторы используются для попыток предсказать будущее финансовое направление. Правильное использование рынка индикаторов не описывается в руководстве Invest.</para>
+
+	</sect3>
+    </sect2>
+  </sect1>
+</article>

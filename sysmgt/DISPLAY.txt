@@ -1,0 +1,2 @@
+The global variable DISPLAY should be set according to the file
+/tmp/.Xn-lock,where n represents a number from 0.

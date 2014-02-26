@@ -1,0 +1,5 @@
+15_path-max.patch
+80_correct_minicommander_install.patch
+81_silent_applet_cleaning.patch
+86_deprecate_applets.patch
+git_no_gweather_3.8.patch

@@ -1,0 +1,1 @@
+xclilp -sel clip<~/.ssh/id_rsa.pub

@@ -1,0 +1,3119 @@
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Aviary.pl
+# Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+# gnomepl@aviary.pl
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Zbigniew Chyla <chyla@alice.ci.pwr.wroc.pl>, 1998-2003.
+# Kuba Winnicki <bw@idc.com.pl>, 1999.
+# Artur Flinta <aflinta@at.kernel.pl>, 2003-2006.
+# Zbigniew Braniecki <gandalf@aviary.pl>, 2007.
+# Stanisław Małolepszy <smalolepszy@aviary.pl>, 2007.
+# Tomasz Dominikowski <dominikowski@gmail.com>, 2008-2009.
+# Joanna Mazgaj <jmazgaj@aviary.pl>, 2009.
+# Wadim Dziedzic <wdziedzic@aviary.pl>, 2009.
+# Piotr Drąg <piotrdrag@gmail.com>, 2010-2012.
+# Aviary.pl <gnomepl@aviary.pl>, 2007-2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-03 22:36+0200\n"
+"PO-Revision-Date: 2012-09-03 22:37+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: Poland\n"
+
+#: ../accessx-status/applet.c:139
+msgid "Shows the state of AccessX features such as latched modifiers"
+msgstr "Wyświetla stan funkcji AccessX, takich jak modyfikatory zapadkowe"
+
+#. about.set_artists([])
+#. about.set_documenters([])
+#. translators: These appear in the About dialog, usual format applies.
+#. "documenters",        documenters,
+#: ../accessx-status/applet.c:144 ../battstat/battstat_applet.c:1203
+#: ../charpick/charpick.c:612 ../cpufreq/src/cpufreq-applet.c:611
+#: ../drivemount/drivemount.c:106 ../geyes/geyes.c:153
+#: ../gweather/gweather-about.c:55 ../invest-applet/invest/about.py:29
+#: ../mini-commander/src/about.c:53 ../mixer/applet.c:1424
+#: ../modemlights/modem-applet.c:1023 ../multiload/main.c:61
+#: ../stickynotes/stickynotes_applet_callbacks.c:383
+#: ../trashapplet/src/trashapplet.c:431
+msgid "translator-credits"
+msgstr ""
+"Zbigniew Chyla <chyla@alice.ci.pwr.wroc.pl>, 1998-2003\n"
+"Kuba Winnicki <bw@idc.com.pl>, 1999\n"
+"Artur Flinta <aflinta@at.kernel.pl>, 2003-2006\n"
+"Zbigniew Braniecki <gandalf@aviary.pl>, 2007\n"
+"Stanisław Małolepszy <smalolepszy@aviary.pl>, 2007\n"
+"Tomasz Dominikowski <dominikowski@gmail.com>, 2008-2009\n"
+"Joanna Mazgaj <jmazgaj@aviary.pl>, 2009\n"
+"Wadim Dziedzic <wdziedzic@aviary.pl>, 2009\n"
+"Piotr Drąg <piotrdrag@gmail.com>, 2010-2012\n"
+"Aviary.pl <gnomepl@aviary.pl>, 2007-2012"
+
+#: ../accessx-status/applet.c:169
+#, c-format
+msgid "There was an error launching the help viewer: %s"
+msgstr "Podczas uruchamianiu przeglądarki pomocy wystąpił błąd: %s"
+
+#: ../accessx-status/applet.c:201
+msgid "Open the keyboard preferences dialog"
+msgstr "Otwiera okno preferencji klawiatury"
+
+#: ../accessx-status/applet.c:219
+#, c-format
+msgid "There was an error launching the keyboard preferences dialog: %s"
+msgstr "Podczas uruchamianiu okna preferencji klawiatury wystąpił błąd: %s"
+
+#: ../accessx-status/applet.c:238
+msgid "_Keyboard Accessibility Preferences"
+msgstr "Preferencje dostępności _klawiatury"
+
+#: ../accessx-status/applet.c:241 ../battstat/battstat_applet.c:64
+#: ../charpick/charpick.c:719 ../cpufreq/src/cpufreq-applet.c:126
+#: ../drivemount/drivemount.c:144 ../geyes/geyes.c:318
+#: ../gweather/gweather-applet.c:124
+#: ../mini-commander/src/mini-commander_applet.c:56 ../mixer/applet.c:381
+#: ../modemlights/modem-applet.c:151 ../multiload/main.c:465
+#: ../stickynotes/stickynotes_applet.c:45 ../trashapplet/src/trashapplet.c:75
+msgid "_Help"
+msgstr "Pomo_c"
+
+#: ../accessx-status/applet.c:244 ../battstat/battstat_applet.c:67
+#: ../charpick/charpick.c:722 ../cpufreq/src/cpufreq-applet.c:129
+#: ../drivemount/drivemount.c:147 ../geyes/geyes.c:321
+#: ../gweather/gweather-applet.c:127
+#: ../mini-commander/src/mini-commander_applet.c:59 ../mixer/applet.c:384
+#: ../modemlights/modem-applet.c:154 ../multiload/main.c:468
+#: ../stickynotes/stickynotes_applet.c:48 ../trashapplet/src/trashapplet.c:78
+msgid "_About"
+msgstr "_O programie"
+
+#. Note to translators: the first letter of the alphabet, not the indefinite article
+#: ../accessx-status/applet.c:468 ../accessx-status/applet.c:508
+msgid "a"
+msgstr "a"
+
+#: ../accessx-status/applet.c:981 ../accessx-status/applet.c:1055
+#: ../accessx-status/applet.c:1124 ../accessx-status/applet.c:1290
+msgid "AccessX Status"
+msgstr "Stan AccessX"
+
+#: ../accessx-status/applet.c:982 ../accessx-status/applet.c:1125
+msgid "Shows keyboard status when accessibility features are used."
+msgstr "Wyświetla stan klawiatury, gdy używane są funkcje dostępności."
+
+#: ../accessx-status/applet.c:1017
+msgid "XKB Extension is not enabled"
+msgstr "Rozszerzenie XKB nie jest włączone"
+
+#: ../accessx-status/applet.c:1022
+msgid "Unknown error"
+msgstr "Nieznany błąd"
+
+#: ../accessx-status/applet.c:1030
+#, c-format
+msgid "Error: %s"
+msgstr "Błąd: %s"
+
+#: ../accessx-status/applet.c:1287
+#: ../accessx-status/org.gnome.applets.AccessxStatusApplet.panel-applet.in.in.h:3
+msgid "Keyboard Accessibility Status"
+msgstr "Stan dostępności klawiatury"
+
+#: ../accessx-status/applet.c:1292
+msgid "Displays current state of keyboard accessibility features"
+msgstr "Wyświetla bieżący stan funkcji dostępności klawiatury"
+
+#: ../accessx-status/org.gnome.applets.AccessxStatusApplet.panel-applet.in.in.h:1
+msgid "AccessX Status Applet Factory"
+msgstr "Generator apletu stan AccessX"
+
+#: ../accessx-status/org.gnome.applets.AccessxStatusApplet.panel-applet.in.in.h:2
+msgid "Keyboard Accessibility Status Applet Factory"
+msgstr "Generator apletu stanu dostępności klawiatury"
+
+#: ../accessx-status/org.gnome.applets.AccessxStatusApplet.panel-applet.in.in.h:4
+msgid "Shows the status of keyboard accessibility features"
+msgstr "Wyświetla stan funkcji dostępności klawiatury"
+
+#: ../battstat/battstat_applet.c:61 ../charpick/charpick.c:716
+#: ../cpufreq/src/cpufreq-applet.c:123 ../geyes/geyes.c:315
+#: ../gweather/gweather-applet.c:121
+#: ../mini-commander/src/mini-commander_applet.c:53 ../mixer/applet.c:387
+#: ../multiload/main.c:459 ../stickynotes/stickynotes_applet.c:42
+msgid "_Preferences"
+msgstr "_Preferencje"
+
+#: ../battstat/battstat_applet.c:72
+msgid "System is running on AC power"
+msgstr "Komputer jest zasilany z sieci"
+
+#: ../battstat/battstat_applet.c:73
+msgid "System is running on battery power"
+msgstr "Komputer jest zasilany z akumulatora"
+
+#: ../battstat/battstat_applet.c:339
+#, c-format
+msgid "Battery charged (%d%%)"
+msgstr "Naładowanie akumulatora (%d%%)"
+
+#: ../battstat/battstat_applet.c:341
+#, c-format
+msgid "Unknown time (%d%%) remaining"
+msgstr "Nieznany czas, pozostało (%d%%)"
+
+#: ../battstat/battstat_applet.c:343
+#, c-format
+msgid "Unknown time (%d%%) until charged"
+msgstr "Nieznany czas (%d%%) do naładowania"
+
+#: ../battstat/battstat_applet.c:348
+#, c-format
+msgid "%d minute (%d%%) remaining"
+msgid_plural "%d minutes (%d%%) remaining"
+msgstr[0] "pozostała %d minuta (%d%%)"
+msgstr[1] "pozostały %d minuty (%d%%)"
+msgstr[2] "pozostało %d minut (%d%%)"
+
+#: ../battstat/battstat_applet.c:353
+#, c-format
+msgid "%d minute until charged (%d%%)"
+msgid_plural "%d minutes until charged (%d%%)"
+msgstr[0] "%d minuta do naładowania (%d%%)"
+msgstr[1] "%d minuty do naładowania (%d%%)"
+msgstr[2] "%d minut do naładowania (%d%%)"
+
+#: ../battstat/battstat_applet.c:359
+#, c-format
+msgid "%d hour (%d%%) remaining"
+msgid_plural "%d hours (%d%%) remaining"
+msgstr[0] "pozostała %d godzina (%d%%)"
+msgstr[1] "pozostały %d godziny (%d%%)"
+msgstr[2] "pozostało %d godzin (%d%%)"
+
+#: ../battstat/battstat_applet.c:364
+#, c-format
+msgid "%d hour until charged (%d%%)"
+msgid_plural "%d hours until charged (%d%%)"
+msgstr[0] "%d godzina do naładowania (%d%%)"
+msgstr[1] "%d godziny do naładowania (%d%%)"
+msgstr[2] "%d godzin do naładowania (%d%%)"
+
+#. TRANSLATOR: "%d %s %d %s" are "%d hours %d minutes"
+#. * Swap order with "%2$s %2$d %1$s %1$d if needed
+#: ../battstat/battstat_applet.c:371
+#, c-format
+msgid "%d %s %d %s (%d%%) remaining"
+msgstr "pozostało %d %s %d %s (%d%%)"
+
+#: ../battstat/battstat_applet.c:372 ../battstat/battstat_applet.c:379
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "godzina"
+msgstr[1] "godziny"
+msgstr[2] "godzin"
+
+#: ../battstat/battstat_applet.c:373 ../battstat/battstat_applet.c:380
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "minuta"
+msgstr[1] "minuty"
+msgstr[2] "minut"
+
+#. TRANSLATOR: "%d %s %d %s" are "%d hours %d minutes"
+#. * Swap order with "%2$s %2$d %1$s %1$d if needed
+#: ../battstat/battstat_applet.c:378
+#, c-format
+msgid "%d %s %d %s until charged (%d%%)"
+msgstr "%d %s %d %s do naładowania (%d%%)"
+
+#: ../battstat/battstat_applet.c:392
+msgid "Battery Monitor"
+msgstr "Monitor akumulatora"
+
+#: ../battstat/battstat_applet.c:402 ../battstat/battstat_applet.c:461
+msgid "Your battery is now fully recharged"
+msgstr "Akumulator jest teraz w pełni naładowany"
+
+#: ../battstat/battstat_applet.c:438 ../battstat/battstat_applet.c:593
+msgid "Battery Notice"
+msgstr "Informacja akumulatora"
+
+#. we don't know the remaining time
+#: ../battstat/battstat_applet.c:538
+#, c-format
+msgid "You have %d%% of your total battery capacity remaining."
+msgstr "Pozostało %d%% pojemności akumulatora."
+
+#: ../battstat/battstat_applet.c:544
+#, c-format
+msgid ""
+"You have %d minute of battery power remaining (%d%% of the total capacity)."
+msgid_plural ""
+"You have %d minutes of battery power remaining (%d%% of the total capacity)."
+msgstr[0] "Pozostała %d minuta pracy na akumulatorze (%d%% całej pojemności)."
+msgstr[1] "Pozostały %d minuty pracy na akumulatorze (%d%% całej pojemności)."
+msgstr[2] "Pozostało %d minut pracy na akumulatorze (%d%% całej pojemności)."
+
+#. TRANSLATORS: this is a list, it is left as a single string
+#. * to allow you to make it appear like a list would in your
+#. * locale.  This is if the laptop does not support suspend.
+#: ../battstat/battstat_applet.c:556
+msgid ""
+"To avoid losing your work:\n"
+" • plug your laptop into external power, or\n"
+" • save open documents and shut your laptop down."
+msgstr ""
+"Aby zapobiec utracie danych, należy:\n"
+" • podłączyć komputer do gniazdka zasilania, albo\n"
+" • zapisać otwarte dokumenty i zakończyć pracę komputera."
+
+#. TRANSLATORS: this is a list, it is left as a single string
+#. * to allow you to make it appear like a list would in your
+#. * locale.  This is if the laptop supports suspend.
+#: ../battstat/battstat_applet.c:564
+msgid ""
+"To avoid losing your work:\n"
+" • suspend your laptop to save power,\n"
+" • plug your laptop into external power, or\n"
+" • save open documents and shut your laptop down."
+msgstr ""
+"Aby zapobiec utracie danych, należy:\n"
+" • uśpić komputer, aby zaoszczędzić energię,\n"
+" • podłączyć komputer do gniazdka zasilania, albo\n"
+" • zapisać otwarte dokumenty i zakończyć pracę komputera."
+
+#: ../battstat/battstat_applet.c:572
+msgid "Your battery is running low"
+msgstr "Niski poziom naładowania akumulatora"
+
+#: ../battstat/battstat_applet.c:667
+msgid "No battery present"
+msgstr "Brak akumulatora"
+
+#: ../battstat/battstat_applet.c:670
+msgid "Battery status unknown"
+msgstr "Nieznany stan akumulatora"
+
+#: ../battstat/battstat_applet.c:850
+msgid "N/A"
+msgstr "N/D"
+
+#: ../battstat/battstat_applet.c:1150 ../drivemount/drivemount.c:132
+#: ../geyes/geyes.c:303 ../geyes/themes.c:242 ../gweather/gweather-applet.c:70
+#: ../gweather/gweather-pref.c:746 ../mini-commander/src/preferences.c:366
+#: ../stickynotes/stickynotes_applet_callbacks.c:349
+#: ../stickynotes/stickynotes_applet_callbacks.c:565
+#: ../trashapplet/src/trashapplet.c:398
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Wystąpił błąd podczas wyświetlania pomocy: %s"
+
+#: ../battstat/battstat_applet.c:1190
+msgid "This utility shows the status of your laptop battery."
+msgstr "Narzędzie wyświetlające stan akumulatora laptopa."
+
+#. true
+#: ../battstat/battstat_applet.c:1192
+msgid "HAL backend enabled."
+msgstr "Włączona obsługa mechanizmu usługi HAL."
+
+#. false
+#: ../battstat/battstat_applet.c:1193
+msgid "Legacy (non-HAL) backend enabled."
+msgstr "Włączone wsparcie standardowe (nie używające usługi HAL)."
+
+#: ../battstat/battstat_applet.c:1569 ../battstat/battstat_applet.c:1622
+#: ../battstat/org.gnome.applets.BattstatApplet.panel-applet.in.in.h:2
+msgid "Battery Charge Monitor"
+msgstr "Monitor poziomu naładowania akumulatora"
+
+#: ../battstat/battstat_applet.c:1623
+#: ../battstat/org.gnome.applets.BattstatApplet.panel-applet.in.in.h:3
+msgid "Monitor a laptop's remaining power"
+msgstr "Monitoruje poziomu naładowania akumulatora w laptopie"
+
+#: ../battstat/battstat_applet.ui.h:1
+msgid "Battery Charge Monitor Preferences"
+msgstr "Preferencje monitora poziomu naładowania akumulatora"
+
+#: ../battstat/battstat_applet.ui.h:2
+msgid "Appearance"
+msgstr "Wygląd"
+
+#: ../battstat/battstat_applet.ui.h:3
+msgid "_Compact view"
+msgstr "_Widok kompaktowy"
+
+#: ../battstat/battstat_applet.ui.h:4
+msgid "(shows single image for status and charge)"
+msgstr "(wyświetla pojedynczy obrazek dla stanu i ładowania)"
+
+#: ../battstat/battstat_applet.ui.h:5
+msgid "_Expanded view"
+msgstr "W_idok rozszerzony"
+
+#: ../battstat/battstat_applet.ui.h:6
+msgid "(two images: one for status, one for charge)"
+msgstr "(dwa obrazki: jeden dla stanu, drugi dla ładowania)"
+
+#: ../battstat/battstat_applet.ui.h:7
+msgid "_Show time/percentage:"
+msgstr "_Wyświetlanie czasu/procentu:"
+
+#: ../battstat/battstat_applet.ui.h:8
+msgid "Show _time remaining"
+msgstr "Wyświetlanie pozostałego c_zasu"
+
+#: ../battstat/battstat_applet.ui.h:9
+msgid "Show _percentage remaining"
+msgstr "Wyświetlanie pozostałego p_rocentu"
+
+#: ../battstat/battstat_applet.ui.h:10
+msgid "Notifications"
+msgstr "Powiadomienia"
+
+#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge drops to: [XX] percent/minutes remaining'
+#: ../battstat/battstat_applet.ui.h:12
+msgid "_Warn when battery charge drops to:"
+msgstr "Os_trzeżenie o spadku poziomu naładowania do:"
+
+#: ../battstat/battstat_applet.ui.h:13
+msgid "_Notify when battery is fully recharged"
+msgstr "_Powiadomienie, gdy akumulator jest w pełni naładowany"
+
+#: ../battstat/battstat-hal.c:343 ../battstat/battstat-hal.c:368
+msgid "HAL error"
+msgstr "Błąd usługi HAL"
+
+#: ../battstat/battstat-hal.c:343
+msgid "Could not create libhal_ctx"
+msgstr "Nie można utworzyć libhal_ctx"
+
+#: ../battstat/battstat-hal.c:368
+msgid "No batteries found"
+msgstr "Brak akumulatora"
+
+#: ../battstat/battstat-hal.c:417
+#, c-format
+msgid "Unable to initialise HAL: %s: %s"
+msgstr "Nie można zainicjować usługi HAL; %s: %s"
+
+#: ../battstat/battstat.schemas.in.h:1
+msgid "Red value level"
+msgstr "Wartość poziomu czerwonego"
+
+#: ../battstat/battstat.schemas.in.h:2
+msgid ""
+"The battery level below which the battery is displayed as red. Also the "
+"value at which the low battery warning is displayed."
+msgstr ""
+"Poziom naładowania akumulatora, poniżej którego jego symbol jest wyświetlany "
+"na czerwono. Również wartość przy której jest wyświetlanie ostrzeżenie o "
+"rozładowaniu."
+
+#: ../battstat/battstat.schemas.in.h:3
+msgid "Warn on low time rather than low percentage"
+msgstr "Ostrzeżenie o pozostałym czasie zamiast procentach"
+
+#: ../battstat/battstat.schemas.in.h:4
+msgid ""
+"Use the value defined in red_value as a time remaining to show the warning "
+"dialog rather than a percentage."
+msgstr ""
+"Użycie wartości zdefiniowanej w red_value jako pozostałego czasu do "
+"wyświetlenia okna dialogowego zamiast procentów."
+
+#: ../battstat/battstat.schemas.in.h:5
+msgid "Low Battery Notification"
+msgstr "Powiadomienie o wyczerpanym akumulatorze"
+
+#: ../battstat/battstat.schemas.in.h:6
+msgid "Notify user when the battery is low."
+msgstr "Powiadomienie użytkownika o niskim poziomie naładowania akumulatora."
+
+#: ../battstat/battstat.schemas.in.h:7
+msgid "Full Battery Notification"
+msgstr "Powiadomienie o naładowanym akumulatorze"
+
+#: ../battstat/battstat.schemas.in.h:8
+msgid "Notify user when the battery is full."
+msgstr "Powiadomienie użytkownika o pełnym naładowaniu akumulatora."
+
+#: ../battstat/battstat.schemas.in.h:9
+msgid "Beep for warnings"
+msgstr "Dźwięk przy ostrzeżeniach"
+
+#: ../battstat/battstat.schemas.in.h:10
+msgid "Beep when displaying a warning."
+msgstr "Sygnał dźwiękowy podczas wyświetlania ostrzeżenia."
+
+#: ../battstat/battstat.schemas.in.h:11
+msgid "Drain from top"
+msgstr "Wyczerpywanie od góry"
+
+#: ../battstat/battstat.schemas.in.h:12
+msgid ""
+"Show the battery meter draining from the top of the battery. Only "
+"implemented for traditional battery view."
+msgstr ""
+"Wyświetlenie opadającego wskaźnika akumulatora. Zaimplementowany tylko dla "
+"tradycyjnego widoku akumulatora."
+
+#: ../battstat/battstat.schemas.in.h:13
+msgid "Upright (small) battery"
+msgstr "Mały akumulator (prawy górny róg)"
+
+#: ../battstat/battstat.schemas.in.h:14
+msgid "Show the upright, smaller battery on the panel."
+msgstr "Wyświetlanie w prawym górnym rogu panelu, mniejszego akumulatora."
+
+#: ../battstat/battstat.schemas.in.h:15
+msgid "Show the horizontal battery"
+msgstr "Wyświetlanie akumulatora poziomo"
+
+#: ../battstat/battstat.schemas.in.h:16
+msgid "Show the traditional, horizontal battery on the panel."
+msgstr "Wyświetlanie tradycyjnego, poziomego akumulatora na ekranie."
+
+#: ../battstat/battstat.schemas.in.h:17
+msgid "Show the time/percent label"
+msgstr "Wyświetlenie etykiety czas/procenty"
+
+#: ../battstat/battstat.schemas.in.h:18
+msgid "0 for no label, 1 for percentage and 2 for time remaining."
+msgstr "0 - brak etykiety, 1 - procenty, 2 - pozostały czas."
+
+#: ../battstat/org.gnome.applets.BattstatApplet.panel-applet.in.in.h:1
+msgid "Battstat Factory"
+msgstr "Generator stanu akumulatora"
+
+#. TRANSLATOR: this is a selectable item in a drop-down menu to end
+#. * this sentence:
+#. *   "Warn when battery charge drops to: [XX] percent".
+#.
+#: ../battstat/properties.c:314
+msgid "Percent"
+msgstr "procent"
+
+#. TRANSLATOR: this is a selectable item in a drop-down menu to end
+#. * this sentence:
+#. *   "Warn when battery charge drops to: [XX] minutes remaining"
+#.
+#: ../battstat/properties.c:320
+msgid "Minutes Remaining"
+msgstr "pozostałych minut"
+
+#: ../battstat/sounds/battstat_applet.soundlist.in.h:1
+msgid "Battery Status Utility"
+msgstr "Narzędzie monitorujące stan akumulatora"
+
+#: ../battstat/sounds/battstat_applet.soundlist.in.h:2
+msgid "Battery power low"
+msgstr "Akumulator jest na wyczerpaniu"
+
+#: ../battstat/sounds/battstat_applet.soundlist.in.h:3
+msgid "Battery fully re-charged"
+msgstr "Akumulator jest w pełni naładowany"
+
+#: ../charpick/charpick.c:438
+msgid "Available palettes"
+msgstr "Dostępne palety"
+
+#. TRANSLATOR: This sentance reads something like 'Insert "PILCROW SIGN"'
+#. *             hopefully, the name of the unicode character has already
+#. *             been translated.
+#.
+#: ../charpick/charpick.c:485
+#, c-format
+msgid "Insert \"%s\""
+msgstr "Wstawia \"%s\""
+
+#: ../charpick/charpick.c:488
+msgid "Insert special character"
+msgstr "Wstawia znak specjalny"
+
+#: ../charpick/charpick.c:492
+#, c-format
+msgid "insert special character %s"
+msgstr "wstaw znak specjalny %s"
+
+#: ../charpick/charpick.c:607
+msgid ""
+"Gnome Panel applet for selecting strange characters that are not on my "
+"keyboard. Released under GNU General Public Licence."
+msgstr ""
+"Aplet panelu GNOME, pozwalający wybierać nietypowe znaki, których nie ma na "
+"klawiaturze. Rozpowszechniany na warunkach licencji GNU GPL."
+
+#: ../charpick/charpick.c:745 ../charpick/charpick.c:759
+#: ../charpick/org.gnome.applets.CharpickerApplet.panel-applet.in.in.h:2
+#: ../charpick/properties.c:451
+msgid "Character Palette"
+msgstr "Paleta znaków"
+
+#: ../charpick/charpick.c:745
+#: ../charpick/org.gnome.applets.CharpickerApplet.panel-applet.in.in.h:3
+msgid "Insert characters"
+msgstr "Narzędzie do wstawiania znaków"
+
+#: ../charpick/charpick.schemas.in.h:1
+msgid "DEPRECATED - Characters shown on applet startup"
+msgstr "PRZESTARZAŁE - Znaki widoczne podczas uruchamiania apletu"
+
+#: ../charpick/charpick.schemas.in.h:2
+msgid "Characters shown on applet startup"
+msgstr "Znaki widoczne podczas uruchamiania apletu"
+
+#: ../charpick/charpick.schemas.in.h:3
+msgid ""
+"The string that the user had selected when the applet was last used. This "
+"string will be displayed when the user starts the applet."
+msgstr ""
+"Ciąg znaków, jaki użytkownik wybrał podczas ostatniego użycia apletu. Ciąg "
+"ten zostanie wyświetlony podczas uruchomienia apletu."
+
+#: ../charpick/charpick.schemas.in.h:4 ../charpick/properties.c:378
+msgid "List of available palettes"
+msgstr "Lista dostępnych palet"
+
+#: ../charpick/charpick.schemas.in.h:5
+msgid "List of strings containing the available palettes."
+msgstr "Lista ciągów znaków zawierających dostępne palety."
+
+#: ../charpick/org.gnome.applets.CharpickerApplet.panel-applet.in.in.h:1
+msgid "Charpicker Applet Factory"
+msgstr "Generator apletu wybieraka znaków"
+
+#: ../charpick/properties.c:28
+msgid "_Edit"
+msgstr "Z_modyfikuj"
+
+#: ../charpick/properties.c:116
+msgid "_Palette:"
+msgstr "_Paleta:"
+
+#: ../charpick/properties.c:124
+msgid "Palette entry"
+msgstr "Element palety"
+
+#: ../charpick/properties.c:125
+msgid "Modify a palette by adding or removing characters"
+msgstr "Modyfikacja palety przez dodawanie lub usuwanie znaków"
+
+#: ../charpick/properties.c:239
+msgid "Add Palette"
+msgstr "Dodanie palety"
+
+#: ../charpick/properties.c:276
+msgid "Edit Palette"
+msgstr "Edycja palety"
+
+#: ../charpick/properties.c:377
+msgid "Palettes list"
+msgstr "Lista palet"
+
+#: ../charpick/properties.c:456
+msgid "_Palettes:"
+msgstr "_Palety:"
+
+#: ../charpick/properties.c:472
+msgid "Add button"
+msgstr "Przycisk dodawania"
+
+#: ../charpick/properties.c:473
+msgid "Click to add a new palette"
+msgstr "Kliknięcie dodaje nową paletę"
+
+#: ../charpick/properties.c:480
+msgid "Edit button"
+msgstr "Przycisk modyfikowania"
+
+#: ../charpick/properties.c:481
+msgid "Click to edit the selected palette"
+msgstr "Kliknięcie modyfikuje wybraną paletę"
+
+#: ../charpick/properties.c:488
+msgid "Delete button"
+msgstr "Przycisk usuwania"
+
+#: ../charpick/properties.c:489
+msgid "Click to delete the selected palette"
+msgstr "Kliknięcie usuwa wybraną paletę"
+
+#: ../charpick/properties.c:540
+msgid "Character Palette Preferences"
+msgstr "Ustawienia palety znaków"
+
+#: ../cpufreq/cpufreq-applet.schemas.in.h:1
+msgid "CPU to Monitor"
+msgstr "Monitorowany procesor"
+
+#: ../cpufreq/cpufreq-applet.schemas.in.h:2
+msgid ""
+"Set the CPU to monitor. In a single processor system you don't have to "
+"change it."
+msgstr ""
+"Ustawia procesor do śledzenia. W systemach jednoprocesorowych, nie ma "
+"potrzeby zmieniania tego."
+
+#: ../cpufreq/cpufreq-applet.schemas.in.h:3
+msgid "Mode to show cpu usage"
+msgstr "Tryb wyświetlania zużycia procesora"
+
+#: ../cpufreq/cpufreq-applet.schemas.in.h:4
+msgid ""
+"A 0 value means to show the applet in graphic mode (pixmap only), 1 to show "
+"the applet in text mode (not to show the pixmap) and 2 to show the applet in "
+"graphic and text mode."
+msgstr ""
+"Wartość 0 oznacza wyświetlanie apletu w trybie graficznym (sama piksmapa), 1 "
+"wyświetlenie apletu w trybie tekstowym (bez wyświetlania piksmapy), 2 "
+"wyświetlenie grafiki i tekstu."
+
+#: ../cpufreq/cpufreq-applet.schemas.in.h:5
+msgid "The type of text to display (if the text is enabled)."
+msgstr "Rodzaj wyświetlanego tekstu (jeżeli tekst jest włączony)."
+
+#: ../cpufreq/cpufreq-applet.schemas.in.h:6
+msgid ""
+"A 0 value means to show cpu frequency, 1 to show frequency and units, and 2 "
+"to show percentage instead of frequency."
+msgstr ""
+"Wartość 0 oznacza wyświetlanie częstotliwości procesora, 1 częstotliwości i "
+"jednostek, 2 procentów zamiast częstotliwości."
+
+#: ../cpufreq/cpufreq-preferences.ui.h:1
+msgid "CPU Frequency Monitor Preferences"
+msgstr "Preferencje monitora częstotliwości procesora"
+
+#: ../cpufreq/cpufreq-preferences.ui.h:2
+msgid "Monitor Settings"
+msgstr "Ustawienia monitora"
+
+#: ../cpufreq/cpufreq-preferences.ui.h:3
+msgid "_Monitored CPU:"
+msgstr "_Monitorowane procesory:"
+
+#: ../cpufreq/cpufreq-preferences.ui.h:4
+msgid "Display Settings"
+msgstr "Ustawienia wyświetlania"
+
+#: ../cpufreq/cpufreq-preferences.ui.h:5
+msgid "_Appearance:"
+msgstr "_Wygląd:"
+
+#: ../cpufreq/cpufreq-preferences.ui.h:6
+msgid "Show CPU frequency as _frequency"
+msgstr "Wyświetlanie częstotliwości procesora jako _częstotliwość"
+
+#: ../cpufreq/cpufreq-preferences.ui.h:7
+msgid "Show frequency _units"
+msgstr "Wyświetlanie je_dnostek częstotliwości"
+
+#: ../cpufreq/cpufreq-preferences.ui.h:8
+msgid "Show CPU frequency as _percentage"
+msgstr "Wyświetlanie częstotliwości procesora w p_rocentach"
+
+#: ../cpufreq/org.gnome.applets.CPUFreqApplet.panel-applet.in.in.h:1
+#: ../cpufreq/src/cpufreq-applet.c:944 ../cpufreq/src/cpufreq-applet.c:1003
+msgid "CPU Frequency Scaling Monitor"
+msgstr "Monitor częstotliwości procesora"
+
+#: ../cpufreq/org.gnome.applets.CPUFreqApplet.panel-applet.in.in.h:2
+msgid "Monitor the CPU Frequency Scaling"
+msgstr "Śledzi zmiany częstotliwość pracy procesora"
+
+#: ../cpufreq/src/cpufreq-applet.c:579 ../cpufreq/src/cpufreq-prefs.c:478
+msgid "Could not open help document"
+msgstr "Nie można otworzyć dokumentu pomocy"
+
+#: ../cpufreq/src/cpufreq-applet.c:606
+msgid "This utility shows the current CPU Frequency Scaling."
+msgstr "Narzędzie wyświetla bieżącą zmianę częstotliwość procesora."
+
+#: ../cpufreq/src/cpufreq-applet.c:1004
+msgid "This utility shows the current CPU Frequency"
+msgstr "Narzędzie wyświetla bieżącą częstotliwość procesora"
+
+#: ../cpufreq/src/cpufreq-prefs.c:613
+msgid "Graphic"
+msgstr "Graficznym"
+
+#: ../cpufreq/src/cpufreq-prefs.c:618
+msgid "Text"
+msgstr "Tekstowym"
+
+#: ../cpufreq/src/cpufreq-prefs.c:623
+msgid "Graphic and Text"
+msgstr "Graficzno-tekstowym"
+
+#: ../cpufreq/src/cpufreq-monitor-cpuinfo.c:121
+msgid "Frequency Scaling Unsupported"
+msgstr "Zmiana częstotliwości nie jest obsługiwana"
+
+#. If there is no cpufreq support it shows only the cpu frequency,
+#. * I think is better than do nothing. I have to notify it to the user, because
+#. * he could think that cpufreq is supported but it doesn't work succesfully
+#.
+#: ../cpufreq/src/cpufreq-monitor-factory.c:59
+msgid "CPU frequency scaling unsupported"
+msgstr "Zmiana częstotliwości procesora nie jest obsługiwana"
+
+#: ../cpufreq/src/cpufreq-monitor-factory.c:60
+msgid ""
+"You will not be able to modify the frequency of your machine.  Your machine "
+"may be misconfigured or not have hardware support for CPU frequency scaling."
+msgstr ""
+"Nie będzie można zmieniać częstotliwości pracy procesora. Komputer może być "
+"niepoprawnie skonfigurowany, albo nie obsługuje sprzętowej zmiany "
+"częstotliwości."
+
+#: ../cpufreq/src/cpufreq-selector/org.gnome.cpufreqselector.policy.in.h:1
+msgid "Change CPU Frequency scaling"
+msgstr "Zmiany częstotliwości pracy procesora"
+
+#: ../cpufreq/src/cpufreq-selector/org.gnome.cpufreqselector.policy.in.h:2
+msgid "Privileges are required to change the CPU Frequency scaling."
+msgstr "Zmiana częstotliwości procesora wymaga uprawnień."
+
+#: ../drivemount/drive-button.c:342 ../drivemount/drive-button.c:355
+msgid "(mounted)"
+msgstr "(zamontowane)"
+
+#: ../drivemount/drive-button.c:344
+msgid "(not mounted)"
+msgstr "(nie zamontowane)"
+
+#: ../drivemount/drive-button.c:562
+msgid "Cannot start Nautilus File Manager"
+msgstr "Nie można uruchomić menedżera plików Nautilus"
+
+#: ../drivemount/drive-button.c:569
+msgid "Could not find Nautilus"
+msgstr "Nie można odnaleźć programu Nautilus"
+
+#: ../drivemount/drive-button.c:893
+msgid "_Play DVD"
+msgstr "_Odtwórz DVD"
+
+#: ../drivemount/drive-button.c:897
+msgid "_Play CD"
+msgstr "_Odtwórz CD"
+
+#: ../drivemount/drive-button.c:900
+#, c-format
+msgid "_Open %s"
+msgstr "_Otwórz %s"
+
+#: ../drivemount/drive-button.c:908
+#, c-format
+msgid "Un_mount %s"
+msgstr "O_dmontuj %s"
+
+#: ../drivemount/drive-button.c:914
+#, c-format
+msgid "_Mount %s"
+msgstr "_Zamontuj %s"
+
+#: ../drivemount/drive-button.c:922
+#, c-format
+msgid "_Eject %s"
+msgstr "_Wysuń %s"
+
+#: ../drivemount/drivemount.c:103
+msgid "Applet for mounting and unmounting block volumes."
+msgstr "Aplet służący do montowania oraz odmontowywania woluminów blokowych."
+
+#: ../drivemount/drivemount.c:164 ../drivemount/drivemount.c:201
+#: ../drivemount/org.gnome.applets.DriveMountApplet.panel-applet.in.in.h:3
+msgid "Disk Mounter"
+msgstr "Narzędzie do montowania dysków"
+
+#: ../drivemount/drivemount.schemas.in.h:1
+msgid "Interval timeout to check mount point status"
+msgstr "Okres czasu sprawdzania stanu punktów montowania"
+
+#: ../drivemount/drivemount.schemas.in.h:2
+msgid "Time in seconds between status updates"
+msgstr "Czas w sekundach pomiędzy aktualizacjami stanu"
+
+#: ../drivemount/org.gnome.applets.DriveMountApplet.panel-applet.in.in.h:1
+msgid "Drive Mount Applet Factory"
+msgstr "Generator apletu montowania napędów"
+
+#: ../drivemount/org.gnome.applets.DriveMountApplet.panel-applet.in.in.h:2
+msgid "Factory for drive mount applet"
+msgstr "Generator apletu montowania napędów"
+
+#: ../drivemount/org.gnome.applets.DriveMountApplet.panel-applet.in.in.h:4
+msgid "Mount local disks and devices"
+msgstr "Narzędzie montujące lokalne dyski i urządzenia"
+
+#: ../geyes/geyes.c:148
+msgid "A goofy set of eyes for the GNOME panel. They follow your mouse."
+msgstr "Zabawne oczy dla panelu GNOME. Śledzą ruchy myszy."
+
+#: ../geyes/geyes.c:348 ../geyes/geyes.c:379 ../geyes/geyes.c:381
+#: ../geyes/org.gnome.applets.GeyesApplet.panel-applet.in.in.h:2
+msgid "Eyes"
+msgstr "Oczy"
+
+#: ../geyes/geyes.c:382
+msgid "The eyes look in the direction of the mouse pointer"
+msgstr "Oczy patrzące w kierunku kursora myszy"
+
+#: ../geyes/geyes.schemas.in.h:1
+msgid "Directory in which the theme is located"
+msgstr "Katalog, w którym znajduje się motyw"
+
+#: ../geyes/org.gnome.applets.GeyesApplet.panel-applet.in.in.h:1
+msgid "Geyes Applet Factory"
+msgstr "Generator apletu Geyes"
+
+#: ../geyes/org.gnome.applets.GeyesApplet.panel-applet.in.in.h:3
+msgid "A set of eyeballs for your panel"
+msgstr "Oczy śledzące ruchy myszy"
+
+#: ../geyes/themes.c:127
+msgid "Can not launch the eyes applet."
+msgstr "Nie można uruchomić apletu Geyes."
+
+#: ../geyes/themes.c:128
+msgid "There was a fatal error while trying to load the theme."
+msgstr "Wystąpił poważny błąd podczas próby wczytania motywu."
+
+#: ../geyes/themes.c:301
+msgid "Geyes Preferences"
+msgstr "Preferencje apletu Geyes"
+
+#: ../geyes/themes.c:334
+msgid "Themes"
+msgstr "Motywy"
+
+#: ../geyes/themes.c:355
+msgid "_Select a theme:"
+msgstr "_Wybór motywu:"
+
+#: ../gweather/gweather-about.c:50
+msgid "© 1999-2005 by S. Papadimitriou and others"
+msgstr "© 1999-2005 S. Papadimitriou i inni"
+
+#: ../gweather/gweather-about.c:51
+msgid "A panel application for monitoring local weather conditions."
+msgstr "Program panelu monitorujący lokalne warunki pogodowe."
+
+#: ../gweather/gweather-applet.c:115
+msgid "_Details"
+msgstr "_Szczegóły"
+
+#: ../gweather/gweather-applet.c:118 ../gweather/gweather-dialog.c:215
+msgid "_Update"
+msgstr "_Odśwież"
+
+#: ../gweather/gweather-applet.c:329
+#: ../gweather/org.gnome.applets.GWeatherApplet.panel-applet.in.in.h:3
+msgid "Weather Report"
+msgstr "Raport pogodowy"
+
+#: ../gweather/gweather-applet.c:347 ../gweather/gweather-applet.c:351
+msgid "GNOME Weather"
+msgstr "Pogoda GNOME"
+
+#: ../gweather/gweather-applet.c:452
+msgid "Weather Forecast"
+msgstr "Prognoza pogody"
+
+#: ../gweather/gweather-applet.c:464
+#, c-format
+msgid ""
+"City: %s\n"
+"Sky: %s\n"
+"Temperature: %s"
+msgstr ""
+"Miasto: %s\n"
+"Zachmurzenie: %s\n"
+"Temperatura: %s"
+
+#: ../gweather/gweather-applet.c:513
+msgid "Updating..."
+msgstr "Aktualizowanie..."
+
+#: ../gweather/gweather-dialog.c:213
+msgid "Details"
+msgstr "Szczegóły"
+
+#: ../gweather/gweather-dialog.c:255
+msgid "City:"
+msgstr "Miasto:"
+
+#: ../gweather/gweather-dialog.c:263
+msgid "Last update:"
+msgstr "Ostatnia aktualizacja:"
+
+#: ../gweather/gweather-dialog.c:271
+msgid "Conditions:"
+msgstr "Warunki:"
+
+#: ../gweather/gweather-dialog.c:279
+msgid "Sky:"
+msgstr "Niebo:"
+
+#: ../gweather/gweather-dialog.c:287
+msgid "Temperature:"
+msgstr "Temperatura:"
+
+#: ../gweather/gweather-dialog.c:295
+msgid "Feels like:"
+msgstr "Temperatura odczuwalna:"
+
+#: ../gweather/gweather-dialog.c:303
+msgid "Dew point:"
+msgstr "Punkt rosy:"
+
+#: ../gweather/gweather-dialog.c:311
+msgid "Relative humidity:"
+msgstr "Wilgotność względna:"
+
+#: ../gweather/gweather-dialog.c:319
+msgid "Wind:"
+msgstr "Wiatr:"
+
+#: ../gweather/gweather-dialog.c:327
+msgid "Pressure:"
+msgstr "Ciśnienie:"
+
+#: ../gweather/gweather-dialog.c:335
+msgid "Visibility:"
+msgstr "Widoczność:"
+
+#: ../gweather/gweather-dialog.c:343
+msgid "Sunrise:"
+msgstr "Wschód słońca:"
+
+#: ../gweather/gweather-dialog.c:351
+msgid "Sunset:"
+msgstr "Zachód słońca:"
+
+#: ../gweather/gweather-dialog.c:485
+msgid "Current Conditions"
+msgstr "Aktualne warunki"
+
+#: ../gweather/gweather-dialog.c:502
+msgid "Forecast Report"
+msgstr "Raport pogodowy"
+
+#: ../gweather/gweather-dialog.c:502
+msgid "See the ForeCast Details"
+msgstr "Wyświetla szczegółową prognozę pogody"
+
+#: ../gweather/gweather-dialog.c:512
+msgid "Forecast"
+msgstr "Prognoza"
+
+#: ../gweather/gweather-dialog.c:520
+msgid "Radar Map"
+msgstr "Mapa radarowa"
+
+#: ../gweather/gweather-dialog.c:551
+msgid "_Visit Weather.com"
+msgstr "_Odwiedź Weather.com"
+
+#: ../gweather/gweather-dialog.c:552
+msgid "Visit Weather.com"
+msgstr "Wyświetla stronę Weather.com"
+
+#: ../gweather/gweather-dialog.c:552
+msgid "Click to Enter Weather.com"
+msgstr "Należy kliknąć, aby odwiedzić witrynę Weather.com"
+
+#: ../gweather/gweather-dialog.c:637
+msgid "Forecast not currently available for this location."
+msgstr "Dla tego położenia nie jest obecnie dostępna prognoza."
+
+#. Accessible Name and Description for the components in Preference Dialog
+#: ../gweather/gweather-pref.c:171
+msgid "Location view"
+msgstr "Widok położenia"
+
+#: ../gweather/gweather-pref.c:171
+msgid "Select Location from the list"
+msgstr "Wybór położenia z listy"
+
+#: ../gweather/gweather-pref.c:172
+msgid "Update spin button"
+msgstr "Wejście liczbowe odświeżania"
+
+#: ../gweather/gweather-pref.c:172
+msgid "Spinbutton for updating"
+msgstr "Wejście liczbowe związane z odświeżaniem"
+
+#: ../gweather/gweather-pref.c:173
+msgid "Address Entry"
+msgstr "Wejście adresu"
+
+#: ../gweather/gweather-pref.c:173
+msgid "Enter the URL"
+msgstr "Wprowadzenie adresu URL"
+
+#: ../gweather/gweather-pref.c:315
+msgid ""
+"Failed to load the Locations XML database.  Please report this as a bug."
+msgstr ""
+"Wczytanie bazy XML położeń się nie powiodło. Proszę to zgłosić jako błąd."
+
+#: ../gweather/gweather-pref.c:805
+msgid "Weather Preferences"
+msgstr "Ustawienia panelu pogodowego"
+
+#: ../gweather/gweather-pref.c:836 ../gweather/gweather-pref.c:1021
+msgid "_Automatically update every:"
+msgstr "_Automatyczna aktualizacja co:"
+
+#.
+#. * Units settings page.
+#.
+#. Temperature Unit
+#: ../gweather/gweather-pref.c:849
+msgid "_Temperature unit:"
+msgstr "Jednostka _temperatury:"
+
+#: ../gweather/gweather-pref.c:858 ../gweather/gweather-pref.c:878
+#: ../gweather/gweather-pref.c:904 ../gweather/gweather-pref.c:932
+msgid "Default"
+msgstr "Domyślna"
+
+#: ../gweather/gweather-pref.c:859
+msgid "Kelvin"
+msgstr "kelwin"
+
+#. TRANSLATORS: Celsius is sometimes referred Centigrade
+#: ../gweather/gweather-pref.c:861
+msgid "Celsius"
+msgstr "stopień Celsjusza"
+
+#: ../gweather/gweather-pref.c:862
+msgid "Fahrenheit"
+msgstr "stopień Fahrenheita"
+
+#. Speed Unit
+#: ../gweather/gweather-pref.c:869
+msgid "_Wind speed unit:"
+msgstr "_Jednostka prędkości wiatru:"
+
+#. TRANSLATOR: The wind speed unit "meters per second"
+#: ../gweather/gweather-pref.c:880
+msgid "m/s"
+msgstr "m/s"
+
+#. TRANSLATOR: The wind speed unit "kilometers per hour"
+#: ../gweather/gweather-pref.c:882
+msgid "km/h"
+msgstr "km/h"
+
+#. TRANSLATOR: The wind speed unit "miles per hour"
+#: ../gweather/gweather-pref.c:884
+msgid "mph"
+msgstr "mile/h"
+
+#. TRANSLATOR: The wind speed unit "knots"
+#: ../gweather/gweather-pref.c:886
+msgid "knots"
+msgstr "węzły"
+
+#: ../gweather/gweather-pref.c:888
+msgid "Beaufort scale"
+msgstr "Skala Beauforta"
+
+#. Pressure Unit
+#: ../gweather/gweather-pref.c:895
+msgid "_Pressure unit:"
+msgstr "Jednostka _ciśnienia:"
+
+#. TRANSLATOR: The pressure unit "kiloPascals"
+#: ../gweather/gweather-pref.c:906
+msgid "kPa"
+msgstr "kPa"
+
+#. TRANSLATOR: The pressure unit "hectoPascals"
+#: ../gweather/gweather-pref.c:908
+msgid "hPa"
+msgstr "hPa"
+
+#. TRANSLATOR: The pressure unit "millibars"
+#: ../gweather/gweather-pref.c:910
+msgid "mb"
+msgstr "mb"
+
+#. TRANSLATOR: The pressure unit "millibars of mercury"
+#: ../gweather/gweather-pref.c:912
+msgid "mmHg"
+msgstr "mmHg"
+
+#. TRANSLATOR: The pressure unit "inches of mercury"
+#: ../gweather/gweather-pref.c:914
+msgid "inHg"
+msgstr "inHg"
+
+#. TRANSLATOR: The pressure unit "atmospheres"
+#: ../gweather/gweather-pref.c:916
+msgid "atm"
+msgstr "atm"
+
+#. Distance Unit
+#: ../gweather/gweather-pref.c:923
+msgid "_Visibility unit:"
+msgstr "Jednostka _widoczności:"
+
+#. TRANSLATOR: The distance unit "meters"
+#: ../gweather/gweather-pref.c:934
+msgid "meters"
+msgstr "metry"
+
+#. TRANSLATOR: The distance unit "kilometers"
+#: ../gweather/gweather-pref.c:936
+msgid "km"
+msgstr "km"
+
+#. TRANSLATOR: The distance unit "miles"
+#: ../gweather/gweather-pref.c:938
+msgid "miles"
+msgstr "mile"
+
+#: ../gweather/gweather-pref.c:972
+msgid "Enable _radar map"
+msgstr "Mapa _radarowa"
+
+#: ../gweather/gweather-pref.c:986
+msgid "Use _custom address for radar map"
+msgstr "_Własny adres mapy radarowej"
+
+#: ../gweather/gweather-pref.c:1003
+msgid "A_ddress:"
+msgstr "Adr_es:"
+
+#: ../gweather/gweather-pref.c:1017
+msgid "Update"
+msgstr "Odświeżanie"
+
+#: ../gweather/gweather-pref.c:1041
+msgid "minutes"
+msgstr "minut"
+
+#: ../gweather/gweather-pref.c:1057
+msgid "Display"
+msgstr "Wyświetlanie"
+
+#: ../gweather/gweather-pref.c:1072
+#: ../mini-commander/src/mini-commander.ui.h:12
+msgid "General"
+msgstr "Ogólne"
+
+#: ../gweather/gweather-pref.c:1085
+msgid "_Select a location:"
+msgstr "Wybór p_ołożenia:"
+
+#: ../gweather/gweather-pref.c:1110
+msgid "_Find:"
+msgstr "_Znajdź:"
+
+#: ../gweather/gweather-pref.c:1117
+msgid "Find _Next"
+msgstr "Znajdź _następny"
+
+#: ../gweather/gweather-pref.c:1139
+msgid "Location"
+msgstr "Położenie"
+
+#: ../gweather/org.gnome.applets.GWeatherApplet.panel-applet.in.in.h:1
+msgid "Gweather Applet Factory"
+msgstr "Generator apletu Gweather"
+
+#: ../gweather/org.gnome.applets.GWeatherApplet.panel-applet.in.in.h:2
+msgid "Factory for creating the weather applet."
+msgstr "Generator tworzący aplet pogodowy."
+
+#: ../gweather/org.gnome.applets.GWeatherApplet.panel-applet.in.in.h:4
+msgid "Monitor the current weather conditions, and forecasts"
+msgstr "Monitor aktualnych warunków pogodowych i prognoza pogody"
+
+#: ../invest-applet/data/org.gnome.applets.InvestApplet.panel-applet.in.in.h:1
+msgid "Invest Applet Factory"
+msgstr "Generator apletu inwestycji"
+
+#: ../invest-applet/data/org.gnome.applets.InvestApplet.panel-applet.in.in.h:2
+msgid "Factory for creating the invest applet."
+msgstr "Generator tworzący aplet inwestycji."
+
+#: ../invest-applet/data/org.gnome.applets.InvestApplet.panel-applet.in.in.h:3
+#: ../invest-applet/invest/about.py:17
+msgid "Invest"
+msgstr "Inwestycje"
+
+#: ../invest-applet/data/org.gnome.applets.InvestApplet.panel-applet.in.in.h:4
+#: ../invest-applet/invest/about.py:20
+msgid "Track your invested money."
+msgstr "Śledzenie zainwestowanych pieniędzy."
+
+#: ../invest-applet/data/financialchart.ui.h:1
+#: ../invest-applet/invest/chart.py:112
+msgid "Financial Chart"
+msgstr "Wykres finansowy"
+
+#: ../invest-applet/data/financialchart.ui.h:2
+msgid "_Ticker symbol: "
+msgstr "_Symbol paska notowań: "
+
+#: ../invest-applet/data/financialchart.ui.h:3
+msgid "Auto _refresh"
+msgstr "Automatyczne o_dświeżanie"
+
+#: ../invest-applet/data/financialchart.ui.h:4
+msgid "Today"
+msgstr "Dzisiaj"
+
+#: ../invest-applet/data/financialchart.ui.h:5
+msgid "5 Days"
+msgstr "5 dni"
+
+#: ../invest-applet/data/financialchart.ui.h:6
+msgid "3 Months"
+msgstr "Kwartał"
+
+#: ../invest-applet/data/financialchart.ui.h:7
+msgid "6 Months"
+msgstr "Pół roku"
+
+#: ../invest-applet/data/financialchart.ui.h:8
+msgid "1 Year"
+msgstr "Rok"
+
+#: ../invest-applet/data/financialchart.ui.h:9
+msgid "5 Years"
+msgstr "5 lat"
+
+#: ../invest-applet/data/financialchart.ui.h:10
+msgid "Maximum"
+msgstr "Maksimum"
+
+#: ../invest-applet/data/financialchart.ui.h:11
+msgid "_Graph style: "
+msgstr "Styl wyk_resu: "
+
+#. see http://biz.yahoo.com/charts/guide11.html and http://en.wikipedia.org/wiki/Moving_average
+#: ../invest-applet/data/financialchart.ui.h:13
+msgid "Moving average: "
+msgstr "Średnia wykładnicza: "
+
+#. see http://biz.yahoo.com/charts/guide12.html and http://en.wikipedia.org/wiki/Moving_average#Exponential_moving_average
+#: ../invest-applet/data/financialchart.ui.h:15
+msgid "Exponential moving average: "
+msgstr "Ruchoma średnia wykładnicza: "
+
+#: ../invest-applet/data/financialchart.ui.h:16
+msgid "5"
+msgstr "5"
+
+#: ../invest-applet/data/financialchart.ui.h:17
+msgid "10"
+msgstr "10"
+
+#: ../invest-applet/data/financialchart.ui.h:18
+msgid "20"
+msgstr "20"
+
+#: ../invest-applet/data/financialchart.ui.h:19
+msgid "50"
+msgstr "50"
+
+#: ../invest-applet/data/financialchart.ui.h:20
+msgid "100"
+msgstr "100"
+
+#: ../invest-applet/data/financialchart.ui.h:21
+msgid "200"
+msgstr "200"
+
+#. see http://en.wikipedia.org/wiki/Technical_analysis#Overlays
+#: ../invest-applet/data/financialchart.ui.h:23
+msgid "Overlays: "
+msgstr "Powłoki: "
+
+#. Please keep this term short. For its meaning, see http://biz.yahoo.com/charts/guide13.html and http://en.wikipedia.org/wiki/Bollinger_bands
+#: ../invest-applet/data/financialchart.ui.h:25
+msgid "Bollinger"
+msgstr "Wstęga Bollingera"
+
+#. Please keep this term short. For its meaning, see http://biz.yahoo.com/charts/guide16.html and http://en.wikipedia.org/wiki/Parabolic_SAR
+#: ../invest-applet/data/financialchart.ui.h:27
+msgid "SAR"
+msgstr "SAR"
+
+#. Please keep this term short. For its meaning, see http://biz.yahoo.com/charts/guide6.html and http://en.wikipedia.org/wiki/Stock_split
+#: ../invest-applet/data/financialchart.ui.h:29
+msgid "Splits"
+msgstr "Splity"
+
+#. Please keep this term short. For its meaning, see http://biz.yahoo.com/charts/guide20.html and http://en.wikipedia.org/wiki/Volume_%28finance%29
+#: ../invest-applet/data/financialchart.ui.h:31
+msgid "Volumes"
+msgstr "Wolumen"
+
+#. see http://biz.yahoo.com/charts/guide10.html and http://en.wikipedia.org/wiki/Technical_indicator#Charting_terms_and_indicators
+#: ../invest-applet/data/financialchart.ui.h:33
+msgid "Indicators: "
+msgstr "Wskaźniki: "
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/Relative_Strength_Index
+#: ../invest-applet/data/financialchart.ui.h:35
+msgid "RSI"
+msgstr "RSI"
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/Volume_%28finance%29
+#: ../invest-applet/data/financialchart.ui.h:37
+msgid "Vol"
+msgstr "Obrót"
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/Money_flow_index
+#: ../invest-applet/data/financialchart.ui.h:39
+msgid "MFI"
+msgstr "MFI"
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/Stochastic_oscillator
+#: ../invest-applet/data/financialchart.ui.h:41
+msgid "Slow stoch"
+msgstr "Wskaźnik slow stoch"
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/Volume_%28finance%29
+#: ../invest-applet/data/financialchart.ui.h:43
+msgid "Vol+MA"
+msgstr "Obrót+MA"
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/Rate_of_change_%28technical_analysis%29
+#: ../invest-applet/data/financialchart.ui.h:45
+msgid "ROC"
+msgstr "ROC"
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/Stochastic_oscillator
+#: ../invest-applet/data/financialchart.ui.h:47
+msgid "Fast stoch"
+msgstr "Wskaźnik fast stoch"
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/Williams_%25R
+#: ../invest-applet/data/financialchart.ui.h:50
+#, no-c-format
+msgid "W%R"
+msgstr "W%R"
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/MACD
+#: ../invest-applet/data/financialchart.ui.h:52
+msgid "MACD"
+msgstr "MACD"
+
+#: ../invest-applet/data/financialchart.ui.h:53
+msgid "Line"
+msgstr "Linia"
+
+#: ../invest-applet/data/financialchart.ui.h:54
+msgid "Bar"
+msgstr "Pasek"
+
+#: ../invest-applet/data/financialchart.ui.h:55
+msgid "Candle"
+msgstr "Świeca"
+
+#: ../invest-applet/data/financialchart.ui.h:56
+msgid "Scale: "
+msgstr "Skala: "
+
+#: ../invest-applet/data/financialchart.ui.h:57
+msgid "Linear"
+msgstr "Liniowa"
+
+#: ../invest-applet/data/financialchart.ui.h:58
+msgid "Logarithmic"
+msgstr "Logarytmiczna"
+
+#: ../invest-applet/data/financialchart.ui.h:59
+msgid "_Options"
+msgstr "_Opcje"
+
+#: ../invest-applet/data/financialchart.ui.h:60
+msgid "Downloading chart from <b>Yahoo!</b>"
+msgstr "Pobieranie wykresu z serwisu <b>Yahoo!</b>"
+
+#: ../invest-applet/data/prefs-dialog.ui.h:1
+msgid "Invest Preferences"
+msgstr "Preferencje apletu inwestycji"
+
+#: ../invest-applet/data/prefs-dialog.ui.h:2
+msgid "label"
+msgstr "etykieta"
+
+#: ../invest-applet/data/prefs-dialog.ui.h:3
+msgid "Stocks"
+msgstr "Akcje"
+
+#. Instead of adding a single stock to the list of stocks, the 'Add Group' button adds a group (kind of a sub folder) to which numerous stocks can be added. A group here refers to a group of stocks.
+#: ../invest-applet/data/prefs-dialog.ui.h:5
+msgctxt " "
+msgid "Add Group"
+msgstr "Dodaj grupę"
+
+#. An index value (for instance the NASDAQ Composite) is based on a number of stocks. This option allows to also show the quotes of the stocks an index is based on.
+#: ../invest-applet/data/prefs-dialog.ui.h:7
+msgid "Show stocks of index values"
+msgstr "Wyświetlanie akcji wartości indeksów"
+
+#: ../invest-applet/data/prefs-dialog.ui.h:8
+msgid ""
+"An index value, for instance the <i>NASDAQ Composite</i> (^IXIC), is based "
+"on a number of stocks. This option allows to also show the quotes of the "
+"<i><b>stocks</b></i> an index is based on."
+msgstr ""
+"Wartość indeksu, na przykład <i>NASDAQ Composite</i> (^IXIC) jest oparta na "
+"liczbie akcji. Ta opcja umożliwia także wyświetlenie notowań <i><b>akcji</"
+"b></i>, na których oparty jest indeks."
+
+#: ../invest-applet/data/prefs-dialog.ui.h:9
+msgid "Hide charts in quotes list"
+msgstr "Ukrycie wykresów na liście notowań"
+
+#: ../invest-applet/data/prefs-dialog.ui.h:10
+msgid ""
+"A small chart image is shown next to each quote. The retrieval of each chart "
+"image causes network traffic. Hiding charts reduces the network bandwidth "
+"demand significantly."
+msgstr ""
+"Obok wszystkich notowań wyświetlane są małe wykresy. Pobieranie każdego "
+"wykresu powoduje ruch w sieci. Ukrycie wykresów znacznie zmniejsza wymagania "
+"prędkości sieci."
+
+#: ../invest-applet/data/prefs-dialog.ui.h:11
+msgid ""
+"<i><small><b>Source:</b> <a href=\"http://finance.yahoo.com/\">Yahoo! "
+"Finance</a> (at least 15 minutes delayed)</small></i>"
+msgstr ""
+"<i><small><b>Źródło:</b> <a href=\"http://finance.yahoo.com/\">Yahoo! "
+"Finance</a> (co najmniej 15 minut opóźnienia)</small></i>"
+
+#: ../invest-applet/data/prefs-dialog.ui.h:12
+msgid "Currency"
+msgstr "Waluta"
+
+#: ../invest-applet/data/prefs-dialog.ui.h:13
+msgid ""
+"Type the target currency to which all stock quotes will be converted to."
+msgstr ""
+"Typ waluty docelowej, do której zostaną przekształcone wszystkie notowania "
+"akcji."
+
+#. name, stock_id, label, accellerator, tooltip, callback
+#: ../invest-applet/invest/applet.py:24
+msgid "About"
+msgstr "O programie"
+
+#: ../invest-applet/invest/applet.py:25
+msgid "Help"
+msgstr "Pomoc"
+
+#: ../invest-applet/invest/applet.py:26
+msgid "Preferences"
+msgstr "Preferencje"
+
+#: ../invest-applet/invest/applet.py:27
+msgid "Refresh"
+msgstr "Odśwież"
+
+#. a) We aren't configured yet
+#: ../invest-applet/invest/applet.py:60
+msgid "<b>You have not entered any stock information yet</b>"
+msgstr "<b>Nie wprowadzono jeszcze żadnych informacji o akcjach</b>"
+
+#: ../invest-applet/invest/applet.py:65
+msgid "<b>No stock quotes are currently available</b>"
+msgstr "<b>Brak dostępnych notowań giełdowych</b>"
+
+#: ../invest-applet/invest/applet.py:66
+msgid ""
+"The server could not be contacted. The computer is either offline or the "
+"servers are down. Try again later."
+msgstr ""
+"Nie można połączyć się z serwerem. Komputer nie jest podłączony do internetu "
+"lub serwery przestały odpowiadać. Proszę spróbować później."
+
+#: ../invest-applet/invest/chart.py:161
+#, python-format
+msgid "Financial Chart - %s"
+msgstr "Wykres finansowy - %s"
+
+#: ../invest-applet/invest/chart.py:228
+msgid "Opening Chart"
+msgstr "Wykres otwarcia"
+
+#: ../invest-applet/invest/chart.py:243
+msgid "Chart downloaded"
+msgstr "Wykres pobrany"
+
+#: ../invest-applet/invest/chart.py:245
+msgid "Chart could not be downloaded"
+msgstr "Wykres nie mógł zostać pobrany"
+
+#: ../invest-applet/invest/preferences.py:44
+msgid "Symbol"
+msgstr "Symbol"
+
+#: ../invest-applet/invest/preferences.py:44
+msgid "Label"
+msgstr "Etykieta"
+
+#: ../invest-applet/invest/preferences.py:44
+msgid "Amount"
+msgstr "Ilość"
+
+#: ../invest-applet/invest/preferences.py:44
+msgid "Price"
+msgstr "Cena"
+
+#: ../invest-applet/invest/preferences.py:44
+msgid "Commission"
+msgstr "Marża"
+
+#: ../invest-applet/invest/preferences.py:44
+msgid "Currency Rate"
+msgstr "Wartość waluty"
+
+#: ../invest-applet/invest/preferences.py:244
+msgid "Stock Group"
+msgstr "Grupa akcji"
+
+#. translators: Asks the user to confirm deletion of a group of stocks
+#: ../invest-applet/invest/preferences.py:269
+msgid "Delete entire stock group?"
+msgstr "Usunąć całą grupę akcji?"
+
+#. translators: stocks can be grouped together into a "stock group".
+#. The user wants to delete a group, but the group still contains stocks.
+#. By deleting the group, also all stocks will be removed from configuration
+#: ../invest-applet/invest/preferences.py:277
+msgid ""
+"This removes all stocks contained in this stock group!\n"
+"Do you really want to remove this stock group?"
+msgstr ""
+"Spowoduje to usunięcie wszystkich akcji zawartych w tej grupie akcji.\n"
+"Na pewno ją usunąć?"
+
+#: ../invest-applet/invest/quotes.py:284
+msgid "Invest could not connect to Yahoo! Finance"
+msgstr "Aplet inwestycji nie mógł połączyć się z Yahoo! Finance"
+
+#. Translators: This is share-market jargon. It is the average percentage change of all stock prices. The %s gets replaced with the string value of the change (localized), including the percent sign.
+#: ../invest-applet/invest/quotes.py:327
+#, python-format
+msgid "Average change: %s"
+msgstr "Średnia zmiana: %s"
+
+# http://pol.proz.com/kudoz/english_to_polish/finance_general/2201546-balance_positions.html
+#. Translators: This is share-market jargon. It refers to the total difference between the current price and purchase price for all the shares put together for a particular currency. i.e. How much money would be earned if they were sold right now. The first string is the change value, the second the currency, and the third value is the percentage of the change, formatted using user's locale.
+#: ../invest-applet/invest/quotes.py:336
+#, python-format
+msgid "Positions balance: %s %s (%s)"
+msgstr "Pozycje bilansu: %s %s (%s)"
+
+#: ../invest-applet/invest/quotes.py:338
+#, python-format
+msgid "Updated at %s"
+msgstr "Zaktualizowano o %s"
+
+#. model: SYMBOL, LABEL, TICKER_ONLY, BALANCE, BALANCE_PCT, VALUE, VARIATION_PCT, PB
+#. Translators: these words all refer to a stock. Last is short
+#. for "last price". Gain is referring to the gain since the
+#. stock was purchased.
+#: ../invest-applet/invest/widgets.py:52
+msgid "Ticker"
+msgstr "Pasek notowań"
+
+#: ../invest-applet/invest/widgets.py:52
+msgid "Last"
+msgstr "Ostatnia"
+
+#: ../invest-applet/invest/widgets.py:52
+msgid "Change %"
+msgstr "Zmiana %"
+
+#: ../invest-applet/invest/widgets.py:52
+msgid "Chart"
+msgstr "Wykres"
+
+#: ../invest-applet/invest/widgets.py:52
+msgid "Gain"
+msgstr "Wzrost"
+
+#: ../invest-applet/invest/widgets.py:52
+msgid "Gain %"
+msgstr "Wzrost %"
+
+#: ../mini-commander/GNOME_MiniCommanderApplet.server.in.h:1
+msgid "Deskbar (formerly Mini-Commander)"
+msgstr "Deskbar (poprzednio miniaturowy wiersz poleceń)"
+
+#: ../mini-commander/GNOME_MiniCommanderApplet.server.in.h:2
+msgid "Deskbar (transparent upgrade from Mini-Commander)"
+msgstr "Deskbar (przezroczysta aktualizacja z miniaturowego wiersza poleceń)"
+
+#: ../mini-commander/src/about.c:48
+msgid ""
+"This GNOME applet adds a command line to the panel. It features command "
+"completion, command history, and changeable macros."
+msgstr ""
+"Aplet GNOME dodający do panelu wiersz poleceń. Obsługuje uzupełnianie "
+"poleceń, historię i zmienne makra."
+
+#: ../mini-commander/src/command_line.c:362
+msgid "No items in history"
+msgstr "Brak elementów w historii"
+
+#. build file select dialog
+#: ../mini-commander/src/command_line.c:488
+msgid "Start program"
+msgstr "Uruchom program"
+
+#: ../mini-commander/src/command_line.c:541
+msgid "Command line"
+msgstr "Wiersz poleceń"
+
+#: ../mini-commander/src/command_line.c:542
+msgid "Type a command here and Gnome will execute it for you"
+msgstr "Proszę wpisać tutaj polecenie powłoki, które ma zostać wykonane"
+
+#: ../mini-commander/src/mc-install-default-macros.c:80
+#, c-format
+msgid "Cannot get schema for %s: %s"
+msgstr "Nie można pobrać schematu dla %s : %s"
+
+#: ../mini-commander/src/mc-install-default-macros.c:111
+#, c-format
+msgid "Cannot set schema for %s: %s"
+msgstr "Nie można ustawić schematu dla %s : %s"
+
+#: ../mini-commander/src/mc-install-default-macros.c:117
+#, c-format
+msgid "Set default list value for %s\n"
+msgstr "Ustawiono domyślną wartość listy dla %s\n"
+
+#: ../mini-commander/src/mc-install-default-macros.c:129
+#, c-format
+msgid "GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL is set, not installing schemas\n"
+msgstr ""
+"Nie ustawiono GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL, rezygnacja z instalacji "
+"schematów\n"
+
+#: ../mini-commander/src/mc-install-default-macros.c:137
+#, c-format
+msgid "Must set the GCONF_CONFIG_SOURCE environment variable\n"
+msgstr "Należy ustawić zmienną środowiskową GCONF_CONFIG_SOURCE\n"
+
+#: ../mini-commander/src/mc-install-default-macros.c:154
+#, c-format
+msgid "Failed to access configuration source(s): %s\n"
+msgstr "Uzyskanie dostępu do źródła konfiguracji się nie powiodło: %s\n"
+
+#: ../mini-commander/src/mc-install-default-macros.c:169
+#, c-format
+msgid "Error syncing config data: %s"
+msgstr "Błąd podczas synchronizowania danych konfiguracji: %s"
+
+#: ../mini-commander/src/mini-commander-global.schemas.in.h:1
+#: ../mini-commander/src/mini-commander.schemas.in.h:26
+msgid "Macro pattern list"
+msgstr "Lista szablonów makr"
+
+#: ../mini-commander/src/mini-commander-global.schemas.in.h:2
+msgid "List of GConfValue entries containing strings for the macro patterns."
+msgstr ""
+"Lista elementów typu GConfValue zawierających ciągi znaków szablonów makr."
+
+#: ../mini-commander/src/mini-commander-global.schemas.in.h:3
+#: ../mini-commander/src/mini-commander.schemas.in.h:28
+msgid "Macro command list"
+msgstr "Lista poleceń makr"
+
+#: ../mini-commander/src/mini-commander-global.schemas.in.h:4
+msgid "List of GConfValue entries containing strings for the macro commands."
+msgstr ""
+"Lista elementów typu GConfValue zawierających ciągi znaków poleceń makr."
+
+#: ../mini-commander/src/mini-commander.ui.h:1
+msgid "Command Line Preferences"
+msgstr "Preferencje wiersza poleceń"
+
+#: ../mini-commander/src/mini-commander.ui.h:2
+msgid "Auto Completion"
+msgstr "Automatyczne uzupełnianie"
+
+#: ../mini-commander/src/mini-commander.ui.h:3
+msgid "E_nable history-based auto completion"
+msgstr "Automatycz_ne uzupełnianie poleceń oparte na historii"
+
+#: ../mini-commander/src/mini-commander.ui.h:4
+msgid "Size"
+msgstr "Rozmiar"
+
+#: ../mini-commander/src/mini-commander.ui.h:5
+#: ../stickynotes/stickynotes.ui.h:19
+msgid "_Width:"
+msgstr "_Szerokość:"
+
+#: ../mini-commander/src/mini-commander.ui.h:6 ../multiload/properties.c:524
+msgid "pixels"
+msgstr "pikseli"
+
+#: ../mini-commander/src/mini-commander.ui.h:7 ../multiload/properties.c:569
+msgid "Colors"
+msgstr "Kolory"
+
+#: ../mini-commander/src/mini-commander.ui.h:8
+msgid "_Use default theme colors"
+msgstr "Uży_cie domyślnych kolorów motywu"
+
+#: ../mini-commander/src/mini-commander.ui.h:9
+msgid "Command line _foreground:"
+msgstr "_Pierwszy plan wiersza poleceń:"
+
+#: ../mini-commander/src/mini-commander.ui.h:10
+msgid "Command line _background:"
+msgstr "_Tło wiersza poleceń:"
+
+#: ../mini-commander/src/mini-commander.ui.h:11
+msgid "Pick a color"
+msgstr "Wybór koloru"
+
+#: ../mini-commander/src/mini-commander.ui.h:13
+msgid "_Macros:"
+msgstr "_Makra:"
+
+#: ../mini-commander/src/mini-commander.ui.h:14
+msgid "_Add Macro..."
+msgstr "_Dodaj makro..."
+
+#: ../mini-commander/src/mini-commander.ui.h:15
+msgid "_Delete Macro"
+msgstr "_Usuń makro"
+
+#: ../mini-commander/src/mini-commander.ui.h:16
+msgid "Macros"
+msgstr "Makra"
+
+#: ../mini-commander/src/mini-commander.ui.h:17
+msgid "Add New Macro"
+msgstr "Nowe makro"
+
+#: ../mini-commander/src/mini-commander.ui.h:18
+msgid "_Pattern:"
+msgstr "_Wzór:"
+
+#: ../mini-commander/src/mini-commander.ui.h:19
+msgid "Co_mmand:"
+msgstr "_Polecenie:"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:1
+msgid "Show handle"
+msgstr "Wyświetlanie uchwytu"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:2
+msgid "Show a handle so the applet can be detached from the panel."
+msgstr "Wyświetlanie uchwytu umożliwiającego odpięcie apletu od panelu."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:3
+msgid "Show frame"
+msgstr "Wyświetlanie ramki"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:4
+msgid "Show a frame surrounding the applet."
+msgstr "Wyświetlanie ramki dookoła apletu."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:5
+msgid "Perform history autocompletion"
+msgstr "Automatyczne uzupełnianie poleceń oparte na historii"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:6
+msgid "Attempt to autocomplete a command from the history of commands entered."
+msgstr "Określa, czy uzupełniać wpisywane polecenia na podstawie historii."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:7
+msgid "Width"
+msgstr "Szerokość"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:8
+msgid "Width of the applet"
+msgstr "Szerokość apletu"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:9
+msgid "Not used anymore"
+msgstr "Już nieużywane"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:10
+msgid "Use the default theme colors"
+msgstr "Użycie domyślnych kolorów motywu"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:11
+msgid "Use theme colors instead of custom ones."
+msgstr "Użycie domyślnych kolorów motywu zamiast własnych."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:12
+msgid "Foreground color, red component"
+msgstr "Kolor podstawowy, składowa czerwona"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:13
+msgid "The red component of the foreground color."
+msgstr "Składowa czerwona koloru pierwszego planu."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:14
+msgid "Foreground color, green component"
+msgstr "Kolor podstawowy, składowa zielona"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:15
+msgid "The green component of the foreground color."
+msgstr "Składowa zielona koloru pierwszego planu."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:16
+msgid "Foreground color, blue component"
+msgstr "Kolor podstawowy, składowa niebieska"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:17
+msgid "The blue component of the foreground color."
+msgstr "Składowa niebieska koloru pierwszego planu."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:18
+msgid "Background color, red component"
+msgstr "Kolor tła, składowa czerwona"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:19
+msgid "The red component of the background color."
+msgstr "Składowa czerwona koloru tła."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:20
+msgid "Background color, green component"
+msgstr "Kolor tła, składowa zielona"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:21
+msgid "The green component of the background color."
+msgstr "Składowa zielona koloru tła."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:22
+msgid "Background color, blue component"
+msgstr "Kolor tła, składowa niebieska"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:23
+msgid "The blue component of the background color."
+msgstr "Składowa niebieska koloru tła."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:24
+msgid "History list"
+msgstr "Lista historii"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:25
+msgid "List of GConfValue entries containing strings for history entries."
+msgstr ""
+"Lista elementów typu GConfValue zawierających ciągi znaków elementów "
+"historii."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:27
+msgid ""
+"This per-applet key is deprecated in favour of the global key, /schemas/apps/"
+"mini-commander-global/macro_patterns."
+msgstr ""
+"Ten klucz apletu jest przestarzały i zastąpiony przez globalny klucz, /"
+"schemas/apps/mini-commander-global/macro_patterns."
+
+#: ../mini-commander/src/mini-commander_applet.c:242
+#: ../mini-commander/src/mini-commander_applet.c:246
+msgid "Browser"
+msgstr "Przeglądarka"
+
+#: ../mini-commander/src/mini-commander_applet.c:247
+msgid "Click this button to start the browser"
+msgstr "Proszę kliknąć ten przycisk, aby otworzyć przeglądarkę"
+
+#: ../mini-commander/src/mini-commander_applet.c:260
+#: ../mini-commander/src/mini-commander_applet.c:264
+msgid "History"
+msgstr "Historia"
+
+#: ../mini-commander/src/mini-commander_applet.c:265
+msgid "Click this button for the list of previous commands"
+msgstr "Proszę kliknąć ten przycisk, aby uzyskać listę poprzednich poleceń"
+
+#: ../mini-commander/src/mini-commander_applet.c:346
+msgid "Command line has been disabled by your system administrator"
+msgstr "Wiersz poleceń został zablokowany przez twojego administratora systemu"
+
+#: ../mini-commander/src/mini-commander_applet.c:360
+#: ../mini-commander/src/org.gnome.applets.MiniCommanderApplet.panel-applet.in.in.h:2
+msgid "Command Line"
+msgstr "Wiersz poleceń"
+
+#: ../mini-commander/src/mini-commander_applet.c:406
+msgid "Mini-Commander applet"
+msgstr "Aplet Mini-Commander"
+
+#: ../mini-commander/src/mini-commander_applet.c:407
+msgid "This applet adds a command line to the panel"
+msgstr "Aplet ten dodaje do panelu wiersz poleceń"
+
+#: ../mini-commander/src/org.gnome.applets.MiniCommanderApplet.panel-applet.in.in.h:1
+msgid "MiniCommander Applet Factory"
+msgstr "Generator apletu MiniCommander"
+
+#: ../mini-commander/src/org.gnome.applets.MiniCommanderApplet.panel-applet.in.in.h:3
+msgid "Mini-Commander"
+msgstr "Miniaturowy wiersz poleceń"
+
+#: ../mini-commander/src/preferences.c:401
+msgid "You must specify a pattern"
+msgstr "Należy podać wzorzec"
+
+#: ../mini-commander/src/preferences.c:405
+msgid "You must specify a pattern and a command"
+msgstr "Należy podać wzorzec i polecenie"
+
+#: ../mini-commander/src/preferences.c:406
+msgid "You must specify a command"
+msgstr "Należy podać polecenie"
+
+#: ../mini-commander/src/preferences.c:409
+msgid "You may not specify duplicate patterns"
+msgstr "Nie można dwukrotnie użyć tego samego wzorca"
+
+#: ../mini-commander/src/preferences.c:779
+msgid "Pattern"
+msgstr "Wzorzec"
+
+#: ../mini-commander/src/preferences.c:789
+msgid "Command"
+msgstr "Polecenie"
+
+#: ../mixer/applet.c:179
+msgid "Volume Applet"
+msgstr "Regulacja głośności"
+
+#. tooltip over applet
+#: ../mixer/applet.c:195 ../mixer/applet.c:216
+#: ../mixer/org.gnome.applets.MixerApplet.panel-applet.in.in.h:1
+#: ../null_applet/null_applet.c:55 ../null_applet/null_applet.c:57
+msgid "Volume Control"
+msgstr "Regulacja głośności"
+
+#: ../mixer/applet.c:378
+msgid "_Open Volume Control"
+msgstr "_Otwórz regulację głośności"
+
+#: ../mixer/applet.c:392
+msgid "Mu_te"
+msgstr "_Wyciszenie"
+
+#: ../mixer/applet.c:558
+msgid ""
+"The volume control did not find any elements and/or devices to control. This "
+"means either that you don't have the right GStreamer plugins installed, or "
+"that you don't have a sound card configured."
+msgstr ""
+"Regulator głośności nie znalazł żadnego elementu i/lub urządzeń do obsługi. "
+"Oznacza to, że nie są zainstalowane odpowiednie wtyczki biblioteki GStreamer "
+"lub karta dźwiękowa nie jest skonfigurowana."
+
+#: ../mixer/applet.c:562
+msgid ""
+"You can remove the volume control from the panel by right-clicking the "
+"speaker icon on the panel and selecting \"Remove From Panel\" from the menu."
+msgstr ""
+"Można usunąć regulację głośności z panelu poprzez kliknięcie prawym "
+"przyciskiem na ikonie głośnika na panelu i wybranie z menu \"Usuń z panelu\"."
+
+#: ../mixer/applet.c:745
+#, c-format
+msgid "Failed to start Volume Control: %s"
+msgstr "Uruchomienie regulacji głośności się nie powiodło: %s"
+
+#: ../mixer/applet.c:1160
+#, c-format
+msgid "%s: muted"
+msgstr "%s: wyciszone"
+
+#. Translator comment: I'm not all too sure if this makes sense
+#. * to mark as a translation, but anyway. The string is a list of
+#. * selected tracks, the number is the volume in percent. You
+#. * most likely want to keep this as-is.
+#: ../mixer/applet.c:1166
+#, c-format
+msgid "%s: %d%%"
+msgstr "%s: %d%%"
+
+#: ../mixer/applet.c:1402
+#, c-format
+msgid "Failed to display help: %s"
+msgstr "Wyświetlenie pomocy się nie powiodło: %s"
+
+#: ../mixer/applet.c:1415
+msgid "Volume control for your GNOME Panel."
+msgstr "Regulacja głośności dla panelu GNOME."
+
+#: ../mixer/applet.c:1416
+msgid "Using GStreamer 0.10."
+msgstr "Używa biblioteki GStreamer 0.10."
+
+#: ../mixer/dock.c:219
+msgid "Mute"
+msgstr "Wyciszenie"
+
+#: ../mixer/dock.c:225
+msgid "Volume Control..."
+msgstr "Regulacja głośności..."
+
+#: ../mixer/load.c:86
+#, c-format
+msgid "Unknown Volume Control %d"
+msgstr "Nieznana regulacja głośności %d"
+
+#: ../mixer/mixer.schemas.in.h:1
+msgid "Channel controlled by applet. Only for OSS setups"
+msgstr "Kanał obsługiwany przez aplet. Tylko w systemach z OSS"
+
+#: ../mixer/mixer.schemas.in.h:2
+msgid "Saved mute state"
+msgstr "Zapisany stan wyciszenia"
+
+#: ../mixer/mixer.schemas.in.h:3
+msgid "Saved volume to restore on startup"
+msgstr "Zapisana głośność do odtworzenia podczas uruchomienia"
+
+#: ../mixer/org.gnome.applets.MixerApplet.panel-applet.in.in.h:2
+msgid "Adjust the sound volume"
+msgstr "Zmienia poziom głośności"
+
+#. make window look cute
+#: ../mixer/preferences.c:90
+msgid "Volume Control Preferences"
+msgstr "Preferencje regulacji głośności"
+
+#: ../mixer/preferences.c:102
+msgid "Select the device and track to control."
+msgstr "Proszę wybrać obsługiwane urządzenie i kanał."
+
+#: ../modemlights/modem-applet.c:142
+msgid "_Activate"
+msgstr "_Aktywuj"
+
+#: ../modemlights/modem-applet.c:145
+msgid "_Deactivate"
+msgstr "_Deaktywuj"
+
+#: ../modemlights/modem-applet.c:148 ../stickynotes/stickynotes.ui.h:4
+msgid "_Properties"
+msgstr "_Właściwości"
+
+#: ../modemlights/modem-applet.c:184
+#: ../modemlights/org.gnome.applets.ModemApplet.panel-applet.in.in.h:1
+msgid "Modem Monitor"
+msgstr "Monitor modemu"
+
+#: ../modemlights/modem-applet.c:710
+msgid "Connection active, but could not get connection time"
+msgstr "Połączenie aktywne, ale nie można pobrać czasu połączenia"
+
+#: ../modemlights/modem-applet.c:726
+#, c-format
+msgid "Time connected: %.1d:%.2d"
+msgstr "Czas połączenia: %.1d:%.2d"
+
+#: ../modemlights/modem-applet.c:730
+msgid "Not connected"
+msgstr "Brak połączenia"
+
+#: ../modemlights/modem-applet.c:752
+msgid ""
+"To connect to your Internet service provider, you need administrator "
+"privileges"
+msgstr ""
+"Aby połączyć się z dostawcą usług internetowych, wymagane są uprawnienia "
+"administratora"
+
+#: ../modemlights/modem-applet.c:753
+msgid ""
+"To disconnect from your Internet service provider, you need administrator "
+"privileges"
+msgstr ""
+"Aby rozłączyć się z dostawcą usług internetowych, wymagane są uprawnienia "
+"administratora"
+
+#: ../modemlights/modem-applet.c:828
+msgid "The entered password is invalid"
+msgstr "Wprowadzone hasło jest nieprawidłowe"
+
+#: ../modemlights/modem-applet.c:830
+msgid ""
+"Check that you have typed it correctly and that you haven't activated the "
+"\"caps lock\" key"
+msgstr ""
+"Proszę sprawdzić, czy zostało wprowadzone poprawnie, oraz czy nie wciśnięto "
+"klawisza \"CapsLock\""
+
+#: ../modemlights/modem-applet.c:932
+msgid "Do you want to connect?"
+msgstr "Połączyć?"
+
+#: ../modemlights/modem-applet.c:933
+msgid "Do you want to disconnect?"
+msgstr "Rozłączyć?"
+
+#: ../modemlights/modem-applet.c:942
+msgid "C_onnect"
+msgstr "_Połącz"
+
+#: ../modemlights/modem-applet.c:942
+msgid "_Disconnect"
+msgstr "_Rozłącz"
+
+#: ../modemlights/modem-applet.c:995
+msgid "Could not launch network configuration tool"
+msgstr "Nie można uruchomić narzędzia konfiguracji sieci"
+
+#: ../modemlights/modem-applet.c:997
+msgid ""
+"Check that it's installed in the correct path and that it has the correct "
+"permissions"
+msgstr ""
+"Proszę sprawdzić, czy jest zainstalowane w poprawnym położeniu, oraz czy ma "
+"nadane właściwe uprawnienia"
+
+#: ../modemlights/modem-applet.c:1020
+msgid "Applet for activating and monitoring a dial-up network connection."
+msgstr ""
+"Aplet służący do aktywacji i monitorowania wdzwanianego połączenia "
+"sieciowego."
+
+#: ../modemlights/modemlights.ui.h:1
+msgid "Enter password"
+msgstr "Proszę podać hasło"
+
+#: ../modemlights/modemlights.ui.h:2
+msgid "Root password required"
+msgstr "Wymagane hasło administratora"
+
+#: ../modemlights/modemlights.ui.h:3
+msgid "Password:"
+msgstr "Hasło:"
+
+#: ../modemlights/modemlights.ui.h:4
+msgid "Connecting with Internet Service Provider"
+msgstr "Łączenie z dostawcą usług internetowych"
+
+#: ../modemlights/org.gnome.applets.ModemApplet.panel-applet.in.in.h:2
+msgid "Activate and monitor a dial-up network connection"
+msgstr "Aktywuje i monitoruje wdzwaniane połączenie sieciowe"
+
+#: ../multiload/main.c:56
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"Monitor obciążenia systemu wyświetlający wykresy dla procesora, pamięci, "
+"przestrzeni wymiany oraz sieci."
+
+#: ../multiload/main.c:129
+msgid "Start system-monitor"
+msgstr "Uruchamia monitor systemu"
+
+#: ../multiload/main.c:150
+#, c-format
+msgid "There was an error executing '%s': %s"
+msgstr "Podczas wykonywania \"%s\" wystąpił błąd: %s"
+
+#: ../multiload/main.c:278 ../multiload/properties.c:594
+msgid "Processor"
+msgstr "Procesor"
+
+#: ../multiload/main.c:280 ../multiload/properties.c:602
+msgid "Memory"
+msgstr "Pamięć"
+
+#: ../multiload/main.c:282 ../multiload/properties.c:610
+msgid "Network"
+msgstr "Sieć"
+
+#: ../multiload/main.c:284 ../multiload/properties.c:617
+msgid "Swap Space"
+msgstr "Obszar wymiany"
+
+#: ../multiload/main.c:286 ../multiload/main.c:365
+msgid "Load Average"
+msgstr "Średnie obciążenie"
+
+#: ../multiload/main.c:288
+msgid "Disk"
+msgstr "Dysk"
+
+#. xgettext: use and cache are > 1 most of the time,
+#. please assume that they always are.
+#.
+#: ../multiload/main.c:304
+#, c-format
+msgid ""
+"%s:\n"
+"%u%% in use by programs\n"
+"%u%% in use as cache"
+msgstr ""
+"%s:\n"
+"%u%% w użyciu przez programy\n"
+"%u%% w użyciu jako bufor"
+
+#: ../multiload/main.c:312
+#, c-format
+msgid "The system load average is %0.02f"
+msgstr "Średnie obciążenie systemu wynosi %0.02f"
+
+#. xgettext: same as in graphic tab of g-s-m
+#: ../multiload/main.c:320
+#, c-format
+msgid ""
+"%s:\n"
+"Receiving %s\n"
+"Sending %s"
+msgstr ""
+"%s:\n"
+"Odbieranie %s\n"
+"Wysyłanie %s"
+
+#: ../multiload/main.c:336
+#, c-format
+msgid ""
+"%s:\n"
+"%u%% in use"
+msgid_plural ""
+"%s:\n"
+"%u%% in use"
+msgstr[0] ""
+"%s:\n"
+"użyte %u%%"
+msgstr[1] ""
+"%s:\n"
+"użyte %u%%"
+msgstr[2] ""
+"%s:\n"
+"użyte %u%%"
+
+#: ../multiload/main.c:361
+msgid "CPU Load"
+msgstr "Obciążenie CPU"
+
+#: ../multiload/main.c:362
+msgid "Memory Load"
+msgstr "Wykorzystanie pamięci operacyjnej"
+
+#: ../multiload/main.c:363
+msgid "Net Load"
+msgstr "Obciążenie sieci"
+
+#: ../multiload/main.c:364
+msgid "Swap Load"
+msgstr "Wykorzystanie obszaru wymiany"
+
+#: ../multiload/main.c:366
+msgid "Disk Load"
+msgstr "Obciążenie dysku"
+
+#: ../multiload/main.c:462
+msgid "_Open System Monitor"
+msgstr "_Otwórz monitor systemu"
+
+#: ../multiload/main.c:490
+#: ../multiload/org.gnome.applets.MultiLoadApplet.panel-applet.in.in.h:1
+msgid "System Monitor"
+msgstr "Monitor systemu"
+
+#: ../multiload/multiload.schemas.in.h:1
+msgid "Enable CPU load graph"
+msgstr "Włączenie wykresu obciążenia procesora"
+
+#: ../multiload/multiload.schemas.in.h:2
+msgid "Enable memory load graph"
+msgstr "Włączenie wykresu zajętości pamięci"
+
+#: ../multiload/multiload.schemas.in.h:3
+msgid "Enable network load graph"
+msgstr "Włączenie wykresu obciążenia sieci"
+
+#: ../multiload/multiload.schemas.in.h:4
+msgid "Enable swap load graph"
+msgstr "Włączenie wykresu zajętości przestrzeni wymiany"
+
+#: ../multiload/multiload.schemas.in.h:5
+msgid "Enable load average graph"
+msgstr "Włączenie wykresu średniego obciążenia"
+
+#: ../multiload/multiload.schemas.in.h:6
+msgid "Enable disk load graph"
+msgstr "Włączenie wykresu obciążenia dysku"
+
+#: ../multiload/multiload.schemas.in.h:7
+msgid "Applet refresh rate in milliseconds"
+msgstr "Czas odświeżania apletów w milisekundach"
+
+#: ../multiload/multiload.schemas.in.h:8
+msgid "Graph size"
+msgstr "Rozmiar wykresu"
+
+#: ../multiload/multiload.schemas.in.h:9
+msgid ""
+"For horizontal panels, the width of the graphs in pixels. For vertical "
+"panels, this is the height of the graphs."
+msgstr ""
+"Dla paneli poziomych, szerokość wykresów w pikselach. Dla paneli pionowych, "
+"wysokość wykresów w pikselach."
+
+#: ../multiload/multiload.schemas.in.h:10
+msgid "Graph color for user-related CPU activity"
+msgstr "Kolor wykresu wykorzystania procesora przez użytkownika"
+
+#: ../multiload/multiload.schemas.in.h:11
+msgid "Graph color for system-related CPU activity"
+msgstr "Kolor wykresu wykorzystania procesora przez system"
+
+#: ../multiload/multiload.schemas.in.h:12
+msgid "Graph color for nice-related CPU activity"
+msgstr "Kolor wykresu wykorzystania procesora przez procesy \"nice\""
+
+#: ../multiload/multiload.schemas.in.h:13
+msgid "Graph color for iowait related CPU activity"
+msgstr "Kolor wykresu wykorzystania procesora przez procesy \"iowait\""
+
+#: ../multiload/multiload.schemas.in.h:14
+msgid "CPU graph background color"
+msgstr "Kolor tła wykresu procesora"
+
+#: ../multiload/multiload.schemas.in.h:15
+msgid "Graph color for user-related memory usage"
+msgstr "Kolor wykresu wykorzystania pamięci przez użytkownika"
+
+#: ../multiload/multiload.schemas.in.h:16
+msgid "Graph color for shared memory"
+msgstr "Kolor wykresu pamięci dzielonej"
+
+#: ../multiload/multiload.schemas.in.h:17
+msgid "Graph color for buffer memory"
+msgstr "Kolor wykresu pamięci buforującej"
+
+#: ../multiload/multiload.schemas.in.h:18
+msgid "Graph color for cached memory"
+msgstr "Kolor wykresu pamięci cache'owanej"
+
+#: ../multiload/multiload.schemas.in.h:19
+msgid "Memory graph background color"
+msgstr "Kolor tła wykresu pamięci"
+
+#: ../multiload/multiload.schemas.in.h:20
+msgid "Graph color for input network activity"
+msgstr "Kolor wykresu ruchu wejściowego do sieci"
+
+#: ../multiload/multiload.schemas.in.h:21
+msgid "Graph color for output network activity"
+msgstr "Kolor wykresu ruchu wyjściowego z sieci"
+
+#: ../multiload/multiload.schemas.in.h:22
+msgid "Graph color for loopback network usage"
+msgstr "Kolor wykresu ruchu wewnątrz sieci"
+
+#: ../multiload/multiload.schemas.in.h:23
+msgid "Network graph background color"
+msgstr "Kolor tła wykresu sieci"
+
+#: ../multiload/multiload.schemas.in.h:24
+msgid "Graph color for user-related swap usage"
+msgstr "Kolor wykresu wykorzystania przestrzeni wymiany przez użytkownika"
+
+#: ../multiload/multiload.schemas.in.h:25
+msgid "Swap graph background color"
+msgstr "Kolor tła wykresu przestrzeni wymiany"
+
+#: ../multiload/multiload.schemas.in.h:26
+msgid "Graph color for load average"
+msgstr "Kolor wykresu przeciętnego obciążenia"
+
+#: ../multiload/multiload.schemas.in.h:27
+msgid "Load graph background color"
+msgstr "Kolor tła wykresu obciążenia"
+
+#: ../multiload/multiload.schemas.in.h:28
+msgid "Graph color for disk read"
+msgstr "Kolor wykresu dla odczytów z dysku"
+
+#: ../multiload/multiload.schemas.in.h:29
+msgid "Graph color for disk write"
+msgstr "Kolor wykresu dla zapisów dysku"
+
+#: ../multiload/multiload.schemas.in.h:30
+msgid "Background color for disk load graph"
+msgstr "Kolor tła wykresu obciążenia dysku"
+
+#: ../multiload/multiload.schemas.in.h:31
+msgid "The desktop description file to execute as the system monitor"
+msgstr "Plik desktop do uruchomienia jako monitor systemu"
+
+#: ../multiload/netspeed.c:40
+#, c-format
+msgid "%s/s"
+msgstr "%s/s"
+
+#: ../multiload/org.gnome.applets.MultiLoadApplet.panel-applet.in.in.h:2
+msgid "A system load indicator"
+msgstr "Wskaźnik obciążenia systemu"
+
+#: ../multiload/properties.c:355
+msgid "Monitored Resources"
+msgstr "Monitorowane zasoby"
+
+#: ../multiload/properties.c:380
+msgid "_Processor"
+msgstr "_Procesor"
+
+#: ../multiload/properties.c:393
+msgid "_Memory"
+msgstr "P_amięć"
+
+#: ../multiload/properties.c:406
+msgid "_Network"
+msgstr "_Sieć"
+
+#: ../multiload/properties.c:419
+msgid "S_wap Space"
+msgstr "Obsza_r wymiany"
+
+#: ../multiload/properties.c:432
+msgid "_Load"
+msgstr "O_bciążenie"
+
+#: ../multiload/properties.c:445
+msgid "_Harddisk"
+msgstr "_Dysk twardy"
+
+#: ../multiload/properties.c:461
+msgid "Options"
+msgstr "Opcje"
+
+#: ../multiload/properties.c:491
+msgid "System m_onitor width: "
+msgstr "_Szerokość monitora systemu: "
+
+#: ../multiload/properties.c:493
+msgid "System m_onitor height: "
+msgstr "_Wysokość monitora systemu: "
+
+#: ../multiload/properties.c:532
+msgid "Sys_tem monitor update interval: "
+msgstr "_Okres odświeżania monitora systemu: "
+
+#: ../multiload/properties.c:558
+msgid "milliseconds"
+msgstr "milisekund"
+
+#: ../multiload/properties.c:596 ../multiload/properties.c:604
+msgid "_User"
+msgstr "_Użytkownik"
+
+#: ../multiload/properties.c:597
+msgid "S_ystem"
+msgstr "_System"
+
+#: ../multiload/properties.c:598
+msgid "N_ice"
+msgstr "_Nice"
+
+#: ../multiload/properties.c:599
+msgid "I_OWait"
+msgstr "I_OWait"
+
+#: ../multiload/properties.c:600
+msgid "I_dle"
+msgstr "_Wolna"
+
+#: ../multiload/properties.c:605
+msgid "Sh_ared"
+msgstr "_Dzielona"
+
+#: ../multiload/properties.c:606
+msgid "_Buffers"
+msgstr "_Bufory"
+
+#: ../multiload/properties.c:607
+msgid "Cach_ed"
+msgstr "Strony w _cache"
+
+#: ../multiload/properties.c:608
+msgid "F_ree"
+msgstr "W_olna"
+
+#: ../multiload/properties.c:612
+msgid "_In"
+msgstr "_Wchodzący"
+
+#: ../multiload/properties.c:613
+msgid "_Out"
+msgstr "Wy_chodzący"
+
+#: ../multiload/properties.c:614
+msgid "_Local"
+msgstr "_Lokalny"
+
+#: ../multiload/properties.c:615 ../multiload/properties.c:625
+#: ../multiload/properties.c:631
+msgid "_Background"
+msgstr "_Tło"
+
+#: ../multiload/properties.c:619
+msgid "_Used"
+msgstr "_Używany"
+
+#: ../multiload/properties.c:620
+msgid "_Free"
+msgstr "Wol_ny"
+
+#: ../multiload/properties.c:622
+msgid "Load"
+msgstr "Obciążenie"
+
+#: ../multiload/properties.c:624
+msgid "_Average"
+msgstr "Średn_ia"
+
+#: ../multiload/properties.c:627
+msgid "Harddisk"
+msgstr "Dysk twardy"
+
+#: ../multiload/properties.c:629
+msgid "_Read"
+msgstr "_Odczyt"
+
+#: ../multiload/properties.c:630
+msgid "_Write"
+msgstr "_Zapis"
+
+#: ../multiload/properties.c:655
+msgid "System Monitor Preferences"
+msgstr "Ustawienia monitora systemu"
+
+#: ../null_applet/null_applet.c:51
+msgid "Inbox Monitor"
+msgstr "Monitor skrzynki odbiorczej"
+
+#: ../null_applet/null_applet.c:53
+msgid "CD Player"
+msgstr "Odtwarzacz płyt CD"
+
+#: ../null_applet/null_applet.c:59
+msgid "Keyboard Indicator"
+msgstr "Wskaźnik klawiatury"
+
+#: ../null_applet/null_applet.c:157
+msgid "Some panel items are no longer available"
+msgstr "Część elementów panelu nie jest już dostępna"
+
+#: ../null_applet/null_applet.c:158
+msgid ""
+"One or more panel items (also referred to as applets) are no longer "
+"available in the GNOME desktop."
+msgstr ""
+"Jeden lub więcej elementów panelu (nazywanych apletami) nie jest już "
+"dostępna w środowisku GNOME."
+
+#: ../null_applet/null_applet.c:160
+msgid "These items will now be removed from your configuration:"
+msgstr "Następujące elementy zostaną usunięte teraz z konfiguracji:"
+
+#: ../null_applet/null_applet.c:163
+msgid "You will not receive this message again."
+msgstr "Ten komunikat nie będzie już wyświetlany."
+
+#  FIXME : Hack because libglade does not properly set these
+#: ../stickynotes/data/GNOME_StickyNotesApplet.server.in.h:1
+msgid "Tomboy (ne Stickynotes)"
+msgstr "Tomboy (dawne Stickynotes)"
+
+#: ../stickynotes/data/GNOME_StickyNotesApplet.server.in.h:2
+msgid "Tomboy (transparent upgrade from stickynotes)"
+msgstr "Tomboy (transparentna aktualizacja ze Stickynotes)"
+
+#: ../stickynotes/org.gnome.applets.StickyNotesApplet.panel-applet.in.in.h:1
+msgid "Sticky Notes Applet Factory"
+msgstr "Generator apletu notatek"
+
+#  FIXME : Hack because libglade does not properly set these
+#: ../stickynotes/org.gnome.applets.StickyNotesApplet.panel-applet.in.in.h:2
+#: ../stickynotes/stickynotes_applet.c:146
+#: ../stickynotes/stickynotes_applet.c:427
+msgid "Sticky Notes"
+msgstr "Notatki"
+
+#: ../stickynotes/org.gnome.applets.StickyNotesApplet.panel-applet.in.in.h:3
+msgid "Create, view, and manage sticky notes on the desktop"
+msgstr "Tworzenie, podgląd i zarządzanie notatkami na pulpicie"
+
+#: ../stickynotes/stickynotes.c:630
+msgid "This note is locked."
+msgstr "Notatka jest zablokowana."
+
+#: ../stickynotes/stickynotes.c:634
+msgid "This note is unlocked."
+msgstr "Notatka jest odblokowana."
+
+#: ../stickynotes/stickynotes.ui.h:1 ../stickynotes/stickynotes_applet.c:33
+msgid "_New Note"
+msgstr "_Nowa notatka"
+
+#: ../stickynotes/stickynotes.ui.h:2
+msgid "_Delete Note..."
+msgstr "_Usuń notatkę..."
+
+#: ../stickynotes/stickynotes.ui.h:3
+msgid "_Lock Note"
+msgstr "Za_blokuj notatkę"
+
+#: ../stickynotes/stickynotes.ui.h:5
+msgid "Sticky Notes Preferences"
+msgstr "Preferencje programu Notatki"
+
+#: ../stickynotes/stickynotes.ui.h:6
+msgid "Default Note Properties"
+msgstr "Domyślne właściwości notatki"
+
+#: ../stickynotes/stickynotes.ui.h:7
+msgid "Choose a font to use for all sticky notes"
+msgstr "Proszę wybrać czcionkę dla wszystkich notatek"
+
+#: ../stickynotes/stickynotes.ui.h:8
+msgid "Pick a default sticky note font"
+msgstr "Wybór domyślnej czcionki dla notatki"
+
+#: ../stickynotes/stickynotes.ui.h:9
+msgid "_Font:"
+msgstr "_Czcionka:"
+
+#: ../stickynotes/stickynotes.ui.h:10
+msgid "Use fo_nt from the system theme"
+msgstr "Użyj czcio_nki systemowej"
+
+#: ../stickynotes/stickynotes.ui.h:11
+msgid "Note C_olor:"
+msgstr "K_olor notatki:"
+
+#: ../stickynotes/stickynotes.ui.h:12
+msgid "Font Co_lor:"
+msgstr "Ko_lor czcionki:"
+
+#: ../stickynotes/stickynotes.ui.h:13
+msgid "Choose a base color to use for all sticky notes"
+msgstr "Proszę wybrać podstawowy kolor dla wszystkich notatek"
+
+#: ../stickynotes/stickynotes.ui.h:14
+msgid "Pick a default sticky note color"
+msgstr "Wybór domyślnego koloru dla notatki"
+
+#: ../stickynotes/stickynotes.ui.h:15
+msgid "Use co_lor from the system theme"
+msgstr "Użyj ko_loru z motywu systemowego"
+
+#: ../stickynotes/stickynotes.ui.h:16
+msgid "Specify the default height (in pixels) of new notes"
+msgstr "Określenie domyślnej wysokości (w pikselach) nowych notatek"
+
+#: ../stickynotes/stickynotes.ui.h:17
+msgid "Specify the default width (in pixels) of new notes"
+msgstr "Określenie domyślnej szerokości (w pikselach) nowych notatek"
+
+#: ../stickynotes/stickynotes.ui.h:18
+msgid "H_eight:"
+msgstr "Wy_sokość:"
+
+#: ../stickynotes/stickynotes.ui.h:20
+msgid "Behavior"
+msgstr "Zachowanie"
+
+#: ../stickynotes/stickynotes.ui.h:21
+msgid "Hide notes when the des_ktop is clicked on"
+msgstr "Ukrywanie notatek po _kliknięciu na pulpit"
+
+#: ../stickynotes/stickynotes.ui.h:22
+msgid "Choose whether to hide all notes when selecting on the desktop"
+msgstr ""
+"Proszę określić, czy ukrywać wszystkie notatki podczas zaznaczania na "
+"pulpicie"
+
+#: ../stickynotes/stickynotes.ui.h:23
+msgid "Force _default color and font on notes"
+msgstr "_Domyślny kolor i czcionka w notatkach"
+
+#: ../stickynotes/stickynotes.ui.h:24
+msgid "Choose if the default style is forced on all notes"
+msgstr ""
+"Proszę określić, czy użycie domyślnego stylu będzie wymuszane na wszystkich "
+"notatkach"
+
+#: ../stickynotes/stickynotes.ui.h:25
+msgid "_Put notes on all workspaces"
+msgstr "_Wyświetlanie notatki na wszystkich obszarach roboczych"
+
+#: ../stickynotes/stickynotes.ui.h:26
+msgid "Choose if notes are visible on all workspaces"
+msgstr "Proszę określić, czy notatki są widoczne na wszystkich obszarach"
+
+#: ../stickynotes/stickynotes.ui.h:27
+msgid "Delete this sticky note?"
+msgstr "Usunąć tę notatkę?"
+
+#: ../stickynotes/stickynotes.ui.h:28
+msgid "This cannot be undone."
+msgstr "Czynności nie można cofnąć."
+
+#: ../stickynotes/stickynotes.ui.h:29
+msgid "Delete all sticky notes?"
+msgstr "Usunąć wszystkie notatki?"
+
+#: ../stickynotes/stickynotes.ui.h:30
+msgid "_Delete All"
+msgstr "Usuń _wszystko"
+
+#: ../stickynotes/stickynotes.ui.h:31
+msgid "Sticky Note"
+msgstr "Notatka"
+
+#: ../stickynotes/stickynotes.ui.h:32
+msgid "Lock/Unlock note"
+msgstr "Zablokowanie/Odblokowanie notatki"
+
+#: ../stickynotes/stickynotes.ui.h:33
+msgid "Close note"
+msgstr "Zamknięcie notatki"
+
+#: ../stickynotes/stickynotes.ui.h:34
+msgid "Resize note"
+msgstr "Zmiana rozmiaru notatki"
+
+#: ../stickynotes/stickynotes.ui.h:35
+msgid "Sticky Note Properties"
+msgstr "Właściwości programu Notatki"
+
+#: ../stickynotes/stickynotes.ui.h:36
+msgid "Properties"
+msgstr "Właściwości"
+
+#: ../stickynotes/stickynotes.ui.h:37
+msgid "Choose a font for the note"
+msgstr "Proszę wybrać czcionkę dla notatki"
+
+#: ../stickynotes/stickynotes.ui.h:38
+msgid "Pick a font for the sticky note"
+msgstr "Wybór czcionki dla notatki"
+
+#: ../stickynotes/stickynotes.ui.h:39
+msgid "Use default fo_nt"
+msgstr "Użyj domyślnej czcio_nki"
+
+#: ../stickynotes/stickynotes.ui.h:40
+msgid "Choose a color for the note"
+msgstr "Proszę wybrać kolor dla notatki"
+
+#: ../stickynotes/stickynotes.ui.h:41
+msgid "Pick a color for the sticky note"
+msgstr "Wybór domyślnego koloru dla notatki"
+
+#: ../stickynotes/stickynotes.ui.h:42
+msgid "Note _Color:"
+msgstr "Ko_lor notatki:"
+
+#: ../stickynotes/stickynotes.ui.h:43
+msgid "Font C_olor:"
+msgstr "K_olor czcionki:"
+
+#: ../stickynotes/stickynotes.ui.h:44
+msgid "Use default co_lor"
+msgstr "Użyj domyślnego ko_loru"
+
+#: ../stickynotes/stickynotes.ui.h:45
+msgid "Specify a title for the note"
+msgstr "Określenie tytułu notatki"
+
+#: ../stickynotes/stickynotes.ui.h:46
+msgid "_Title:"
+msgstr "_Tytuł:"
+
+#: ../stickynotes/stickynotes.schemas.in.h:1
+msgid "Default width for new notes"
+msgstr "Domyślna szerokość nowych notatek"
+
+#: ../stickynotes/stickynotes.schemas.in.h:2
+msgid "Default width for new sticky notes in pixels."
+msgstr "Domyślna szerokość w pikselach nowej notatki."
+
+#: ../stickynotes/stickynotes.schemas.in.h:3
+msgid "Default height for new notes"
+msgstr "Domyślna wysokość nowej notatki"
+
+#: ../stickynotes/stickynotes.schemas.in.h:4
+msgid "Default height for new sticky notes in pixels."
+msgstr "Domyślna wysokość w pikselach nowej notatki."
+
+#: ../stickynotes/stickynotes.schemas.in.h:5
+msgid "Default color for new notes"
+msgstr "Domyślny kolor dla nowej notatki"
+
+#: ../stickynotes/stickynotes.schemas.in.h:6
+msgid ""
+"Default color for new sticky notes. This should be in html hex "
+"specification, for example \"#30FF50\"."
+msgstr ""
+"Domyślny kolor dla nowej notatki. Powinien być podany w postaci liczb "
+"szesnastkowych formatu HTML, przykładowo \"#30FF50\"."
+
+#: ../stickynotes/stickynotes.schemas.in.h:7
+msgid "Default color for font"
+msgstr "Domyślny kolor dla czcionki"
+
+#: ../stickynotes/stickynotes.schemas.in.h:8
+msgid ""
+"Default font color for new sticky notes. This should be in html hex "
+"specification, for example \"#000000\"."
+msgstr ""
+"Domyślny kolor czcionki dla nowej notatki. Powinien być podany w postaci "
+"liczb szesnastkowych formatu HTML, przykładowo \"#000000\"."
+
+#: ../stickynotes/stickynotes.schemas.in.h:9
+msgid "Default font for new notes"
+msgstr "Domyślna czcionka dla nowej notatki"
+
+#: ../stickynotes/stickynotes.schemas.in.h:10
+msgid ""
+"Default font for new sticky notes. This should be a Pango Font Name, for "
+"example \"Sans Italic 10\"."
+msgstr ""
+"Domyślna czcionka dla nowej notatki. Powinna to być nazwa czcionki pango, "
+"przykładowo \"Sans Italic 10\"."
+
+#: ../stickynotes/stickynotes.schemas.in.h:11
+msgid "Sticky notes' workspace stickyness"
+msgstr "Przyklejanie notatek do obszarów roboczych"
+
+#: ../stickynotes/stickynotes.schemas.in.h:12
+msgid ""
+"Specifies whether the sticky notes are visible on ALL workspaces on the "
+"desktop, or not."
+msgstr "Określa, czy notatki są widoczne na wszystkich obszarach roboczych."
+
+#: ../stickynotes/stickynotes.schemas.in.h:13
+msgid "Sticky notes' locked state"
+msgstr "Stan zablokowania notatek"
+
+#: ../stickynotes/stickynotes.schemas.in.h:14
+msgid "Specifies whether the sticky notes are locked (non-editable) or not."
+msgstr "Określa, czy notatki są zablokowane (tylko do odczytu)."
+
+#: ../stickynotes/stickynotes.schemas.in.h:15
+msgid "Date format of note's title"
+msgstr "Format daty w tytule notatki"
+
+#: ../stickynotes/stickynotes.schemas.in.h:16
+msgid ""
+"By default, sticky notes are given the current date as the title when they "
+"are created. This format is used; anything that can be parsed by strftime() "
+"is valid."
+msgstr ""
+"Domyślnie, nowym notatkom zostanie nadana bieżąca data. Używany jest ten "
+"format; dopuszczalne jest wszystko co można przetworzyć przez strftime()."
+
+#: ../stickynotes/stickynotes.schemas.in.h:17
+msgid "Whether to use the default system color"
+msgstr "Określa, czy używane będą domyślne kolory systemowe"
+
+#: ../stickynotes/stickynotes.schemas.in.h:18
+msgid ""
+"If this option is disabled, a custom color can be used as the default color "
+"for all sticky notes."
+msgstr ""
+"Jeżeli wyłączone, można użyć dowolnego koloru jako domyślnego dla wszystkich "
+"notatek."
+
+#: ../stickynotes/stickynotes.schemas.in.h:19
+msgid "Whether to use the default system font"
+msgstr "Określa, czy używana będzie domyślna czcionka systemowa"
+
+#: ../stickynotes/stickynotes.schemas.in.h:20
+msgid ""
+"If this option is disabled, a custom font can be used as the default font "
+"for all sticky notes."
+msgstr ""
+"Jeżeli wyłączone, można użyć dowolnej czcionki jako domyślnej dla wszystkich "
+"notatek."
+
+#: ../stickynotes/stickynotes.schemas.in.h:21
+msgid "Whether to force the default color and font on all notes"
+msgstr ""
+"Określa, czy wymuszane będzie na wszystkich notatkach użycie domyślnych "
+"kolorów i czcionek"
+
+#: ../stickynotes/stickynotes.schemas.in.h:22
+msgid ""
+"If this option is enabled, the custom colors and fonts that have been "
+"assigned to individual notes will be ignored."
+msgstr ""
+"Określa, czy kolory i czcionki przyporządkowane do poszczególnych notatek "
+"będą ignorowane."
+
+#: ../stickynotes/stickynotes.schemas.in.h:23
+msgid "Whether to hide all notes when the desktop is selected"
+msgstr "Określa, czy ukrywać wszystkie notatki podczas zaznaczania na pulpicie"
+
+#: ../stickynotes/stickynotes.schemas.in.h:24
+msgid ""
+"If this option is enabled, selecting the desktop in any way will "
+"automatically hide all the open notes."
+msgstr ""
+"Jeśli włączone, kliknięcie na pulpit w dowolny sposób automatycznie ukryje "
+"wszystkie otwarte notatki."
+
+#: ../stickynotes/stickynotes.schemas.in.h:25
+msgid "Whether to ask for confirmation when deleting a note"
+msgstr "Określa, czy będzie wymagane potwierdzanie usunięcia notatki"
+
+#: ../stickynotes/stickynotes.schemas.in.h:26
+msgid "Empty notes are always deleted without confirmation."
+msgstr "Puste notatki są zawsze usuwane bez potwierdzenia."
+
+#: ../stickynotes/stickynotes_applet.c:36
+msgid "Hi_de Notes"
+msgstr "U_kryj notatki"
+
+#: ../stickynotes/stickynotes_applet.c:39
+msgid "_Delete Notes"
+msgstr "_Usuń notatki"
+
+#: ../stickynotes/stickynotes_applet.c:55
+msgid "_Lock Notes"
+msgstr "Za_blokuj notatki"
+
+#: ../stickynotes/stickynotes_applet.c:620
+#, c-format
+msgid "%d note"
+msgid_plural "%d notes"
+msgstr[0] "%d notatka"
+msgstr[1] "%d notatki"
+msgstr[2] "%d notatek"
+
+#: ../stickynotes/stickynotes_applet.c:621
+msgid "Show sticky notes"
+msgstr "Wyświetla notatki"
+
+#: ../stickynotes/stickynotes_applet_callbacks.c:379
+msgid "Sticky Notes for the GNOME Desktop Environment"
+msgstr "Notatki dla środowiska GNOME"
+
+#: ../trashapplet/org.gnome.applets.TrashApplet.panel-applet.in.in.h:1
+msgid "Trash"
+msgstr "Kosz"
+
+#: ../trashapplet/org.gnome.applets.TrashApplet.panel-applet.in.in.h:2
+msgid "Go to Trash"
+msgstr "Przejście do kosza"
+
+#: ../trashapplet/src/trashapplet.c:69 ../trashapplet/src/trash-empty.c:343
+msgid "_Empty Trash"
+msgstr "Op_różnij kosz"
+
+#: ../trashapplet/src/trashapplet.c:72
+msgid "_Open Trash"
+msgstr "Ot_wórz kosz"
+
+#: ../trashapplet/src/trashapplet.c:128
+#, c-format
+msgid "%d Item in Trash"
+msgid_plural "%d Items in Trash"
+msgstr[0] "%d element w koszu"
+msgstr[1] "%d elementy w koszu"
+msgstr[2] "%d elementów w koszu"
+
+#: ../trashapplet/src/trashapplet.c:136
+msgid "No Items in Trash"
+msgstr "Brak elementów w koszu"
+
+#: ../trashapplet/src/trashapplet.c:377
+#, c-format
+msgid ""
+"Error while spawning nautilus:\n"
+"%s"
+msgstr ""
+"Błąd podczas uruchamiania programu Nautilus:\n"
+"%s"
+
+#: ../trashapplet/src/trashapplet.c:426
+msgid ""
+"A GNOME trash bin that lives in your panel. You can use it to view the trash "
+"or drag and drop items into the trash."
+msgstr ""
+"Kosz GNOME egzystujący na panelu. Można go używać do przeglądania usuniętych "
+"rzeczy lub przeciągać na niego wyrzucane elementy."
+
+#: ../trashapplet/src/trashapplet.c:451
+msgid "Delete Immediately?"
+msgstr "Usunąć natychmiast?"
+
+#: ../trashapplet/src/trashapplet.c:480
+msgid "Cannot move items to trash, do you want to delete them immediately?"
+msgstr "Nie można przenieść elementów do kosza, czy usunąć je od razu?"
+
+#: ../trashapplet/src/trashapplet.c:485
+msgid ""
+"Cannot move some items to trash, do you want to delete these immediately?"
+msgstr "Nie można przenieść części elementów do kosza, czy usunąć je od razu?"
+
+#: ../trashapplet/src/trashapplet.c:615
+msgid "Trash Applet"
+msgstr "Aplet kosza"
+
+#. Translators: the %s in this string should be read as %d.
+#: ../trashapplet/src/trash-empty.c:73
+#, c-format
+msgid "Removing item %s of %s"
+msgstr "Usuwanie elementu %s z %s"
+
+#. Translators: %s is a file name
+#: ../trashapplet/src/trash-empty.c:99
+#, c-format
+msgid "Removing: %s"
+msgstr "Usuwanie: %s"
+
+#: ../trashapplet/src/trash-empty.c:322
+msgid "Empty all of the items from the trash?"
+msgstr "Opróżnić kosz ze wszystkich elementów?"
+
+#: ../trashapplet/src/trash-empty.c:329
+msgid ""
+"If you choose to empty the trash, all items in it will be permanently lost. "
+"Please note that you can also delete them separately."
+msgstr ""
+"Jeżeli zostanie wybrane opróżnienie kosza, wszystkie elementy zostaną trwale "
+"usunięte. Można też usuwać je pojedynczo."
+
+#: ../trashapplet/trashapplet-empty-progress.ui.h:1
+msgid "Emptying the Trash"
+msgstr "Opróżnianie kosza"
+
+#: ../trashapplet/trashapplet-empty-progress.ui.h:2
+msgid "From:"
+msgstr "Od:"

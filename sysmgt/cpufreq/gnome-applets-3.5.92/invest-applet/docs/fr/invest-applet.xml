@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "3.2.0">
+<!ENTITY manrevision "1.0">
+<!ENTITY date "September 2011">
+<!ENTITY app "Invest">
+<!ENTITY panel-help SYSTEM "/usr/share/gnome/help/user-guide/C/user-guide.xml">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fr">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Manuel de Invest</title>       
+
+    <copyright>
+      <year>2004</year>
+      <year>2005</year>
+      <holder>Raphael Slinckx</holder>
+    </copyright>
+    <copyright> 
+      <year>2007</year>
+      <holder>Terrence Hall</holder> 
+    </copyright> 
+    <copyright>
+      <year>2010</year>
+      <year>2011</year>
+      <holder>Enrico Minack</holder>
+    </copyright><copyright><year>2010</year><holder>Bruno Brouard (annoa.b@gmail.com)</holder></copyright><copyright><year>2011</year><holder>Alain Lojewski (allomervan@gmail.com)</holder></copyright>
+
+
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+   -->
+
+    <publisher role="maintainer"> 
+      <publishername>Projet de documentation GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Permission vous est donnée de copier, distribuer et/ou modifier ce document selon les termes de la licence de documentation libre GNU, Version 1.1 ou ultérieure publiée par la Free Software Foundation sans section inaltérable, sans texte de première page de couverture ni texte de dernière page de couverture. Vous trouverez un exemplaire de cette licence en suivant ce <ulink type="help" url="ghelp:fdl">lien</ulink> ou dans le fichier COPYING-DOCS fourni avec le présent manuel.</para>
+         <para>Ce manuel fait partie de la collection de manuels GNOME distribués selon les termes de la licence de documentation libre GNU. Si vous souhaitez distribuer ce manuel indépendamment de la collection, vous devez joindre un exemplaire de la licence au document, comme indiqué dans la section 6 de celle-ci.</para>
+
+	<para>La plupart des noms utilisés par les entreprises pour distinguer leurs produits et services sont des marques déposées. Lorsque ces noms apparaissent dans la documentation GNOME et que les membres du projet de documentation GNOME sont informés de l'existence de ces marques déposées, soit ces noms entiers, soit leur première lettre est en majuscule.</para>
+
+	<para>LE PRÉSENT DOCUMENT ET SES VERSIONS DE MISE À JOUR SONT FOURNIS SOUS LES CONDITIONS DE L'ACCORD DE LICENCE DE DOCUMENTATION LIBRE GNU, SACHANT QUE : <orderedlist>
+		<listitem>
+		  <para>LE PRÉSENT DOCUMENT EST FOURNI « TEL QUEL », SANS AUCUNE GARANTIE, EXPRESSE OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE BONNE QUALITÉ MARCHANDE OU D'APTITUDE À UN EMPLOI PARTICULIER OU AUTORISÉ DU DOCUMENT OU DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE RELATIF À LA QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, L'AUTEUR, NI TOUT AUTRE PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE INTERVENTION, RÉPARATION OU CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE RESPONSABILITÉ CONSTITUE UNE PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ SOUS CETTE DÉNÉGATION DE RESPONSABILITÉ ; ET</para>
+		</listitem>
+		<listitem>
+		  <para>EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL S'AGISSE D'UN DÉLIT CIVIL (Y COMPRIS LA NÉGLIGENCE), CONTRACTUEL OU AUTRE, L'AUTEUR, LE RÉDACTEUR INITIAL, TOUT PARTICIPANT OU TOUT DISTRIBUTEUR DE CE DOCUMENT OU DE SA VERSION MODIFIÉE, OU TOUT FOURNISSEUR DE L'UNE DE CES PARTIES NE POURRA ÊTRE TENU RESPONSABLE À L'ÉGARD DE QUICONQUE POUR TOUT DOMMAGE DIRECT, INDIRECT, PARTICULIER, OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, SANS LIMITATION, LES DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, À UN ARRÊT DE TRAVAIL, À UNE DÉFAILLANCE OU UN MAUVAIS FONCTIONNEMENT INFORMATIQUE, OU À TOUT AUTRE DOMMAGE OU PERTE LIÉE À L'UTILISATION DU DOCUMENT ET DE SES VERSIONS MODIFIÉES, MÊME SI LADITE PARTIE A ÉTÉ INFORMÉE DE L'ÉVENTUALITÉ DE TELS DOMMAGES.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+  <authorgroup> 
+    <author>
+      <firstname/>
+      <surname>L'équipe de documentation GNOME</surname>
+    </author>
+    <author> 
+      <firstname>Terrence</firstname> 
+      <surname>Hall</surname> 
+      <affiliation><address><email>teebob21@gmail.com</email></address></affiliation> 
+    </author> 
+    <author>
+      <firstname>Enrico</firstname>
+      <surname>Minack</surname>
+      <affiliation><address><email>enrico-minack@gmx.de</email></address></affiliation>
+    </author>
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+    <othercredit role="translator">
+      <firstname>Latin</firstname> 
+      <surname>Translator 1</surname> 
+      <affiliation> 
+	<orgname>Latin Translation Team</orgname> 
+	<address> <email>translator@gnome.org</email> </address> 
+      </affiliation>
+      <contrib>Latin translation</contrib>
+    </othercredit>
+-->
+    </authorgroup>
+	
+    <revhistory>
+      <revision> 
+	<revnumber/>
+	<date/>
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Ce manuel documente la version 3.2.0 de Invest.</releaseinfo> 
+
+    <legalnotice> 
+      <title>Votre avis</title> 
+      <para>Pour rapporter une anomalie ou émettre une suggestion concernant l'application Invest ou ce manuel, suivez les instructions de la <ulink url="ghelp:gnome-feedback" type="help">page de réactions sur GNOME</ulink>.</para>
+
+<!-- Translators may also add here feedback address for translations -->
+
+    </legalnotice> 
+    <abstract role="description">
+      <para>Manuel d'utilisation de Invest</para>
+
+    </abstract>
+
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>Invest</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>invest-applet</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+ <!-- ============= Introduction ============================== -->
+
+  <sect1 id="invest-applet-intro">
+    <title>Introduction</title>
+
+    <para>L'applet <application>Invest</application> du tableau de bord GNOME télécharge les cotations des actions, des indices boursiers, des devises et des métaux précieux en temps réel à partir de <ulink url="http://finance.yahoo.com/">Yahoo! Finance</ulink> et les affiche dans une liste déroulante.</para>
+    <para>Les fonctionnalités suivantes sont disponibles dans <application>Invest</application> :</para>
+	<itemizedlist>
+            <listitem>
+              <para>récupération des cotations de n'importe quelle action, indice boursier, devise ou métal précieux connus sur le site <ulink url="http://finance.yahoo.com">Yahoo! Finance</ulink>,</para>
+            </listitem>
+            <listitem>
+              <para>mise à jour des cotations toutes les quinze minutes,</para>
+            </listitem>
+            <listitem>
+              <para>affichage du cours actuel, de la variation du jour et d'un diagramme des variations du jour,</para>
+            </listitem>
+            <listitem>
+              <para>affichage de la devise de la cotation et, si configuré, conversion automatique dans la devise cible,</para>
+            </listitem>
+            <listitem>
+              <para>affichage du montant du gain ou de la perte depuis l'achat, également convertit dans la devise cible,</para>
+            </listitem>
+            <listitem>
+              <para>affichage du pourcentage de hausse ou de baisse du cours depuis l'achat.</para>
+            </listitem>
+	</itemizedlist>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="invest-applet-getting-started">
+    <title>Premiers pas</title>
+
+                                                                                
+<!-- ============= To Start Invest ============================ -->
+    <sect2 id="invest-applet-to-add">
+      <title>Ajout de Invest à un tableau de bord</title>
+      <para>Pour ajouter <application>Invest</application> à un tableau de bord GNOME, cliquez-droit sur le tableau de bord, puis choisissez <guilabel>Ajouter au tableau de bord</guilabel>. Sélectionnez <application>Invest</application> dans la boîte de dialogue <guilabel>Ajouter au tableau de bord</guilabel>, puis cliquez sur <guilabel>Ajouter</guilabel>. Cliquez sur <guilabel>Fermer</guilabel> lorsque vous avez fini.</para>
+    </sect2>
+    <sect2 id="invest-applet-to-remove">
+      <title>Suppression de Invest d'un tableau de bord</title>
+      <para>Pour enlever <application>Invest</application> d'un tableau de bord GNOME, cliquez-droit sur l'icône, puis choisissez <guilabel>Enlever du tableau de bord</guilabel>.</para>
+    </sect2>
+    <sect2 id="additional-applet-help">
+      <title>Informations supplémentaires</title>
+      <para>Plus d'informations sur le tableau de bord GNOME peuvent être obtenues dans la <ulink url="ghelp:user-guide?panels" type="help">documentation GNOME sur les tableaux de bord</ulink>.</para>
+    </sect2>
+  </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="invest-applet-usage">
+    <title>Utilisation de Invest</title>
+    <para>Pour que l'applet puisse vous indiquer les dernières cotations, vous devez le configurer. Les cotations peuvent provenir de différents centres boursiers des valeurs dans le monde, les prix peuvent donc être dans des devises différentes. La conversion automatique des devises ainsi que celle des achats que vous avez effectués dans différents pays peut être configurée. Enfin, des graphiques sont disponibles pour chacune des cotations configurées.</para>
+
+    <sect2 id="invest-applet-configure-quotes">
+      <title>Configuration de vos cotations</title>
+
+    <sect3 id="invest-applet-add-stocks">
+
+      <title>Ajout de nouvelles cotations à l'applet</title>
+
+      <para>Pour ajouter de nouvelles cotations à <application>Invest</application>, effectuez les opérations suivantes :</para>
+      <orderedlist>
+        <listitem>
+          <para>Cliquez-droit sur l'icône de l'applet et sélectionnez <guilabel>Préférences</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Cliquez sur <guilabel>Ajouter</guilabel> pour ajouter une cotation à <application>Invest</application>.</para>
+        </listitem>
+        <listitem>
+          <para>La cotation par défaut est GOOG. Elle est sélectionnée pour pouvoir la modifier immédiatement. Saisissez le <guilabel>Symbole</guilabel> de votre cotation. Si vous ne connaissez pas le symbole de votre cotation, reportez-vous au paragraphe ci-dessous.</para>
+        </listitem>
+	<listitem>
+	  <para>Puis, cliquez sur l'<guilabel>Étiquette</guilabel> de votre cotation et saisissez-y son nom commercial.</para>
+	</listitem>
+	<listitem>
+	  <para>Vous pouvez aussi modifier le nombre d'actions que vous possédez, le prix d'achat et la commission.</para>
+	</listitem>
+        <listitem>
+          <para>Cliquez sur <guilabel>Fermer</guilabel> lorsque vous avez fini d'ajouter vos cotations.</para>
+        </listitem>
+      </orderedlist>
+	<para>Si vous ne connaissez pas le symbole financier de votre cotation, allez sur <ulink url="http://finance.yahoo.com/">http://finance.yahoo.com/</ulink>. Saisissez le nom de la cotation dans le champ texte du coin gauche de votre écran. Au cours de la saisie, des propositions approchantes vous seront faites. La première colonne indique le symbole de la cotation, la seconde son nom et la troisième sa bourse des valeurs. La devise des cotations peut varier selon les différents centres boursiers des valeurs, en fonction du pays dans lequel elles se situent. Vous pouvez voir ci-dessous une capture d'écran d'une recherche de cotation « Yahoo ».</para>
+
+	<para><mediaobject><imageobject>
+	  <imagedata format="PNG" fileref="figures/symbol-search.png"/>
+	</imageobject></mediaobject> Capture d'écran de Yahoo! Finance pendant la recherche d'une cotation.</para>
+
+	<para>Invest gère toutes les cotations disponibles sur le site de <ulink url="http://finance.yahoo.com/">Yahoo! Finance</ulink>. Cela concerne en particulier :</para>
+	<formalpara>
+	  <title>Les actions, les obligations et les titres</title>
+          <para>Cela représente la majorité des cotations disponibles. Recherchez ou naviguez sur <ulink url="http://finance.yahoo.com/">Yahoo! Finance</ulink> pour regarder ce qu'il est possible de trouver.</para>
+	</formalpara>
+	<formalpara>
+	  <title>Les indices boursiers</title>
+          <para>Toute cotation précédée d'un ^ est en réalité un indice boursier, c'est-à-dire une cotation qui représente la performance d'un certain nombre d'autres cotations. Exemples types : le Dow Jones Industrial Average (<ulink url="http://finance.yahoo.com/q?s=^DJI">^DJI</ulink>) et le NASDAQ Composite (<ulink url="http://finance.yahoo.com/q?s=^IXIC">^IXIC</ulink>).</para>
+	</formalpara>
+	<formalpara>
+	  <title>Le cours des devises</title>
+          <para>Le change entre n'importe quelles devises est aussi disponible. Leurs symboles respectifs sont représentés ainsi : la devise AAA en devise BBB, ou en d'autres termes, combien coûte la devise AAA en devise BBB, ce qui donne le symbole AAABBB=X. Pour savoir combien d'euros vous obtiendrez avec un dollar US (combien coûte un USD en EUR), suivez le lien <ulink url="http://finance.yahoo.com/q?s=usdeur%3DX">USDEUR=X</ulink>. Pour de plus amples informations, consultez cette <ulink url="http://finance.yahoo.com/currency-investing">page de Yahoo! Finance</ulink>. Les devises sont représentées par leur <ulink url="http://fr.wikipedia.org/wiki/Codes_ISO_4217_des_monnaies">code ISO 4217 des devises</ulink>.</para>
+	</formalpara>
+	<formalpara>
+	  <title>Les métaux précieux</title>
+          <para>Le <ulink url="http://fr.wikipedia.org/wiki/Codes_ISO_4217_des_monnaies">code ISO 4217 des devises</ulink> inclut également les métaux précieux dans la liste des devises. Les métaux précieux cotés sont l'or, l'argent, le palladium et le platine. Leur symbole financier commence par X suivi de leur symbole chimique : respectivement XAU, XAG, XPD et XPT. Leur cours dans n'importe quelle devise est ainsi disponible comme pour les devisesm ci-dessus. Par exemple, l'or par rapport au dollar US porte le symbole <ulink url="http://finance.yahoo.com/q?s=XAUUSD%3DX">XAUUSD=X</ulink>. Vous pouvez aussi calculer l'inverse (<ulink url="http://finance.yahoo.com/q?s=USDXAU%3DX">USDXAU=X</ulink>) : combien d'onces d'or vous pouvez obtenir avec un dollar US.</para>
+	</formalpara>
+    </sect3>
+    <sect3 id="invest-applet-to-view-stocks">
+      <title>Affichage de vos cotations enregistrées</title>
+      <para>Pour afficher vos cotations enregistrées, cliquez sur l'icône <application>Invest</application> du tableau de bord. La liste de vos cotations apparaît. Pour fermer la liste, cliquez à nouveau sur l'icône. Tenez compte du fait que la mise à jour des cotations se fait avec un retard de quinze minutes.</para>
+    </sect3>
+
+    <sect3 id="invest-applet-to-refresh-stocks">
+
+      <title>Mise à jour de l'affichage</title>
+      <para>Pour remettre à jour immédiatement les informations qui apparaissent, cliquez-droit sur l'applet et choisissez <guilabel>Actualiser</guilabel>.</para>
+    </sect3>
+    <sect3 id="invest-applet-to-remove-stocks">
+       <title>Suppression de cotations de l'applet</title>
+      <para>Pour supprimer des cotations d'<application>Invest</application>, effectuez les opérations suivantes :</para>
+      <orderedlist>
+        <listitem>
+          <para>Cliquez-droit sur l'icône de l'applet et sélectionnez <guilabel>Préférences</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Cliquez sur la ligne contenant la cotation que vous souhaitez supprimer.</para>
+        </listitem>
+        <listitem>
+          <para>Cliquez sur <guilabel>Enlever</guilabel> pour supprimer la cotation.</para>
+        </listitem>
+        <listitem>
+          <para>Cliquez sur <guilabel>Fermer</guilabel> lorsque vous avez fini.</para>
+        </listitem>
+      </orderedlist> 
+    </sect3>
+   </sect2>
+
+    <sect2 id="invest-applet-configure-currencies">
+      <title>Paramétrage de la conversion des devises</title>
+      <para>Invest affiche toutes les cotations dans leur devise d'origine telles qu'obtenues de Yahoo! Finance. Si vous souhaitez que toutes les cotations soient affichées dans une seule devise cible, il vous faut le configurer dans la boîte de dialogue des préférences.</para>
+      <orderedlist>
+        <listitem>
+          <para>Cliquez-droit sur l'icône de l'applet et sélectionnez <guilabel>Préférences</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Saisissez la devise cible dans le champ texte <guilabel>Devise</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Au cours de la saisie, des propositions approchantes vous seront faites.</para>
+        </listitem>
+        <listitem>
+          <para>Sélectionnez votre devise cible.</para>
+        </listitem>
+        <listitem>
+          <para>Remarquez que la nouvelle colonne <guilabel>Cours de la devise</guilabel> apparaît dans votre liste de cotations.</para>
+        </listitem>
+        <listitem>
+          <para>Pour tous les achats pour lesquels le <guilabel>Prix</guilabel> et la <guilabel>Commission</guilabel> sont donnés dans la devise d'origine, le taux de change au moment de l'achat de la devise d'origine vers la devise cible doit être saisi dans le champ <guilabel>Cours de la devise</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Cliquez sur <guilabel>Fermer</guilabel> lorsque vous avez fini.</para>
+        </listitem>
+      </orderedlist>
+      <para>Considérons un exemple : vous achetez une cotation Yahoo! (YHOO) pour 10,0 USD à un cours de devise de 0,75 EUR par USD. Autrement dit, la cotation vous coûte 7,50 EUR. Ensuite vous payez 5,00 USD de commission, équivalent à 3,75 EUR. Lorsque vous paramétrez la devise cible à EUR, soit vous saisissez les valeurs en EUR (devise cible) et conservez le <guilabel>Cours de la devise</guilabel> à 0,00 ou vous saisissez les valeurs en USD (devise d'origine) et saisissez le taux de change EUR par USD (<ulink url="http://finance.yahoo.com/q?s=eurusd%3DX">EURUSD=X</ulink>).</para>
+      <tip>
+        <para>Le <guilabel>Prix</guilabel> et la <guilabel>Commission</guilabel> doivent être fournis tous les deux dans la même devise.</para>
+      </tip>
+      <para>Si vous voulez supprimer la devise cible, effacez simplement le champ texte <guilabel>Devise</guilabel>.</para>
+   </sect2>
+
+    <sect2 id="invest-applet-stock-charts-options">
+      <title>Options graphiques</title>
+      <para>Dans votre liste, il y a un diagramme pour chacune de vos cotations. Pour afficher les différents graphiques financiers disponibles pour une cotation, double-cliquez sur la cotation choisie. Les paramètres sont personnalisables à l'aide du bouton <guilabel>Options</guilabel>.</para>
+	<sect3 id="invest-applet-stock-chart-options-date">
+	<title>Période prise en compte</title>
+              <para>La période prise en compte, dans le coin en haut à droite du graphique, définit la durée sur laquelle s'effectue un compte-rendu. Par défaut, elle est de un jour d'enregistrement, mais les durées suivantes peuvent être sélectionnées : <guilabel>Aujourd'hui</guilabel>, <guilabel>5 jours</guilabel>, <guilabel>3 mois</guilabel>, <guilabel>6 mois</guilabel>, <guilabel>1 an</guilabel>, <guilabel>5 ans</guilabel>, <guilabel>Maximum</guilabel>..</para>
+
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-graph">
+	<title>Style du graphique</title>
+              <para>L'historique des cours peut être tracé de trois manières différentes. Vous avez le choix entre un graphique linéaire, barre ou chandelier.</para>
+	  <itemizedlist>
+            <listitem>
+              <para><guilabel>Graphique linéaire</guilabel> (<guilabel>l</guilabel>)</para>
+	      <para>C'est l'option par défaut. Cela trace l'historique d'une cotation d'une façon familière, connectant chaque jour son cours de clôture avec le précédent d'une simple ligne. Le tracé ainsi obtenu pour la cotation n'est utile qu'à un analyste intéressé par les cours de clôture quotidiens.</para>
+            </listitem>
+            <listitem>
+              <para><guilabel>Graphique barre</guilabel> (<guilabel>b</guilabel>)</para>
+	      <para>Un graphique barre représente l'activité journalière complète d'une cotation par une simple ligne verticale. Le sommet de la ligne indique le cours le plus haut que la valeur a atteint pendant la journée et sa base, le cours le plus bas. Le cours de clôture est affiché sur le côté droit de la ligne et le cours d'ouverture est affiché sur le côté gauche. Une barre représente une journée de transactions.</para>
+            </listitem>
+            <listitem>
+              <para><guilabel>Graphique chandelier</guilabel> (<guilabel>c</guilabel>)</para>
+	      <para>Un graphique chandelier est un graphique sur lequel les cours d'ouverture et de clôture sont représentés par le sommet et la base d'un rectangle entourant une ligne verticale qui relie le cours le plus haut et le plus bas. L'intérieur du rectangle est plein si le cours de clôture est inférieur à celui d'ouverture et est laissé vide dans le cas contraire.</para>
+
+            </listitem>
+	</itemizedlist>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-ma">
+	<title>Moyenne mobile</title>
+              <para>Une moyenne mobile est une série statistique des prix de clôture d'un titre sur plusieurs jours consécutifs d'échange. Elle est habituellement affichée sous forme d'un graphique linéaire pour indiquer les tendances des prix de la cotation.</para>
+	</sect3>
+
+	<sect3 id="invest-applet-stock-chart-options-ema">
+	<title>Moyenne mobile exponentielle</title>
+              <para>Une moyenne mobile exponentielle (EMA) est définie comme une moyenne mobile calculée en pondérant de manière plus forte les valeurs récentes que les anciennes. Ce type de moyenne mobile réagit plus rapidement aux fluctuations de prix récentes que la simple moyenne mobile. Les EMA sur 12 et 26 jours sont des moyennes à court terme populaires tandis que les EMA sur plus de 50 jours sont utilisées pour indiquer les tendances à long terme.</para>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-overlays">
+	<title>Plans de recouvrement</title>
+              <para>Les plans de recouvrement vous permettent de tracer de nombreuses mesures statistiques sur un seul graphique. Par exemple, vous pouvez comparer la performance d'une cotation unique à celle d'un indice tel que le NASDAQ ou le DJIA.</para>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-indicators">
+	<title>Indicateurs</title>
+              <para>Les indicateurs sont utilisés pour tenter de prédire les tendances financières futures. L'usage correct des indicateurs de marchés sort de l'objectif du manuel de Invest.</para>
+
+	</sect3>
+    </sect2>
+  </sect1>
+</article>

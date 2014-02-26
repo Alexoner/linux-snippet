@@ -1,0 +1,2 @@
+ magic-sysrq configuration file is :/etc/sysctl.d/10-magic-sysrq.conf
+ process file: /proc/sys/kernel/sysrq

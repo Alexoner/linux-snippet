@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "3.2.0">
+<!ENTITY manrevision "1.0">
+<!ENTITY date "September 2011">
+<!ENTITY app "Invest">
+<!ENTITY panel-help SYSTEM "/usr/share/gnome/help/user-guide/C/user-guide.xml">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Εγχειρίδιο Invest </title>       
+
+    <copyright>
+      <year>2004</year>
+      <year>2005</year>
+      <holder>Raphael Slinckx</holder>
+    </copyright>
+    <copyright> 
+      <year>2007</year>
+      <holder>Terrence Hall</holder> 
+    </copyright> 
+    <copyright>
+      <year>2010</year>
+      <year>2011</year>
+      <holder>Enrico Minack</holder>
+    </copyright>
+
+
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+   -->
+
+    <publisher role="maintainer"> 
+      <publishername>Έργο τεκμηρίωσης του Gnome</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Δίνεται άδεια για αντιγραφή, διανομή και/ή τροποποίηση του εγγράφου υπό τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή μεταγενέστερη εκδιδόμενη από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Σταθερά Εδάφια, χωρίς Εξώφυλλα Κειμένου, και χωρίς Οπισθόφυλλα Κειμένου. Μπορείτε να βρείτε ένα αντίγραφο της GFDL σε αυτόν το <ulink type="help" url="ghelp:fdl">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανεμήθηκε με αυτόν τον οδηγό.</para>
+         <para>Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του GNOME όπως διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτή την τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 της άδειας.</para>
+
+	<para>Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρίες για να ξεχωρίσουν τα προϊόντα και τις υπηρεσίες είναι σήματα κατατεθέντα. Όπου αυτά τα ονόματα εμφανίζονται στην τεκμηρίωση GNOME,και τα μέλη της ομάδας τεκμηρίωσης GNOME έχουν γνώση αυτών, τότε αυτά αναγράφονται με κεφαλαίους χαρακτήρες ή με αρχικούς κεφαλαίους χαρακτήρες.</para>
+
+	<para>ΤΟ ΈΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΑΔΕΙΑΣ GNU FREE DOCUMENTATION ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <orderedlist>
+		<listitem>
+		  <para>Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ "ΩΣ ΕΧΕΙ", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΟΤΙ ΜΠΟΡΕΙ ΝΑ ΕΞΥΠΗΡΕΤΗΣΕΙ ΚΑΠΟΙΟ ΣΚΟΠΟ Η ΟΤΙ ΕΙΝΑΙ ΧΩΡΙΣ ΣΦΑΛΜΑ. ΟΛΟΚΛΗΡΗ Η ΕΥΘΥΝΗ ΓΙΑ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ ΚΑΙ ΛΕΙΤΟΥΡΓΙΚΟΤΗΤΑ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ ΕΙΝΑΙ ΛΑΘΟΣ ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ.ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ.</para>
+		</listitem>
+		<listitem>
+		  <para>ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+  <authorgroup> 
+    <author>
+      <firstname/>
+      <surname>Ομάδα Τεκμηρίωσης GNOME</surname>
+    </author>
+    <author> 
+      <firstname>Terrence</firstname> 
+      <surname>Hall</surname> 
+      <affiliation><address><email>teebob21@gmail.com</email></address></affiliation> 
+    </author> 
+    <author>
+      <firstname>Enrico</firstname>
+      <surname>Minack</surname>
+      <affiliation><address><email>enrico-minack@gmx.de</email></address></affiliation>
+    </author>
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+    <othercredit role="translator">
+      <firstname>Latin</firstname> 
+      <surname>Translator 1</surname> 
+      <affiliation> 
+	<orgname>Latin Translation Team</orgname> 
+	<address> <email>translator@gnome.org</email> </address> 
+      </affiliation>
+      <contrib>Latin translation</contrib>
+    </othercredit>
+-->
+    </authorgroup>
+	
+    <revhistory>
+      <revision> 
+	<revnumber/>
+	<date/>
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>This manual describes version 3.2.0 of Invest.
+    </releaseinfo> 
+
+    <legalnotice> 
+      <title>Aνάδραση</title> 
+      <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με το <application>Invest.</application>  ή αυτή την τεκμηρίωση, ακολουθήστε τις οδηγίες που περιγράφονται στη σελίδα <ulink url="ghelp:gnome-feedback" type="help">ανάδρασης GNOME </ulink>.</para>
+
+<!-- Translators may also add here feedback address for translations -->
+
+    </legalnotice> 
+    <abstract role="description">
+      <para>Εγχειρίδιο χρήστη για το Invest</para>
+
+    </abstract>
+
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>Invest</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>Μικροεφαρμογή Invest</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+ <!-- ============= Introduction ============================== -->
+
+  <sect1 id="invest-applet-intro">
+    <title>Εισαγωγή</title>
+
+    <para>Η μικροεφαρμογή <application>Invest</application> στον πίνακα εφαρμογών του GNOME λαμβάνει τις τρέχουσες τιμές μετοχών, δεικτών και πολύτιμων μετάλλων από το <ulink url="http://finance.yahoo.com">Yahoo! Finance</ulink> και τις εμφανίζει σε μία αναπτυσσόμενη λίστα.</para>
+    <para>Το <application>Invest</application> παρέχει τα ακόλουθα χαρακτηριστικά:</para>
+	<itemizedlist>
+            <listitem>
+              <para>Ανάκτηση τιμών για οποιοδήποτε γνωστή μετοχή, δείκτη, νόμισμα ή πολύτιμο μέταλλο από το <ulink url="http://finance.yahoo.com">Yahoo! Finance</ulink></para>
+            </listitem>
+            <listitem>
+              <para>Οι τιμές ανανεώνονται αυτόματα κάθε 15 λεπτά</para>
+            </listitem>
+            <listitem>
+              <para>Εμφανίζονται η τρέχουσα τιμή, η ημερήσια μεταβολή και ένα γράφημα των σημερινών αλλαγών</para>
+            </listitem>
+            <listitem>
+              <para>Εμφανίζεται το νόμισμα της τιμής και μπορεί να ρυθμισθεί να μετατρέπεται αυτόματα σε άλλο νόμισμα</para>
+            </listitem>
+            <listitem>
+              <para>Η αύξηση ή μείωση της τιμής από την αγορά της, επίσης μετατρέψιμη στο επιθυμητό νόμισμα</para>
+            </listitem>
+            <listitem>
+              <para>Το ποσοστό αύξησης ή μείωσης της τιμής από την αγορά της</para>
+            </listitem>
+	</itemizedlist>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="invest-applet-getting-started">
+    <title>Ξεκινώντας</title>
+
+                                                                                
+<!-- ============= To Start Invest ============================ -->
+    <sect2 id="invest-applet-to-add">
+      <title>Προσθήκη του Invest στον πίνακα εφαρμογών</title>
+      <para>Για να προσθέσετε την μικροεφαρμογή <application>Invest</application> στον πίνακα εφαρμογών του GNOME,κάντε δεξί-κλικ στον πίνακα και κατόπιν επιλέξτε <guimenuitem>Προσθήκη στον πίνακα εφαρμογών</guimenuitem>.Επιλέξτε <application>Invest</application> στο διάλογο  <application>Προσθήκηστον πίνακα εφαρμογών</application>,και στο τέλος επιβεβαιώστε πιέζοντας το κουμπί <guibutton>OK</guibutton>.Πατήστε <guilabel>Κλείσιμο</guilabel> μόλις τελειώσετε.</para>
+    </sect2>
+    <sect2 id="invest-applet-to-remove">
+      <title>Αφαίρεση Invest από τον πίνακα εφαρμογών</title>
+      <para>Για να αφαιρέσετε την μικροεφαρμογή <application>Invest</application> από τον πίνακα εφαρμογών του GNOME,κάντε δεξί-κλικ στο εικονίδιο στον πίνακα εφαρμογών, κατόπιν επιλέξτε <guilabel>Αφαίρεση από τον πίνακα εφαρμογών</guilabel>.</para>
+    </sect2>
+    <sect2 id="additional-applet-help">
+      <title>Περισσότερες πληροφορίες</title>
+      <para>Περισσότερες πληροφορίες σχετικά με τον πίνακα εφαρμογών του GNOME μπορείτε να βρείτε στο <ulink url="ghelp:user-guide?panels" type="help">GNOME Panel documentation</ulink>.</para>
+    </sect2>
+  </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="invest-applet-usage">
+    <title>Χρησιμοποιώντας το Invest</title>
+    <para>Πριν η εφαρμογή σας δώσει τρέχουσες τιμές, πρέπει να τη διαμορφώσετε. Οι τιμές προέρχονται από διάφορα χρηματιστήρια ανά τον κόσμο, έτσι οι τιμές μπορεί να είναι σε διάφορα νομίσματα. Η αυτόματη μετατροπή νομισμάτων μπορεί να διαμορφωθεί, καθώς και η μετατροπή των αγορών σας σε διάφορες χώρες. Τέλος, είναι διαθέσιμα γραφήματα για κάθε μια διαμορφωθείσα τιμή.</para>
+
+    <sect2 id="invest-applet-configure-quotes">
+      <title>Διαμόρφωση τιμών</title>
+
+    <sect3 id="invest-applet-add-stocks">
+
+      <title>Προσθήκη νέων τιμών στη μικροεφαρμογή</title>
+
+      <para>Για να προσθέσετε νέες τιμές στο <application>Invest</application>, κάντε τα εξής βήματα:</para>
+      <orderedlist>
+        <listitem>
+          <para>Κάντε δεξί κλικ στο εικονίδιο στον πίνακα εφαρμογών και επιλέξτε <guilabel>Προτιμήσεις</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Κάντε κλικ στο <guilabel>Προσθήκη</guilabel> για να να εισάγετε μια τιμή στο <application>Invest</application>.</para>
+        </listitem>
+        <listitem>
+          <para>Η προεπιλεγμένη μορφή είναι GOOG. Είναι αρχικά επιλεγμένη για επεξεργασία έτσι μπορείτε να την αλλάξετε αμέσως. Εισάγετε το <guilabel>Σύμβολο</guilabel> της τιμής εδώ. Αν δεν ξέρετε το σύμβολο της τιμής, δείτε παρακάτω.</para>
+        </listitem>
+	<listitem>
+	  <para>Μετά κάντε κλικ στην <guilabel>Ετικέτα</guilabel> της τιμής και πληκτρολογήστε το σωστό όνομα.</para>
+	</listitem>
+	<listitem>
+	  <para>Μπορείτε επίσης να επεξεργαστείτε τον αριθμό των μετοχών που κατέχετε, την τιμή αγοράς και την προμήθεια.</para>
+	</listitem>
+        <listitem>
+          <para>Κάντε κλικ στο <guilabel>Κλείσιμο</guilabel> όταν τελειώσετε με την προσθήκη τιμών.</para>
+        </listitem>
+      </orderedlist>
+	<para>Αν δεν ξέρετε το πραγματικό σύμβολο της τιμής σας, πηγαίνετε στο <ulink url="http://finance.yahoo.com/">http://finance.yahoo.com/</ulink>. Εισάγετε το όνομα της τιμής στο πεδίο κειμένου στην πάνω αριστερή γωνία της οθόνης. Κατά την πληκτρολόγηση θα εμφανιστεί λίστα με τις αντίστοιχες τιμές. Η πρώτη στήλη έχει το σύμβολο της τιμής, η δεύτερη δείχνει το όνομα και στην τρίτη στήλη το χρηματιστήριο της τιμής. Το νόμισμα της τιμής μπορεί να διαφέρει μεταξύ των χρηματιστηρίων ανάλογα με τη χώρα τους. Παρακάτω μπορείτε να δείτε ένα στιγμιότυπο οθόνης από την αναζήτηση της τιμής της "yahoo".</para>
+
+	<para><mediaobject><imageobject>
+	  <imagedata format="PNG" fileref="figures/symbol-search.png"/>
+	</imageobject></mediaobject> Στιγμιότυπο οθόνης Yahoo! Finance κατά την αναζήτηση τιμής.</para>
+
+	<para>Το Invest υποστηρίζει όλες τις τιμές που μπορεούν να βρεθούν στο <ulink url="http://finance.yahoo.com/">Yahoo! Finance</ulink>. Συγκεκριμένα, αυτές είναι του ακόλουθου τύπου.</para>
+	<formalpara>
+	  <title>Μετοχές, ομόλογα και κινητές αξίες</title>
+          <para>Αυτές είναι η πλειονότητα των διαθέσιμων τιμών. Αναζητήστε ή περιηγηθείτε στο <ulink url="http://finance.yahoo.com/">Yahoo! Finance</ulink> για να δείτε τι υπάρχει.</para>
+	</formalpara>
+	<formalpara>
+	  <title>Χρηματιστηριακοί δείκτες</title>
+          <para>Όλες οι τιμές που αρχίζουν με ^ είναι στην πράξη δείκτες, μια τιμή δηλαδή που αντιπροσωπεύει τις αποδόσεις κάποιων άλλων τιμών. Παραδείγματα είναι ο δείκτης Dow Jones Industrial Average (<ulink url="http://finance.yahoo.com/q?s=^DJI">^DJI</ulink>) και ο NASDAQ Composite (<ulink url="http://finance.yahoo.com/q?s=^IXIC">^IXIC</ulink>).</para>
+	</formalpara>
+	<formalpara>
+	  <title>Ισοτιμίες νομισμάτων</title>
+          <para>Είναι επίσης διαθέσιμες ισοτιμίες μεταξύ δύο οποιονδήποτε νομισμάτων. Το αντίστοιχο σύμβολο είναι δομημένο ως ακολούθως. Νόμισμα ΑΑΑ σε νόμισμα ΒΒΒ, ή αλλιώς, πόσο κοστίζει το νόμισμα ΑΑΑ σε νόμισμα ΒΒΒ, έχει σύμβολο ΑΑΑΒΒΒ=Χ. Αν θέλετε να ξέρετε πόσα EUR παίρνετε για ένα USD (πόσο κοστίζει ένα δολλάριο σε ευρώ), επιλέγετε <ulink url="http://finance.yahoo.com/q?s=usdeur%3DX">USDEUR=X</ulink>. Μπορείτε να βρείτε περισσότερες πληροφορίες στη <ulink url="http://finance.yahoo.com/currency-investing">σελίδα νομισμάτων του Yahoo! Finance</ulink>. Τα νομίσματα αντιπροσωπεύονται με τον <ulink url="http://en.wikipedia.org/wiki/Currency_code">κωδικό τους κατά ISO 4217</ulink>.</para>
+	</formalpara>
+	<formalpara>
+	  <title>Πολύτιμα μέταλλα</title>
+          <para>Ο <ulink url="http://en.wikipedia.org/wiki/Currency_code">κώδικας νομισμάτων των ISO 4217</ulink> απαριθμεί επίσης τα πολύτιμα μέταλλα ως νομίσματα. Αυτά είναι ο Χρυσός, το Ασήμι, το Παλλάδιο και η Πλατίνα. Οι κωδικοί τους αρχίζουν με Χ, ακολουθούμενο από το χημικό τους σύμβολο: XAU, XAG, XPD και XPT, αντίστοιχα. Με αυτούς τους κωδικούς, είναι διαθέσιμη η τιμή των πολύτιμων μετάλλων σε οποιοδήποτε άλλο νόμισμα μέσω των ισοτιμιών που περιγράφηκαν παραπάνω. Παραδείγματος χάριν ο Χρυσός σε USD έχει το σύμβολο <ulink url="http://finance.yahoo.com/q?s=XAUUSD%3DX">XAUUSD=X</ulink>. Μπορείτε ακόμα να έχετε το αντίστροφο (<ulink url="http://finance.yahoo.com/q?s=USDXAU%3DX">USDXAU=X</ulink>): πόσο Χρυσό σε ουγγιές αγοράζετε με ένα USD;</para>
+	</formalpara>
+    </sect3>
+    <sect3 id="invest-applet-to-view-stocks">
+      <title>Προβολή διαμορφωθεισών τιμών</title>
+      <para>Για να δείτε όλες τις διαμορφωμένες τιμές, κάντε κλικ στο εικονίδιο του <application>Invest</application> στον πίνακα. Μια λίστα των τιμών σας θα εμφανιστεί. Για να κλείσετε τη λίστα, κάντε ξανά κλικ στο εικονίδιο. Σημειώστε ότι οι τιμές εμφανίζονται συνήθως με 15λεπτη καθυστέρηση.</para>
+    </sect3>
+
+    <sect3 id="invest-applet-to-refresh-stocks">
+
+      <title>Ενημέρωση της εμφάνισης</title>
+      <para>Για άμεση ενημέρωση των πληροφοριών που εμφανίζονται στη μικροεφαρμογή,δεξί κλικ στη μικροεφαρμογή,και κατόπιν επιλέξτε <guilabel>Ανανέωση</guilabel>.</para>
+    </sect3>
+    <sect3 id="invest-applet-to-remove-stocks">
+       <title>Αφαίρεση τιμών από την μικροεφαρμογή</title>
+      <para>Για να αφαιρέσετε τιμές από το <application>Invest</application>, κάντε τα εξής βήματα:</para>
+      <orderedlist>
+        <listitem>
+          <para>Κάντε δεξί κλικ στο εικονίδιο στον πίνακα εφαρμογών και επιλέξτε <guilabel>Προτιμήσεις</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Κάντε κλικ στη γραμμή που περιέχει την τιμή που θέλετε να αφαιρέσετε.</para>
+        </listitem>
+        <listitem>
+          <para>Κάντε κλικ στο <guilabel>Αφαίρεση</guilabel> για να διαγραφεί η λίστα.</para>
+        </listitem>
+        <listitem>
+          <para>Κάντε κλικ στο <guilabel>Κλείσιμο</guilabel> μόλις τελειώσετε.</para>
+        </listitem>
+      </orderedlist> 
+    </sect3>
+   </sect2>
+
+    <sect2 id="invest-applet-configure-currencies">
+      <title>Ρύθμιση μετατροπών νομισμάτων</title>
+      <para>Το Invest εμφανίζει όλες τις τιμές στο αρχικό τους νόμισμα όπως τις ανακτά από το Yahoo! Finance. Αν επιθυμείτε να εμφανίζονται όλες οι τιμές σε ένα νόμισμα, αυτό μπορεί να διαμορφωθεί στο διάλογο προτιμήσεων.</para>
+      <orderedlist>
+        <listitem>
+          <para>Κάντε δεξί κλικ στο εικονίδιο στον πίνακα εφαρμογών και επιλέξτε <guilabel>Προτιμήσεις</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Πληκτρολογήστε το επιθυμητό νόμισμα στο πεδίο κειμένου <guilabel>Νόμισμα</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Ενώ πληκτρολογείτε, το πεδίο κειμένου θα προτείνει νομίσματα που ταιριάζουν με αυτό που εισάγατε.</para>
+        </listitem>
+        <listitem>
+          <para>Επιλέξτε το επιθυμητό νόμισμα.</para>
+        </listitem>
+        <listitem>
+          <para>Παρατηρήστε ότι στη λίστα των τιμών εμφανίζεται η κανούρια στήλη <guilabel>Νομσματική ισοτιμία</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Για όλες τις αγορές όπου η <guilabel>Τιμή</guilabel> και οι <guilabel>Προμήθεια</guilabel> δίνονται στο αρχικό τους νόμισμα, πρέπει να δίνεται η ισοτιμία τη στιγμή της αγοράς από το νόμισμα προέλευσης στο επιθυμητό νόμισμα στο πεδίο <guilabel>Ισοτιμία</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Κάντε κλικ στο <guilabel>Κλείσιμο</guilabel> μόλις τελειώσετε.</para>
+        </listitem>
+      </orderedlist>
+      <para>Ας δούμε ένα παράδειγμα: Αγοράσατε μια μετοχή της Yahoo! (YHOO) για 10.00 USD με ισοτιμία 0.75 EUR ανά USD. Με άλλα λόγια, η μετοχή κόστισε 7.50 EUR. Πληρώσατε επιπλέον 5.00 USD προμήθεια, που ισοδυναμεί σε 3.75 EUR. Όταν ορίσετε το νόμισμα στόχο σε EUR, πρέπει είτε να εισάγεται τις τιμές σε EUR (νόμισμα στόχος) και να διατηρήσετε την <guilabel>Ισοτιμία</guilabel> στο 0.00, ή να εισάγεται τις τιμές σε USD (νόμισμα προέλευσης) και να εισάγετε την ισοτιμία EUR ανά USD (<ulink url="http://finance.yahoo.com/q?s=eurusd%3DX">USDEUR=X</ulink>).</para>
+      <tip>
+        <para>Η <guilabel>Τιμή</guilabel> και η <guilabel>Προμήθεια</guilabel> πρέπει αμφότερες να είναι στο ίδιο νόμισμα.</para>
+      </tip>
+      <para>Αν θέλετε να αφαιρέσετε ξανά το νόμισμα στόχο, απλώς εκκαθαρίστε το πεδίο κειμένου <guilabel>Νόμισμα</guilabel>.</para>
+   </sect2>
+
+    <sect2 id="invest-applet-stock-charts-options">
+      <title>Επιλογές διαγραμμάτων</title>
+      <para>Για κάθε τιμή στη λίστα σας, είναι διαθέσιμο ένα οικονομικό γράφημα. Για να ανοίξετε το οικονομικό διάγραμμα, δείτε τη λίστα με τις διαμορφωμένες τιμές και κάντε διπλό κλικ στη τιμή που θέλετε να παραστήσετε. Οι παράμετροι του διαγράμματος μπορούν να προσαρμοστούν πάτωντας τις <guilabel>Επιλογές</guilabel>.</para>
+	<sect3 id="invest-applet-stock-chart-options-date">
+	<title>Χρονικό εύρος</title>
+              <para>Το εύρος ημερομηνιών, στην πάνω δεξιά γωνία του παραθύρου, επιλέγει τη χρονική διάρκεια της αναφοράς. Από προεπιλογή, δίνει δεδομένα μιας ημέρας αλλά μπορούν να επιλεγούν οι ακόλουθες διάρκειες: <guilabel>Σήμερα</guilabel>, <guilabel>5 Ημέρες</guilabel>, <guilabel>3 Μήνες</guilabel>, <guilabel>6 Μήνες</guilabel>, <guilabel>1 Έτος</guilabel>, <guilabel>5 Έτη</guilabel>, <guilabel>Μέγιστο</guilabel>.</para>
+
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-graph">
+	<title>Τεχνοτροπία διαγράμματος</title>
+              <para>Πληροφορίες για  ιστορικό τιμών μπορούν να διαγραμμηθούν σε τρεις διαφορετικούς τρόπους. Μπορείτε να επιλέξετε γράφημα γραμμής, γράφημα ράβδου ή γράφημα κηροπήγιου.</para>
+	  <itemizedlist>
+            <listitem>
+              <para><guilabel>Γράφημα γραμμής</guilabel> (<guilabel>γ</guilabel>)</para>
+	      <para>Αυτή είναι η προεπιλογή. Αυτή σχεδιάζει την πληροφορία του ιστορικού τιμών με οικείο τρόπο, συνδέοντας την τιμή κλεισίματος κάθε μέρας με μία γραμμή για κάθε μετοχή. Γραφήματα γραμμής για τον σχεδιασμό των τιμών είναι χρήσιμα αν κάποιος αναλυτής ενδιαφέρετε μόνο για την τιμή κλεισίματος κάθε φορά.</para>
+            </listitem>
+            <listitem>
+              <para><guilabel>Γράφημα ράβδων</guilabel> (<guilabel>ρ</guilabel>)</para>
+	      <para>Ένα γράφημα ράβδων αναπαριστά τη δραστηριότητα όλης της ημέρας με μία μοναδική κατακόρυφη ράβδο. Η κορυφή της κατακόρυφης γραμμής προσδιορίζει την υψηλότερη τιμή που εμπορεύτηκε μια κινητή αξία κατά την διάρκεια της ημέρας, και το κάτω μέρος αναπαριστά την χαμηλότερη τιμή. Η τιμή κλεισίματος φαίνεται στο δεξιό μέρος της ράβδου, και η τιμή ανοίγματος φαίνεται στην αριστερή μεριά της ράβδου. Μία ράβδος αναπαριστά διαπραγμάτευση μίας μέρας.</para>
+            </listitem>
+            <listitem>
+              <para><guilabel>Γράφημα κεριού</guilabel> (<guilabel>κ</guilabel>)</para>
+	      <para>Σε ένα ορθογωνικό γράφημα στο οποίο οι τιμές κλεισίματος και ανοίγματος αναπαριστούνται σαν η κορυφή και το κάτω μέρος του ορθογωνίου που περιβάλλει μία κατακόρυφη γραμμή που συνδέει την υψηλότερη και τη χαμηλότερη τιμή. Το σώμα του ορθογωνίου γεμίζει αν η τιμή κλεισίματος είναι χαμηλότερη από την τιμή ανοίγματος και μένει κενό αν η τιμή κλεισίματος είναι υψηλότερη από την τιμή ανοίγματος.</para>
+
+            </listitem>
+	</itemizedlist>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-ma">
+	<title>Κινητός μέσος όρος</title>
+              <para>Ο κινούμενος μέσος όρος είναι μία στατιστική σειρά των τιμών κλεισίματος μιας αξίας σε συνεχόμενες ημέρες διαπραγμάτευσης. Συνήθως απεικονίζονται στο ίδιο γράφημα όπως το γράφημα γραμμής για να προσδιοριστούν οι τάσεις στις τιμές.</para>
+	</sect3>
+
+	<sect3 id="invest-applet-stock-chart-options-ema">
+	<title>Εκθετικός κινητός μέσος όρος</title>
+              <para>Η εκθετική κίνηση του μέσου όρου (ΕΜΟ), ορίζεται ως ο κινούμενος μέσος όρος, υπολογιζόμενος δίνοντας μεγαλύτερο βάρος στις πιο πρόσφατες τιμές από ότι στις παλιές τιμές. Αυτός ο τύπος κινούμενου μέσου όρου αντιδρά γρηγορότερα στις πρόσφατες αλλαγές τιμών από ότι ένα απλό κινούμενο μέσο όρο. Η 12- και 26-ήμερη ΕΜΟ είναι γνωστές για βραχυπρόθεσμους μέσους όρους, ενώ οι ΕΜΟ μεγαλύτεροι από 50 ημέρες χρησιμοποιούνται για να αξιοσημειώσουν μακροπρόθεσμες τάσεις.</para>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-overlays">
+	<title>Υπερθέσεις</title>
+              <para>Οι υπερθέσεις δίνουν την δυνατότητα σχεδίασης πολλαπλών στατιστικών μετρήσεων σε ένα μοναδικό γράφημα. Για παράδειγμα, μπορείτε να συγκρίνετε την απόδοση μίας μοναδικής τιμής έναντι κάποιου δείκτη όπως του NASDAQ  ή του DJIA.</para>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-indicators">
+	<title>Δείκτες</title>
+              <para>Οι δείκτες χρησιμοποιούνται για να προβλέψουν τις μελλοντικές οικονομικές τάσεις.Η σωστή χρήση των δεικτών αγοράς δεν περιέχετε στο εγχειρίδιο του Invest. </para>
+
+	</sect3>
+    </sect2>
+  </sect1>
+</article>

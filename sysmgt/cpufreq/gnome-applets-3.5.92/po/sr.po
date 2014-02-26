@@ -1,0 +1,3742 @@
+# Serbian translation of gnome-applets
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2003, 2004, 2005, 2006.
+# This file is distributed under the same license as the gnome-applets package.
+# Maintainer: Данило Шеган <danilo@gnome.org>
+# Reviewed on 2005-09-03 by: Игор Несторовић <igor@prevod.org>
+# Милош Поповић <gpopac@gmail.com>, 2010.
+# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"applets&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-02-19 10:30+0000\n"
+"PO-Revision-Date: 2012-02-26 15:38+0200\n"
+"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"Language-Team: Serbian <gnom@prevod.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Project-Style: gnome\n"
+
+#: ../accessx-status/applet.c:139
+msgid "Shows the state of AccessX features such as latched modifiers"
+msgstr ""
+"Приказује стање функција Приступачности Икса као што су задржани измењивачи"
+
+#. about.set_artists([])
+#. about.set_documenters([])
+#. translators: These appear in the About dialog, usual format applies.
+#. "documenters",        documenters,
+#: ../accessx-status/applet.c:144 ../battstat/battstat_applet.c:1203
+#: ../charpick/charpick.c:612 ../cpufreq/src/cpufreq-applet.c:611
+#: ../drivemount/drivemount.c:106 ../geyes/geyes.c:153
+#: ../gweather/gweather-about.c:55 ../invest-applet/invest/about.py:29
+#: ../mini-commander/src/about.c:53 ../mixer/applet.c:1424
+#: ../modemlights/modem-applet.c:1023 ../multiload/main.c:61
+#: ../stickynotes/stickynotes_applet_callbacks.c:383
+#: ../trashapplet/src/trashapplet.c:431
+msgid "translator-credits"
+msgstr ""
+"Данило Шеган <danilo@prevod.org>\n"
+"\n"
+"http://prevod.org — превод на српски језик."
+
+#: ../accessx-status/applet.c:169
+#, c-format
+msgid "There was an error launching the help viewer: %s"
+msgstr "Дошло је до грешке при покретању прегледача помоћи: %s"
+
+#: ../accessx-status/applet.c:201
+msgid "Open the keyboard preferences dialog"
+msgstr "Отвара прозорче поставки тастатуре"
+
+#: ../accessx-status/applet.c:219
+#, c-format
+msgid "There was an error launching the keyboard preferences dialog: %s"
+msgstr "Дошло је до грешке при приказивању прозорчета поставки тастатуре: %s"
+
+#: ../accessx-status/applet.c:238
+msgid "_Keyboard Accessibility Preferences"
+msgstr "Поставке приступачности _тастатуре"
+
+#: ../accessx-status/applet.c:241 ../battstat/battstat_applet.c:64
+#: ../charpick/charpick.c:719 ../cpufreq/src/cpufreq-applet.c:126
+#: ../drivemount/drivemount.c:144 ../geyes/geyes.c:318
+#: ../gweather/gweather-applet.c:124
+#: ../mini-commander/src/mini-commander_applet.c:56 ../mixer/applet.c:381
+#: ../modemlights/modem-applet.c:151 ../multiload/main.c:465
+#: ../stickynotes/stickynotes_applet.c:45 ../trashapplet/src/trashapplet.c:75
+msgid "_Help"
+msgstr "_Помоћ"
+
+#: ../accessx-status/applet.c:244 ../battstat/battstat_applet.c:67
+#: ../charpick/charpick.c:722 ../cpufreq/src/cpufreq-applet.c:129
+#: ../drivemount/drivemount.c:147 ../geyes/geyes.c:321
+#: ../gweather/gweather-applet.c:127
+#: ../mini-commander/src/mini-commander_applet.c:59 ../mixer/applet.c:384
+#: ../modemlights/modem-applet.c:154 ../multiload/main.c:468
+#: ../stickynotes/stickynotes_applet.c:48 ../trashapplet/src/trashapplet.c:78
+msgid "_About"
+msgstr "_О програму"
+
+#. Note to translators: the first letter of the alphabet, not the indefinite article
+#: ../accessx-status/applet.c:468 ../accessx-status/applet.c:508
+msgid "a"
+msgstr "а"
+
+#: ../accessx-status/applet.c:981 ../accessx-status/applet.c:1055
+#: ../accessx-status/applet.c:1124 ../accessx-status/applet.c:1290
+msgid "AccessX Status"
+msgstr "Стање приступачности Икса"
+
+#: ../accessx-status/applet.c:982 ../accessx-status/applet.c:1125
+msgid "Shows keyboard status when accessibility features are used."
+msgstr "Приказује стање тастатуре када се користе функције приступачности."
+
+#: ../accessx-status/applet.c:1017
+msgid "XKB Extension is not enabled"
+msgstr "ХКБ проширење није укључено"
+
+#: ../accessx-status/applet.c:1022
+msgid "Unknown error"
+msgstr "Непозната грешка"
+
+#: ../accessx-status/applet.c:1030
+#, c-format
+msgid "Error: %s"
+msgstr "Грешка: %s"
+
+#: ../accessx-status/applet.c:1287
+#: ../accessx-status/org.gnome.applets.AccessxStatusApplet.panel-applet.in.in.h:3
+msgid "Keyboard Accessibility Status"
+msgstr "Стање приступачности тастатуре"
+
+#: ../accessx-status/applet.c:1292
+msgid "Displays current state of keyboard accessibility features"
+msgstr "Приказује текуће стање функција приступачности тастатуре"
+
+#: ../accessx-status/org.gnome.applets.AccessxStatusApplet.panel-applet.in.in.h:1
+msgid "AccessX Status Applet Factory"
+msgstr "Производња програмчета стања приступасчности Икса"
+
+#: ../accessx-status/org.gnome.applets.AccessxStatusApplet.panel-applet.in.in.h:2
+msgid "Keyboard Accessibility Status Applet Factory"
+msgstr "Производња програмчета стања приступачности тастатуре"
+
+#: ../accessx-status/org.gnome.applets.AccessxStatusApplet.panel-applet.in.in.h:4
+msgid "Shows the status of keyboard accessibility features"
+msgstr "Приказује стање функција приступачности тастатуре"
+
+#: ../battstat/battstat_applet.c:61 ../charpick/charpick.c:716
+#: ../cpufreq/src/cpufreq-applet.c:123 ../geyes/geyes.c:315
+#: ../gweather/gweather-applet.c:121
+#: ../mini-commander/src/mini-commander_applet.c:53 ../mixer/applet.c:387
+#: ../multiload/main.c:459 ../stickynotes/stickynotes_applet.c:42
+msgid "_Preferences"
+msgstr "_Поставке"
+
+#: ../battstat/battstat_applet.c:72
+msgid "System is running on AC power"
+msgstr "Систем се напаја из електричне мреже"
+
+#: ../battstat/battstat_applet.c:73
+msgid "System is running on battery power"
+msgstr "Систем се напаја из батерије"
+
+#: ../battstat/battstat_applet.c:339
+#, c-format
+msgid "Battery charged (%d%%)"
+msgstr "Батерија је напуњена (%d%%)"
+
+#: ../battstat/battstat_applet.c:341
+#, c-format
+msgid "Unknown time (%d%%) remaining"
+msgstr "Није познато преостало време (%d%%)"
+
+#: ../battstat/battstat_applet.c:343
+#, c-format
+msgid "Unknown time (%d%%) until charged"
+msgstr "Није познато преостало време пуњења (%d%%)"
+
+#: ../battstat/battstat_applet.c:348
+#, c-format
+msgid "%d minute (%d%%) remaining"
+msgid_plural "%d minutes (%d%%) remaining"
+msgstr[0] "Преостаје %d минут (%d%%)"
+msgstr[1] "Преостају %d минута (%d%%)"
+msgstr[2] "Преостаје %d минута (%d%%)"
+msgstr[3] "Преостао је један минут (%d%%)"
+
+#: ../battstat/battstat_applet.c:353
+#, c-format
+msgid "%d minute until charged (%d%%)"
+msgid_plural "%d minutes until charged (%d%%)"
+msgstr[0] "%d минут до пуне батерије (%d%%)"
+msgstr[1] "%d минута до пуне батерије (%d%%)"
+msgstr[2] "%d минута до пуне батерије (%d%%)"
+msgstr[3] "Још минут до пуне батерије (%d%%)"
+
+#: ../battstat/battstat_applet.c:359
+#, c-format
+msgid "%d hour (%d%%) remaining"
+msgid_plural "%d hours (%d%%) remaining"
+msgstr[0] "Преостаје %d сат (%d%%)"
+msgstr[1] "Преостају %d сата (%d%%)"
+msgstr[2] "Преостаје %d сати (%d%%)"
+msgstr[3] "Преостао је један сат (%d%%)"
+
+#: ../battstat/battstat_applet.c:364
+#, c-format
+msgid "%d hour until charged (%d%%)"
+msgid_plural "%d hours until charged (%d%%)"
+msgstr[0] "%d сат до пуне батерије (%d%%)"
+msgstr[1] "%d сата до пуне батерије (%d%%)"
+msgstr[2] "%d сати до пуне батерије (%d%%)"
+msgstr[3] "Један сат до пуне батерије (%d%%)"
+
+#. TRANSLATOR: "%d %s %d %s" are "%d hours %d minutes"
+#. * Swap order with "%2$s %2$d %1$s %1$d if needed
+#: ../battstat/battstat_applet.c:371
+#, c-format
+msgid "%d %s %d %s (%d%%) remaining"
+msgstr "Преостаје %d %s и %d %s (%d%%)"
+
+#: ../battstat/battstat_applet.c:372 ../battstat/battstat_applet.c:379
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "сат"
+msgstr[1] "сата"
+msgstr[2] "сати"
+msgstr[3] "сат"
+
+#: ../battstat/battstat_applet.c:373 ../battstat/battstat_applet.c:380
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "минут"
+msgstr[1] "минута"
+msgstr[2] "минута"
+msgstr[3] "минут"
+
+#. TRANSLATOR: "%d %s %d %s" are "%d hours %d minutes"
+#. * Swap order with "%2$s %2$d %1$s %1$d if needed
+#: ../battstat/battstat_applet.c:378
+#, c-format
+msgid "%d %s %d %s until charged (%d%%)"
+msgstr "%d %s %d %s до пуне батерије (%d%%)"
+
+#: ../battstat/battstat_applet.c:392
+msgid "Battery Monitor"
+msgstr "Праћење стања батерије"
+
+#: ../battstat/battstat_applet.c:402 ../battstat/battstat_applet.c:461
+msgid "Your battery is now fully recharged"
+msgstr "Батерија је сада у потпуности напуњена"
+
+#: ../battstat/battstat_applet.c:438 ../battstat/battstat_applet.c:593
+msgid "Battery Notice"
+msgstr "Обавештење о батерији"
+
+#. we don't know the remaining time
+#: ../battstat/battstat_applet.c:538
+#, c-format
+msgid "You have %d%% of your total battery capacity remaining."
+msgstr "Преостало вам је укупно %d%% од капацитета батерије."
+
+#: ../battstat/battstat_applet.c:544
+#, c-format
+msgid ""
+"You have %d minute of battery power remaining (%d%% of the total capacity)."
+msgid_plural ""
+"You have %d minutes of battery power remaining (%d%% of the total capacity)."
+msgstr[0] "Можете да радите још %d минут на батерији (%d%% укупног капацитета)."
+msgstr[1] "Можете да радите још %d минута на батерији (%d%% укупног капацитета)."
+msgstr[2] "Можете да радите још %d минута на батерији (%d%% укупног капацитета)."
+msgstr[3] "Можете да радите још %d минут на батерији (%d%% укупног капацитета)."
+
+#. TRANSLATORS: this is a list, it is left as a single string
+#. * to allow you to make it appear like a list would in your
+#. * locale.  This is if the laptop does not support suspend.
+#: ../battstat/battstat_applet.c:556
+msgid ""
+"To avoid losing your work:\n"
+" • plug your laptop into external power, or\n"
+" • save open documents and shut your laptop down."
+msgstr ""
+"Да избегнете губитак података:\n"
+" • прикључите преносни рачунар на електричну мрежу, или\n"
+" • сачувајте отворене документе и искључите рачунар."
+
+#. TRANSLATORS: this is a list, it is left as a single string
+#. * to allow you to make it appear like a list would in your
+#. * locale.  This is if the laptop supports suspend.
+#: ../battstat/battstat_applet.c:564
+msgid ""
+"To avoid losing your work:\n"
+" • suspend your laptop to save power,\n"
+" • plug your laptop into external power, or\n"
+" • save open documents and shut your laptop down."
+msgstr ""
+"Да избегнете губитак података:\n"
+" • пребаците преносни рачунар у приправност,\n"
+" • прикључите га на електричну мрежу, или\n"
+" • сачувајте отворене документе и искључите рачунар."
+
+#: ../battstat/battstat_applet.c:572
+msgid "Your battery is running low"
+msgstr "Батерија је скоро празна"
+
+#: ../battstat/battstat_applet.c:667
+msgid "No battery present"
+msgstr "Батерија није присутна"
+
+#: ../battstat/battstat_applet.c:670
+msgid "Battery status unknown"
+msgstr "Није познато стање батерије"
+
+#: ../battstat/battstat_applet.c:850
+msgid "N/A"
+msgstr "Недоступно"
+
+#: ../battstat/battstat_applet.c:1150 ../drivemount/drivemount.c:132
+#: ../geyes/geyes.c:303 ../geyes/themes.c:242 ../gweather/gweather-applet.c:70
+#: ../gweather/gweather-pref.c:746 ../mini-commander/src/preferences.c:366
+#: ../stickynotes/stickynotes_applet_callbacks.c:349
+#: ../stickynotes/stickynotes_applet_callbacks.c:565
+#: ../trashapplet/src/trashapplet.c:398
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Дошло је до грешке при приказивању помоћи: %s"
+
+#: ../battstat/battstat_applet.c:1190
+msgid "This utility shows the status of your laptop battery."
+msgstr "Ова алатка приказује стање батерије вашег преносног рачунара."
+
+#. true
+#: ../battstat/battstat_applet.c:1192
+msgid "HAL backend enabled."
+msgstr "Омогућена је ХАЛ позадинска услуга."
+
+#. false
+#: ../battstat/battstat_applet.c:1193
+msgid "Legacy (non-HAL) backend enabled."
+msgstr "Омогућена је обична услуга (не ХАЛ)."
+
+#: ../battstat/battstat_applet.c:1569 ../battstat/battstat_applet.c:1622
+#: ../battstat/org.gnome.applets.BattstatApplet.panel-applet.in.in.h:2
+msgid "Battery Charge Monitor"
+msgstr "Праћење стања батерије"
+
+#: ../battstat/battstat_applet.c:1623
+#: ../battstat/org.gnome.applets.BattstatApplet.panel-applet.in.in.h:3
+msgid "Monitor a laptop's remaining power"
+msgstr "Пратите преостало напајање преносног рачунара"
+
+#: ../battstat/battstat_applet.ui.h:1
+msgid "Battery Charge Monitor Preferences"
+msgstr "Поставке праћења стања батерије"
+
+#: ../battstat/battstat_applet.ui.h:2
+msgid "Appearance"
+msgstr "Изглед"
+
+#: ../battstat/battstat_applet.ui.h:3
+msgid "_Compact view"
+msgstr "_Сажети приказ"
+
+#: ../battstat/battstat_applet.ui.h:4
+msgid "(shows single image for status and charge)"
+msgstr "(приказује једну слику за стање и напон)"
+
+#: ../battstat/battstat_applet.ui.h:5
+msgid "_Expanded view"
+msgstr "_Опширни приказ"
+
+#: ../battstat/battstat_applet.ui.h:6
+msgid "(two images: one for status, one for charge)"
+msgstr "(две слике: једна за стање, друга за напон)"
+
+#: ../battstat/battstat_applet.ui.h:7
+msgid "_Show time/percentage:"
+msgstr "При_кажи време/постотак:"
+
+#: ../battstat/battstat_applet.ui.h:8
+msgid "Show _time remaining"
+msgstr "Прикажи преостало _време"
+
+#: ../battstat/battstat_applet.ui.h:9
+msgid "Show _percentage remaining"
+msgstr "Прикажи преостали _постотак"
+
+#: ../battstat/battstat_applet.ui.h:10
+msgid "Notifications"
+msgstr "Обавештења"
+
+#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge drops to: [XX] percent/minutes remaining'
+#: ../battstat/battstat_applet.ui.h:12
+msgid "_Warn when battery charge drops to:"
+msgstr "_Упозори када напуњеност батерија спадне на:"
+
+#: ../battstat/battstat_applet.ui.h:13
+msgid "_Notify when battery is fully recharged"
+msgstr "_Обавести када се батерија потпуно напуни"
+
+#: ../battstat/battstat-hal.c:343 ../battstat/battstat-hal.c:368
+msgid "HAL error"
+msgstr "Грешка у програму ХАЛ"
+
+#: ../battstat/battstat-hal.c:343
+msgid "Could not create libhal_ctx"
+msgstr "Не могу да направим „libhal_ctx“"
+
+#: ../battstat/battstat-hal.c:368
+msgid "No batteries found"
+msgstr "Батерија није присутна"
+
+#: ../battstat/battstat-hal.c:417
+#, c-format
+msgid "Unable to initialise HAL: %s: %s"
+msgstr "Не могу да покренем ХАЛ-а: %s: %s"
+
+#: ../battstat/battstat.schemas.in.h:1
+msgid "Red value level"
+msgstr "Вредност за црвено"
+
+#: ../battstat/battstat.schemas.in.h:2
+msgid ""
+"The battery level below which the battery is displayed as red. Also the "
+"value at which the low battery warning is displayed."
+msgstr ""
+"Стање батерије испод којег се батерија приказује у црвеној боји. Такође "
+"вредност за коју се приказује упозорење о попуњености батерије."
+
+#: ../battstat/battstat.schemas.in.h:3
+msgid "Warn on low time rather than low percentage"
+msgstr "Упозорава када преостане мало времена уместо малог постотка"
+
+#: ../battstat/battstat.schemas.in.h:4
+msgid ""
+"Use the value defined in red_value as a time remaining to show the warning "
+"dialog rather than a percentage."
+msgstr ""
+"Користи вредност одређену са „red_value“ као преостало време за приказ "
+"упозорења уместо постотка."
+
+#: ../battstat/battstat.schemas.in.h:5
+msgid "Low Battery Notification"
+msgstr "Обавештење о слабој батерији"
+
+#: ../battstat/battstat.schemas.in.h:6
+msgid "Notify user when the battery is low."
+msgstr "Обавештава корисника када је батерија слаба."
+
+#: ../battstat/battstat.schemas.in.h:7
+msgid "Full Battery Notification"
+msgstr "Обавештење о пуној батерији"
+
+#: ../battstat/battstat.schemas.in.h:8
+msgid "Notify user when the battery is full."
+msgstr "Обавештава корисника када се напуни батерија."
+
+#: ../battstat/battstat.schemas.in.h:9
+msgid "Beep for warnings"
+msgstr "Звучна упозорења"
+
+#: ../battstat/battstat.schemas.in.h:10
+msgid "Beep when displaying a warning."
+msgstr "Звучно се оглашава приликом приказивања упозорења."
+
+#: ../battstat/battstat.schemas.in.h:11
+msgid "Drain from top"
+msgstr "Прађњење од врха"
+
+#: ../battstat/battstat.schemas.in.h:12
+msgid ""
+"Show the battery meter draining from the top of the battery. Only "
+"implemented for traditional battery view."
+msgstr ""
+"Приказује стање батерије која се празни од врха. Користи се само за "
+"традиционални преглед батерије."
+
+#: ../battstat/battstat.schemas.in.h:13
+msgid "Upright (small) battery"
+msgstr "Усправна (мала) батерија"
+
+#: ../battstat/battstat.schemas.in.h:14
+msgid "Show the upright, smaller battery on the panel."
+msgstr "Приказује усправну, умањену батерију на панелу."
+
+#: ../battstat/battstat.schemas.in.h:15
+msgid "Show the horizontal battery"
+msgstr "Приказује батерију положено"
+
+#: ../battstat/battstat.schemas.in.h:16
+msgid "Show the traditional, horizontal battery on the panel."
+msgstr "Приказује традиционалну, положену батерију на панелу."
+
+#: ../battstat/battstat.schemas.in.h:17
+msgid "Show the time/percent label"
+msgstr "Приказује време/постотак напуњености"
+
+#: ../battstat/battstat.schemas.in.h:18
+msgid "0 for no label, 1 for percentage and 2 for time remaining."
+msgstr "0 за искључивање ознаке, 1 за проценат и 2 за преостало време."
+
+#: ../battstat/org.gnome.applets.BattstatApplet.panel-applet.in.in.h:1
+msgid "Battstat Factory"
+msgstr "Производња стања батерије"
+
+#. TRANSLATOR: this is a selectable item in a drop-down menu to end
+#. * this sentence:
+#. *   "Warn when battery charge drops to: [XX] percent".
+#.
+#: ../battstat/properties.c:314
+msgid "Percent"
+msgstr "Постотак"
+
+#. TRANSLATOR: this is a selectable item in a drop-down menu to end
+#. * this sentence:
+#. *   "Warn when battery charge drops to: [XX] minutes remaining"
+#.
+#: ../battstat/properties.c:320
+msgid "Minutes Remaining"
+msgstr "Преостало минута"
+
+#: ../battstat/sounds/battstat_applet.soundlist.in.h:1
+msgid "Battery Status Utility"
+msgstr "Алатка за стање батерије"
+
+#: ../battstat/sounds/battstat_applet.soundlist.in.h:2
+msgid "Battery power low"
+msgstr "Батерија је слаба"
+
+#: ../battstat/sounds/battstat_applet.soundlist.in.h:3
+msgid "Battery fully re-charged"
+msgstr "Батерија је у потпуности напуњена"
+
+#: ../charpick/charpick.c:438
+msgid "Available palettes"
+msgstr "Доступне палете"
+
+#. TRANSLATOR: This sentance reads something like 'Insert "PILCROW SIGN"'
+#. *             hopefully, the name of the unicode character has already
+#. *             been translated.
+#.
+#: ../charpick/charpick.c:485
+#, c-format
+msgid "Insert \"%s\""
+msgstr "Уметни „%s“"
+
+#: ../charpick/charpick.c:488
+msgid "Insert special character"
+msgstr "Уметни нарочити знак"
+
+#: ../charpick/charpick.c:492
+#, c-format
+msgid "insert special character %s"
+msgstr "умеће нарочити знак %s"
+
+#: ../charpick/charpick.c:607
+msgid ""
+"Gnome Panel applet for selecting strange characters that are not on my "
+"keyboard. Released under GNU General Public Licence."
+msgstr ""
+"Програмче Гномовог панела за избор чудних знакова који се не налазе на мојој "
+"тастатури. Објављено под Гнуовом Општом јавном лиценцом (GNU GPL)."
+
+#: ../charpick/charpick.c:745 ../charpick/charpick.c:759
+#: ../charpick/org.gnome.applets.CharpickerApplet.panel-applet.in.in.h:2
+#: ../charpick/properties.c:451
+msgid "Character Palette"
+msgstr "Палета знакова"
+
+#: ../charpick/charpick.c:745
+#: ../charpick/org.gnome.applets.CharpickerApplet.panel-applet.in.in.h:3
+msgid "Insert characters"
+msgstr "Унесите знакове"
+
+#: ../charpick/charpick.schemas.in.h:1
+msgid "DEPRECATED - Characters shown on applet startup"
+msgstr "ЗАСТАРЕЛО — Знакови који се приказују по покретању програмчета"
+
+#: ../charpick/charpick.schemas.in.h:2
+msgid "Characters shown on applet startup"
+msgstr "Знакови који се приказују по покретању програмчета"
+
+#: ../charpick/charpick.schemas.in.h:3
+msgid ""
+"The string that the user had selected when the applet was last used. This "
+"string will be displayed when the user starts the applet."
+msgstr ""
+"Ниска коју је изабрао корисник при последњој употреби програмчета. Ова ниска "
+"ће бити приказана када корисник покрене програмче."
+
+#: ../charpick/charpick.schemas.in.h:4 ../charpick/properties.c:378
+msgid "List of available palettes"
+msgstr "Списак доступних палета"
+
+#: ../charpick/charpick.schemas.in.h:5
+msgid "List of strings containing the available palettes."
+msgstr "Списак ниски које садрже доступне палете."
+
+#: ../charpick/org.gnome.applets.CharpickerApplet.panel-applet.in.in.h:1
+msgid "Charpicker Applet Factory"
+msgstr "Фабрика програмчета за избор знакова"
+
+#: ../charpick/properties.c:28
+msgid "_Edit"
+msgstr "_Уређивање"
+
+#: ../charpick/properties.c:116
+msgid "_Palette:"
+msgstr "_Палета:"
+
+#: ../charpick/properties.c:124
+msgid "Palette entry"
+msgstr "Унос у палети"
+
+#: ../charpick/properties.c:125
+msgid "Modify a palette by adding or removing characters"
+msgstr "Измените палету додавањем или уклањањем знакова"
+
+#: ../charpick/properties.c:239
+msgid "Add Palette"
+msgstr "Додај палету"
+
+#: ../charpick/properties.c:276
+msgid "Edit Palette"
+msgstr "Уреди палету"
+
+#: ../charpick/properties.c:377
+msgid "Palettes list"
+msgstr "Списак палета"
+
+#: ../charpick/properties.c:456
+msgid "_Palettes:"
+msgstr "_Палете:"
+
+#: ../charpick/properties.c:472
+msgid "Add button"
+msgstr "Дугме додавања"
+
+#: ../charpick/properties.c:473
+msgid "Click to add a new palette"
+msgstr "Кликните да додате нову палету"
+
+#: ../charpick/properties.c:480
+msgid "Edit button"
+msgstr "Дугме уређивања"
+
+#: ../charpick/properties.c:481
+msgid "Click to edit the selected palette"
+msgstr "Кликните да уредите изабрану палету"
+
+#: ../charpick/properties.c:488
+msgid "Delete button"
+msgstr "Дугме брисања"
+
+#: ../charpick/properties.c:489
+msgid "Click to delete the selected palette"
+msgstr "Кликните да обришете изабрану палету"
+
+#: ../charpick/properties.c:540
+msgid "Character Palette Preferences"
+msgstr "Поставке палете знакова"
+
+#: ../cpufreq/cpufreq-applet.schemas.in.h:1
+msgid "CPU to Monitor"
+msgstr "Процесор за праћење"
+
+#: ../cpufreq/cpufreq-applet.schemas.in.h:2
+msgid ""
+"Set the CPU to monitor. In a single processor system you don't have to "
+"change it."
+msgstr ""
+"Изаберите процесор за праћење. Нема потребе да мењате на једнопроцесорском "
+"систему."
+
+#: ../cpufreq/cpufreq-applet.schemas.in.h:3
+msgid "Mode to show cpu usage"
+msgstr "Режим за приказ искоришћења процесора"
+
+#: ../cpufreq/cpufreq-applet.schemas.in.h:4
+msgid ""
+"A 0 value means to show the applet in graphic mode (pixmap only), 1 to show "
+"the applet in text mode (not to show the pixmap) and 2 to show the applet in "
+"graphic and text mode."
+msgstr ""
+"Вредност 0 означава приказ програмчета са графиком (само слика), 1 приказ са "
+"текстом (без слике) а 2 приказ и графика и текста."
+
+#: ../cpufreq/cpufreq-applet.schemas.in.h:5
+msgid "The type of text to display (if the text is enabled)."
+msgstr "Врста текста ѕа приказ (ако је текст укључен)."
+
+#: ../cpufreq/cpufreq-applet.schemas.in.h:6
+msgid ""
+"A 0 value means to show cpu frequency, 1 to show frequency and units, and 2 "
+"to show percentage instead of frequency."
+msgstr ""
+"Вредност 0 означава приказ учестаности процесора, 1 за приказ учестаности и "
+"јединица, а 2 постотак уместо учестаности."
+
+#: ../cpufreq/cpufreq-preferences.ui.h:1
+msgid "CPU Frequency Monitor Preferences"
+msgstr "Поставке праћења учестаности процесора"
+
+#: ../cpufreq/cpufreq-preferences.ui.h:2
+msgid "Monitor Settings"
+msgstr "Подешавања монитора"
+
+#: ../cpufreq/cpufreq-preferences.ui.h:3
+msgid "_Monitored CPU:"
+msgstr "_Надгледани процесори:"
+
+#: ../cpufreq/cpufreq-preferences.ui.h:4
+msgid "Display Settings"
+msgstr "Подешавања екрана"
+
+#: ../cpufreq/cpufreq-preferences.ui.h:5
+msgid "_Appearance:"
+msgstr "_Изглед:"
+
+#: ../cpufreq/cpufreq-preferences.ui.h:6
+msgid "Show CPU frequency as _frequency"
+msgstr "Прикажи фреквенцију процесора"
+
+#: ../cpufreq/cpufreq-preferences.ui.h:7
+msgid "Show frequency _units"
+msgstr "Прикажи и мерне јединице"
+
+#: ../cpufreq/cpufreq-preferences.ui.h:8
+msgid "Show CPU frequency as _percentage"
+msgstr "Прикажи фреквенцију процесора у _процентима"
+
+#: ../cpufreq/org.gnome.applets.CPUFreqApplet.panel-applet.in.in.h:1
+#: ../cpufreq/src/cpufreq-applet.c:944 ../cpufreq/src/cpufreq-applet.c:1003
+msgid "CPU Frequency Scaling Monitor"
+msgstr "Праћење промене фреквенције процесора"
+
+#: ../cpufreq/org.gnome.applets.CPUFreqApplet.panel-applet.in.in.h:2
+msgid "Monitor the CPU Frequency Scaling"
+msgstr "Праћење промене фреквенције процесора"
+
+#: ../cpufreq/src/cpufreq-applet.c:579 ../cpufreq/src/cpufreq-prefs.c:478
+msgid "Could not open help document"
+msgstr "Не могу да отворим документ помоћи"
+
+#: ../cpufreq/src/cpufreq-applet.c:606
+msgid "This utility shows the current CPU Frequency Scaling."
+msgstr "Ова алатка приказује текуће стање фреквенције процесора."
+
+#: ../cpufreq/src/cpufreq-applet.c:1004
+msgid "This utility shows the current CPU Frequency"
+msgstr "Ова алатка приказује текућу фреквенцију процесора"
+
+#: ../cpufreq/src/cpufreq-prefs.c:613
+msgid "Graphic"
+msgstr "График"
+
+#: ../cpufreq/src/cpufreq-prefs.c:618
+msgid "Text"
+msgstr "Текст"
+
+#: ../cpufreq/src/cpufreq-prefs.c:623
+msgid "Graphic and Text"
+msgstr "График и текст"
+
+#: ../cpufreq/src/cpufreq-monitor-cpuinfo.c:121
+msgid "Frequency Scaling Unsupported"
+msgstr "Није подржана промена фреквенције"
+
+#. If there is no cpufreq support it shows only the cpu frequency,
+#. * I think is better than do nothing. I have to notify it to the user, because
+#. * he could think that cpufreq is supported but it doesn't work succesfully
+#.
+#: ../cpufreq/src/cpufreq-monitor-factory.c:59
+msgid "CPU frequency scaling unsupported"
+msgstr "Измена фреквенције процесора није подржана"
+
+#: ../cpufreq/src/cpufreq-monitor-factory.c:60
+msgid ""
+"You will not be able to modify the frequency of your machine.  Your machine "
+"may be misconfigured or not have hardware support for CPU frequency scaling."
+msgstr ""
+"Нећете моћи да измените фреквенцију рачунара. Рачунар можда није добро "
+"подешен или не подржава измену фреквенције процесора."
+
+#: ../cpufreq/src/cpufreq-selector/org.gnome.cpufreqselector.policy.in.h:1
+msgid "Change CPU Frequency scaling"
+msgstr "Промене фреквенције процесора"
+
+#: ../cpufreq/src/cpufreq-selector/org.gnome.cpufreqselector.policy.in.h:2
+msgid "Privileges are required to change the CPU Frequency scaling."
+msgstr "Потребна су овлашћења за промену фреквенције процесора."
+
+#: ../drivemount/drive-button.c:342 ../drivemount/drive-button.c:355
+msgid "(mounted)"
+msgstr "(прикључен)"
+
+#: ../drivemount/drive-button.c:344
+msgid "(not mounted)"
+msgstr "(није прикључен)"
+
+#: ../drivemount/drive-button.c:562
+msgid "Cannot start Nautilus File Manager"
+msgstr "Не могу да покренем Наутилус управника датотека"
+
+#: ../drivemount/drive-button.c:569
+msgid "Could not find Nautilus"
+msgstr "Не могу да пронађем Наутилус"
+
+#: ../drivemount/drive-button.c:893
+msgid "_Play DVD"
+msgstr "_Пусти ДВД"
+
+#: ../drivemount/drive-button.c:897
+msgid "_Play CD"
+msgstr "_Пусти ЦД"
+
+#: ../drivemount/drive-button.c:900
+#, c-format
+msgid "_Open %s"
+msgstr "_Отвори %s"
+
+#: ../drivemount/drive-button.c:908
+#, c-format
+msgid "Un_mount %s"
+msgstr "Ис_кључи %s"
+
+#: ../drivemount/drive-button.c:914
+#, c-format
+msgid "_Mount %s"
+msgstr "_Прикључи %s"
+
+#: ../drivemount/drive-button.c:922
+#, c-format
+msgid "_Eject %s"
+msgstr "_Избаци %s"
+
+#: ../drivemount/drivemount.c:103
+msgid "Applet for mounting and unmounting block volumes."
+msgstr "Програмче за прикључивање и искључивање блок уређаја."
+
+#: ../drivemount/drivemount.c:164 ../drivemount/drivemount.c:201
+#: ../drivemount/org.gnome.applets.DriveMountApplet.panel-applet.in.in.h:3
+msgid "Disk Mounter"
+msgstr "Прикључење диска"
+
+#: ../drivemount/drivemount.schemas.in.h:1
+msgid "Interval timeout to check mount point status"
+msgstr "Размак између две провере стања прикљученог уређаја"
+
+#: ../drivemount/drivemount.schemas.in.h:2
+msgid "Time in seconds between status updates"
+msgstr "Време у секундама између две провере стања"
+
+#: ../drivemount/org.gnome.applets.DriveMountApplet.panel-applet.in.in.h:1
+msgid "Drive Mount Applet Factory"
+msgstr "Производња програмчета за прикључивање дискова"
+
+#: ../drivemount/org.gnome.applets.DriveMountApplet.panel-applet.in.in.h:2
+msgid "Factory for drive mount applet"
+msgstr "Производња програмчета за прикључивање дискова"
+
+#: ../drivemount/org.gnome.applets.DriveMountApplet.panel-applet.in.in.h:4
+msgid "Mount local disks and devices"
+msgstr "Прикључите локалне дискове и уређаје"
+
+#: ../geyes/geyes.c:148
+msgid "A goofy set of eyes for the GNOME panel. They follow your mouse."
+msgstr "Шашаве очи за Гномов панел која прате курсор миша."
+
+#: ../geyes/geyes.c:348 ../geyes/geyes.c:379 ../geyes/geyes.c:381
+#: ../geyes/org.gnome.applets.GeyesApplet.panel-applet.in.in.h:2
+msgid "Eyes"
+msgstr "Очи"
+
+#: ../geyes/geyes.c:382
+msgid "The eyes look in the direction of the mouse pointer"
+msgstr "Погледом очи верно прате кретњу миша"
+
+#: ../geyes/geyes.schemas.in.h:1
+msgid "Directory in which the theme is located"
+msgstr "Директоријум у ком се налази тема"
+
+#: ../geyes/org.gnome.applets.GeyesApplet.panel-applet.in.in.h:1
+msgid "Geyes Applet Factory"
+msgstr "Фабрика програмчета ГОчи"
+
+#: ../geyes/org.gnome.applets.GeyesApplet.panel-applet.in.in.h:3
+msgid "A set of eyeballs for your panel"
+msgstr "Пар очију за ваш панел"
+
+#: ../geyes/themes.c:127
+msgid "Can not launch the eyes applet."
+msgstr "Не могу да покренем програмче с очима."
+
+#: ../geyes/themes.c:128
+msgid "There was a fatal error while trying to load the theme."
+msgstr "Дошло је до кобне грешке при покушају учитавања теме."
+
+#: ../geyes/themes.c:301
+msgid "Geyes Preferences"
+msgstr "Поставке ГОчију"
+
+#: ../geyes/themes.c:334
+msgid "Themes"
+msgstr "Теме"
+
+#: ../geyes/themes.c:355
+msgid "_Select a theme:"
+msgstr "_Изаберите тему:"
+
+#: ../gweather/gweather-about.c:50
+msgid "© 1999-2005 by S. Papadimitriou and others"
+msgstr "© 1999–2005 — С. Пападимитроу и други"
+
+#: ../gweather/gweather-about.c:51
+msgid "A panel application for monitoring local weather conditions."
+msgstr "Програмче панела за праћење локалних временских прилика."
+
+#: ../gweather/gweather-applet.c:115
+msgid "_Details"
+msgstr "_Детаљи"
+
+#: ../gweather/gweather-applet.c:118 ../gweather/gweather-dialog.c:215
+msgid "_Update"
+msgstr "_Освежи"
+
+#: ../gweather/gweather-applet.c:329
+#: ../gweather/org.gnome.applets.GWeatherApplet.panel-applet.in.in.h:3
+msgid "Weather Report"
+msgstr "Извештај о времену"
+
+#: ../gweather/gweather-applet.c:347 ../gweather/gweather-applet.c:351
+msgid "GNOME Weather"
+msgstr "Гном време"
+
+#: ../gweather/gweather-applet.c:452
+msgid "Weather Forecast"
+msgstr "Временска прогноза"
+
+#: ../gweather/gweather-applet.c:464
+#, c-format
+msgid ""
+"City: %s\n"
+"Sky: %s\n"
+"Temperature: %s"
+msgstr ""
+"Место: %s\n"
+"Небо: %s\n"
+"Температура: %s"
+
+#: ../gweather/gweather-applet.c:513
+msgid "Updating..."
+msgstr "Освежава..."
+
+#: ../gweather/gweather-dialog.c:213
+msgid "Details"
+msgstr "Детаљи"
+
+#: ../gweather/gweather-dialog.c:255
+msgid "City:"
+msgstr "Место:"
+
+#: ../gweather/gweather-dialog.c:263
+msgid "Last update:"
+msgstr "Последња допуна:"
+
+#: ../gweather/gweather-dialog.c:271
+msgid "Conditions:"
+msgstr "Услови:"
+
+#: ../gweather/gweather-dialog.c:279
+msgid "Sky:"
+msgstr "Небо:"
+
+#: ../gweather/gweather-dialog.c:287
+msgid "Temperature:"
+msgstr "Температура:"
+
+#: ../gweather/gweather-dialog.c:295
+msgid "Feels like:"
+msgstr "Осећа се као:"
+
+#: ../gweather/gweather-dialog.c:303
+msgid "Dew point:"
+msgstr "Тачка росе:"
+
+#: ../gweather/gweather-dialog.c:311
+msgid "Relative humidity:"
+msgstr "Релативна влажност:"
+
+#: ../gweather/gweather-dialog.c:319
+msgid "Wind:"
+msgstr "Ветар:"
+
+#: ../gweather/gweather-dialog.c:327
+msgid "Pressure:"
+msgstr "Притисак:"
+
+#: ../gweather/gweather-dialog.c:335
+msgid "Visibility:"
+msgstr "Видљивост:"
+
+#: ../gweather/gweather-dialog.c:343
+msgid "Sunrise:"
+msgstr "Зора:"
+
+#: ../gweather/gweather-dialog.c:351
+msgid "Sunset:"
+msgstr "Залазак:"
+
+#: ../gweather/gweather-dialog.c:485
+msgid "Current Conditions"
+msgstr "Текуће прилике"
+
+#: ../gweather/gweather-dialog.c:502
+msgid "Forecast Report"
+msgstr "Временска прогноза"
+
+#: ../gweather/gweather-dialog.c:502
+msgid "See the ForeCast Details"
+msgstr "Погледајте детаљну прогнозу"
+
+#: ../gweather/gweather-dialog.c:512
+msgid "Forecast"
+msgstr "Прогноза"
+
+#: ../gweather/gweather-dialog.c:520
+msgid "Radar Map"
+msgstr "Радарска мапа"
+
+#: ../gweather/gweather-dialog.c:551
+msgid "_Visit Weather.com"
+msgstr "_Посетите Weather.com"
+
+#: ../gweather/gweather-dialog.c:552
+msgid "Visit Weather.com"
+msgstr "Посетите Weather.com"
+
+#: ../gweather/gweather-dialog.c:552
+msgid "Click to Enter Weather.com"
+msgstr "Кликните да посетите Weather.com"
+
+#: ../gweather/gweather-dialog.c:637
+msgid "Forecast not currently available for this location."
+msgstr "Прогноза није тренутно доступна за ово место."
+
+#. Accessible Name and Description for the components in Preference Dialog
+#: ../gweather/gweather-pref.c:171
+msgid "Location view"
+msgstr "Преглед према месту"
+
+#: ../gweather/gweather-pref.c:171
+msgid "Select Location from the list"
+msgstr "Изаберите место из списка"
+
+#: ../gweather/gweather-pref.c:172
+msgid "Update spin button"
+msgstr "Освежи вртеће дугме"
+
+#: ../gweather/gweather-pref.c:172
+msgid "Spinbutton for updating"
+msgstr "Вртеће дугме за освежавање"
+
+#: ../gweather/gweather-pref.c:173
+msgid "Address Entry"
+msgstr "Унос адресе"
+
+#: ../gweather/gweather-pref.c:173
+msgid "Enter the URL"
+msgstr "Унесите адресу"
+
+#: ../gweather/gweather-pref.c:315
+msgid ""
+"Failed to load the Locations XML database.  Please report this as a bug."
+msgstr "Неуспело учитавање XML базе са местима.  Пријавите ово као грешку."
+
+#: ../gweather/gweather-pref.c:805
+msgid "Weather Preferences"
+msgstr "Поставке времена"
+
+#: ../gweather/gweather-pref.c:836 ../gweather/gweather-pref.c:1021
+msgid "_Automatically update every:"
+msgstr "_Аутоматско освежавање сваких:"
+
+#.
+#. * Units settings page.
+#.
+#. Temperature Unit
+#: ../gweather/gweather-pref.c:849
+msgid "_Temperature unit:"
+msgstr "_Јединица температуре:"
+
+#: ../gweather/gweather-pref.c:858 ../gweather/gweather-pref.c:878
+#: ../gweather/gweather-pref.c:904 ../gweather/gweather-pref.c:932
+msgid "Default"
+msgstr "Подразумевано"
+
+#: ../gweather/gweather-pref.c:859
+msgid "Kelvin"
+msgstr "Келвини"
+
+#. TRANSLATORS: Celsius is sometimes referred Centigrade
+#: ../gweather/gweather-pref.c:861
+msgid "Celsius"
+msgstr "Целзијуси"
+
+#: ../gweather/gweather-pref.c:862
+msgid "Fahrenheit"
+msgstr "Фаренхајти"
+
+#. Speed Unit
+#: ../gweather/gweather-pref.c:869
+msgid "_Wind speed unit:"
+msgstr "Јединица _брзине ветра:"
+
+#. TRANSLATOR: The wind speed unit "meters per second"
+#: ../gweather/gweather-pref.c:880
+msgid "m/s"
+msgstr "м/с"
+
+#. TRANSLATOR: The wind speed unit "kilometers per hour"
+#: ../gweather/gweather-pref.c:882
+msgid "km/h"
+msgstr "км/ч"
+
+#. TRANSLATOR: The wind speed unit "miles per hour"
+#: ../gweather/gweather-pref.c:884
+msgid "mph"
+msgstr "миља/ч"
+
+#. TRANSLATOR: The wind speed unit "knots"
+#: ../gweather/gweather-pref.c:886
+msgid "knots"
+msgstr "чворова"
+
+#: ../gweather/gweather-pref.c:888
+msgid "Beaufort scale"
+msgstr "Бофорова скала"
+
+#. Pressure Unit
+#: ../gweather/gweather-pref.c:895
+msgid "_Pressure unit:"
+msgstr "Јединица _притиска:"
+
+#. TRANSLATOR: The pressure unit "kiloPascals"
+#: ../gweather/gweather-pref.c:906
+msgid "kPa"
+msgstr "kPa"
+
+#. TRANSLATOR: The pressure unit "hectoPascals"
+#: ../gweather/gweather-pref.c:908
+msgid "hPa"
+msgstr "hPa"
+
+#. TRANSLATOR: The pressure unit "millibars"
+#: ../gweather/gweather-pref.c:910
+msgid "mb"
+msgstr "mb"
+
+#. TRANSLATOR: The pressure unit "millibars of mercury"
+#: ../gweather/gweather-pref.c:912
+msgid "mmHg"
+msgstr "mmHg"
+
+# Kod nas treba mmHg
+#. TRANSLATOR: The pressure unit "inches of mercury"
+#: ../gweather/gweather-pref.c:914
+msgid "inHg"
+msgstr "inHg"
+
+#. TRANSLATOR: The pressure unit "atmospheres"
+#: ../gweather/gweather-pref.c:916
+msgid "atm"
+msgstr "атмосфера"
+
+#. Distance Unit
+#: ../gweather/gweather-pref.c:923
+msgid "_Visibility unit:"
+msgstr "Јединица _видљивости:"
+
+#. TRANSLATOR: The distance unit "meters"
+#: ../gweather/gweather-pref.c:934
+msgid "meters"
+msgstr "метара"
+
+#. TRANSLATOR: The distance unit "kilometers"
+#: ../gweather/gweather-pref.c:936
+msgid "km"
+msgstr "km"
+
+#. TRANSLATOR: The distance unit "miles"
+#: ../gweather/gweather-pref.c:938
+msgid "miles"
+msgstr "миља"
+
+#: ../gweather/gweather-pref.c:972
+msgid "Enable _radar map"
+msgstr "Укључи _радарску мапу"
+
+#: ../gweather/gweather-pref.c:986
+msgid "Use _custom address for radar map"
+msgstr "Користи произвољну _адресу за радарску мапу"
+
+#: ../gweather/gweather-pref.c:1003
+msgid "A_ddress:"
+msgstr "А_дреса:"
+
+#: ../gweather/gweather-pref.c:1017
+msgid "Update"
+msgstr "Освежи"
+
+# bug:plural-forms
+#: ../gweather/gweather-pref.c:1041
+msgid "minutes"
+msgstr "минута"
+
+#: ../gweather/gweather-pref.c:1057
+msgid "Display"
+msgstr "Приказ"
+
+#: ../gweather/gweather-pref.c:1072
+#: ../mini-commander/src/mini-commander.ui.h:12
+msgid "General"
+msgstr "Опште"
+
+#: ../gweather/gweather-pref.c:1085
+msgid "_Select a location:"
+msgstr "Изаберите _место:"
+
+#: ../gweather/gweather-pref.c:1110
+msgid "_Find:"
+msgstr "_Нађи:"
+
+#: ../gweather/gweather-pref.c:1117
+msgid "Find _Next"
+msgstr "Нађи _следеће"
+
+#: ../gweather/gweather-pref.c:1139
+msgid "Location"
+msgstr "Место"
+
+#: ../gweather/org.gnome.applets.GWeatherApplet.panel-applet.in.in.h:1
+msgid "Gweather Applet Factory"
+msgstr "Фабрика програмчета Гпрогнозе"
+
+#: ../gweather/org.gnome.applets.GWeatherApplet.panel-applet.in.in.h:2
+msgid "Factory for creating the weather applet."
+msgstr "Фабрика за прављење програмчета за време."
+
+#: ../gweather/org.gnome.applets.GWeatherApplet.panel-applet.in.in.h:4
+msgid "Monitor the current weather conditions, and forecasts"
+msgstr "Праћење тренутних временских прилика и временске прогнозе"
+
+#: ../invest-applet/data/org.gnome.applets.InvestApplet.panel-applet.in.in.h:1
+msgid "Invest Applet Factory"
+msgstr "Фабрика програмчета улагања"
+
+#: ../invest-applet/data/org.gnome.applets.InvestApplet.panel-applet.in.in.h:2
+msgid "Factory for creating the invest applet."
+msgstr "Фабрика за прављење програмчета улагања."
+
+#: ../invest-applet/data/org.gnome.applets.InvestApplet.panel-applet.in.in.h:3
+#: ../invest-applet/invest/about.py:17
+msgid "Invest"
+msgstr "Улагања"
+
+#: ../invest-applet/data/org.gnome.applets.InvestApplet.panel-applet.in.in.h:4
+#: ../invest-applet/invest/about.py:20
+msgid "Track your invested money."
+msgstr "Пратите ваш уложен новац."
+
+#: ../invest-applet/data/financialchart.ui.h:1
+#: ../invest-applet/invest/chart.py:112
+msgid "Financial Chart"
+msgstr "Финансијски графикон"
+
+#: ../invest-applet/data/financialchart.ui.h:2
+msgid "_Ticker symbol: "
+msgstr "_Знак тикера: "
+
+#: ../invest-applet/data/financialchart.ui.h:3
+msgid "Auto _refresh"
+msgstr "_Самоосвежавање"
+
+#: ../invest-applet/data/financialchart.ui.h:4
+msgid "Today"
+msgstr "Данас"
+
+#: ../invest-applet/data/financialchart.ui.h:5
+msgid "5 Days"
+msgstr "5 дана"
+
+#: ../invest-applet/data/financialchart.ui.h:6
+msgid "3 Months"
+msgstr "3 месеца"
+
+#: ../invest-applet/data/financialchart.ui.h:7
+msgid "6 Months"
+msgstr "6 месеци"
+
+#: ../invest-applet/data/financialchart.ui.h:8
+msgid "1 Year"
+msgstr "1 година"
+
+#: ../invest-applet/data/financialchart.ui.h:9
+msgid "5 Years"
+msgstr "5 година"
+
+#: ../invest-applet/data/financialchart.ui.h:10
+msgid "Maximum"
+msgstr "Највише"
+
+#: ../invest-applet/data/financialchart.ui.h:11
+msgid "_Graph style: "
+msgstr "_Врста графика: "
+
+#. see http://biz.yahoo.com/charts/guide11.html and http://en.wikipedia.org/wiki/Moving_average
+#: ../invest-applet/data/financialchart.ui.h:13
+msgid "Moving average: "
+msgstr "Помена просека: "
+
+#. see http://biz.yahoo.com/charts/guide12.html and http://en.wikipedia.org/wiki/Moving_average#Exponential_moving_average
+#: ../invest-applet/data/financialchart.ui.h:15
+msgid "Exponential moving average: "
+msgstr "Просек експоненцијалное промене: "
+
+#: ../invest-applet/data/financialchart.ui.h:16
+msgid "5"
+msgstr "5"
+
+#: ../invest-applet/data/financialchart.ui.h:17
+msgid "10"
+msgstr "10"
+
+#: ../invest-applet/data/financialchart.ui.h:18
+msgid "20"
+msgstr "20"
+
+#: ../invest-applet/data/financialchart.ui.h:19
+msgid "50"
+msgstr "50"
+
+#: ../invest-applet/data/financialchart.ui.h:20
+msgid "100"
+msgstr "100"
+
+#: ../invest-applet/data/financialchart.ui.h:21
+msgid "200"
+msgstr "200"
+
+#. see http://en.wikipedia.org/wiki/Technical_analysis#Overlays
+#: ../invest-applet/data/financialchart.ui.h:23
+msgid "Overlays: "
+msgstr "Суме: "
+
+#. Please keep this term short. For its meaning, see http://biz.yahoo.com/charts/guide13.html and http://en.wikipedia.org/wiki/Bollinger_bands
+#: ../invest-applet/data/financialchart.ui.h:25
+msgid "Bollinger"
+msgstr "Булинџер"
+
+#. Please keep this term short. For its meaning, see http://biz.yahoo.com/charts/guide16.html and http://en.wikipedia.org/wiki/Parabolic_SAR
+#: ../invest-applet/data/financialchart.ui.h:27
+msgid "SAR"
+msgstr "SAR"
+
+#. Please keep this term short. For its meaning, see http://biz.yahoo.com/charts/guide6.html and http://en.wikipedia.org/wiki/Stock_split
+#: ../invest-applet/data/financialchart.ui.h:29
+msgid "Splits"
+msgstr "Поделе"
+
+#. Please keep this term short. For its meaning, see http://biz.yahoo.com/charts/guide20.html and http://en.wikipedia.org/wiki/Volume_%28finance%29
+#: ../invest-applet/data/financialchart.ui.h:31
+msgid "Volumes"
+msgstr "Волумени"
+
+#. see http://biz.yahoo.com/charts/guide10.html and http://en.wikipedia.org/wiki/Technical_indicator#Charting_terms_and_indicators
+#: ../invest-applet/data/financialchart.ui.h:33
+msgid "Indicators: "
+msgstr "Показивачи: "
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/Relative_Strength_Index
+#: ../invest-applet/data/financialchart.ui.h:35
+msgid "RSI"
+msgstr "RSI"
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/Volume_%28finance%29
+#: ../invest-applet/data/financialchart.ui.h:37
+msgid "Vol"
+msgstr "Вол"
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/Money_flow_index
+#: ../invest-applet/data/financialchart.ui.h:39
+msgid "MFI"
+msgstr "MFI"
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/Stochastic_oscillator
+#: ../invest-applet/data/financialchart.ui.h:41
+msgid "Slow stoch"
+msgstr "Спора берза"
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/Volume_%28finance%29
+#: ../invest-applet/data/financialchart.ui.h:43
+msgid "Vol+MA"
+msgstr "Вол+МА"
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/Rate_of_change_%28technical_analysis%29
+#: ../invest-applet/data/financialchart.ui.h:45
+msgid "ROC"
+msgstr "ROC"
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/Stochastic_oscillator
+#: ../invest-applet/data/financialchart.ui.h:47
+msgid "Fast stoch"
+msgstr "Брза берза"
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/Williams_%25R
+#: ../invest-applet/data/financialchart.ui.h:50
+#, no-c-format
+msgid "W%R"
+msgstr "W%R"
+
+#. Please keep this term short. For its meaning, see http://en.wikipedia.org/wiki/MACD
+#: ../invest-applet/data/financialchart.ui.h:52
+msgid "MACD"
+msgstr "MACD"
+
+#: ../invest-applet/data/financialchart.ui.h:53
+#| msgid "minute"
+#| msgid_plural "minutes"
+msgid "Line"
+msgstr "Ред"
+
+#: ../invest-applet/data/financialchart.ui.h:54
+msgid "Bar"
+msgstr "Трака"
+
+#: ../invest-applet/data/financialchart.ui.h:55
+#| msgid "Command line"
+msgid "Candle"
+msgstr "Свећа"
+
+#: ../invest-applet/data/financialchart.ui.h:56
+msgid "Scale: "
+msgstr "Размера: "
+
+#: ../invest-applet/data/financialchart.ui.h:57
+msgid "Linear"
+msgstr "Линеарни"
+
+#: ../invest-applet/data/financialchart.ui.h:58
+msgid "Logarithmic"
+msgstr "Логаритамски"
+
+#: ../invest-applet/data/financialchart.ui.h:59
+msgid "_Options"
+msgstr "_Опције"
+
+#: ../invest-applet/data/financialchart.ui.h:60
+msgid "Downloading chart from <b>Yahoo!</b>"
+msgstr "Преузимам графикон са <b>Yahoo!</b>"
+
+#: ../invest-applet/data/prefs-dialog.ui.h:1
+msgid "Invest Preferences"
+msgstr "Поставке за улагања"
+
+#: ../invest-applet/data/prefs-dialog.ui.h:2
+msgid "label"
+msgstr "натпис"
+
+#: ../invest-applet/data/prefs-dialog.ui.h:3
+msgid "Stocks"
+msgstr "Берзе"
+
+#. Instead of adding a single stock to the list of stocks, the 'Add Group' button adds a group (kind of a sub folder) to which numerous stocks can be added. A group here refers to a group of stocks.
+#: ../invest-applet/data/prefs-dialog.ui.h:5
+msgctxt " "
+msgid "Add Group"
+msgstr "Додај групу"
+
+#. An index value (for instance the NASDAQ Composite) is based on a number of stocks. This option allows to also show the quotes of the stocks an index is based on.
+#: ../invest-applet/data/prefs-dialog.ui.h:7
+msgid "Show stocks of index values"
+msgstr "Прикажи берзе вредности индекса"
+
+#: ../invest-applet/data/prefs-dialog.ui.h:8
+msgid ""
+"An index value, for instance the <i>NASDAQ Composite</i> (^IXIC), is based "
+"on a number of stocks. This option allows to also show the quotes of the "
+"<i><b>stocks</b></i> an index is based on."
+msgstr ""
+"Вредност индекса, на пример <i>NASDAQ Composite</i> (^IXIC), се заснива на "
+"броју берзи. Ова опција омогућава такође приказивање акција <i><b>берзе</b></"
+"i> на којима се заснива индекс."
+
+#: ../invest-applet/data/prefs-dialog.ui.h:9
+msgid "Hide charts in quotes list"
+msgstr "Сакриј графике на списку акција"
+
+#: ../invest-applet/data/prefs-dialog.ui.h:10
+msgid ""
+"A small chart image is shown next to each quote. The retrieval of each chart "
+"image causes network traffic. Hiding charts reduces the network bandwidth "
+"demand significantly."
+msgstr ""
+"Сличица графика се приказује поред сваке акције. Проналажење сваке сличице "
+"графика оптерећује мрежни саобраћај. Скривање графика значајно умањује "
+"потражњу мрежног протока."
+
+#: ../invest-applet/data/prefs-dialog.ui.h:11
+msgid ""
+"<i><small><b>Source:</b> <a href=\"http://finance.yahoo.com/\">Yahoo! "
+"Finance</a> (at least 15 minutes delayed)</small></i>"
+msgstr ""
+"<i><small><b>Извор:</b> <a href=\"http://finance.yahoo.com/\">Јаху! "
+"Финансије</a> (са најмање 15 минута кашњења)</small></i>"
+
+# Да није ово нешто као курсна листа???
+#: ../invest-applet/data/prefs-dialog.ui.h:12
+msgid "Currency"
+msgstr "Промет"
+
+#: ../invest-applet/data/prefs-dialog.ui.h:13
+msgid ""
+"Type the target currency to which all stock quotes will be converted to."
+msgstr ""
+"Упишите циљну новчану јединицу у којој ће бити претворене све акције берзе."
+
+#. name, stock_id, label, accellerator, tooltip, callback
+#: ../invest-applet/invest/applet.py:24
+msgid "About"
+msgstr "О програму"
+
+#: ../invest-applet/invest/applet.py:25
+msgid "Help"
+msgstr "Помоћ"
+
+#: ../invest-applet/invest/applet.py:26
+msgid "Preferences"
+msgstr "Поставке"
+
+#: ../invest-applet/invest/applet.py:27
+msgid "Refresh"
+msgstr "Освежи"
+
+#. a) We aren't configured yet
+#: ../invest-applet/invest/applet.py:60
+msgid "<b>You have not entered any stock information yet</b>"
+msgstr "<b>Још увек нисте унели податке о берзи</b>"
+
+#: ../invest-applet/invest/applet.py:65
+msgid "<b>No stock quotes are currently available</b>"
+msgstr "<b>Тренутно нису доступна стања на берзи</b>"
+
+#: ../invest-applet/invest/applet.py:66
+msgid ""
+"The server could not be contacted. The computer is either offline or the "
+"servers are down. Try again later."
+msgstr ""
+"Не могу да се повежем на овај сервер. Или рачунар ради ван мреже или су "
+"сервери угашени. Пробајте поново касније."
+
+#: ../invest-applet/invest/chart.py:161
+#, python-format
+msgid "Financial Chart - %s"
+msgstr "Финансијски графикон — %s"
+
+#: ../invest-applet/invest/chart.py:228
+msgid "Opening Chart"
+msgstr "Отвара графикон"
+
+#: ../invest-applet/invest/chart.py:243
+msgid "Chart downloaded"
+msgstr "Графикон је преузет"
+
+#: ../invest-applet/invest/chart.py:245
+msgid "Chart could not be downloaded"
+msgstr "Не могу да преузмен графикон"
+
+#: ../invest-applet/invest/preferences.py:44
+msgid "Symbol"
+msgstr "Симбол"
+
+#: ../invest-applet/invest/preferences.py:44
+msgid "Label"
+msgstr "Назив"
+
+#: ../invest-applet/invest/preferences.py:44
+msgid "Amount"
+msgstr "Износ"
+
+#: ../invest-applet/invest/preferences.py:44
+msgid "Price"
+msgstr "Цена"
+
+#: ../invest-applet/invest/preferences.py:44
+msgid "Commission"
+msgstr "Провизија"
+
+# Да није ово нешто као курсна листа?
+#: ../invest-applet/invest/preferences.py:44
+msgid "Currency Rate"
+msgstr "Прометна стопа"
+
+#: ../invest-applet/invest/preferences.py:244
+msgid "Stock Group"
+msgstr "Група берзе"
+
+#. translators: Asks the user to confirm deletion of a group of stocks
+#: ../invest-applet/invest/preferences.py:269
+msgid "Delete entire stock group?"
+msgstr "Да обришем целу групу берзе?"
+
+#. translators: stocks can be grouped together into a "stock group".
+#. The user wants to delete a group, but the group still contains stocks.
+#. By deleting the group, also all stocks will be removed from configuration
+#: ../invest-applet/invest/preferences.py:277
+msgid ""
+"This removes all stocks contained in this stock group!\n"
+"Do you really want to remove this stock group?"
+msgstr ""
+"Ово ће уклонити све берзе које се налазе у овој групи!\n"
+"Да ли заиста желите да уклоните ову групу берзи?"
+
+#: ../invest-applet/invest/quotes.py:284
+msgid "Invest could not connect to Yahoo! Finance"
+msgstr "Не могу да се повежем на Yahoo! финансије"
+
+#. Translators: This is share-market jargon. It is the average percentage change of all stock prices. The %s gets replaced with the string value of the change (localized), including the percent sign.
+#: ../invest-applet/invest/quotes.py:327
+#, python-format
+msgid "Average change: %s"
+msgstr "Средња промена: %s"
+
+#. Translators: This is share-market jargon. It refers to the total difference between the current price and purchase price for all the shares put together for a particular currency. i.e. How much money would be earned if they were sold right now. The first string is the change value, the second the currency, and the third value is the percentage of the change, formatted using user's locale.
+#: ../invest-applet/invest/quotes.py:336
+#, python-format
+msgid "Positions balance: %s %s (%s)"
+msgstr "Баланс позиције: %s %s (%s)"
+
+#: ../invest-applet/invest/quotes.py:338
+#, python-format
+msgid "Updated at %s"
+msgstr "Ажурирано %s"
+
+#. model: SYMBOL, LABEL, TICKER_ONLY, BALANCE, BALANCE_PCT, VALUE, VARIATION_PCT, PB
+#. Translators: these words all refer to a stock. Last is short
+#. for "last price". Gain is referring to the gain since the
+#. stock was purchased.
+#: ../invest-applet/invest/widgets.py:52
+msgid "Ticker"
+msgstr "Тикер"
+
+#: ../invest-applet/invest/widgets.py:52
+msgid "Last"
+msgstr "Задња"
+
+#: ../invest-applet/invest/widgets.py:52
+msgid "Change %"
+msgstr "Промена %"
+
+#: ../invest-applet/invest/widgets.py:52
+msgid "Chart"
+msgstr "Графикон"
+
+#: ../invest-applet/invest/widgets.py:52
+msgid "Gain"
+msgstr "Добит"
+
+#: ../invest-applet/invest/widgets.py:52
+msgid "Gain %"
+msgstr "Добит %"
+
+#: ../mini-commander/GNOME_MiniCommanderApplet.server.in.h:1
+msgid "Deskbar (formerly Mini-Commander)"
+msgstr "Чаробна линија (раније Мали наредник)"
+
+#: ../mini-commander/GNOME_MiniCommanderApplet.server.in.h:2
+msgid "Deskbar (transparent upgrade from Mini-Commander)"
+msgstr "Чаробна линија (неприметна надоградња Малог наредника)"
+
+#: ../mini-commander/src/about.c:48
+msgid ""
+"This GNOME applet adds a command line to the panel. It features command "
+"completion, command history, and changeable macros."
+msgstr ""
+"Ово програмче Гнома додаје линију наредбе на панел. Садржи допуњавање "
+"наредби, историјат наредби и измењиве макрое."
+
+#: ../mini-commander/src/command_line.c:362
+msgid "No items in history"
+msgstr "Нема ставки у историјату"
+
+#. build file select dialog
+#: ../mini-commander/src/command_line.c:488
+msgid "Start program"
+msgstr "Покрени програм"
+
+#: ../mini-commander/src/command_line.c:541
+msgid "Command line"
+msgstr "Наредба"
+
+#: ../mini-commander/src/command_line.c:542
+msgid "Type a command here and Gnome will execute it for you"
+msgstr "Овде унесите наредбу и Гном ће је извршити за вас"
+
+#: ../mini-commander/src/mc-install-default-macros.c:80
+#, c-format
+msgid "Cannot get schema for %s: %s"
+msgstr "Не могу да добијем шему за %s: %s"
+
+#: ../mini-commander/src/mc-install-default-macros.c:111
+#, c-format
+msgid "Cannot set schema for %s: %s"
+msgstr "Не могу да поставим шему за %s: %s"
+
+#: ../mini-commander/src/mc-install-default-macros.c:117
+#, c-format
+msgid "Set default list value for %s\n"
+msgstr "Постави подразумевану вредност списка за %s\n"
+
+#: ../mini-commander/src/mc-install-default-macros.c:129
+#, c-format
+msgid "GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL is set, not installing schemas\n"
+msgstr "„GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL“ је подешено, не подешава шеме\n"
+
+#: ../mini-commander/src/mc-install-default-macros.c:137
+#, c-format
+msgid "Must set the GCONF_CONFIG_SOURCE environment variable\n"
+msgstr "Мора се поставити променљива окружења GCONF_CONFIG_SOURCE\n"
+
+#: ../mini-commander/src/mc-install-default-macros.c:154
+#, c-format
+msgid "Failed to access configuration source(s): %s\n"
+msgstr "Неуспешно приступање изворима подешавања: %s\n"
+
+#: ../mini-commander/src/mc-install-default-macros.c:169
+#, c-format
+msgid "Error syncing config data: %s"
+msgstr "Грешка при усклађивању података о подешавањима: %s"
+
+#: ../mini-commander/src/mini-commander-global.schemas.in.h:1
+#: ../mini-commander/src/mini-commander.schemas.in.h:26
+msgid "Macro pattern list"
+msgstr "Списак сложених образаца"
+
+#: ../mini-commander/src/mini-commander-global.schemas.in.h:2
+msgid "List of GConfValue entries containing strings for the macro patterns."
+msgstr "Списак уноса вредности Гконфа који садрже макро обрасце."
+
+#: ../mini-commander/src/mini-commander-global.schemas.in.h:3
+#: ../mini-commander/src/mini-commander.schemas.in.h:28
+msgid "Macro command list"
+msgstr "Списак сложених наредби"
+
+#: ../mini-commander/src/mini-commander-global.schemas.in.h:4
+msgid "List of GConfValue entries containing strings for the macro commands."
+msgstr "Списак уноса вредности Гконфа који садрже макро наредбе."
+
+#: ../mini-commander/src/mini-commander.ui.h:1
+msgid "Command Line Preferences"
+msgstr "Подешавања терминалчића"
+
+#: ../mini-commander/src/mini-commander.ui.h:2
+msgid "Auto Completion"
+msgstr "Самодопуњавање"
+
+#: ../mini-commander/src/mini-commander.ui.h:3
+msgid "E_nable history-based auto completion"
+msgstr "О_могући самодопуњавање засновано на претходним наредбама"
+
+#: ../mini-commander/src/mini-commander.ui.h:4
+msgid "Size"
+msgstr "Величина"
+
+#: ../mini-commander/src/mini-commander.ui.h:5
+#: ../stickynotes/stickynotes.ui.h:19
+msgid "_Width:"
+msgstr "_Ширина:"
+
+#: ../mini-commander/src/mini-commander.ui.h:6 ../multiload/properties.c:524
+msgid "pixels"
+msgstr "пиксела"
+
+#: ../mini-commander/src/mini-commander.ui.h:7 ../multiload/properties.c:569
+msgid "Colors"
+msgstr "Боје"
+
+#: ../mini-commander/src/mini-commander.ui.h:8
+msgid "_Use default theme colors"
+msgstr "_Користите боје из подразумеване теме"
+
+#: ../mini-commander/src/mini-commander.ui.h:9
+msgid "Command line _foreground:"
+msgstr "Боја слова терминалчића:"
+
+#: ../mini-commander/src/mini-commander.ui.h:10
+msgid "Command line _background:"
+msgstr "_Позадина за терминалчић:"
+
+#: ../mini-commander/src/mini-commander.ui.h:11
+msgid "Pick a color"
+msgstr "Изаберите боју"
+
+#: ../mini-commander/src/mini-commander.ui.h:13
+msgid "_Macros:"
+msgstr "_Макрои:"
+
+#: ../mini-commander/src/mini-commander.ui.h:14
+msgid "_Add Macro..."
+msgstr "_Додај макро..."
+
+#: ../mini-commander/src/mini-commander.ui.h:15
+msgid "_Delete Macro"
+msgstr "О_бриши макро"
+
+#: ../mini-commander/src/mini-commander.ui.h:16
+msgid "Macros"
+msgstr "Макрои"
+
+#: ../mini-commander/src/mini-commander.ui.h:17
+msgid "Add New Macro"
+msgstr "Додај нови макро"
+
+#: ../mini-commander/src/mini-commander.ui.h:18
+msgid "_Pattern:"
+msgstr "М_устра:"
+
+#: ../mini-commander/src/mini-commander.ui.h:19
+msgid "Co_mmand:"
+msgstr "_Наредба:"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:1
+msgid "Show handle"
+msgstr "Прикажи ручку"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:2
+msgid "Show a handle so the applet can be detached from the panel."
+msgstr "Прикажи ручку како би се програмче могло одвојити од панела."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:3
+msgid "Show frame"
+msgstr "Прикажи оквир"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:4
+msgid "Show a frame surrounding the applet."
+msgstr "Прикажи оквир око програмчета."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:5
+msgid "Perform history autocompletion"
+msgstr "Омогући самодопуњавање засновано на претходним наредбама"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:6
+msgid "Attempt to autocomplete a command from the history of commands entered."
+msgstr "Покушава да сам допуни наредбу из списка већ коришћених наредби."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:7
+msgid "Width"
+msgstr "Ширина"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:8
+msgid "Width of the applet"
+msgstr "Ширина програмчета"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:9
+msgid "Not used anymore"
+msgstr "Више се не користи"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:10
+msgid "Use the default theme colors"
+msgstr "Користите боје подразумеване теме"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:11
+msgid "Use theme colors instead of custom ones."
+msgstr "Користи боје из теме уместо изабраних."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:12
+msgid "Foreground color, red component"
+msgstr "Боја текста, црвена компонента"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:13
+msgid "The red component of the foreground color."
+msgstr "Црвена компонента боје текста."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:14
+msgid "Foreground color, green component"
+msgstr "Боја текста, зелена компонента"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:15
+msgid "The green component of the foreground color."
+msgstr "Зелена компонента боје текста."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:16
+msgid "Foreground color, blue component"
+msgstr "Боја текста, плава компонента"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:17
+msgid "The blue component of the foreground color."
+msgstr "Плава компонента боје текста."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:18
+msgid "Background color, red component"
+msgstr "Боја позадине, црвена компонента"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:19
+msgid "The red component of the background color."
+msgstr "Црвена компонента боје позадине."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:20
+msgid "Background color, green component"
+msgstr "Боја позадине, зелена компонента"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:21
+msgid "The green component of the background color."
+msgstr "Зелена компонента боје позадине."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:22
+msgid "Background color, blue component"
+msgstr "Боја позадине, плава компонента"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:23
+msgid "The blue component of the background color."
+msgstr "Плава компонента боје позадине."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:24
+msgid "History list"
+msgstr "Претходне наредбе"
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:25
+msgid "List of GConfValue entries containing strings for history entries."
+msgstr "Списак GConfValue уноса који садрже претходне наредбе."
+
+#: ../mini-commander/src/mini-commander.schemas.in.h:27
+msgid ""
+"This per-applet key is deprecated in favour of the global key, /schemas/apps/"
+"mini-commander-global/macro_patterns."
+msgstr ""
+"Овај кључ по програмчету је застарео у корист општег кључа, /schemas/apps/"
+"mini-commander-global/macro_patterns."
+
+#: ../mini-commander/src/mini-commander_applet.c:242
+#: ../mini-commander/src/mini-commander_applet.c:246
+msgid "Browser"
+msgstr "Претражи"
+
+#: ../mini-commander/src/mini-commander_applet.c:247
+msgid "Click this button to start the browser"
+msgstr "Притисните ово дугме да изаберете програм са диска"
+
+#: ../mini-commander/src/mini-commander_applet.c:260
+#: ../mini-commander/src/mini-commander_applet.c:264
+msgid "History"
+msgstr "Претходне наредбе"
+
+#: ../mini-commander/src/mini-commander_applet.c:265
+msgid "Click this button for the list of previous commands"
+msgstr "Притисните ово дугме да видите списак претходних наредби"
+
+#: ../mini-commander/src/mini-commander_applet.c:346
+msgid "Command line has been disabled by your system administrator"
+msgstr "Линију за унос наредбе је искључио администратор вашег система"
+
+# Команда!
+#: ../mini-commander/src/mini-commander_applet.c:360
+#: ../mini-commander/src/org.gnome.applets.MiniCommanderApplet.panel-applet.in.in.h:2
+msgid "Command Line"
+msgstr "Наредба"
+
+#: ../mini-commander/src/mini-commander_applet.c:406
+msgid "Mini-Commander applet"
+msgstr "Програмче Мали-наредник"
+
+#: ../mini-commander/src/mini-commander_applet.c:407
+msgid "This applet adds a command line to the panel"
+msgstr "Ово програмче додаје поље за издавање наредби на панел"
+
+#: ../mini-commander/src/org.gnome.applets.MiniCommanderApplet.panel-applet.in.in.h:1
+msgid "MiniCommander Applet Factory"
+msgstr "Производња терминалчића"
+
+#: ../mini-commander/src/org.gnome.applets.MiniCommanderApplet.panel-applet.in.in.h:3
+msgid "Mini-Commander"
+msgstr "Терминалчић"
+
+#: ../mini-commander/src/preferences.c:401
+msgid "You must specify a pattern"
+msgstr "Морате навести образац"
+
+#: ../mini-commander/src/preferences.c:405
+msgid "You must specify a pattern and a command"
+msgstr "Морате навести и образац и наредбу"
+
+#: ../mini-commander/src/preferences.c:406
+msgid "You must specify a command"
+msgstr "Морате навести наредбу"
+
+#: ../mini-commander/src/preferences.c:409
+msgid "You may not specify duplicate patterns"
+msgstr "Не можете двоструко навести исте обрасце"
+
+#: ../mini-commander/src/preferences.c:779
+msgid "Pattern"
+msgstr "Образац"
+
+#: ../mini-commander/src/preferences.c:789
+msgid "Command"
+msgstr "Наредба"
+
+#: ../mixer/applet.c:179
+msgid "Volume Applet"
+msgstr "Управљање јачином звука"
+
+#. tooltip over applet
+#: ../mixer/applet.c:195 ../mixer/applet.c:216
+#: ../mixer/org.gnome.applets.MixerApplet.panel-applet.in.in.h:1
+#: ../null_applet/null_applet.c:55 ../null_applet/null_applet.c:57
+msgid "Volume Control"
+msgstr "Управљање јачином звука"
+
+#: ../mixer/applet.c:378
+msgid "_Open Volume Control"
+msgstr "Управљање јачин_ом звука"
+
+# Mozda je bolje "zanemi", ali sta onda sa "muted"?
+#: ../mixer/applet.c:392
+msgid "Mu_te"
+msgstr "_Утишај"
+
+#: ../mixer/applet.c:558
+msgid ""
+"The volume control did not find any elements and/or devices to control. This "
+"means either that you don't have the right GStreamer plugins installed, or "
+"that you don't have a sound card configured."
+msgstr ""
+"Управљање јачином звука није нашло ништа чиме може да управља. То значи или "
+"да немате инсталиране одговарајуће додатке за GStreamer, или да звучна карта "
+"није подешена."
+
+#: ../mixer/applet.c:562
+msgid ""
+"You can remove the volume control from the panel by right-clicking the "
+"speaker icon on the panel and selecting \"Remove From Panel\" from the menu."
+msgstr ""
+"Можете да уклоните управљање јачином звука са панела десним кликом на икону "
+"звучника и одабиром опције „Уклони са панела“ из менија."
+
+#: ../mixer/applet.c:745
+#, c-format
+msgid "Failed to start Volume Control: %s"
+msgstr "Неуспешно покретање управљања јачином звука: %s"
+
+#: ../mixer/applet.c:1160
+#, c-format
+msgid "%s: muted"
+msgstr "%s: утишано"
+
+#. Translator comment: I'm not all too sure if this makes sense
+#. * to mark as a translation, but anyway. The string is a list of
+#. * selected tracks, the number is the volume in percent. You
+#. * most likely want to keep this as-is.
+#: ../mixer/applet.c:1166
+#, c-format
+msgid "%s: %d%%"
+msgstr "%s: %d%%"
+
+#: ../mixer/applet.c:1402
+#, c-format
+msgid "Failed to display help: %s"
+msgstr "Неуспешно приказивање помоћи: %s"
+
+#: ../mixer/applet.c:1415
+msgid "Volume control for your GNOME Panel."
+msgstr "Управљање јачином звука за ваш Гном панел."
+
+#: ../mixer/applet.c:1416
+msgid "Using GStreamer 0.10."
+msgstr "Користи се GStreamer окосница верзије 0.10."
+
+# Mozda je bolje "zanemi", ali sta onda sa "muted"?
+#: ../mixer/dock.c:219
+msgid "Mute"
+msgstr "Утишај"
+
+#: ../mixer/dock.c:225
+msgid "Volume Control..."
+msgstr "Управљање јачином звука..."
+
+#: ../mixer/load.c:86
+#, c-format
+msgid "Unknown Volume Control %d"
+msgstr "Непознато управљање јачином звука %d"
+
+#: ../mixer/mixer.schemas.in.h:1
+msgid "Channel controlled by applet. Only for OSS setups"
+msgstr "Каналом управља програмче. Само за ОСС системе"
+
+#: ../mixer/mixer.schemas.in.h:2
+msgid "Saved mute state"
+msgstr "Сачувај утишано стање"
+
+#: ../mixer/mixer.schemas.in.h:3
+msgid "Saved volume to restore on startup"
+msgstr "Сачувана јачина која се поставља при покретању"
+
+#: ../mixer/org.gnome.applets.MixerApplet.panel-applet.in.in.h:2
+msgid "Adjust the sound volume"
+msgstr "Подеси јачину звука"
+
+#. make window look cute
+#: ../mixer/preferences.c:90
+msgid "Volume Control Preferences"
+msgstr "Поставке за управљање јачином звука"
+
+#: ../mixer/preferences.c:102
+msgid "Select the device and track to control."
+msgstr "Изаберите уређај и канал који желите да подесите."
+
+#: ../modemlights/modem-applet.c:142
+msgid "_Activate"
+msgstr "_Успостави"
+
+#: ../modemlights/modem-applet.c:145
+msgid "_Deactivate"
+msgstr "Пре_кини"
+
+#: ../modemlights/modem-applet.c:148 ../stickynotes/stickynotes.ui.h:4
+msgid "_Properties"
+msgstr "Осо_бине"
+
+#: ../modemlights/modem-applet.c:184
+#: ../modemlights/org.gnome.applets.ModemApplet.panel-applet.in.in.h:1
+msgid "Modem Monitor"
+msgstr "Праћење модема"
+
+#: ../modemlights/modem-applet.c:710
+msgid "Connection active, but could not get connection time"
+msgstr "Веза је успостављена, али не могу да сазнам њено трајање"
+
+#: ../modemlights/modem-applet.c:726
+#, c-format
+msgid "Time connected: %.1d:%.2d"
+msgstr "Трајање везе: %.1d:%.2d"
+
+#: ../modemlights/modem-applet.c:730
+msgid "Not connected"
+msgstr "Неповезан"
+
+#: ../modemlights/modem-applet.c:752
+msgid ""
+"To connect to your Internet service provider, you need administrator "
+"privileges"
+msgstr ""
+"Да се повежете на вашег добављача Интернет услуга, требају вам "
+"администраторска овлашћења"
+
+#: ../modemlights/modem-applet.c:753
+msgid ""
+"To disconnect from your Internet service provider, you need administrator "
+"privileges"
+msgstr ""
+"Да прекинете везу са вашим добављачем Интернет услуга, требају вам "
+"администраторска овлашћења"
+
+#: ../modemlights/modem-applet.c:828
+msgid "The entered password is invalid"
+msgstr "Унета лозинка је неисправна"
+
+#: ../modemlights/modem-applet.c:830
+msgid ""
+"Check that you have typed it correctly and that you haven't activated the "
+"\"caps lock\" key"
+msgstr ""
+"Проверите да ли сте је исправно унели и да нисте притиснули „Caps Lock“ "
+"тастер"
+
+#: ../modemlights/modem-applet.c:932
+msgid "Do you want to connect?"
+msgstr "Желите да успоставите везу?"
+
+#: ../modemlights/modem-applet.c:933
+msgid "Do you want to disconnect?"
+msgstr "Желите да прекинете везу?"
+
+#: ../modemlights/modem-applet.c:942
+msgid "C_onnect"
+msgstr "П_овежи се"
+
+#: ../modemlights/modem-applet.c:942
+msgid "_Disconnect"
+msgstr "_Прекини везу"
+
+#: ../modemlights/modem-applet.c:995
+msgid "Could not launch network configuration tool"
+msgstr "Не могу да покренем алат за подешавање мреже"
+
+#: ../modemlights/modem-applet.c:997
+msgid ""
+"Check that it's installed in the correct path and that it has the correct "
+"permissions"
+msgstr ""
+"Проверите да ли је инсталиран на исправном месту и да има одговарајућа "
+"овлашћења"
+
+#: ../modemlights/modem-applet.c:1020
+msgid "Applet for activating and monitoring a dial-up network connection."
+msgstr "Програмче за повезивање и праћење модемске мрежне везе."
+
+#: ../modemlights/modemlights.ui.h:1
+msgid "Enter password"
+msgstr "Унесите лозинку"
+
+#: ../modemlights/modemlights.ui.h:2
+msgid "Root password required"
+msgstr "Потребна је администраторска лозинка"
+
+#: ../modemlights/modemlights.ui.h:3
+msgid "Password:"
+msgstr "Лозинка:"
+
+#: ../modemlights/modemlights.ui.h:4
+msgid "Connecting with Internet Service Provider"
+msgstr "Повезујем се са продавцем Интернет услуга"
+
+#: ../modemlights/org.gnome.applets.ModemApplet.panel-applet.in.in.h:2
+msgid "Activate and monitor a dial-up network connection"
+msgstr "Покрени и прати модемску мрежну везу"
+
+#: ../multiload/main.c:56
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"Праћење оптерећења система омогућава приказ графика за процесор, меморију, и "
+"меморију на диску, а уз то и мрежни саобраћај."
+
+#: ../multiload/main.c:129
+msgid "Start system-monitor"
+msgstr "Покреће праћење система"
+
+#: ../multiload/main.c:150
+#, c-format
+msgid "There was an error executing '%s': %s"
+msgstr "Дошло је до грешке при извршавању „%s“: %s"
+
+#: ../multiload/main.c:278 ../multiload/properties.c:594
+msgid "Processor"
+msgstr "Процесор"
+
+#: ../multiload/main.c:280 ../multiload/properties.c:602
+msgid "Memory"
+msgstr "Меморија"
+
+#: ../multiload/main.c:282 ../multiload/properties.c:610
+msgid "Network"
+msgstr "Мрежа"
+
+#: ../multiload/main.c:284 ../multiload/properties.c:617
+msgid "Swap Space"
+msgstr "Замена за меморију (swap)"
+
+#: ../multiload/main.c:286 ../multiload/main.c:365
+msgid "Load Average"
+msgstr "Просечно оптерећење"
+
+#: ../multiload/main.c:288
+msgid "Disk"
+msgstr "Диск"
+
+#. xgettext: use and cache are > 1 most of the time,
+#. please assume that they always are.
+#.
+#: ../multiload/main.c:304
+#, c-format
+msgid ""
+"%s:\n"
+"%u%% in use by programs\n"
+"%u%% in use as cache"
+msgstr ""
+"%s:\n"
+"%u%% употребљавају програми\n"
+"%u%% је у употреби као остава"
+
+#: ../multiload/main.c:312
+#, c-format
+msgid "The system load average is %0.02f"
+msgstr "Просечно оптерећење система је %0.02f"
+
+#. xgettext: same as in graphic tab of g-s-m
+#: ../multiload/main.c:320
+#, c-format
+msgid ""
+"%s:\n"
+"Receiving %s\n"
+"Sending %s"
+msgstr ""
+"%s:\n"
+"Прима %s\n"
+"Шаље %s"
+
+#: ../multiload/main.c:336
+#, c-format
+msgid ""
+"%s:\n"
+"%u%% in use"
+msgid_plural ""
+"%s:\n"
+"%u%% in use"
+msgstr[0] ""
+"%s:\n"
+"%u%% у употреби"
+msgstr[1] ""
+"%s:\n"
+"%u%% у употреби"
+msgstr[2] ""
+"%s:\n"
+"%u%% у употреби"
+msgstr[3] ""
+"%s:\n"
+"%u%% у употреби"
+
+#: ../multiload/main.c:361
+msgid "CPU Load"
+msgstr "Оптерећење процесора"
+
+#: ../multiload/main.c:362
+msgid "Memory Load"
+msgstr "Оптерећење меморије"
+
+# bug: Ili je ovo "net" kao "ukupno"?
+#: ../multiload/main.c:363
+msgid "Net Load"
+msgstr "Оптерећење мреже"
+
+#: ../multiload/main.c:364
+msgid "Swap Load"
+msgstr "Оптерећење меморије на диску"
+
+#: ../multiload/main.c:366
+msgid "Disk Load"
+msgstr "Оптерећење диска"
+
+#: ../multiload/main.c:462
+msgid "_Open System Monitor"
+msgstr "_Покрени Праћење система"
+
+#: ../multiload/main.c:490
+#: ../multiload/org.gnome.applets.MultiLoadApplet.panel-applet.in.in.h:1
+msgid "System Monitor"
+msgstr "Праћење система"
+
+#: ../multiload/multiload.schemas.in.h:1
+msgid "Enable CPU load graph"
+msgstr "Прикажи график оптерећења процесора"
+
+#: ../multiload/multiload.schemas.in.h:2
+msgid "Enable memory load graph"
+msgstr "Прикажи график заузећа меморије"
+
+#: ../multiload/multiload.schemas.in.h:3
+msgid "Enable network load graph"
+msgstr "Прикажи график оптерећења мреже"
+
+#: ../multiload/multiload.schemas.in.h:4
+msgid "Enable swap load graph"
+msgstr "Прикажи график заузећа замене за меморију (swap)"
+
+#: ../multiload/multiload.schemas.in.h:5
+msgid "Enable load average graph"
+msgstr "Прикажи график просечног оптерећења"
+
+#: ../multiload/multiload.schemas.in.h:6
+msgid "Enable disk load graph"
+msgstr "Прикажи график оптерећења диска"
+
+#: ../multiload/multiload.schemas.in.h:7
+msgid "Applet refresh rate in milliseconds"
+msgstr "Брзина освежавања програмчета у милисекундама"
+
+#: ../multiload/multiload.schemas.in.h:8
+msgid "Graph size"
+msgstr "Величина графика"
+
+#: ../multiload/multiload.schemas.in.h:9
+msgid ""
+"For horizontal panels, the width of the graphs in pixels. For vertical "
+"panels, this is the height of the graphs."
+msgstr ""
+"За водоравне панеле, ширина графика у тачкама. За усправне панеле, ово је "
+"висина графика."
+
+#: ../multiload/multiload.schemas.in.h:10
+msgid "Graph color for user-related CPU activity"
+msgstr "Боја графика за корисничке активности процесора"
+
+#: ../multiload/multiload.schemas.in.h:11
+msgid "Graph color for system-related CPU activity"
+msgstr "Боја графика за системске активности процесора"
+
+#: ../multiload/multiload.schemas.in.h:12
+msgid "Graph color for nice-related CPU activity"
+msgstr "Боја графика за активности процесора са мањим приоритетом"
+
+#: ../multiload/multiload.schemas.in.h:13
+msgid "Graph color for iowait related CPU activity"
+msgstr "Боја графика за активности процесора при чекању на У/И"
+
+#: ../multiload/multiload.schemas.in.h:14
+msgid "CPU graph background color"
+msgstr "Боја позадине за график процесора"
+
+#: ../multiload/multiload.schemas.in.h:15
+msgid "Graph color for user-related memory usage"
+msgstr "Боја графика за корисничку употребу меморије"
+
+#: ../multiload/multiload.schemas.in.h:16
+msgid "Graph color for shared memory"
+msgstr "Боја графика за дељену меморију"
+
+#: ../multiload/multiload.schemas.in.h:17
+msgid "Graph color for buffer memory"
+msgstr "Боја графика за баферисану меморију"
+
+#: ../multiload/multiload.schemas.in.h:18
+msgid "Graph color for cached memory"
+msgstr "Боја графика за кеш меморију"
+
+#: ../multiload/multiload.schemas.in.h:19
+msgid "Memory graph background color"
+msgstr "Боја позадине за праћење меморије"
+
+#: ../multiload/multiload.schemas.in.h:20
+msgid "Graph color for input network activity"
+msgstr "Боја графика за праћење примљених података у мрежи"
+
+#: ../multiload/multiload.schemas.in.h:21
+msgid "Graph color for output network activity"
+msgstr "Боја графика за праћење послатих података у мрежи"
+
+# Не разумем
+# ~Милош
+#: ../multiload/multiload.schemas.in.h:22
+msgid "Graph color for loopback network usage"
+msgstr "Боја графика за повратну активности у мрежи"
+
+#: ../multiload/multiload.schemas.in.h:23
+msgid "Network graph background color"
+msgstr "Боја позадине за праћење мреже"
+
+#: ../multiload/multiload.schemas.in.h:24
+msgid "Graph color for user-related swap usage"
+msgstr "Боја графика за корисничку употребу замене за меморије (swap)"
+
+#: ../multiload/multiload.schemas.in.h:25
+msgid "Swap graph background color"
+msgstr "Боја позадине за праћење замене за меморију (swap)"
+
+#: ../multiload/multiload.schemas.in.h:26
+msgid "Graph color for load average"
+msgstr "Боја графика за просечно оптерећење"
+
+#: ../multiload/multiload.schemas.in.h:27
+msgid "Load graph background color"
+msgstr "Боја позадине за праћење оптерећења"
+
+#: ../multiload/multiload.schemas.in.h:28
+msgid "Graph color for disk read"
+msgstr "Боја графика за читање са диска"
+
+#: ../multiload/multiload.schemas.in.h:29
+msgid "Graph color for disk write"
+msgstr "Боја графика за упис на диск"
+
+#: ../multiload/multiload.schemas.in.h:30
+msgid "Background color for disk load graph"
+msgstr "Боја позадине за график оптерећења диска"
+
+# Јел ок овако?
+#: ../multiload/multiload.schemas.in.h:31
+msgid "The desktop description file to execute as the system monitor"
+msgstr ""
+"Покретачка датотека коју треба покренути као програм за праћење система"
+
+#: ../multiload/netspeed.c:40
+#, c-format
+msgid "%s/s"
+msgstr "%s/s"
+
+#: ../multiload/org.gnome.applets.MultiLoadApplet.panel-applet.in.in.h:2
+msgid "A system load indicator"
+msgstr "Показатељ оптерећења система"
+
+#: ../multiload/properties.c:355
+msgid "Monitored Resources"
+msgstr "Праћени ресурси"
+
+#: ../multiload/properties.c:380
+msgid "_Processor"
+msgstr "_Процесор"
+
+#: ../multiload/properties.c:393
+msgid "_Memory"
+msgstr "_Меморија"
+
+#: ../multiload/properties.c:406
+msgid "_Network"
+msgstr "М_режа"
+
+#: ../multiload/properties.c:419
+msgid "S_wap Space"
+msgstr "_Замена за меморију (swap)"
+
+#: ../multiload/properties.c:432
+msgid "_Load"
+msgstr "_Оптерећење"
+
+#: ../multiload/properties.c:445
+msgid "_Harddisk"
+msgstr "_Тврди диск"
+
+#: ../multiload/properties.c:461
+msgid "Options"
+msgstr "Опције"
+
+#: ../multiload/properties.c:491
+msgid "System m_onitor width: "
+msgstr "_Ширина програмчета: "
+
+#: ../multiload/properties.c:493
+msgid "System m_onitor height: "
+msgstr "_Висина програмчета: "
+
+#: ../multiload/properties.c:532
+msgid "Sys_tem monitor update interval: "
+msgstr "_Време између два освежавања приказа:"
+
+#: ../multiload/properties.c:558
+msgid "milliseconds"
+msgstr "милисекунди"
+
+#: ../multiload/properties.c:596 ../multiload/properties.c:604
+msgid "_User"
+msgstr "_Корисник"
+
+#: ../multiload/properties.c:597
+msgid "S_ystem"
+msgstr "_Систем"
+
+#: ../multiload/properties.c:598
+msgid "N_ice"
+msgstr "_Мање приоритетно"
+
+#: ../multiload/properties.c:599
+msgid "I_OWait"
+msgstr "У_Ичекање"
+
+#: ../multiload/properties.c:600
+msgid "I_dle"
+msgstr "_Неупослен"
+
+#: ../multiload/properties.c:605
+msgid "Sh_ared"
+msgstr "_Дељена"
+
+#: ../multiload/properties.c:606
+msgid "_Buffers"
+msgstr "_Бафери"
+
+#: ../multiload/properties.c:607
+msgid "Cach_ed"
+msgstr "Кеш_ирана"
+
+#: ../multiload/properties.c:608
+msgid "F_ree"
+msgstr "_Слободна"
+
+#: ../multiload/properties.c:612
+msgid "_In"
+msgstr "_Примљено"
+
+#: ../multiload/properties.c:613
+msgid "_Out"
+msgstr "П_ослато"
+
+#: ../multiload/properties.c:614
+msgid "_Local"
+msgstr "_Локално"
+
+#: ../multiload/properties.c:615 ../multiload/properties.c:625
+#: ../multiload/properties.c:631
+msgid "_Background"
+msgstr "_Позадина"
+
+#: ../multiload/properties.c:619
+msgid "_Used"
+msgstr "Ис_коришћено"
+
+#: ../multiload/properties.c:620
+msgid "_Free"
+msgstr "_Слободно"
+
+#: ../multiload/properties.c:622
+msgid "Load"
+msgstr "Оптерећење"
+
+#: ../multiload/properties.c:624
+msgid "_Average"
+msgstr "Про_сечно"
+
+#: ../multiload/properties.c:627
+msgid "Harddisk"
+msgstr "Тврди диск"
+
+#: ../multiload/properties.c:629
+msgid "_Read"
+msgstr "_Читање"
+
+#: ../multiload/properties.c:630
+msgid "_Write"
+msgstr "_Упис"
+
+#: ../multiload/properties.c:655
+msgid "System Monitor Preferences"
+msgstr "Поставке праћења система"
+
+#: ../null_applet/null_applet.c:51
+msgid "Inbox Monitor"
+msgstr "Праћење долазне поште"
+
+#: ../null_applet/null_applet.c:53
+msgid "CD Player"
+msgstr "Програм за звучни диск"
+
+#: ../null_applet/null_applet.c:59
+msgid "Keyboard Indicator"
+msgstr "Показатељ тастатуре"
+
+#: ../null_applet/null_applet.c:157
+msgid "Some panel items are no longer available"
+msgstr "Неке ставке панела више нису доступне"
+
+#: ../null_applet/null_applet.c:158
+msgid ""
+"One or more panel items (also referred to as applets) are no longer "
+"available in the GNOME desktop."
+msgstr ""
+"Једна или више ставки панела (познатијих као програмчићи) више не долази уз "
+"Гном окружење."
+
+#: ../null_applet/null_applet.c:160
+msgid "These items will now be removed from your configuration:"
+msgstr "Ове ставке ће сада бити уклоњене из ваших подешавања:"
+
+#: ../null_applet/null_applet.c:163
+msgid "You will not receive this message again."
+msgstr "Нећете више примити ову поруку."
+
+#: ../stickynotes/data/GNOME_StickyNotesApplet.server.in.h:1
+msgid "Tomboy (ne Stickynotes)"
+msgstr "Томица (старе белешке)"
+
+#: ../stickynotes/data/GNOME_StickyNotesApplet.server.in.h:2
+msgid "Tomboy (transparent upgrade from stickynotes)"
+msgstr "Томица (неприметна надоградња од старих белешки)"
+
+#: ../stickynotes/org.gnome.applets.StickyNotesApplet.panel-applet.in.in.h:1
+msgid "Sticky Notes Applet Factory"
+msgstr "Производња програмчета за белешке"
+
+#: ../stickynotes/org.gnome.applets.StickyNotesApplet.panel-applet.in.in.h:2
+#: ../stickynotes/stickynotes_applet.c:146
+#: ../stickynotes/stickynotes_applet.c:427
+msgid "Sticky Notes"
+msgstr "Белешке"
+
+#: ../stickynotes/org.gnome.applets.StickyNotesApplet.panel-applet.in.in.h:3
+msgid "Create, view, and manage sticky notes on the desktop"
+msgstr "Направите, гледајте и управљајте белешкама на радној површини"
+
+#: ../stickynotes/stickynotes.c:630
+msgid "This note is locked."
+msgstr "Ова белешка је закључана."
+
+#: ../stickynotes/stickynotes.c:634
+msgid "This note is unlocked."
+msgstr "Ова белешка је откључана."
+
+#: ../stickynotes/stickynotes.ui.h:1 ../stickynotes/stickynotes_applet.c:33
+msgid "_New Note"
+msgstr "_Нова белешка"
+
+#: ../stickynotes/stickynotes.ui.h:2
+msgid "_Delete Note..."
+msgstr "_Обриши белешку..."
+
+#: ../stickynotes/stickynotes.ui.h:3
+msgid "_Lock Note"
+msgstr "_Закључај белешку"
+
+#: ../stickynotes/stickynotes.ui.h:5
+msgid "Sticky Notes Preferences"
+msgstr "Поставке за белешку"
+
+#: ../stickynotes/stickynotes.ui.h:6
+msgid "Default Note Properties"
+msgstr "Подешавање подразумеване белешке"
+
+# тоолтип??? ~Милош
+#: ../stickynotes/stickynotes.ui.h:7
+msgid "Choose a font to use for all sticky notes"
+msgstr "Поставља подразумевани фонт за све белешке"
+
+#: ../stickynotes/stickynotes.ui.h:8
+msgid "Pick a default sticky note font"
+msgstr "Изаберите подразумевани фонт за белешке"
+
+#: ../stickynotes/stickynotes.ui.h:9
+msgid "_Font:"
+msgstr "_Фонт:"
+
+#: ../stickynotes/stickynotes.ui.h:10
+msgid "Use fo_nt from the system theme"
+msgstr "Користи фонт из с_истемске теме"
+
+#: ../stickynotes/stickynotes.ui.h:11
+msgid "Note C_olor:"
+msgstr "_Боја белешке:"
+
+#: ../stickynotes/stickynotes.ui.h:12
+msgid "Font Co_lor:"
+msgstr "Бо_ја фонта:"
+
+# тоолтип??? ~Милош
+#: ../stickynotes/stickynotes.ui.h:13
+msgid "Choose a base color to use for all sticky notes"
+msgstr "Поставља подразумевану боју за све белешке"
+
+#: ../stickynotes/stickynotes.ui.h:14
+msgid "Pick a default sticky note color"
+msgstr "Изаберите подразумевану боју за белешке"
+
+#: ../stickynotes/stickynotes.ui.h:15
+msgid "Use co_lor from the system theme"
+msgstr "Користи боју из _системске теме"
+
+#: ../stickynotes/stickynotes.ui.h:16
+msgid "Specify the default height (in pixels) of new notes"
+msgstr "Изаберите подразумевану висину белешке (у пикселима)"
+
+#: ../stickynotes/stickynotes.ui.h:17
+msgid "Specify the default width (in pixels) of new notes"
+msgstr "Изаберите подразумевану ширину белешке (у пикселима)"
+
+#: ../stickynotes/stickynotes.ui.h:18
+msgid "H_eight:"
+msgstr "_Висина:"
+
+#: ../stickynotes/stickynotes.ui.h:20
+msgid "Behavior"
+msgstr "Понашање"
+
+#: ../stickynotes/stickynotes.ui.h:21
+msgid "Hide notes when the des_ktop is clicked on"
+msgstr "_Сакриј белешке када кликнем на радну површ"
+
+#: ../stickynotes/stickynotes.ui.h:22
+msgid "Choose whether to hide all notes when selecting on the desktop"
+msgstr "Да ли да сакријем све белешке када кликнете на радну површину"
+
+#: ../stickynotes/stickynotes.ui.h:23
+msgid "Force _default color and font on notes"
+msgstr "Да ли да _наметнем подразумевану боју и словни лик за све белешке"
+
+#: ../stickynotes/stickynotes.ui.h:24
+msgid "Choose if the default style is forced on all notes"
+msgstr "Да ли да наметнем подразумевани стил за све белешке"
+
+#: ../stickynotes/stickynotes.ui.h:25
+msgid "_Put notes on all workspaces"
+msgstr "Постави на све _радне површине"
+
+#: ../stickynotes/stickynotes.ui.h:26
+msgid "Choose if notes are visible on all workspaces"
+msgstr "Да ли да прикажем белешке на свим радним просторима"
+
+#: ../stickynotes/stickynotes.ui.h:27
+msgid "Delete this sticky note?"
+msgstr "Да обришем лепљиву белешку?"
+
+#: ../stickynotes/stickynotes.ui.h:28
+msgid "This cannot be undone."
+msgstr "Ово не можете поништити."
+
+#: ../stickynotes/stickynotes.ui.h:29
+msgid "Delete all sticky notes?"
+msgstr "Да обришем све лепљиве белешке?"
+
+#: ../stickynotes/stickynotes.ui.h:30
+msgid "_Delete All"
+msgstr "Обриши _све"
+
+#: ../stickynotes/stickynotes.ui.h:31
+msgid "Sticky Note"
+msgstr "Белешке"
+
+#: ../stickynotes/stickynotes.ui.h:32
+msgid "Lock/Unlock note"
+msgstr "Закључај/откључај белешку"
+
+#: ../stickynotes/stickynotes.ui.h:33
+msgid "Close note"
+msgstr "Затвори белешку"
+
+#: ../stickynotes/stickynotes.ui.h:34
+msgid "Resize note"
+msgstr "Промени величину белешке"
+
+#: ../stickynotes/stickynotes.ui.h:35
+msgid "Sticky Note Properties"
+msgstr "Особине белешке"
+
+#: ../stickynotes/stickynotes.ui.h:36
+msgid "Properties"
+msgstr "Особине"
+
+#: ../stickynotes/stickynotes.ui.h:37
+msgid "Choose a font for the note"
+msgstr "Уобичајени фонт белешке"
+
+#: ../stickynotes/stickynotes.ui.h:38
+msgid "Pick a font for the sticky note"
+msgstr "Изаберите фонт за белешку"
+
+#: ../stickynotes/stickynotes.ui.h:39
+msgid "Use default fo_nt"
+msgstr "К_ористи подразумевани фонт"
+
+#: ../stickynotes/stickynotes.ui.h:40
+msgid "Choose a color for the note"
+msgstr "Уобичајена боја белешке"
+
+#: ../stickynotes/stickynotes.ui.h:41
+msgid "Pick a color for the sticky note"
+msgstr "Изаберите боју за белешке"
+
+#: ../stickynotes/stickynotes.ui.h:42
+msgid "Note _Color:"
+msgstr "Б_оја белешке:"
+
+#: ../stickynotes/stickynotes.ui.h:43
+msgid "Font C_olor:"
+msgstr "_Боја фонта:"
+
+#: ../stickynotes/stickynotes.ui.h:44
+msgid "Use default co_lor"
+msgstr "_Користи подразумевану боју"
+
+#: ../stickynotes/stickynotes.ui.h:45
+msgid "Specify a title for the note"
+msgstr "Упишите наслов за белешку"
+
+#: ../stickynotes/stickynotes.ui.h:46
+msgid "_Title:"
+msgstr "_Наслов:"
+
+#: ../stickynotes/stickynotes.schemas.in.h:1
+msgid "Default width for new notes"
+msgstr "Уобичајена ширина за нове белешке"
+
+#: ../stickynotes/stickynotes.schemas.in.h:2
+msgid "Default width for new sticky notes in pixels."
+msgstr "Уобичајена ширина у тачкама за нове белешке."
+
+#: ../stickynotes/stickynotes.schemas.in.h:3
+msgid "Default height for new notes"
+msgstr "Уобичајена висина за нове белешке"
+
+#: ../stickynotes/stickynotes.schemas.in.h:4
+msgid "Default height for new sticky notes in pixels."
+msgstr "Уобичајена висина у тачкама за нове белешке."
+
+#: ../stickynotes/stickynotes.schemas.in.h:5
+msgid "Default color for new notes"
+msgstr "Уобичајена боја за нове белешке"
+
+#: ../stickynotes/stickynotes.schemas.in.h:6
+msgid ""
+"Default color for new sticky notes. This should be in html hex "
+"specification, for example \"#30FF50\"."
+msgstr ""
+"Уобичајена боја за нове белешке. Ово треба да буде HTML хексадекадни навод "
+"боје, нпр. „#30FF50“."
+
+#: ../stickynotes/stickynotes.schemas.in.h:7
+msgid "Default color for font"
+msgstr "Уобичајена боја словног лика"
+
+#: ../stickynotes/stickynotes.schemas.in.h:8
+msgid ""
+"Default font color for new sticky notes. This should be in html hex "
+"specification, for example \"#000000\"."
+msgstr ""
+"Уобичајена боја за нове белешке. Ово треба да буде HTML хексадекадни навод "
+"боје, нпр. „#000000“."
+
+#: ../stickynotes/stickynotes.schemas.in.h:9
+msgid "Default font for new notes"
+msgstr "Уобичајени словни лик за нове белешке"
+
+#: ../stickynotes/stickynotes.schemas.in.h:10
+msgid ""
+"Default font for new sticky notes. This should be a Pango Font Name, for "
+"example \"Sans Italic 10\"."
+msgstr ""
+"Уобичајени фонт за нове белешке. Ово треба да буде име фонта за Панго, нпр. "
+"„Sans Italic 10“."
+
+#: ../stickynotes/stickynotes.schemas.in.h:11
+msgid "Sticky notes' workspace stickyness"
+msgstr "Лепљивост белешки за радну површину"
+
+#: ../stickynotes/stickynotes.schemas.in.h:12
+msgid ""
+"Specifies whether the sticky notes are visible on ALL workspaces on the "
+"desktop, or not."
+msgstr "Одређује да ли се белешке виде на СВИМ радним површинама, или не."
+
+#: ../stickynotes/stickynotes.schemas.in.h:13
+msgid "Sticky notes' locked state"
+msgstr "Закључано стање белешки"
+
+#: ../stickynotes/stickynotes.schemas.in.h:14
+msgid "Specifies whether the sticky notes are locked (non-editable) or not."
+msgstr "Одређује да ли су белешке закључане (не могу се изменити) или не."
+
+#: ../stickynotes/stickynotes.schemas.in.h:15
+msgid "Date format of note's title"
+msgstr "Образац за датум у насловима белешки"
+
+#: ../stickynotes/stickynotes.schemas.in.h:16
+msgid ""
+"By default, sticky notes are given the current date as the title when they "
+"are created. This format is used; anything that can be parsed by strftime() "
+"is valid."
+msgstr ""
+"Уобичајено, када се направе белешке, користи се текући датум за наслов. Овај "
+"образац се користи; све што прихвата strftime() је дозвољено."
+
+#: ../stickynotes/stickynotes.schemas.in.h:17
+msgid "Whether to use the default system color"
+msgstr "Да ли се користи подразумевана боја система"
+
+#: ../stickynotes/stickynotes.schemas.in.h:18
+msgid ""
+"If this option is disabled, a custom color can be used as the default color "
+"for all sticky notes."
+msgstr ""
+"Уколико је ова опција искључена, може се користити боја по избору као "
+"уобичајена боја за све белешке."
+
+#: ../stickynotes/stickynotes.schemas.in.h:19
+msgid "Whether to use the default system font"
+msgstr "Да ли се користи подразумевани системски словни лик"
+
+#: ../stickynotes/stickynotes.schemas.in.h:20
+msgid ""
+"If this option is disabled, a custom font can be used as the default font "
+"for all sticky notes."
+msgstr ""
+"Уколико је ова опција искључена, може се користити фонт по избору као "
+"уобичајени фонт за све белешке."
+
+#: ../stickynotes/stickynotes.schemas.in.h:21
+msgid "Whether to force the default color and font on all notes"
+msgstr "Да ли да наметнем подразумевану боју и словни лик за све белешке"
+
+#: ../stickynotes/stickynotes.schemas.in.h:22
+msgid ""
+"If this option is enabled, the custom colors and fonts that have been "
+"assigned to individual notes will be ignored."
+msgstr ""
+"Уколико је ова опција укључена, неће се користити подешавања боја и фонтова "
+"за појединачне белешке."
+
+#: ../stickynotes/stickynotes.schemas.in.h:23
+msgid "Whether to hide all notes when the desktop is selected"
+msgstr "Да ли да сакријем све белешке при избору радне површи"
+
+#: ../stickynotes/stickynotes.schemas.in.h:24
+msgid ""
+"If this option is enabled, selecting the desktop in any way will "
+"automatically hide all the open notes."
+msgstr ""
+"Уколико укључите ову опцију, избор радне површине на било кој начин ће "
+"сакрити све отворене белешке."
+
+#: ../stickynotes/stickynotes.schemas.in.h:25
+msgid "Whether to ask for confirmation when deleting a note"
+msgstr "Да ли се тражи одобрење при брисању белешке"
+
+#: ../stickynotes/stickynotes.schemas.in.h:26
+msgid "Empty notes are always deleted without confirmation."
+msgstr "Празне белешке се увек бришу без потврде."
+
+#: ../stickynotes/stickynotes_applet.c:36
+msgid "Hi_de Notes"
+msgstr "Сак_риј белешке"
+
+#: ../stickynotes/stickynotes_applet.c:39
+msgid "_Delete Notes"
+msgstr "У_клони белешке"
+
+#: ../stickynotes/stickynotes_applet.c:55
+msgid "_Lock Notes"
+msgstr "_Закључај белешке"
+
+#: ../stickynotes/stickynotes_applet.c:620
+#, c-format
+msgid "%d note"
+msgid_plural "%d notes"
+msgstr[0] "%d белешка"
+msgstr[1] "%d белешке"
+msgstr[2] "%d белешки"
+msgstr[3] "Једна белешка"
+
+#: ../stickynotes/stickynotes_applet.c:621
+msgid "Show sticky notes"
+msgstr "Прикажи белешке"
+
+#: ../stickynotes/stickynotes_applet_callbacks.c:379
+msgid "Sticky Notes for the GNOME Desktop Environment"
+msgstr "Белешке за радно окружење Гном"
+
+#: ../trashapplet/org.gnome.applets.TrashApplet.panel-applet.in.in.h:1
+msgid "Trash"
+msgstr "Смеће"
+
+#: ../trashapplet/org.gnome.applets.TrashApplet.panel-applet.in.in.h:2
+msgid "Go to Trash"
+msgstr "Иди до Смећа"
+
+#: ../trashapplet/src/trashapplet.c:69 ../trashapplet/src/trash-empty.c:343
+msgid "_Empty Trash"
+msgstr "Из_баци смеће"
+
+#: ../trashapplet/src/trashapplet.c:72
+msgid "_Open Trash"
+msgstr "_Отвори смеће"
+
+# bug: plural-forms
+#: ../trashapplet/src/trashapplet.c:128
+#, c-format
+msgid "%d Item in Trash"
+msgid_plural "%d Items in Trash"
+msgstr[0] "%d ставка у смећу"
+msgstr[1] "%d ставке у смећу"
+msgstr[2] "%d ставки у смећу"
+msgstr[3] "Једна ставка у смећу"
+
+#: ../trashapplet/src/trashapplet.c:136
+msgid "No Items in Trash"
+msgstr "Нема ставки у Смећу"
+
+#: ../trashapplet/src/trashapplet.c:377
+#, c-format
+msgid ""
+"Error while spawning nautilus:\n"
+"%s"
+msgstr ""
+"Грешка при позивању Наутилуса:\n"
+"%s"
+
+#: ../trashapplet/src/trashapplet.c:426
+msgid ""
+"A GNOME trash bin that lives in your panel. You can use it to view the trash "
+"or drag and drop items into the trash."
+msgstr ""
+"Гномова канта за смеће на панелу. Користите је да прегледате смеће или да "
+"превучете и убаците ставке у смеће."
+
+#: ../trashapplet/src/trashapplet.c:451
+msgid "Delete Immediately?"
+msgstr "Одмах обрисати?"
+
+#: ../trashapplet/src/trashapplet.c:480
+msgid "Cannot move items to trash, do you want to delete them immediately?"
+msgstr "Не могу да преместим ставке у смеће, желите ли да их одмах обришете?"
+
+#: ../trashapplet/src/trashapplet.c:485
+msgid ""
+"Cannot move some items to trash, do you want to delete these immediately?"
+msgstr ""
+"Не могу да преместим неке ставке у смеће, желите ли да их одмах обришете?"
+
+#: ../trashapplet/src/trashapplet.c:615
+msgid "Trash Applet"
+msgstr "Програмче за Смеће"
+
+#. Translators: the %s in this string should be read as %d.
+#: ../trashapplet/src/trash-empty.c:73
+#, c-format
+msgid "Removing item %s of %s"
+msgstr "Уклања ставку %s од %s"
+
+#. Translators: %s is a file name
+#: ../trashapplet/src/trash-empty.c:99
+#, c-format
+msgid "Removing: %s"
+msgstr "Уклањам: %s"
+
+#: ../trashapplet/src/trash-empty.c:322
+msgid "Empty all of the items from the trash?"
+msgstr "Избацити све ставке из смећа?"
+
+#: ../trashapplet/src/trash-empty.c:329
+msgid ""
+"If you choose to empty the trash, all items in it will be permanently lost. "
+"Please note that you can also delete them separately."
+msgstr ""
+"Уколико избаците смеће, све ставке из њега ће бити трајно уклоњене. "
+"Приметите да сваку можете засебно избацити."
+
+#: ../trashapplet/trashapplet-empty-progress.ui.h:1
+msgid "Emptying the Trash"
+msgstr "Избацивање смећа"
+
+#: ../trashapplet/trashapplet-empty-progress.ui.h:2
+msgid "From:"
+msgstr "Из:"
+
+#~ msgid "Alt+Control changes layout."
+#~ msgstr "Alt+Control мења распоред."
+
+#~ msgid "Alt+Shift changes layout."
+#~ msgstr "Alt+Shift мења распоред."
+
+#~ msgid "Arabic keymap"
+#~ msgstr "Арапски распоред"
+
+#~ msgid "Armenian"
+#~ msgstr "Јерменски"
+
+#~ msgid "Basque"
+#~ msgstr "Баскијски"
+
+#~ msgid "Belgian"
+#~ msgstr "Белгијски"
+
+#~ msgid "Both Alt keys together change layout."
+#~ msgstr "Оба Alt тастера заједно мењају распоред."
+
+#~ msgid "Both Ctrl keys together change layout."
+#~ msgstr "Оба Ctrl тастера заједно мењају распоред."
+
+#~ msgid "Both Shift keys together change layout."
+#~ msgstr "Оба Shift тастера заједно мењају распоред."
+
+#~ msgid "Brazil Portuguese keymap"
+#~ msgstr "Бралиски португалски распоред"
+
+#~ msgid "Bulgarian Cyrillic"
+#~ msgstr "Бугарска ћирилица"
+
+#~ msgid "Bulgarian keymap"
+#~ msgstr "Бугарски распоред"
+
+#~ msgid "CapsLock key changes layout."
+#~ msgstr "CapsLock тастер мења распоред."
+
+#~ msgid "Control+Shift changes layout."
+#~ msgstr "Control+Shift мења распоред."
+
+#~ msgid "Czech keymap"
+#~ msgstr "Чешки распоред"
+
+#~ msgid "Danish keymap"
+#~ msgstr "Дански распоред"
+
+#~ msgid "Dutch keymap"
+#~ msgstr "Холандски распоред"
+
+#~ msgid "English keymap"
+#~ msgstr "Енглески распоред"
+
+#~ msgid "Estonian keymap"
+#~ msgstr "Естонски распоред"
+
+#~ msgid "Finnish keymap"
+#~ msgstr "Фински распоред"
+
+#~ msgid "French Swiss"
+#~ msgstr "Француски швајцарски"
+
+#~ msgid "French Swiss keymap"
+#~ msgstr "Француски швајцарски распоред"
+
+#~ msgid "French keymap"
+#~ msgstr "Француски распоред"
+
+#~ msgid "French-Canadian 105-key"
+#~ msgstr "Француски канадски распоред од 105 тастера"
+
+#~ msgid "GB 102-key"
+#~ msgstr "Британски са 102 тастера"
+
+#~ msgid "GB 105-key"
+#~ msgstr "Британски са 105 тастера"
+
+#~ msgid "Generic Keyboard"
+#~ msgstr "Обична тастатура"
+
+#~ msgid "Georgian Latin"
+#~ msgstr "Грузијски латинични"
+
+#~ msgid "Georgian Russian layout"
+#~ msgstr "Грузијски руски распоред"
+
+#~ msgid "Georgian keymap"
+#~ msgstr "Грузијски распоред"
+
+#~ msgid "German"
+#~ msgstr "Немачки"
+
+#~ msgid "German Swiss with Euro"
+#~ msgstr "Немачки швајцарски са евром"
+
+#~ msgid "German keymap"
+#~ msgstr "Немачки распоред"
+
+#~ msgid "Greek keymap"
+#~ msgstr "Грчки распоред"
+
+#~ msgid "Hebrew keymap"
+#~ msgstr "Хебрејски распоред"
+
+#~ msgid "Hungarian 101-key latin 1"
+#~ msgstr "Мађарски за 101-тастер latin1"
+
+#~ msgid "Hungarian 101-key latin 2"
+#~ msgstr "Мађарски за 101-тастер latin2"
+
+#~ msgid "Hungarian 105-key latin 1"
+#~ msgstr "Мађарски за 105-тастер latin1"
+
+#~ msgid "Hungarian 105-key latin 2"
+#~ msgstr "Мађарски за 105-тастер latin2"
+
+#~ msgid "Hungarian PC/AT 101 keyboard"
+#~ msgstr "Мађарска PC/AT 101 тастатура"
+
+#~ msgid "Hungarian latin1"
+#~ msgstr "Мађарски latin1"
+
+#~ msgid "Icelandic keymap"
+#~ msgstr "Исландски распоред"
+
+#~ msgid "Italian keymap"
+#~ msgstr "Италијански распоред"
+
+#~ msgid "Japanese keymap"
+#~ msgstr "Јапански распоред"
+
+#~ msgid "Lao keymap"
+#~ msgstr "Лао распоред"
+
+# Хм хм
+#~ msgid "Layout shift behavior"
+#~ msgstr "Понашање промене распореда"
+
+#~ msgid "Left Alt key changes layout."
+#~ msgstr "Леви Alt тастер мења распоред."
+
+#~ msgid "Left Ctrl key changes group."
+#~ msgstr "Леви Ctrl тастер мења распоред."
+
+#~ msgid "Left Shift key changes group."
+#~ msgstr "Леви Shift тастер мења распоред."
+
+# bug: it's not a "Win", it's "Lose" key!
+#~ msgid "Left Win-key changes layout."
+#~ msgstr "Леви Windows тастер мења распоред."
+
+#~ msgid "Lithuanian keymap"
+#~ msgstr "Литвански распоред"
+
+#~ msgid "Macedonian"
+#~ msgstr "Македонски"
+
+#~ msgid "Menu key changes layout."
+#~ msgstr "Menu тастер мења распоред."
+
+#~ msgid "Mongolian alt keymap"
+#~ msgstr "Монголски алтернативни распоред"
+
+#~ msgid "Mongolian keymap"
+#~ msgstr "Монголски распоред"
+
+#~ msgid "Mongolian phonetic keymap"
+#~ msgstr "Монголски гласовни распоред"
+
+#~ msgid "Norwegian"
+#~ msgstr "Норвешки"
+
+#~ msgid "Plain Russian keymap"
+#~ msgstr "Обични руски распоред"
+
+#~ msgid "Polish"
+#~ msgstr "Пољски"
+
+#~ msgid "Polish deadkeys"
+#~ msgstr "Пољски акценти"
+
+#~ msgid "Portugal"
+#~ msgstr "Португал"
+
+#~ msgid "Portugal Deadkeys"
+#~ msgstr "Португалски акценти"
+
+#~ msgid "Portuguese keymap"
+#~ msgstr "Португалски распоред"
+
+#~ msgid "Right Alt key changes layout."
+#~ msgstr "Десни Alt тастер мења распоред."
+
+#~ msgid "Right Ctrl key changes group."
+#~ msgstr "Десни Ctrl тастер мења распоред."
+
+#~ msgid "Right Shift key changes group."
+#~ msgstr "Десни Shift тастер мења распоред."
+
+#~ msgid "Right Win-key changes layout."
+#~ msgstr "Десни Windows тастер мења распоред."
+
+#~ msgid "Russian Cyrillic"
+#~ msgstr "Руска ћирилица"
+
+#~ msgid "Russian keymap"
+#~ msgstr "Руски распоред"
+
+#~ msgid "Serbian keymap"
+#~ msgstr "Српски распоред"
+
+#~ msgid "Shift+CapsLock changes layout."
+#~ msgstr "Shift+CapsLock мењају распоред."
+
+#~ msgid "Slovak keymap"
+#~ msgstr "Словачки распоред"
+
+#~ msgid "Slovenian"
+#~ msgstr "Словеначки"
+
+#~ msgid "Slovenian keymap"
+#~ msgstr "Словеначки распоред"
+
+#~ msgid "Spanish keymap"
+#~ msgstr "Шпански распоред"
+
+#~ msgid "Sun (!not PC!) type5 Hungarian latin 2"
+#~ msgstr "Sun-ов (!није за PC!) мађарски типа 5 latin 2"
+
+#~ msgid "Swedish"
+#~ msgstr "Шведски"
+
+#~ msgid "Swedish keymap"
+#~ msgstr "Шведски распоред"
+
+#~ msgid "Swiss keymap"
+#~ msgstr "Швајцарски распоред"
+
+#~ msgid "Thai"
+#~ msgstr "Тајландски"
+
+#~ msgid "Thai Kedmanee"
+#~ msgstr "Тајландски Кедмани"
+
+#~ msgid "Thai keymap"
+#~ msgstr "Тајландски распоред"
+
+#~ msgid "Turkish \"F\" keyboard"
+#~ msgstr "Turska „F“ тастатура"
+
+#~ msgid "Turkish \"Q\" keyboard"
+#~ msgstr "Turska „Q“ тастатура"
+
+#~ msgid "Turkish keymap"
+#~ msgstr "Турски распоред"
+
+#~ msgid "UK 105-key"
+#~ msgstr "Британска са 105 тастера"
+
+#~ msgid "UK PC/AT keyboard"
+#~ msgstr "Британска PC/AT тастатура"
+
+#~ msgid "US 101-key keyboard"
+#~ msgstr "Америчка тастатура са 101 тастером"
+
+#~ msgid "US 105-key keyboard (with windows keys)"
+#~ msgstr "Америчка тастатура са 105 тастера (са Windows тастерима)"
+
+#~ msgid "US 84-key"
+#~ msgstr "Америчка тастатура са 84 тастера"
+
+#~ msgid "US DEC 450"
+#~ msgstr "Америчка тастатура DEC 450"
+
+#~ msgid "US IBM RS/6000"
+#~ msgstr "Америчка тастатура IBM RS/6000"
+
+#~ msgid "US International"
+#~ msgstr "Америчка међународна"
+
+#~ msgid "US Macintosh"
+#~ msgstr "Америчка Мекинтош"
+
+#~ msgid "US PC/AT 101 keyboard"
+#~ msgstr "Америчка PC/AT 101 тастатура"
+
+#~ msgid "US Silicon Graphics 101-key"
+#~ msgstr "Америчка Silicon Graphics 101 тастатура"
+
+#~ msgid "US Sun type5"
+#~ msgstr "Америчка Sun-ова типа5"
+
+#~ msgid "Armenian Sun keymap"
+#~ msgstr "Јерменски Sun-ов распоред"
+
+#~ msgid "Azerbaijani Turkish Sun keymap"
+#~ msgstr "Азербејџански турски Sun-ов распоред"
+
+#~ msgid "Belarusian Sun keymap"
+#~ msgstr "Белоруски Sun-ов распоред"
+
+#~ msgid "Brazil Portuguese Sun USB keymap"
+#~ msgstr "Бразилски португалски Sun-ов USB распоред"
+
+#~ msgid "Brazil Portuguese Sun keymap"
+#~ msgstr "Бразилски португалски Sun-ов распоред"
+
+#~ msgid "British Sun Type-4 keymap"
+#~ msgstr "Британски Sun-ов распоред типа 4"
+
+#~ msgid "British Sun USB keymap"
+#~ msgstr "Британски Sun-ов USB распоред"
+
+#~ msgid "British Sun keymap"
+#~ msgstr "Британски Sun-ов распоред"
+
+#~ msgid "Bulgarian Sun keymap"
+#~ msgstr "Бугарски Sun-ов распоред"
+
+#~ msgid "Canadian Sun keymap"
+#~ msgstr "Канадски Sun-ов распоред"
+
+#~ msgid "Czech Sun keymap"
+#~ msgstr "Чешки Sun-ов распоред"
+
+#~ msgid "Danish Sun Type-4 keymap"
+#~ msgstr "Дански Sun-ов распоред типа 4"
+
+#~ msgid "Danish Sun USB keymap"
+#~ msgstr "Дански Sun-ов USB распоред"
+
+#~ msgid "Danish Sun keymap"
+#~ msgstr "Дански Sun-ов распоред"
+
+#~ msgid "Dutch Sun keymap"
+#~ msgstr "Холандски Sun-ов распоред"
+
+#~ msgid "Estonian Sun keymap"
+#~ msgstr "Естонски Sun-ов распоред"
+
+#~ msgid "Finnish Sun keymap"
+#~ msgstr "Фински Sun-ов распоред"
+
+#~ msgid "French Sun USB keymap"
+#~ msgstr "Француски Sun-ов USB распоред"
+
+#~ msgid "French Sun keymap"
+#~ msgstr "Француски Sun-ов распоред"
+
+#~ msgid "German Sun Type-4 keymap"
+#~ msgstr "Немачки Sun-ов распоред типа 4"
+
+#~ msgid "German Sun USB keymap"
+#~ msgstr "Немачки Sun-ов USB распоред"
+
+#~ msgid "German Sun keymap"
+#~ msgstr "Немачки Sun-ов распоред"
+
+#~ msgid "Hebrew Sun keymap"
+#~ msgstr "Хебрејски Sun-ов распоред"
+
+#~ msgid "Hungarian latin2 Sun keymap"
+#~ msgstr "Мађарски latin2 Sun-ов распоред"
+
+#~ msgid "Hungarian type5 latin 1 keymap"
+#~ msgstr "Мађарски latin 1 распоред типа 5"
+
+#~ msgid "Icelandic Sun keymap"
+#~ msgstr "Исландски Sun-ов распоред"
+
+#~ msgid "Italian Sun Type-4 keymap"
+#~ msgstr "Италијански Sun-ов распоред типа 4"
+
+#~ msgid "Italian Sun USB keymap"
+#~ msgstr "Италијански Sun-ов USB распоред"
+
+#~ msgid "Italian Sun keymap"
+#~ msgstr "Италијански Sun-ов распоред"
+
+#~ msgid "Japanese Sun Type-4 keymap"
+#~ msgstr "Јапански Sun-ов распоред типа 4"
+
+#~ msgid "Japanese Sun keymap"
+#~ msgstr "Јапански Sun-ов распоред"
+
+#~ msgid "Latvian Sun keymap"
+#~ msgstr "Латвијски Sun-ов распоред"
+
+#~ msgid "Lithuanian Sun keymap"
+#~ msgstr "Литвански Sun-ов распоред"
+
+#~ msgid "Macedonian Sun keymap"
+#~ msgstr "Македонски Sun-ов распоред"
+
+#~ msgid "Norwegian Sun keymap"
+#~ msgstr "Норвешки Sun-ов распоред"
+
+#~ msgid "Polish Sun keymap"
+#~ msgstr "Пољски Sun-ов распоред"
+
+#~ msgid "Portuguese Sun Type-4 keymap"
+#~ msgstr "Португалски Sun-ов распоред типа 4"
+
+#~ msgid "Portuguese Sun keymap"
+#~ msgstr "Португалски Sun-ов распоред"
+
+#~ msgid "Romanian Sun keymap"
+#~ msgstr "Румунски Sun-ов распоред"
+
+#~ msgid "Russian Sun keymap"
+#~ msgstr "Руски Sun-ов распоред"
+
+#~ msgid "Serbian Sun standard keymap"
+#~ msgstr "Српски стандардни Sun-ов распоред"
+
+#~ msgid "Slovak Sun keymap"
+#~ msgstr "Словачки Sun-ов распоред"
+
+#~ msgid "Slovenian Sun keymap"
+#~ msgstr "Словеначки Sun-ов распоред"
+
+#~ msgid "Spanish Sun Type-4 keymap"
+#~ msgstr "Шпански Sun-ов распоред типа 4"
+
+#~ msgid "Spanish Sun USB keymap"
+#~ msgstr "Шпански Sun-ов USB распоред"
+
+#~ msgid "Spanish Sun keymap"
+#~ msgstr "Шпански Sun-ов распоред"
+
+#~ msgid "Swedish Sun Type-4 keymap"
+#~ msgstr "Шведски Sun-ов распоред типа 4"
+
+#~ msgid "Swedish Sun USB keymap"
+#~ msgstr "Шведски Sun-ов USB распоред"
+
+#~ msgid "Swedish Sun keymap"
+#~ msgstr "Шведски Sun-ов распоред"
+
+#~ msgid "Swiss German Sun keymap"
+#~ msgstr "Швајцарски немачки Sun-ов распоред"
+
+#~ msgid "Thai Sun keymap"
+#~ msgstr "Тајландски Sun-ов распоред"
+
+#~ msgid "Turkish Sun keymap"
+#~ msgstr "Турски Sun-ов распоред"
+
+#~ msgid "US Sun Type-4 keymap"
+#~ msgstr "Амерички Sun-ов распоред типа 4"
+
+#~ msgid "US Sun USB keymap"
+#~ msgstr "Амерички Sun-ов USB распоред"
+
+#~ msgid "US Sun type5 keymap"
+#~ msgstr "Амерички Sun-ов распоред типа 5"
+
+#~ msgid "Ukrainian Sun keymap"
+#~ msgstr "Украјински Sun-ов распоред"
+
+#~ msgid "Vietnamese Sun keymap"
+#~ msgstr "Вијетнамски Sun-ов распоред"
+
+#~ msgid ""
+#~ "<i><small><b>Note:</b> Quotes are delayed at least 15 minutes.\n"
+#~ "<b>Source: </b> Yahoo!</small></i>"
+#~ msgstr ""
+#~ "<i><small><b>Примедба:</b> Стања касне најмање 15 минута.\n"
+#~ "<b>Извор: </b> Yahoo!</small></i>"
+
+#~ msgid "Cannot execute '%s'"
+#~ msgstr "Не могу да извршим ’%s‘"
+
+#~ msgid "Invest Applet"
+#~ msgstr "Програмче за улагања"
+
+#~ msgid "CD Player (Deprecated)"
+#~ msgstr "Поставке за пуштање ЦД-а (застарело)"
+
+#~ msgid "Panel applet for playing audio CDs"
+#~ msgstr "Програмче панела за пуштање музичких ЦД-а"
+
+#~ msgid "Alert you when new mail arrives"
+#~ msgstr "Обавести када стигне нова пошта"
+
+#~ msgid "Inbox Monitor (Deprecated)"
+#~ msgstr "Праћење сандучета (застарело)"
+
+#~ msgid "Volume Control (Deprecated)"
+#~ msgstr "Контрола јачине звука (превазиђено)"
+
+#~ msgid "Factory for deprecating applets"
+#~ msgstr "Фабрика за застаревање програмчића"
+
+#~ msgid "Null Applet Factory"
+#~ msgstr "Фабрика ништавног програмчета"
+
+#~ msgid "Monitor the quality of a wireless network link"
+#~ msgstr "Праћење квалитета бежичне мрежне везе"
+
+#~ msgid "Wireless Link Monitor"
+#~ msgstr "Праћење бежичне везе"
+
+#~ msgid "Keyboard Indicator (Deprecated)"
+#~ msgstr "Показатељ тастатуре (превазиђено)"
+
+#~ msgid "Keyboard layout indicator"
+#~ msgstr "Показатељ распореда тастатуре"
+
+#~ msgid "Keyboard _Preferences"
+#~ msgstr "_Поставке тастатуре"
+
+#~ msgid "Pl_ugins"
+#~ msgstr "_Додаци"
+
+#~ msgid "Show Current _Layout"
+#~ msgstr "Прикажи текући _распоред"
+
+#~ msgid "Keyboard applet factory"
+#~ msgstr "Радионица програмчета за тастатуру"
+
+#~ msgid "Unknown"
+#~ msgstr "Непознато"
+
+#~ msgid "Keyboard Layout \"%s\""
+#~ msgstr "Распоред тастатуре „%s“"
+
+#~ msgid "Copyright (c) Sergey V. Udaltsov 1999-2004"
+#~ msgstr "Ауторско право © Сергеј В. Удалцов 1999–2004"
+
+#~ msgid "Keyboard layout indicator applet for GNOME"
+#~ msgstr "Програмче за ознаку распореда на тастатури за Гнома"
+
+#~ msgid "Keyboard Layout"
+#~ msgstr "Распоред тастатуре"
+
+#~ msgid "<b>Appearance</b>"
+#~ msgstr "<b>Изглед</b>"
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "<b>Colors</b>"
+#~ msgstr "<b>Боје</b>"
+
+#~ msgid "<b>Size</b>"
+#~ msgstr "<b>Величина</b>"
+
+#~ msgid "<span weight=\"bold\" size=\"larger\">Root password required</span>"
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">Потребна је администраторска "
+#~ "лозинка</span>"
+
+#~ msgid ""
+#~ "<b>Delete all sticky notes?</b>\n"
+#~ "\n"
+#~ "This cannot be undone."
+#~ msgstr ""
+#~ "<b>Да обришем све белешке?</b>\n"
+#~ "\n"
+#~ "Не можете вратити ову радњу."
+
+#~ msgid ""
+#~ "<b>Delete this sticky note?</b>\n"
+#~ "\n"
+#~ "This cannot be undone."
+#~ msgstr ""
+#~ "<b>Да обришем ову белешке?</b>\n"
+#~ "\n"
+#~ "Не можете вратити ову радњу."
+
+#~ msgid "<b>Properties</b>"
+#~ msgstr "<b>Особине</b>"
+
+#~ msgid "<b>From:</b>"
+#~ msgstr "<b>Шаље:</b>"
+
+#~ msgid "<big><b>Emptying the Trash</b></big>"
+#~ msgstr "<big><b>Избацивање смећа</b></big>"
+
+#~ msgid "    "
+#~ msgstr "    "
+
+#~ msgid "Using GStreamer 0.8."
+#~ msgstr "Користи се GStreamer окосница верзије 0.8."
+
+#~ msgid "-"
+#~ msgstr "-"
+
+#~ msgid "+"
+#~ msgstr "+"
+
+#~ msgid "Graph color for PLIP network activity"
+#~ msgstr "Боја графика за праћење PLIP активности у мрежи"
+
+#~ msgid "Graph color for SLIP network activity"
+#~ msgstr "Боја графика за праћење SLIP активности у мрежи"
+
+#~ msgid "_SLIP"
+#~ msgstr "_SLIP"
+
+#~ msgid "PL_IP"
+#~ msgstr "PL_IP"
+
+#~ msgid "_Ethernet"
+#~ msgstr "Е_тернет"
+
+#~ msgid "Othe_r"
+#~ msgstr "_Остала"
+
+#~ msgid "_Open"
+#~ msgstr "_Отвори"
+
+#~ msgid "(not connected)"
+#~ msgstr "(неповезан)"
+
+#~ msgid "Mount Error"
+#~ msgstr "Грешка при прикључењу"
+
+#~ msgid "Unmount Error"
+#~ msgstr "Грешка при искључењу"
+
+#~ msgid "Eject Error"
+#~ msgstr "Грешка при избацивању"
+
+#~ msgid "Error"
+#~ msgstr "Грешка"

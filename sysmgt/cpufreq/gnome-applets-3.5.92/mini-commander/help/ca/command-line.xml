@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- -*- indent-tabs-mode: nil -*- -->
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.12">
+<!ENTITY applet "Command Line">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp 
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ca">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo> 
+  <title>Manual de la línia d'ordres</title> 
+  <abstract role="description">
+    <para>La línia d'ordres permet executar ordres des d'un quadre i inclou accés ràpid al navegador de fitxers i a l'historial d'ordres.</para>
+  </abstract>
+  <copyright>
+    <year>2005</year>
+    <holder>Davyd Madeley</holder>
+  </copyright>
+  <copyright>
+    <year>2004</year>
+    <holder>Angela Boyle</holder>
+  </copyright>
+  <copyright> 
+    <year>2002</year>
+    <year>2003</year> 
+    <year>2004</year> 
+    <holder>Sun Microsystems</holder> 
+  </copyright>    
+  <copyright> 
+    <year>1998</year> 
+    <holder>Oliver Maruhn</holder> 
+  </copyright>
+  <copyright> 
+    <year>1998</year> 
+    <holder>Dan Mueth</holder> 
+  </copyright><copyright><year>2009</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright>
+  <!-- translators: uncomment this:
+       <copyright>
+       <year>2003</year>
+       <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+       </copyright>
+  -->
+  <publisher role="maintainer"> 
+    <publishername>Projecte de documentació del GNOME</publishername> 
+  </publisher>
+
+     <legalnotice id="legalnotice">
+         <para>Teniu permís per a copiar, distribuir i/o modificar aquest document, sota els termes de la Llicència de documentació lliure GNU (GFDL), versió 1.1 o qualsevol versió publicada posteriorment per la Free Software Foundation, sense seccions invariants, sense texts de portada i sense texts de contraportada. Podeu trobar una còpia de la GFDL en aquest <ulink type="help" url="ghelp:fdl">enllaç</ulink> o en el fitxer COPYING-DOCS distribuït amb aquest manual.</para>
+          <para>Aquest manual forma part d'una col·lecció de manuals del GNOME distribuïts sota la GFDL. Si voleu distribuir aquest manual independentment de la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal com es descriu a la secció 6 de la llicència.</para>
+ 
+         <para>Molts dels noms que les empreses utilitzen per a distingir els seus productes i serveis es consideren marques comercials. Quan aquests noms apareguin en qualsevol documentació del GNOME, si els membres del Projecte de documentació del GNOME han estat avisats pel que fa a les marques, els noms apareixeran en majúscules o amb les inicials en majúscules.</para>
+ 
+         <para>EL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT S'OFEREIXEN SOTA ELS TERMES DE LA LLICÈNCIA DE DOCUMENTACIÓ LLIURE DE GNU, TENINT EN COMPTE QUE: <orderedlist>
+                 <listitem>
+                   <para>EL DOCUMENT S'OFEREIX «TAL COM ÉS», SENSE CAP TIPUS DE GARANTIA, NI EXPLÍCITA NI IMPLÍCITA; AIXÒ INCLOU, SENSE LIMITAR-S'HI, LES GARANTIES QUE EL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT NO TINGUI DEFECTES, SIGUI COMERCIALITZABLE, SIGUI ADEQUAT PER A UN ÚS CONCRET O NO INFRINGEIXI CAP LLEI. TOT EL RISC PEL QUE FA A LA QUALITAT, EXACTITUD I RENDIMENT DEL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I</para>
+                 </listitem>
+                 <listitem>
+                   <para>EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT (INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+ 
+
+  <authorgroup>
+    <author>
+      <firstname>Sun</firstname>
+      <surname>Equip de documentació del GNOME</surname>
+      <affiliation>
+        <orgname>Sun Microsystems</orgname>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Oliver</firstname>
+      <surname>Maruhn</surname>
+      <affiliation>
+        <orgname>Projecte de documentació del GNOME</orgname>
+	<address><email>oliver@maruhn.com</email></address>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Dan</firstname>
+      <surname>Mueth</surname>
+      <affiliation>
+        <orgname>Projecte de documentació del GNOME</orgname>
+	<address><email>d-mueth@uchicago.edu</email></address>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Angela</firstname>
+      <surname>Boyle</surname>
+      <affiliation>
+        <orgname>Projecte de documentació del GNOME</orgname>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Davyd</firstname><surname>Madeley</surname>
+      <affiliation>
+        <orgname>Projecte GNOME</orgname>
+	<address><email>davyd@madeley.id.au</email></address>
+      </affiliation>
+    </author>
+    <!-- This is appropriate place for other contributors: translators,
+         maintainers,  etc. Commented out by default.
+         <othercredit role="translator">
+         <firstname>Latin</firstname> 
+         <surname>Translator 1</surname> 
+         <affiliation> 
+         <orgname>Latin Translation Team</orgname> 
+         <address> <email>translator@gnome.org</email> </address> 
+         </affiliation>
+         <contrib>Latin translation</contrib>
+         </othercredit>
+    -->
+  </authorgroup> 
+  <revhistory>
+    <revision>
+      <revnumber>Versió 2.12</revnumber>
+      <date>Setembre de 2005</date>
+      <revdescription>
+        <para role="author">Davyd Madeley</para>
+      </revdescription>
+    </revision>
+    <revision>
+      <revnumber>Versió 2.10</revnumber>
+      <date>Març de 2005</date>
+      <revdescription>
+        <para role="author">Davyd Madeley</para>
+      </revdescription>
+    </revision>
+    <revision>
+      <revnumber>Versió 2.8</revnumber>
+      <date>Setembre de 2004</date>
+      <revdescription>
+        <para role="author">Angela Boyle</para>
+        <para role="publisher">Projecte de documentació del GNOME</para>
+      </revdescription>
+    </revision>
+    <revision> 
+      <revnumber>Manual de la miniaplicació de la línia d'ordres (versió 2.7)</revnumber> 
+      <date>Agost de 2004</date> 
+      <revdescription> 
+        <para role="author">Sun Microsystems</para>
+        <para role="publisher">Projecte de documentació del GNOME</para>
+      </revdescription> 
+    </revision>
+    <revision> 
+      <revnumber>Manual de la miniaplicació de la línia d'ordres (versió 2.6)</revnumber> 
+      <date>Setembre de 2003</date> 
+      <revdescription> 
+        <para role="author">Sun Microsystems</para>
+        <para role="publisher">Projecte de documentació del GNOME</para>
+      </revdescription> 
+    </revision>
+    <revision> 
+      <revnumber>Manual de la miniaplicació de la línia d'ordres (versió 2.5)</revnumber> 
+      <date>Agost de 2003</date> 
+      <revdescription> 
+        <para role="author">Sun Microsystems</para>
+        <para role="publisher">Projecte de documentació del GNOME</para>
+      </revdescription> 
+    </revision>
+    <revision> 
+      <revnumber>Manual de la miniaplicació de la línia d'ordres (versió 2.4)</revnumber> 
+          <date>Abril de 2003</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+          </revdescription> 
+        </revision>
+        
+			<revision> 
+          <revnumber>Manual de la miniaplicació de la línia d'ordres (versió 2.3)</revnumber> 
+          <date>Gener de 2003</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+          </revdescription> 
+        </revision> 
+
+        <revision> 
+          <revnumber>Manual de la miniaplicació de la línia d'ordres (versió 2.2)</revnumber> 
+          <date>Agost de 2002</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+          </revdescription> 
+        </revision> 
+        
+         
+        <revision> 
+          <revnumber>Manual de la miniaplicació de la línia d'ordres (versió 2.1)</revnumber> 
+          <date>Juliol de 2002</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+          </revdescription> 
+        </revision> 
+        <revision> 
+          <revnumber>Manual de la miniaplicació de la línia d'ordres (versió 2.0)</revnumber> 
+          <date>Març de 2002</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+          </revdescription> 
+        </revision> 
+        <revision> 
+          <revnumber>Manual de la miniaplicació Mini-Commander</revnumber> 
+          <date>1998</date> 
+          <revdescription> 
+             <para role="author">Oliver Maruhn <email>oliver@maruhn.com</email></para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+             <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+          </revdescription> 
+        </revision> 
+     </revhistory> 
+     <releaseinfo>Aquest manual descriu la versió 2.12 de la línia d'ordres.</releaseinfo> 
+     <legalnotice> 
+        <title>Comentaris</title> 
+        <para>Per a informar d'un error o fer algun suggeriment sobre la miniaplicació de la línia d'ordres o aquest manual, seguiu les indicacions a la <ulink url="ghelp:gnome-feedback" type="help">pàgina de comentaris del GNOME</ulink>.</para>
+     </legalnotice> 
+  </articleinfo> 
+  <indexterm zone="index"> 
+     <primary>Línia d'ordres</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+     <primary>miniaplicació de la línia d'ordres</primary> 
+  </indexterm>
+
+<!-- ============= Introduction =====-->
+  <sect1 id="command-line-introduction"> 
+     <title>Introducció</title> 
+     
+     <!-- ==== Figure ==================-->
+     <figure id="applet-fig"> 
+        <title>Línia d'ordres</title> 
+        <screenshot> 
+          <mediaobject> 
+             <imageobject><imagedata fileref="figures/command-line.png" format="PNG"/> 
+             </imageobject> 
+             <textobject> 
+                <phrase>Mostra la línia d'ordres.</phrase> 
+             </textobject> 
+          </mediaobject> 
+        </screenshot> 
+     </figure> 
+     <para>La <application>línia d'ordres</application> proporciona una línia d'ordres que podeu utilitzar a qualsevol quadre de l'escriptori.</para>
+     <para>La <application>línia d'ordres</application> conté els elements interactius següents:</para>
+        
+        <variablelist>
+          <varlistentry>
+             <term>Camp <guilabel>Entrada</guilabel></term>
+             <listitem>
+                <para>Al <guilabel>camp d'entrada</guilabel> podeu introduir-hi ordres, macros i programes.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Botó <guilabel>Explorador</guilabel> &mdash; el pic</term>
+             <listitem>
+                <para>Podeu utilitzar el botó <guilabel>Explorador</guilabel> per a cercar programes al sistema operatiu. Una icona amb un cercle sòlid identifica el botó <guilabel>Explorador</guilabel>.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Botó <guibutton>Historial</guibutton> &mdash; la fletxa cap avall</term>
+             <listitem>
+                <para>Podeu utilitzar el botó <guibutton>Historial</guibutton> per a obtenir ordres anteriors. Una icona amb una fletxa cap avall identifica el botó <guibutton>Historial</guibutton>.</para>
+             </listitem>
+          </varlistentry>
+        </variablelist> 
+        <sect2 id="features">
+	<title>Funcions</title>        
+        <variablelist>
+          <varlistentry>
+             <term>Llista de l'historial d'ordres executades anteriorment</term>
+             <listitem>
+                <para>Podeu executar ordres directament des del visualitzador de la llista de l'historial. També podeu rotar-ne el contingut mitjançant el <guilabel>camp d'entrada</guilabel> per a mostrar i després executar una ordre. Apareixerà una barra de desplaçament vertical quan hi hagi 20 o més ordres a la llista de l'historial. Per a obtenir més informació vegeu la <xref linkend="command-line-histlist"/>.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Funció de compleció automàtica basada en l'historial</term>
+             <listitem>
+                <para>La <application>línia d'ordres</application> utilitza una funció de compleció automàtica basada en l'historial per a completar les ordres del <guilabel>camp d'entrada</guilabel>. Aquesta funció compara el contingut del <guilabel>camp d'entrada</guilabel> amb la llista de l'historial. Si la <application>línia d'ordres</application> troba una coincidència llavors la miniaplicació completarà l'ordre. Per a obtenir més informació vegeu la nota a la <xref linkend="command-line-histlist"/>.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Funció de compleció d'ordres a petició de l'usuari</term>
+             <listitem>
+                <para>Aquesta funció de compleció d'ordres compara els caràcters de les cadenes al <guilabel>camp d'entrada</guilabel> amb les ordres al camí de l'usuari. La funció de compleció d'ordres és útil si no sabeu la seqüència exacta de caràcters o com s'escriu una ordre. Després d'introduir les primeres lletres del nom de l'ordre, premeu la tecla <keycap>Tab</keycap>. Si la <application>línia d'ordres</application> reconeix la seqüència de caràcters com a única, llavors la miniaplicació completarà el nom de l'ordre. Per a obtenir més informació vegeu la <xref linkend="command-line-run"/>.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Funcionalitat de macro</term>
+             <listitem>
+                <para>La funcionalitat de macro proporciona fins a 99 dreceres d'ordres. A més de les ordres predefinides podeu crear les vostres pròpies per a utilitzar amb la <application>línia d'ordres</application>. Per a obtenir més informació vegeu la <xref linkend="command-line-macros"/>.</para>
+             </listitem>
+          </varlistentry>
+        </variablelist>
+	</sect2>
+
+      <sect2 id="command-line-introduction-add">       
+        <title>Com afegir la línia d'ordres a un quadre</title>
+        <para>Per a afegir la <application>línia d'ordres</application> a un quadre, feu clic amb el botó secundari al quadre i trieu <guimenuitem>Afegeix al quadre</guimenuitem>. Seleccioneu <application>Línia d'ordres</application> al diàleg <application>Afegeix al quadre</application> i feu clic a <guibutton>D'acord</guibutton>.</para>
+      </sect2>
+
+  </sect1>
+<!-- ================ Running Commands =======-->
+  <sect1 id="command-line-usage"> 
+     <title>Execució d'ordres</title>
+	<!-- ================ To Run Command =======-->
+     <sect2 id="command-line-run">
+        <title>Com executar una ordre des del camp d'entrada</title>
+        <para>Per a executar una ordre des del <guilabel>camp d'entrada</guilabel> realitzeu els passos següents:</para>
+        <orderedlist> 
+          <listitem>
+             <para>Introduïu l'ordre al <guilabel>camp d'entrada</guilabel>.</para>
+             <para>Per a fer que la <application>línia d'ordres</application> intenti completar el nom de l'ordre, premeu la tecla <keycap>Tab</keycap>.</para>
+          </listitem> 
+          <listitem>
+             <para>Introduïu les opcions de la línia d'ordres, si n'hi ha, al <guilabel>camp d'entrada</guilabel>.</para>
+          </listitem> 
+          <listitem>
+             <para>Premeu la tecla <keycap>Retorn</keycap>.</para>
+          </listitem> 
+        </orderedlist>
+	<para>Si l'ordre que heu introduït no es pot executar, l'ordinador emetrà un avís sonor i la miniaplicació indicarà que l'ordre no s'ha pogut executar tot mostrant un signe d'interrogació (?) abans de l'ordre. Comproveu que heu especificat l'ordre correctament. Fent clic a la línia d'ordres el signe d'interrogació desapareixerà automàticament.</para>
+	<tip>
+        <para>Si l'opció de compleció automàtica està seleccionada, la <application>línia d'ordres</application> cercarà una coincidència a la llista de l'historial durant els passos 1 i 2. Per a obtenir més informació vegeu la <xref linkend="command-line-histauto"/>.</para>
+	</tip>
+	</sect2>
+<sect2 id="command-line-histauto">
+		<title>Compleció automàtica basada en l'historial</title>
+		<para>Podeu habilitar o inhabilitar aquesta opció dins del menú <guimenu>Preferències</guimenu> a la pestanya <guilabel>General</guilabel> sota <guilabel>Compleció automàtica</guilabel>. Seleccioneu <guilabel>Habilita la compleció automàtica basada en l'historial</guilabel> per a indicar a la <application>línia d'ordres</application> que compari el <guilabel>camp d'entrada</guilabel> amb la llista de l'historial i completi les ordres on hi hagi una coincidència.</para>
+	        <para>Si l'opció de compleció automàtica està seleccionada, la <application>línia d'ordres</application> cercarà una coincidència a la llista de l'historial durant els passos 1 i 2 de la <xref linkend="command-line-run"/>. Si hi ha una coincidència a la llista de l'historial, la <application>línia d'ordres</application> completarà l'ordre. Per a acceptar l'ordre, premeu la tecla <keycap>Retorn</keycap>. Si no voleu acceptar l'ordre, introduïu més caràcters al <guilabel>camp d'entrada</guilabel>.</para>
+     </sect2>
+	<!-- ================ To Run Program =======-->
+     <sect2 id="command-line-filesys"> 
+        <title>Com executar un programa del sistema de fitxers</title> 
+        <para>Feu clic al botó <guilabel>Explorador</guilabel> per a mostrar el sistema de fitxers i feu doble clic al programa que voleu executar.</para>
+        <para>Podeu utilitzar la <application>línia d'ordres</application> per a executar scripts, ordres o altres programes del sistema de fitxers.</para>
+     </sect2> 
+     <sect2 id="command-line-histlist"> 
+        <title>Com executar una ordre, macro o programa des de la llista de l'historial</title> 
+        <para>Podeu executar una ordre, macro o programa que s'hagi executat anteriorment des de la llista de l'historial de les maneres següents: <itemizedlist> 
+             <listitem>
+                <para>Feu clic al botó <guibutton>Historial</guibutton> per a mostrar la llista de l'historial. Feu clic a un element de la llista de l'historial per a executar l'ordre, macro o programa que necessiteu.</para>
+             </listitem> 
+             <listitem>
+                <para>Feu clic al <guilabel>camp d'entrada</guilabel> i utilitzeu les fletxes cap amunt i cap avall del teclat per a rotar la llista de l'historial. Premeu <keycap>Retorn</keycap> per a executar una ordre, macro o programa específic quan l'element de la llista de l'historial que vulgueu es mostri al <guilabel>camp d'entrada</guilabel>.</para>
+             </listitem> 
+          </itemizedlist></para>
+
+	<note>
+		<title>Compleció automàtica basada en l'historial</title>
+		<para>Podeu habilitar o inhabilitar aquesta opció dins del menú <guimenu>Preferències</guimenu> a la pestanya <guilabel>General</guilabel> sota <guilabel>Compleció automàtica</guilabel>. Seleccioneu <guilabel>Habilita la compleció automàtica basada en l'historial</guilabel> per a indicar a la <application>línia d'ordres</application> que compari el <guilabel>camp d'entrada</guilabel> amb la llista de l'historial i completi les ordres on hi hagi una coincidència.</para>
+	</note>
+     </sect2> 
+</sect1>
+<!-- ================ Using Macros =======-->
+<sect1 id="command-line-macros">
+	<title>Utilització de dreceres o macros</title>
+                <para>La funcionalitat de macro proporciona fins a 99 dreceres d'ordres. A més de les ordres predefinides podeu crear les vostres pròpies per a utilitzar amb la <application>línia d'ordres</application>.</para>
+     <sect2 id="command-line-runmacro"> 
+        <title>Com executar una macro des del camp d'entrada</title> 
+        <para>Per a executar una macro que estigui definida a la llista de la <xref linkend="command-line-prefs-2"/> de la <application>línia d'ordres</application>, introduïu-la <guilabel>camp d'entrada</guilabel> i premeu la tecla <keycap>Retorn</keycap>.</para>
+        <para>La funció de la <xref linkend="command-line-histauto"/> també funciona amb macros.</para>
+        <para>La llista següent mostra alguns exemples de les macros de la <application>línia d'ordres</application>:</para>
+        <informaltable frame="none"> 
+          <tgroup cols="2" colsep="0" rowsep="0"><colspec colwidth="29.29*"/><colspec colwidth="70.71*"/> 
+             <tbody> 
+                <row valign="top"> 
+                  <entry><para><userinput>http://</userinput> o <userinput>www.</userinput></para></entry> 
+                  <entry><para>Qualsevol entrada que comenci amb <userinput>http://</userinput> o <userinput>www.</userinput> s'interpretarà com a URL i es carregarà al navegador web.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>ftp://</userinput> o <userinput>ftp.</userinput></para></entry> 
+                  <entry><para>Qualsevol entrada que comenci amb <userinput>ftp://</userinput> o <userinput>ftp.</userinput> s'interpretarà com un URL i es carregarà al programa FTP predeterminat.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>dictionary:</userinput></para></entry> 
+                  <entry><para>Utilitzeu <userinput>dictionary:</userinput> per a cercar una paraula utilitzant el <application>Diccionari del GNOME</application>.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>google:</userinput></para></entry> 
+                  <entry><para>Utilitzeu <userinput>google:</userinput> per a cercar quelcom utilitzant el motor de cerca del Google.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>av:</userinput></para></entry> 
+                  <entry><para>Utilitzeu <userinput>av:</userinput> per a cercar quelcom utilitzant el motor de cerca de l'Altavista.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>yahoo:</userinput></para></entry> 
+                  <entry><para>Utilitzeu <userinput>yahoo:</userinput> per a cercar quelcom utilitzant el motor de cerca del Yahoo.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>fm:</userinput></para></entry> 
+                  <entry><para>Utilitzeu <userinput>fm:</userinput> per a cercar paquets a la base de dades de paquets del Freshmeat.</para></entry> 
+                </row> 
+             </tbody> 
+          </tgroup> 
+        </informaltable>
+     </sect2> 
+    <sect2 id="command-line-prefs-2"> 
+        <title>Personalització de les macros</title> 
+     <figure id="applet-macro-fig"> 
+        <title>Configuració de les macros</title> 
+        <screenshot> 
+          <mediaobject> 
+             <imageobject><imagedata fileref="figures/prefs-macros.png" format="PNG"/> 
+             </imageobject> 
+             <textobject> 
+                <phrase>Configuració de les macros</phrase> 
+             </textobject> 
+          </mediaobject> 
+        </screenshot> 
+     </figure> 
+        <para>Aquesta pestanya conté una llista de les macros que podeu utilitzar amb la <application>línia d'ordres</application>. La llista conté la informació següent:</para>
+          <itemizedlist> 
+             <listitem>
+                <para>Una llista d'expressions regulars UNIX a la columna <guilabel>Patró</guilabel>.</para>
+                <para>Una expressió regular és un patró de caràcters o números que podeu utilitzar per a fer coincidir amb cadenes. Vegeu la pàgina del manual <command>regex</command> per a obtenir més informació sobre com crear una expressió regular.</para>
+             </listitem> 
+             <listitem>
+                <para>Una llista d'ordres a la columna <guilabel>Ordre</guilabel>.</para>
+                <para>Una ordre s'executa si el patró corresponent coincideix amb el text que introduïu al <guilabel>camp d'entrada</guilabel>. Les macros són ordres que poden admetre paràmetres analitzats per l'expressió regular.</para>
+             </listitem> 
+          </itemizedlist> 
+		<para>Per a afegir una macro nova, feu clic al botó <guibutton>Afegeix una macroinstrucció</guibutton>. Per a suprimir una macro, seleccioneu la macro i feu clic al botó <guibutton>Suprimeix una macroinstrucció</guibutton>.</para>
+     </sect2> 
+</sect1>
+
+<!-- ============= Appearance ============================= -->
+  <sect1 id="command-line-apperance"> 
+     <title>Personalització de l'aparença</title> 
+     <para><figure id="applet-prefs-fig"> 
+        <title>Preferències</title> 
+        <screenshot> 
+          <mediaobject> 
+             <imageobject><imagedata fileref="figures/prefs.png" format="PNG"/> 
+             </imageobject> 
+             <textobject> 
+                <phrase>Diàleg de preferències</phrase> 
+             </textobject> 
+          </mediaobject> 
+        </screenshot> 
+     </figure> Per a configurar l'aparença de la <application>línia d'ordres</application>, feu clic amb el botó secundari a l'àrea de la miniaplicació fora dels elements interactius, trieu <guimenuitem>Preferències</guimenuitem> i seleccioneu la pestanya <guilabel>General</guilabel>.</para>
+        <variablelist>
+		<varlistentry>
+		<term>Per a moure la línia d'ordres:</term>
+		<listitem>
+		<para>Seleccioneu <guilabel>Mostra la nansa</guilabel> per a adjuntar una nansa a la vora de la miniaplicació. Podeu utilitzar la nansa per a arrossegar la pantalla de la <application>línia d'ordres</application> a qualsevol ubicació de l'escriptori.</para>
+		</listitem>
+		</varlistentry>
+		<varlistentry>
+		<term>Per a afegir un contorn:</term>
+		<listitem>
+		<para>Seleccioneu aquesta opció per a mostrar un marc al voltant de la <application>línia d'ordres</application>.</para>
+		</listitem>
+		</varlistentry>
+		<varlistentry>
+		<term>Per a canviar l'amplada:</term>
+		<listitem>
+		<para>Utilitzeu la casella de selecció <guilabel>Amplada . . . píxels</guilabel> per a especificar l'amplada de la miniaplicació.</para>
+		</listitem>
+		</varlistentry>
+		<varlistentry>
+		<term>Per a ajustar el tema de colors:</term>
+		<listitem>
+			<itemizedlist>
+				<listitem><para>Seleccioneu <guilabel>Utilitza els colors del tema predeterminat</guilabel> per a utilitzar els colors predeterminats del tema del GNOME.</para></listitem>
+				<listitem><para>Feu clic al botó <guilabel>Color del text de la línia d'ordres</guilabel> per a seleccionar un color per al text de la línia d'ordres. Aquest botó no està disponible si la casella de selecció <guilabel>Utilitza els colors del tema predeterminat</guilabel> està seleccionada.</para></listitem>
+				<listitem><para>Feu clic al botó <guilabel>Color de fons de la línia d'ordres</guilabel> per a seleccionar un color per al fons del <guilabel>camp d'entrada</guilabel>. Aquest botó no està disponible si la casella de selecció <guilabel>Utilitza els colors del tema predeterminat</guilabel> està seleccionada.</para></listitem>
+			</itemizedlist>
+		</listitem>
+		</varlistentry>	
+	</variablelist>
+
+  </sect1> 
+</article>

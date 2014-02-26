@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.12.0">
+<!ENTITY applet "Battery Charge Monitor">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Τεκμηρίωση της Παρακολούθησης φόρτισης μπαταρίας</title> 
+    <abstract role="description">
+      <para>Η Παρακολούθηση φόρτισης της μπαταρίας εμφανίζει την τρέχουσα φόρτιση της μπαταρίας και παρέχει προειδοποιήσεις αν η φόρτιση κατέβει κάτω από συγκεκριμένο επίπεδο.</para>
+    </abstract>
+    <copyright>
+      <year>2005</year>
+      <holder>Davyd Madeley</holder>
+    </copyright>
+    <copyright>
+      <year>2004</year>
+      <holder>Angela Boyle</holder>
+    </copyright>
+    <copyright>
+      <year>2004</year>
+      <holder>Sun Microsystems</holder>
+    </copyright>
+    <copyright>
+      <year>2002</year>
+      <holder>Trevor Curtis</holder>
+    </copyright>
+    <copyright> 
+      <year>1999</year> 
+      <year>2000</year> 
+      <holder>Jorgen Pehrson</holder> 
+    </copyright>
+<!-- translators: uncomment this:
+
+    <copyright>
+     <year>2002</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+   -->
+
+    <publisher role="maintainer"> 
+      <publishername>Έργο τεκμηρίωσης του Gnome</publishername> 
+    </publisher> 
+  
+      <legalnotice id="legalnotice">
+	<para>Δίνεται άδεια για αντιγραφή, διανομή και/ή τροποποίηση του εγγράφου υπό τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή μεταγενέστερη εκδιδόμενη από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Σταθερά Εδάφια, χωρίς Εξώφυλλα Κειμένου, και χωρίς Οπισθόφυλλα Κειμένου. Μπορείτε να βρείτε ένα αντίγραφο της GFDL σε αυτόν τον <ulink type="help" url="ghelp:fdl">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανεμήθηκε με αυτόν τον οδηγό.</para>
+         <para>Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του GNOME όπως διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτή την τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 της άδειας.</para>
+
+	<para>Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρίες για να ξεχωρίσουν τα  προϊόντα και τις υπηρεσίες είναι σήματα κατατεθέν. Όπου αυτά τα ονόματα εμφανίζονται στην τεκμηρίωση GNOME, και τα μέλη της ομάδας τεκμηρίωσης GNOME έχουν γνώση αυτών, τότε αυτά αναγράφονται με κεφαλαίους χαρακτήρες ή με αρχικούς κεφαλαίους χαρακτήρες.</para>
+
+	<para>ΤΟ ΈΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΑΔΕΙΑΣ GNU FREE DOCUMENTATION ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <orderedlist>
+		<listitem>
+		  <para>Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ "ΩΣ ΕΧΕΙ", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΟΤΙ ΜΠΟΡΕΙ ΝΑ ΕΞΥΠΗΡΕΤΗΣΕΙ ΚΑΠΟΙΟ ΣΚΟΠΟ Η ΟΤΙ ΕΙΝΑΙ ΧΩΡΙΣ ΣΦΑΛΜΑ. ΟΛΟΚΛΗΡΗ Η ΕΥΘΥΝΗ ΓΙΑ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ ΚΑΙ ΛΕΙΤΟΥΡΓΙΚΟΤΗΤΑ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ ΕΙΝΑΙ ΛΑΘΟΣ ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ.</para>
+		</listitem>
+		<listitem>
+		  <para>ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ.</para>
+		</listitem>
+	  </orderedlist>"</para>
+  </legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+    <authorgroup> 
+      <author>
+        <firstname>Sun</firstname>
+        <surname>Ομάδα τεκμηρίωσης του Gnome</surname>
+        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
+      </author>
+      <author>
+        <firstname>Trevor</firstname>
+        <surname>Curtis</surname>
+        <affiliation>
+          <orgname>Έργο τεκμηρίωσης του Gnome</orgname>
+          <address> <email>tcurtis@somaradio.ca</email> </address>
+        </affiliation>
+      </author>
+      <author> 
+        <firstname>Jorgen</firstname> 
+        <surname>Pehrson</surname> 
+        <affiliation> 
+          <orgname>Έργο τεκμηρίωσης του Gnome</orgname> 
+          <address> <email>jp@spektr.eu.org</email> </address> 
+        </affiliation> 
+      </author> 
+      <author>
+	<firstname>Angela</firstname>
+	<surname>Boyle</surname>
+	<affiliation>
+	  <orgname>Έργο τεκμηρίωσης του Gnome</orgname>
+	</affiliation>
+      </author>
+      <author>
+        <firstname>Davyd</firstname>
+	<surname>Madeley</surname>
+	<affiliation>
+	  <orgname>Έργο του Gnome</orgname>
+	</affiliation>
+      </author>
+        <!-- This is appropriate place for other contributors: translators,
+             maintainers,  etc. Commented out by default.
+             <othercredit role="translator">
+	       <firstname>Latin</firstname> 
+	       <surname>Translator 1</surname> 
+	       <affiliation> 
+	         <orgname>Latin Translation Team</orgname> 
+	         <address> <email>translator@gnome.org</email> </address> 
+	       </affiliation>
+	       <contrib>Latin translation</contrib>
+             </othercredit>
+-->
+
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>Έκδοση 2.12</revnumber>
+	<date>Σεπτέμβριος 2005</date>
+	<revdescription>
+	  <para role="author">Davyd Madeley</para>
+	</revdescription>
+      </revision>
+      <revision>
+        <revnumber>Έκδοση 2.10</revnumber>
+	<date>Μαρτιος 2005</date>
+	<revdescription>
+	 <para role="author">Davyd Madeley</para>
+	</revdescription>
+      </revision>
+      <revision>
+	<revnumber>Έκδοση 2.8</revnumber>
+	<date>Σεπτέμβριος 2004</date>
+	<revdescription>
+	  <para role="author">Angela Boyle</para>
+	  <para role="publisher">Έργο τεκμηρίωσης του Gnome</para>
+	</revdescription>
+      </revision>
+      <revision>
+        <revnumber>Τεκμηρίωση V2.2 της μικροεφαρμογής Παρακολούθησης φόρτισης της μπαταρίας</revnumber>
+        <date>Αύγουστος 2004</date>
+        <revdescription>
+          <para role="author">Ομάδα τεκμηρίωσης sun gnome</para>
+          <para role="publisher">Έργο τεκμηρίωσης του Gnome</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>Τεκμηρίωση V2.0 της μικροεφαρμογής παρακολούθησης φόρτισης της μπαταρίας</revnumber>
+        <date>Μάιος 2002</date>
+        <revdescription>
+          <para role="author">Trevor Curtis <email>tcurtis@somaradio.ca</email></para>
+          <para role="author">Jorgen Pehrson <email>jp@spektr.eu.org</email></para>
+          <para role="publisher">Έργο τεκμηρίωσης του Gnome</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+                                                                                                  
+    <releaseinfo>Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.12 της Παρακολούθησης φόρτισης της μπαταρίας.</releaseinfo>
+                                                                                                  
+    <legalnotice>
+      <title>Ανάδραση</title>
+      <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με τη μικροεφαρμογή Παρακολούθησης φόρτισης της μπαταρίας ή με αυτό το εγχειρίδιο, ακολουθήστε τις οδηγίες στο σύνδεσμο <ulink url="ghelp:gnome-feedback" type="help">Σελίδα ανάδρασης του Gnome</ulink>.</para>
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+	 <primary>Μικροεφαρμογή Παρακολούθησης φόρτισης της μπαταρίας</primary> 
+  </indexterm> 
+
+  <indexterm zone="index"> 
+	 <primary>Μικροεφαρμογή στατιστικών μπαταρίας</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="battstat-introduction"> 
+    <title>Εισαγωγή</title> 
+
+    <figure id="battstat-applet-fig"> 
+      <title>Μικροεφαρμογή Παρακολούθησης φόρτισης της μπαταρίας</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Η μικροεφαρμογή Παρακολούθησης φόρτισης της μπαταρίας.</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+
+    <para>Η <application>Παρακολούθηση φόρτισης της μπαταρίας</application> εμφανίζει την κατάσταση όλων των μπαταριών στο φορητό υπολογιστή σας. Η εφαρμογή μπορεί να σας εμφανίσει την υπολοιπόμενη χωρητικότητα της μπαταρίας γραφικά και σε ποσοστό, όπως επίσης να σας προσφέρει μια εκτίμηση του υπολοιπόμενου χρόνου που βασίζεται από τον τρέχοντα ρυθμό χρήσης.</para>
+
+    <sect2 id="battstat-introduction-add">
+      <title>Για να προσθέσετε την Παρακολούθηση φόρτισης της μπαταρίας σε πίνακα εφαρμογών</title>
+      <para>Για να προσθέσετε την <application>Παρακολούθηση φόρτισης της μπαταρίας</application> σε πίνακα εφαρμογών, κάντε δεξί κλικ με το ποντίκι σας στον πίνακα εφαρμογών, ύστερα επιλέξτε από το μενού <guimenuitem>Προσθήκη στον πίνακα εφαρμογών</guimenuitem>. Επιλέξτε <application>Παρακολούθηση φόρτισης της μπαταρίας</application> στο διάλογο <application>Προσθήκη στον πίνακα εφαρμογών</application>, ύστερα κάνετε κλικ στο κουμπί <guibutton>OK</guibutton>.</para>
+      <para>Η διάταξη της μικροεφαρμογής <application>Παρακολούθηση φόρτισης της μπαταρίας</application> διαφέρει και εξαρτάται από το μέγεθος και τον τύπο του πίνακα εφαρμογών στο οποίο η μικροεφαρμογή ανήκει.</para>
+    </sect2>
+
+    <sect2 id="battstat-power-backends">
+     <title>Συστήματα υποστήριξης διαχείρισης ενέργειας</title>
+
+     <para>Η Παρακολούθηση μπαταρίας υποστηρίζει έναν αριθμό υποσυστημάτων διαχείρισης ενέργειας. Αν είναι διαθέσιμο, η παρακολούθηση θα αποπειραθεί να χρησιμοποιήσει το freedesktop.org <ulink url="http://freedesktop.org/Software/hal">Επίπεδο αφαίρεσης υλικού (HAL)</ulink>. Αν αυτό δεν είναι διαθέσιμο ή το συστημά σας δεν υποστηρίζεται, η παρακολούθηση μπαταρίας θα αποπειραθεί να έχει άμεση πρόσβαση στο σύστημα διαχείρισης ενέργειας.</para>
+     <para>Δεν είναι όλα τα συστήματα υποστήριξης διαχείρισης ενέργειας διαθέσιμα για όλους τους παροχείς, και μερικοί παροχείς προσθέτουν τα δικά τους πρόσθετα συστήματα υποστήριξης για συγκεκριμένα συστήματα και υλικό. Αν η Παρακολούθηση μπαταρίας δεν επιστρέφει πληροφορίες από την μπαταρίας σας δείτε την <xref linkend="Αντιμετώπιση προβλημάτων στατιστικών μπαταρίας"/>.</para>
+    </sect2>
+
+    <sect2 id="battstat-getting-help">
+      <title>Λήψη βοήθειας</title>
+      <para>Αν η Παρακολούθηση μπαταρίας δεν λειτουργεί, δείτε τις εξής πρόσθετες πηγές:</para>
+      <itemizedlist>
+       <listitem><para><xref linkend="Αντιμετώπιση προβλημάτων στατιστικών μπαταρίας"/>;</para></listitem>
+       <listitem><para>
+        <ulink url="http://mail.gnome.org/archives/">λίστες ηλεκτρονικού ταχυδρομείου του Gnome</ulink>
+       </para></listitem>
+      </itemizedlist>
+    </sect2>
+
+</sect1>
+
+<!-- ================ Customizing the Appearance ========================= -->
+
+  <sect1 id="battstat-appearance">
+    <title>Προτιμήσεις</title>
+          <para>Για να ανοίξετε τις προτιμήσεις για την παρακολούθηση, κάντε δεξί κλικ με το ποντίκι σας στην παρακολούθηση στον πίνακα εφαρμογών και ύστερα επιλέξτε <guimenuitem>Προτιμήσεις</guimenuitem></para>
+    <figure id="battstat-applet-prefs-menu"> 
+      <title>Μενού περιεχομένων (με διπλό κλικ) της Παρακολούθησης φόρτισης της μπαταρίας</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/context-menu.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Μενού περιεχομένων της Παρακολούθησης φόρτισης της μπαταρίας</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+    <figure id="battstat-applet-prefs"> 
+      <title>Διάλογος προτιμήσεων</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-preferences.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Διάλογος προτιμήσεων</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Εμφάνιση</guilabel></term>
+	  <listitem>
+	  <variablelist>
+	    <varlistentry>
+	      <term><guilabel>Συμπτυγμένη προβολή</guilabel></term>
+	      <listitem><para>Αυτή η προβολή εμφανίζει μόνο ένα γράφημα στον πίνακα εφαρμογών, είτε μια κατακόρυφη μπαταρία που δείχνει την υπολοιπόμενη δυνατότητα ή ένα βύσμα που δείχνει ότι ο φορητός σας είναι συνδεδεμένος σε εξωτερική πηγή ισχύος. <figure id="battstat-applet-compact"> 
+      <title>Συμπτυγμένη προβολή</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Συμπτυγμένη προβολή</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para>
+	      <para>Η συμπτυγμένη προβολή είναι η προεπιλεγμένη προβολή για την παρακολούθηση όπως του Gnome 2.12.</para></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><guilabel>Εκτεταμένη προβολή</guilabel></term>
+	      <listitem><para>Η εκτεταμένη προβολή είναι προγενέστερη εμφάνιση για προηγούμενες εκδόσεις του Gnome. Περιέχει το μεγαλύτερο γράφημα για την μπαταρία όπως επίσης γράφημα που δείχνει σε ποια κατάσταση είναι η μπαταρία. <figure id="battstat-applet-expanded"> 
+      <title>Εκτεταμένη προβολή</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet-expanded.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Εκτεταμένη προβολή</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><guilabel>Εμφάνιση χρόνου/ποσοστού</guilabel></term>
+	      <listitem><para>Αν επιλέξετε αυτήν την επιλογή θα εμφανιστεί το ένα κομμάτι από τα δύο που περιέχουν πληροφορίες.Η <guilabel>Εμφάνιση υπολοιπόμενου χρόνου</guilabel> θα σας επιστρέψει πόσες ώρες και πόσα λεπτά μέχρι η μπαταρία να αποφορτιστεί ή να φορτιστεί πλήρως. Η <guilabel>Εμφάνιση υπολοιπόμενου χρόνου σε ποσοστό</guilabel> θα σας επιστρέψει το ποσοστό φόρτισης που απομένει στην μπαταρία.</para></listitem>
+	    </varlistentry>
+	  </variablelist>
+	  </listitem>
+        </varlistentry>
+	<varlistentry>
+	 <term><guilabel>Ειδοποιήσεις</guilabel></term>
+	  <listitem>
+	  <itemizedlist>
+	   <listitem><para><guilabel>Προειδοποίηση όταν η φόρτιση μπαταρίας είναι κάτω από</guilabel></para>
+	   <para>Αν επιλέξετε αυτήν την επιλογή θα εμφανιστεί ο διάλογος ειδοποιήσεων όποτε η μπαταρία του φορητού σας φτάσει την καθορισμένη τιμή, είτε σαν υπολοιπόμενο ποσοστό είτε σαν αριθμός λεπτών που απομένουν. Αυτό δείχνει ότι το ποσό της υπολοιπόμενης φόρτισης της μπαταρίας σας είναι κρίσιμα χαμηλό.Μπορείτε να απορρίψετε αυτόν το διάλογο ειδοποιήσεων, αλλιώς αυτός θα εξαφανίζεται όταν συνδέετε τον φορητό σας στην κύρια ισχύ.</para>
+	   </listitem>
+	   <listitem>
+	    <para><guilabel>Να υπάρχει προειδοποίηση όταν η μπαταρία έχει φορτιστεί πλήρως</guilabel></para>
+	    <para>Αν επιλέξετε αυτήν την επιλογή θα υπάρχει προειδοποίηση όταν η μπαταρία σας έχει φορτιστεί πλήρως. Αν έχετε μεταγλωττίσει την Παρακολούθηση φόρτισης της μπαταρίας με το libnotify, υπάρχει υποστήριξη για μια μη ενοχλητική ειδοποίηση με ανάδυση από την παρακολούθηση στον πίνακα εφαρμογών.</para>
+	   </listitem>
+	  </itemizedlist>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+   </sect1>
+
+   <sect1 id="battstat-troubleshooting">
+    <title>Αντιμετώπιση προβλημάτων</title>
+    
+    <para>Σε σχέση με τις πολυπλοκότητες της διαχείρισης ενέργειας και τις αχανείς διαφορές για καθένα από τα διάφορα συστήματα διαχείρισης ενέργειας, η αποσφαλμάτωση των σφαλμάτων στην παρακολούθηση της μπαταρίας ίσως είναι δύσκολη. Θα πρέπει να καθορίσετε αν το σφάλμα υπάρχει στην παρακολούθηση μπαταρίας ή είναι σφάλμα των πληροφοριών που παρέχονται από το σύστημά σας.</para>
+    <para>ΟΙ ακόλουθες πληροφορίες μπορεί να  είναι χρήσιμες για αντιμετώπιση προβλημάτων για τα σφάλματα σχετικά με την Παρακολούθηση της μπαταρίας. Δεν είναι με κανέναν τρόπο εξαντλητικό. Αν βρείτε ένα σφάλμα σχετικά με την Παρακολούθηση φόρτισης της μπαταρία; (που προκλήθηκε από κακές πληροφορίες που αναφέρθηκαν από το ACPI), παρακαλώ <ulink url="http://bugzilla.gnome.org/">να το ανεφέρετε</ulink>.</para>
+
+    <sect2 id="battstat-troubleshooting-backends">
+     <title>Καθορισμός του συστήματος υποστήριξης</title>
+     <para>Αν χρησιμοποιείτε το επίπεδο αφαίρεσης υλικού (δείτε <xref linkend="συστήματα υποστήριξης στατιστικών ενέργειας της μπαταρίας"/>)  τότε θα εμφανίζεται στο σχετικό διάλογο τοποθετώντας ένα άστρο δίπλκα στο συγγραφέα του συστήματος υποστήριξης HAL. <figure id="battstat-credits-hal"> 
+      <title>Ελέγξτε ότι χρησιμοποιείτε το σύστημα υποστήριξης HAL</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-credits-hal.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Εκτεταμένη προβολή</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para>
+
+     <para>Άλλα υποσυστήματα δεν δίνουν πληροφορίες ότι χρησιμοποιούνται, έτσι πρέπει να μαντεύετε βασισμένοι στο υλικό σας. Οι περισσότεροι καινούριοι φορητοί υπολογιστές χρησιμοποιούν το ACPI ως υποσύστημα υποστήριξης. Αυτό είναι επίσης το υποσύστημα υποστήριξης με το μεγαλύτερο αριθμό ασυνεπειών.</para>
+    </sect2>
+
+    <sect2 id="battstat-troubleshooting-acpi">
+      <title>Έλεγχος πληροφοριών ACPI</title>
+      <para>Αν χρησιμοποιείτε το σύστημα υποστήριξης ACPI για την Παρακολούθηση φόρτισης της μπαταρίας. είναι σημαντικό να ελέγξετε ότι το ACPI σας επιστρέφει τις σωστές πληροφορίες. Αν δεν συμβαίνει αυτό, τότε θα πρέπει να αναβαθμίσει το DSDT σας ή κάτι άλλο που έχει σχέση με το ACPI.</para>
+      <example><title>Παράδειγμα εξόδου ACPI</title>
+       <screen>
+[rupert@laptop ~]$ cat /proc/acpi/battery/BAT1/info
+present:                 yes
+design capacity:         41040 mWh
+last full capacity:      37044 mWh
+battery technology:      rechargeable
+design voltage:          10800 mV
+design capacity warning: 745 mWh
+design capacity low:     0 mWh
+capacity granularity 1:  10 mWh
+capacity granularity 2:  10 mWh
+model number:            G71C00056110
+serial number:           0000000008
+battery type:            Li-ION
+OEM info:
+[rupert@laptop ~]$ cat /proc/acpi/battery/BAT1/state
+present:                 yes
+capacity state:          ok
+charging state:          discharging
+present rate:            11232 mW
+remaining capacity:      27140 mWh
+present voltage:         11400 mV
+[rupert@laptop ~]$</screen>
+      </example>
+      <para>Μπορείτε να υπολογίσετε γρήγορα το υπολοιπόμενο ποσοστό χρησιμοποιώντας την <guilabel>υπολοιπόμενη δυνατότητα</guilabel> που ανήκει στη <guilabel>τελευταία πλήρης δυνατότητα</guilabel>, μπορείτε να υπολογίσετε τον υπολοιπόμενο χρόνο από την  <guilabel>υπολοιπόμενη δυνατότητα</guilabel> που ανήκει στο <guilabel>παρών ρυθμός</guilabel>.</para>
+    </sect2>
+
+    <sect2 id="battstat-troubleshooting-nohal">
+      <title>Επίπεδο αφαίρεσης υλικού</title>
+      <para>Μπορείτε να ελέγξετε ότι η μπαταρία σας έχει ανιχνευτεί από το HAL χρησιμοποιώντας την εντολή <command>hal-device-manager</command>. Αν η μπαταρία σας δεν έχει ανιχνευτεί  ή υπάρχουν λανθασμένες πληροφορίες, μπορείτε να προσπαθήσετε να απενεργοποιήσετε το σύστημα υποστήριξης HAL ρυθμίζοντας ένα κλειδί GConf.</para>
+      <para>Επιλέξτε <guimenuitem>Επεξεργαστής ρυθμίσεων</guimenuitem> από το μενού <guimenu>Εφαρμογές</guimenu>, στα <guisubmenu>Εργαλεία συστήματος</guisubmenu>. Αναζητήστε την τιμή του κλειδιού <prompt>OAFIID:GNOME_BattstatApplet</prompt> που θα πρέπει να βρίσκεται στο μονοπάτι <filename>/apps/panel/applets</filename>.</para>
+      <para>Συμπεραίνοντας το μονοπάτι είναι <filename>/apps/panel/applets/applet_1</filename>. Στο μονοπάτι <filename>/apps/panel/applets/applet_1/prefs</filename> προσθέστε ένα <guimenuitem>Νέο κλειδί...</guimenuitem> που είναι <guilabel>no_hal</guilabel> και καθορίστε το στη δυαδική τιμή ως αληθής. Αυτό θα απενεργοποιήσει τη χρήση του HAL (δείτε <xref linkend="σύστηματα υποστήριξης αντιμετώπισης προβλημάτων στατιστικών μπαταρίας"/> για να μάθετε πώς να το ελέγχετε).</para>
+    </sect2>
+    
+   </sect1>
+
+</article>

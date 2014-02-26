@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- -*- indent-tabs-mode: nil -*- -->
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.12">
+<!ENTITY applet "Command Line">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp 
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ko">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo> 
+  <title>Command Line Manual</title> 
+  <abstract role="description">
+    <para>Command Line allows commands to be run from a panel,
+      and includes quick access to a file browser and command history.</para>
+  </abstract>
+  <copyright>
+    <year>2005</year>
+    <holder>Davyd Madeley</holder>
+  </copyright>
+  <copyright>
+    <year>2004</year>
+    <holder>Angela Boyle</holder>
+  </copyright>
+  <copyright> 
+    <year>2002</year>
+    <year>2003</year> 
+    <year>2004</year> 
+    <holder>Sun Microsystems</holder> 
+  </copyright>    
+  <copyright> 
+    <year>1998</year> 
+    <holder>Oliver Maruhn</holder> 
+  </copyright>
+  <copyright> 
+    <year>1998</year> 
+    <holder>Dan Mueth</holder> 
+  </copyright><copyright><year>2002.</year><holder>Sun Microsystems</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
+  <!-- translators: uncomment this:
+       <copyright>
+       <year>2003</year>
+       <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+       </copyright>
+  -->
+  <publisher role="maintainer"> 
+    <publishername>그놈 문서 프로젝트</publishername> 
+  </publisher>
+
+     <legalnotice id="legalnotice">
+         <para>본 설명서는 프리 소프트웨어 재단(FSF)에서 발행한 GNU 자유 문서 라이센스(GFDL) 버전 1.1 이상의 조항에 따라 변경 불가 부분, 앞 표지 텍스트 및 뒷 표지 텍스트를 제외하고 복사, 수정 및/또는 배포할 수 있습니다. GFDL의 사본은 <ulink type="help" url="ghelp:fdl">링크</ulink> 또는 본 설명서와 함께 배포된 COPYING-DOCS 파일에서 찾을 수 있습니다.</para>
+          <para>본 설명서는 GFDL에 따라 배포된 그놈 설명서 컬렉션의 일부입니다. 본 설명서를 컬렉션과 별도로 배포하려는 경우에는 라이센스 조항 6에 따라 라이센스 사본을 설명서에 추가하면 됩니다.</para>
+ 
+         <para>기업의 제품과 서비스를 식별하기 위해 사용된 많은 이름은 상표로 간주됩니다. 그놈 문서에 사용된 이름과 그놈 문서 프로젝트의 구성원은 해당 상표로, 모두 대문자로 표시되거나 첫 글자가 대문자로 표시되어 있습니다.</para>
+ 
+         <para>문서 및 수정판은 다음 GNU 자유 문서 라이센스의 조항에 따라 제공됩니다. <orderedlist>
+                 <listitem>
+                   <para>문서는 "있는 그대로"로 제공되며 상품성, 특정 목적에의 적합성 또는 준수에 대한 보증을 비롯한 일체의 명시적 또는 암시적인 보증을 제한 없이 부인합니다. 문서 및 수정판의 품질, 정확성 및 성능에 대한 책임은 전적으로 사용자에게 있습니다. 문서 또는 수정판에 대한 오류를 입증하려면 사용자(원저작자, 저작자 또는 배포자 아님)는 필요한 서비스, 수리 및 수정 비용을 부담해야 합니다. 본 보증 부인은 라이센스의 필수 부분에 해당합니다. 본 보증 부인을 따르지 않는 모든 문서나 수정판은 사용할 수 없습니다.</para>
+                 </listitem>
+                 <listitem>
+                   <para>또한 불법 행위(부주의 포함), 계약 또는 직접, 간접, 특별, 부수적 및 파생적인 모든 손해(영업권 손실, 작업 중지, 컴퓨터 오류 및 고장 또는 본 문서나 수정판의 사용으로 인해 발생하거나 관련된 기타 모든 손실 및 이러한 손실 가능성에 대해 미리 공지한 경우에도 제한되지 않음)에 대해서는 어떠한 상황이나 법률적인 이론 하에서도 본 문서 또는 수정판의 저작자, 원저자, 모든 배포자 또는 공급자는 책임을 지지 않습니다.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+ 
+
+  <authorgroup>
+    <author>
+      <firstname>Sun</firstname>
+      <surname>그놈 문서 팀</surname>
+      <affiliation>
+        <orgname>Sun Microsystems</orgname>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Oliver</firstname>
+      <surname>Maruhn</surname>
+      <affiliation>
+        <orgname>그놈 문서 프로젝트</orgname>
+	<address><email>oliver@maruhn.com</email></address>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Dan</firstname>
+      <surname>Mueth</surname>
+      <affiliation>
+        <orgname>그놈 문서 프로젝트</orgname>
+	<address><email>d-mueth@uchicago.edu</email></address>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Angela</firstname>
+      <surname>Boyle</surname>
+      <affiliation>
+        <orgname>그놈 문서 프로젝트</orgname>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Davyd</firstname><surname>Madeley</surname>
+      <affiliation>
+        <orgname>그놈 프로젝트</orgname>
+	<address><email>davyd@madeley.id.au</email></address>
+      </affiliation>
+    </author>
+    <!-- This is appropriate place for other contributors: translators,
+         maintainers,  etc. Commented out by default.
+         <othercredit role="translator">
+         <firstname>Latin</firstname> 
+         <surname>Translator 1</surname> 
+         <affiliation> 
+         <orgname>Latin Translation Team</orgname> 
+         <address> <email>translator@gnome.org</email> </address> 
+         </affiliation>
+         <contrib>Latin translation</contrib>
+         </othercredit>
+    -->
+  </authorgroup> 
+  <revhistory>
+    <revision>
+      <revnumber>버전 2.12</revnumber>
+      <date>2005년 9월</date>
+      <revdescription>
+        <para role="author">Davyd Madeley</para>
+      </revdescription>
+    </revision>
+    <revision>
+      <revnumber>버전 2.10</revnumber>
+      <date>2005년 3월</date>
+      <revdescription>
+        <para role="author">Davyd Madeley</para>
+      </revdescription>
+    </revision>
+    <revision>
+      <revnumber>버전 2.8</revnumber>
+      <date>2004년 9월</date>
+      <revdescription>
+        <para role="author">Angela Boyle</para>
+        <para role="publisher">그놈 문서 프로젝트</para>
+      </revdescription>
+    </revision>
+    <revision> 
+      <revnumber>Command Line Applet Manual V2.7</revnumber> 
+      <date>2004년 8월</date> 
+      <revdescription> 
+        <para role="author">Sun Microsystems</para>
+        <para role="publisher">그놈 문서 프로젝트</para>
+      </revdescription> 
+    </revision>
+    <revision> 
+      <revnumber>Command Line Applet Manual V2.6</revnumber> 
+      <date>2003년 9월</date> 
+      <revdescription> 
+        <para role="author">Sun Microsystems</para>
+        <para role="publisher">그놈 문서 프로젝트</para>
+      </revdescription> 
+    </revision>
+    <revision> 
+      <revnumber>Command Line Applet Manual V2.5</revnumber> 
+      <date>2003년 8월</date> 
+      <revdescription> 
+        <para role="author">Sun Microsystems</para>
+        <para role="publisher">그놈 문서 프로젝트</para>
+      </revdescription> 
+    </revision>
+    <revision> 
+      <revnumber>Command Line Applet Manual V2.4</revnumber> 
+          <date>2003년 4월</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">그놈 문서 프로젝트</para>
+          </revdescription> 
+        </revision>
+        
+			<revision> 
+          <revnumber>Command Line Applet Manual V2.3</revnumber> 
+          <date>2003년 1월</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">그놈 문서 프로젝트</para>
+          </revdescription> 
+        </revision> 
+
+        <revision> 
+          <revnumber>Command Line Applet Manual V2.2</revnumber> 
+          <date>2002년 8월</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">그놈 문서 프로젝트</para>
+          </revdescription> 
+        </revision> 
+        
+         
+        <revision> 
+          <revnumber>Command Line Applet Manual V2.1</revnumber> 
+          <date>2002년 7월</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">그놈 문서 프로젝트</para>
+          </revdescription> 
+        </revision> 
+        <revision> 
+          <revnumber>Command Line Applet Manual V2.0</revnumber> 
+          <date>2002년 3월</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">그놈 문서 프로젝트</para>
+          </revdescription> 
+        </revision> 
+        <revision> 
+          <revnumber>Mini-Commander Applet Manual</revnumber> 
+          <date>1998</date> 
+          <revdescription> 
+             <para role="author">Oliver Maruhn <email>oliver@maruhn.com</email></para>
+             <para role="publisher">그놈 문서 프로젝트</para>
+             <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para>
+             <para role="publisher">그놈 문서 프로젝트</para>
+          </revdescription> 
+        </revision> 
+     </revhistory> 
+     <releaseinfo> This manual describes version 2.12 of Command Line.
+        </releaseinfo> 
+     <legalnotice> 
+        <title>피드백</title> 
+        <para>
+          To report a bug or make a suggestion regarding the Command Line applet or this manual, follow the directions in the <ulink url="ghelp:gnome-feedback" type="help">GNOME Feedback Page</ulink>. 
+        </para>
+     </legalnotice> 
+  </articleinfo> 
+  <indexterm zone="index"> 
+     <primary>Command Line</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+     <primary>command line applet</primary> 
+  </indexterm>
+
+<!-- ============= Introduction =====-->
+  <sect1 id="command-line-introduction"> 
+     <title>소개</title> 
+     
+     <!-- ==== Figure ==================-->
+     <figure id="applet-fig"> 
+        <title>Command Line</title> 
+        <screenshot> 
+          <mediaobject> 
+             <imageobject><imagedata fileref="figures/command-line.png" format="PNG"/> 
+             </imageobject> 
+             <textobject> 
+                <phrase>Shows Command Line.</phrase> 
+             </textobject> 
+          </mediaobject> 
+        </screenshot> 
+     </figure> 
+     <para>
+        The <application>Command Line</application> provides a command line that you can use within any panel on the desktop. </para>
+     <para>
+        <application>Command Line</application> contains the following interactive elements: </para>
+        
+        <variablelist>
+          <varlistentry>
+             <term>
+                <guilabel>Entry</guilabel> field</term>
+             <listitem>
+                <para>
+                  You can enter commands, macros, and programs in the <guilabel>entry field</guilabel>.
+                </para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>
+                <guilabel>Browser</guilabel> button &mdash; the bullet</term>
+             <listitem>
+                <para>
+                  You can use the <guibutton>Browser</guibutton> button to look through your file system for programs. A solid-circle icon identifies the <guibutton>Browser</guibutton> button.
+                </para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>
+                <guibutton>History</guibutton> button &mdash; the down arrow</term>
+             <listitem>
+                <para>
+                  You can use the <guibutton>History</guibutton> button to recall previous commands. A down-arrow icon identifies the <guibutton>History</guibutton> button.
+                </para>
+             </listitem>
+          </varlistentry>
+        </variablelist> 
+        <sect2 id="features">
+	<title>Features</title>        
+        <variablelist>
+          <varlistentry>
+             <term>History list of previously executed commands</term>
+             <listitem>
+                <para>
+                  You can execute commands directly from the history list display. You can also cycle the history list contents through the <guilabel>entry field</guilabel> to display and then execute a command. A vertical scrollbar appears when more than 20 commands are in the history list. See <xref linkend="command-line-histlist"/> for more information.
+                </para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>History-based auto completion function</term>
+             <listitem>
+                <para>
+                  <application>Command Line</application> uses the history-based auto completion function to complete commands in the <guilabel>entry field</guilabel>. This function compares the contents of the <guilabel>entry field</guilabel> with the history list. If <application>Command Line</application> finds a match then the applet completes the command. See the note in <xref linkend="command-line-histlist"/> for more information.
+                </para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>User-requestable command completion function</term>
+             <listitem>
+                <para>
+                  This command completion function compares character strings in the <guilabel>entry field</guilabel> with commands in the user path. The command completion function is useful if you do not know the exact character sequence or spelling of a command. After you type the first few letters of the command name, press the <keycap>Tab</keycap> key. If <application>Command Line</application> recognizes the character sequence as unique, then the applet completes the command name. See <xref linkend="command-line-run"/> for more information.
+                </para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Macro facility</term>
+             <listitem>
+                <para>
+                  The macro facility provides up to 99 shortcut commands. In addition to predefined commands you can create your own commands for use with <application>Command Line</application>. See <xref linkend="command-line-macros"/> for more information.
+                </para>
+             </listitem>
+          </varlistentry>
+        </variablelist>
+	</sect2>
+
+      <sect2 id="command-line-introduction-add">       
+        <title>To Add Command Line to a Panel</title>
+        <para>To add <application>Command Line</application> to a panel,
+        right-click on the panel, then choose <guimenuitem>Add to
+        Panel</guimenuitem>.  Select <application>Command Line</application>
+        in the <application>Add to the panel</application> dialog, then
+        click <guibutton>OK</guibutton>.</para>
+      </sect2>
+
+  </sect1>
+<!-- ================ Running Commands =======-->
+  <sect1 id="command-line-usage"> 
+     <title>Running Commands</title>
+	<!-- ================ To Run Command =======-->
+     <sect2 id="command-line-run">
+        <title>To Run a Command From the Entry Field</title>
+        <para>
+          To run a command from the <guilabel>entry field</guilabel>, perform the following steps: 
+        </para>
+        <orderedlist> 
+          <listitem>
+             <para>
+                Type the command in the <guilabel>entry field</guilabel>. 
+             </para>
+             <para>
+                To instruct <application>Command Line </application> to try to complete the command name, press the <keycap>Tab</keycap> key.
+             </para>
+          </listitem> 
+          <listitem>
+             <para>
+                Type the command-line options, if any, in the <guilabel>entry field</guilabel>. 
+             </para>
+          </listitem> 
+          <listitem>
+             <para>
+                Press <keycap>Return</keycap>. 
+             </para>
+          </listitem> 
+        </orderedlist>
+	<para>
+	 If the command you entered could not be run, the computer will emit a
+	 single warning beep and the applet will indicate the command could not
+	 be run by showing a question mark (?) before the command. Check that
+	 you specified the command correctly. Clicking on the command line will
+	 cause the question mark to automatically disappear.
+	</para>
+	<tip>
+        <para>If the auto completion option is selected, <application>Command Line</application> searches for a match in the history list during steps 1 and 2. See <xref linkend="command-line-histauto"/> for more information.</para>
+	</tip>
+	</sect2>
+<sect2 id="command-line-histauto">
+		<title>History-based auto completion</title>
+		<para>You can enable or disable this option under the <guimenu>Preferences</guimenu> menu in the <guilabel>General</guilabel> tab under <guilabel>Auto Completion</guilabel>. Select <guilabel>Enable history-based auto completion</guilabel> to instruct <application>Command Line</application> to compare the <guilabel>entry field</guilabel> with the history list, and complete commands when there is a match. </para>
+	        <para>If the auto completion option is selected, <application>Command Line</application> searches for a match in the history list during steps 1 and 2 in <xref linkend="command-line-run"/>. If there is a match in the history list, <application>Command Line</application> completes the command. To accept the command, press <keycap>Return</keycap>. If you do not want to accept the command, type more characters in the <guilabel>entry field</guilabel>. 
+        </para>
+     </sect2>
+	<!-- ================ To Run Program =======-->
+     <sect2 id="command-line-filesys"> 
+        <title>To Run a Program From Your File System</title> 
+        <para>
+          Click on the <guibutton>Browser</guibutton> button to display the file system, then double-click on the program you want to run. 
+        </para>
+        <para>
+          You can use <application>Command Line</application> to run scripts, execute commands, or run other programs from your file system. 
+        </para>
+     </sect2> 
+     <sect2 id="command-line-histlist"> 
+        <title>To Run a Previous Command, Macro, or Program From the History List
+          </title> 
+        <para>
+          You can run a previously executed command, macro, or program from the history list in one of the following ways: 
+          <itemizedlist> 
+             <listitem>
+                <para>
+                  Click on the <guibutton>History</guibutton> button to display the history list. Click on a history list item to run the command, macro, or program that you require.
+                </para>
+             </listitem> 
+             <listitem>
+                <para>
+                  Click on the <guilabel>entry field</guilabel>, then use the keyboard up and down arrows to cycle through the history list. Press <keycap>Return</keycap> to run a specific command, macro, or program when the history list item you want is displayed in the <guilabel>entry field</guilabel>.
+                </para>
+             </listitem> 
+          </itemizedlist>
+        </para>
+
+	<note>
+		<title>History-based auto completion</title>
+		<para>You can enable or disable this option under the <guimenu>Preferences</guimenu> menu in the <guilabel>General</guilabel> tab under <guilabel>Auto Completion</guilabel>. Select <guilabel>Enable history-based auto completion</guilabel> to instruct <application>Command Line</application> to compare the <guilabel>entry field</guilabel> with the history list, and complete commands when there is a match. </para>
+	</note>
+     </sect2> 
+</sect1>
+<!-- ================ Using Macros =======-->
+<sect1 id="command-line-macros">
+	<title>Using Shortcuts or Macros</title>
+                <para>
+                  The macro facility provides up to 99 shortcut commands. In addition to predefined commands you can create your own commands for use with <application>Command Line</application>.
+                </para>
+     <sect2 id="command-line-runmacro"> 
+        <title>To Run a Macro From the Entry Field</title> 
+        <para>
+          To run a macro that is defined in the <application>Command Line</application> <xref linkend="command-line-prefs-2"/> list, type the macro in the <guilabel> entry field</guilabel>, then press <keycap>Return</keycap>. 
+        </para>
+        <para>
+          The <xref linkend="command-line-histauto"/> function also works for macros. 
+        </para>
+        <para>
+          The following list shows some examples of <application>Command Line</application> macros: 
+        </para>
+        <informaltable frame="none"> 
+          <tgroup cols="2" colsep="0" rowsep="0"><colspec colwidth="29.29*"/><colspec colwidth="70.71*"/> 
+             <tbody> 
+                <row valign="top"> 
+                  <entry><para><userinput>http://</userinput> or
+		  <userinput>www.</userinput></para></entry> 
+                  <entry><para>
+                   Anything starting with <userinput>http://</userinput> or
+		   <userinput>www.</userinput> will be
+		   treated as a URL and loaded in your web browser.
+		  </para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>ftp://</userinput> or
+		  <userinput>ftp.</userinput></para></entry> 
+                  <entry><para>
+                   Anything starting <userinput>ftp://</userinput> or
+		   <userinput>ftp.</userinput> will be
+		   treated as a URL and loaded in your default FTP software.
+                  </para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>dictionary:</userinput></para></entry> 
+                  <entry><para>
+		   Use <userinput>dictionary:</userinput> to look up a word
+		   using <application>GNOME Dictionary</application>.
+                  </para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>google:</userinput></para></entry> 
+                  <entry><para>
+		   Use <userinput>google:</userinput> to search for something
+		   using the Google search engine.
+                  </para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>av:</userinput></para></entry> 
+                  <entry><para>
+		   Use <userinput>av:</userinput> to search for something using
+		   the Altavista search engine.
+                  </para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>yahoo:</userinput></para></entry> 
+                  <entry><para>
+		   Use the <userinput>yahoo:</userinput> macro to search for
+		   things using the Yahoo search engine.
+                  </para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>fm:</userinput></para></entry> 
+                  <entry><para>
+		   Use <userinput>fm:</userinput> to search for packages in the
+		   Freshmeat package database.
+                  </para></entry> 
+                </row> 
+             </tbody> 
+          </tgroup> 
+        </informaltable>
+     </sect2> 
+    <sect2 id="command-line-prefs-2"> 
+        <title>Customizing Your Macros</title> 
+     <figure id="applet-macro-fig"> 
+        <title>Configuring Macros</title> 
+        <screenshot> 
+          <mediaobject> 
+             <imageobject><imagedata fileref="figures/prefs-macros.png" format="PNG"/> 
+             </imageobject> 
+             <textobject> 
+                <phrase>Configuring Macros</phrase> 
+             </textobject> 
+          </mediaobject> 
+        </screenshot> 
+     </figure> 
+        <para>
+          This tabbed section contains a list of macros that you can use with <application>Command Line</application>. The list contains the following information: 
+			</para>
+          <itemizedlist> 
+             <listitem>
+                <para>
+                  A list of UNIX regular expressions in the <guilabel>Pattern</guilabel> column. 
+                </para>
+                <para>
+                  A regular expression is a pattern of characters or numbers that you use to match strings. See the <command>regex</command> man page for further information on how to construct a regular expression. 
+                </para>
+             </listitem> 
+             <listitem>
+                <para>
+                  A list of commands in the <guilabel>Command</guilabel> column.
+                </para>
+                <para>
+                  A command executes if the corresponding pattern successfully matches the text that you type into the <guilabel>entry field</guilabel>. The macros are commands that can take parameters parsed by the regular expression.
+                </para>
+             </listitem> 
+          </itemizedlist> 
+		<para>To add a new macro, click on the <guibutton>Add Macro</guibutton> button. To delete a macro, select the macro, then click on the <guibutton>Delete Macro</guibutton> button. 
+     </para>
+     </sect2> 
+</sect1>
+
+<!-- ============= Appearance ============================= -->
+  <sect1 id="command-line-apperance"> 
+     <title>Customizing the Appearance</title> 
+     <para>
+     <figure id="applet-prefs-fig"> 
+        <title>Preferences</title> 
+        <screenshot> 
+          <mediaobject> 
+             <imageobject><imagedata fileref="figures/prefs.png" format="PNG"/> 
+             </imageobject> 
+             <textobject> 
+                <phrase>Preferences Dialog</phrase> 
+             </textobject> 
+          </mediaobject> 
+        </screenshot> 
+     </figure> 
+        To configure the appearance of <application>Command Line</application>, right-click on an area of the applet outside the interactive elements, then choose <guimenuitem>Preferences</guimenuitem> and select the <guilabel>General</guilabel> tab.
+     </para>
+        <variablelist>
+		<varlistentry>
+		<term>To move Command Line: </term>
+		<listitem>
+		<para>Select <guilabel>Show handle</guilabel> to attach a handle to the edge of the applet. You can use the handle to drag the <application>Command Line</application> display to any location on your desktop. </para>
+		</listitem>
+		</varlistentry>
+		<varlistentry>
+		<term>To add a border:</term>
+		<listitem>
+		<para>Select this option to show a frame around the <application>Command Line</application>.</para>
+		</listitem>
+		</varlistentry>
+		<varlistentry>
+		<term>To change the width:</term>
+		<listitem>
+		<para>Use the <guilabel>Width . . . pixels</guilabel> spin box to specify the applet width.</para>
+		</listitem>
+		</varlistentry>
+		<varlistentry>
+		<term>To adjust the color theme:</term>
+		<listitem>
+			<itemizedlist>
+				<listitem><para>Select <guilabel>Use default theme colors</guilabel> to use the colors from the default GNOME theme.</para></listitem>
+				<listitem><para>Click on the <guilabel>Command line foreground</guilabel> button to select a color for the command line text. This button is unavailable if the <guilabel>Use default theme colors</guilabel> check box is selected.</para></listitem>
+				<listitem><para>Click on the <guilabel>Command line background</guilabel> button to select a color for the <guilabel>entry field</guilabel> background. This button is unavailable if the <guilabel>Use default theme colors</guilabel> check box is selected.</para></listitem>
+			</itemizedlist>
+		</listitem>
+		</varlistentry>	
+	</variablelist>
+
+  </sect1> 
+</article>

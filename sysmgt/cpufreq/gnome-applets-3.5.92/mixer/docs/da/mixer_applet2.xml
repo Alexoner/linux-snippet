@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.8">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "August 2004">
+<!ENTITY applet "Volume Control">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Mar 12, 2002
+  
+-->
+<article id="index" lang="da">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Manual til lydstyrkekontrol</title> 
+	 <abstract role="description">
+	   <para>Lydstyrkekontrol giver dig mulighed for at styre lydstyrken på din maskine og giver visuel tilbagemelding på den nuværende lydstyrke.</para>
+	 </abstract>
+	 <copyright> 
+		<year>2002</year> 
+		<year>2003</year> 
+		<year>2004</year> 
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Dan Mueth</holder> 
+	 </copyright><copyright><year>2010</year><holder>Nicky (nicky441@gmail.com)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+	 <publisher role="maintainer"> 
+		<publishername>GNOME-dokumentationsholdet</publishername> 
+	 </publisher> 
+
+  <legalnotice id="legalnotice">
+	<para>Der gives tilladelse til at kopiere, distribuere og/eller ændre dette dokument under betingelserne i GNU Free Documentation License (GFDL), version 1.1 eller enhver nyere version, udgivet af Free Software Foundation uden invariante afsnit, uden forsidetekster, og uden bagsidetekster. Du kan finde en kopi af GFDL'en her: <ulink type="help" url="ghelp:fdl">link</ulink>, eller i filen COPYING-DOCS der distribueres med denne manual.</para>
+         <para>Denne manual er en del af GNOME-manualsamlingen distribueret under GFDL. Hvis du vil distribuere denne manual separat fra denne samling, kan du gøre det ved at tilføje en kopi af licensen til manualen, som beskrevet i sektion 6 af licensen.</para>
+
+	<para>Mange af navnene brugt af firmaer til at skelne deres produkter og tjenester er registrerede varemærker. Der hvor disse navne optræder i GNOME-dokumentationen, og medlemmerne af GNOME-dokumentationsprojektet er blevet gjort opmærksomme på disse varemærker, er navnene skrevet med store bogstaver eller store forbogstaver.</para>
+
+	<para>DETTE DOKUMENT OG MODIFICEREDE VERSIONER GØRES TILGÆNGELIGT UNDER BETINGELSERNE I GNU FREE DOCUMENTATION LICENSE UNDER DEN FORUDSÆTNING AT: <orderedlist>
+		<listitem>
+		  <para>DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE FOR DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, ELLER EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN HVILKEN SOM HELST MÅDE, HÆFTER DU FOR BETALING FOR EVENTUEL NØDVENDIG SERVICE, REPARATION ELLER KORREKTION (OG IKKE HVERKEN DEN OPRINDELIGE FORFATTER, SKRIBENT ELLER NOGEN ANDEN BIDRAGYDER). DENNE ERKLÆRING OM GARANTIFORBEHOLD ER EN ESSENTIEL DEL AF DENNE LICENS. INGEN BRUG AF NOGET DOKUMENT ELLER ÆNDRET VERSION AF DOKUMENTET ER AUTORISERET HERUNDER BORTSET FRA DENNE FORBEHOLDSERKLÆRING; OG</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER INGEN OMSTÆNDIGHEDER OG UNDER INGEN JURIDISK TEORI, UANSET OM DET ER EN BEVIDST SKADENDE HANDLING (INKLUSIVE UFORSVARLIGHED) ELLER PÅ HVILKEN SOM HELST ANDEN MÅDE, KAN FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER ELLER LEVERANDØR AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER GØRES ANSVARLIG OVERFOR NOGEN PERSON FOR NOGEN DIREKTE, INDIREKTE, SPECIEL, TILFÆLDIG ELLER FØLGENDE SKADE PÅFØRT NOGEN INKLUSIVE, UDEN BEGRÆNSNING, SKADE SOM FØLGE AF TAB AF RYGTE, ARBEJDSSTOP, COMPUTER-FEJL ELLER -SVIGT, ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN SÅDAN PART HAR VÆRET INFORMERET OM MULIGHEDEN FOR SÅDANNE SKADER.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Angela</firstname> 
+		  <surname>Boyle</surname> 
+		  <affiliation> 
+			 <address><email>aboyle@aboyle.com</email></address> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Dan</firstname> 
+		  <surname>Mueth</surname> 
+		  <affiliation> 
+			 <orgname>GNOME-dokumentationsholdet</orgname> 
+			 <address> <email>d-mueth@uchicago.edu</email> </address> 
+		  </affiliation> 
+		</author>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	 <releaseinfo revision="2.26" role="review"/>
+
+	 <revhistory>
+		<revision> 
+		  <revnumber>Manual til panelprogrammet lydstyrkekontrol V2.8</revnumber> 
+		  <date>August 2004</date> 
+		  <revdescription> 
+			 <para role="author">Angela Boyle</para> 
+			 <para role="publisher">GNOME-dokumentationsholdet</para> 
+		  </revdescription> 
+		</revision>  
+		<revision> 
+		  <revnumber>Manual til panelprogrammet lydstyrkekontrol V2.6</revnumber> 
+		  <date>Februar 2004</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
+			 <para role="publisher">GNOME-dokumentationsholdet</para> 
+		  </revdescription> 
+		</revision>  
+		<revision> 
+		  <revnumber>Manual til panelprogrammet lydstyrkekontrol V2.5</revnumber> 
+		  <date>September 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
+			 <para role="publisher">GNOME-dokumentationsholdet</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Manual til panelprogrammet lydstyrkekontrol V2.4</revnumber> 
+		  <date>August 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
+			 <para role="publisher">GNOME-dokumentationsholdet</para> 
+		  </revdescription> 
+		</revision>  
+		<revision> 
+		  <revnumber>Manual til panelprogrammet lydstyrkekontrol V2.3</revnumber> 
+		  <date>Marts 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
+			 <para role="publisher">GNOME-dokumentationsholdet</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Manual til panelprogrammet lydstyrkekontrol V2.2</revnumber> 
+		  <date>Januar 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
+			 <para role="publisher">GNOME-dokumentationsholdet</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Manual til panelprogrammet lydstyrkekontrol V2.1</revnumber> 
+		  <date>August 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
+			 <para role="publisher">GNOME-dokumentationsholdet</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Manual til panelprogrammet lydstyrkekontrol V2.0</revnumber> 
+		  <date>April 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
+			 <para role="publisher">GNOME-dokumentationsholdet</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Panelprogram til lydmikseren</revnumber> 
+		  <date>2000</date> 
+		  <revdescription> 
+			 <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para> 
+			 <para role="publisher">GNOME-dokumentationsholdet</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>Denne manual beskriver version 2.8 af lydstyrkekontrol.</releaseinfo> 
+	 <legalnotice> 
+		<title>Tilbagemelding</title> 
+		<para>Hvis du ønsker at indrapportere en fejl eller komme med et forslag vedrørende lydstyrkekontrol eller denne manual så følg vejledningen på siden <ulink url="ghelp:gnome-feedback" type="help">tilbagemeldinger omkring GNOME</ulink>.</para>
+		
+	 </legalnotice> 
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Lydstyrkekontrol</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="volumecontrol-introduction">
+<title>Introduktion</title>
+<!-- ==== Figure ============================================= -->
+	 <figure id="volumecontrol-fig"> 
+		<title>Panelprogrammet lydstyrkekontrol</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/volumecontrol_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Viser panelprogrammet lydstyrkekontrol. Indeholder et billede af en højtaler.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>Panelprogrammet <application>Lydstyrkekontrol</application> giver dig mulighed for at justere lydstyrken på din maskine. Ikonet på panelet forandrer sig alt efter den lydstyrke du vælger. For eksempel, hvis du vælger en lav lydstyrke, viser ikonet kun én lydbølge fra højtalerikonet på panelet. Efterhånden som du hæver lydstyrken, vil højtalerikonet forandre sig til at vise flere lydbølger.</para>
+
+    <sect2 id="volumecontrol-introduction-add">
+      <title>For at tilføje lydstyrkekontrol til et panel</title>
+      <para>For at tilføje <application>Lydstyrkekontrol</application> til et panel, højreklik på panelet, og vælg <guimenuitem>Tilføj til panel</guimenuitem>. Vælg <application>Lydstyrkekontrol</application> i vinduet <application>Tilføj til panel</application> og tryk så <guibutton>O.k.</guibutton>.</para>
+    </sect2>
+</sect1>
+
+<sect1 id="volumecontrol-usage">
+<title>Brug af lydstyrkekontrol</title>
+
+	<sect2 id="volumecontrol-adjust">
+	<title>For at justere lydstyrken</title>
+	<para>Tryk på panelprogrammet for at vise en skydekontrol. For hæve lydstyrken, flyt skyderen opad. For at sænke lydstyrken, flyt skyderen nedad.</para>
+	</sect2>
+	
+	<sect2 id="volumecontrol-off">
+	<title>For at slukke lyden</title>
+	<para>For at slå lyden fra, højreklik på panelprogrammet, og vælg <guimenuitem>Stilhed</guimenuitem>.</para>
+	</sect2>
+	
+	<sect2 id="volumecontrol-add">
+	<title>For adgang til ekstra funktioner</title>
+	<para>For at få adgang til flere funktioner omkring lyden, højreklik på panelprogrammet, og vælg <guimenuitem>Lydindstillinger</guimenuitem>. Et lydstyrkeprogram vises, og det vil tillade dig at indstille lydstyrken og balancere lydniveauer for afspilning og indspilning af lyd.</para>
+	</sect2>
+
+</sect1>
+
+<sect1 id="volumecontrol-prefs">
+<title>Tilpasse lydstyrkekontrol</title>
+<para>For at indstille <application>Lydstyrkekontrol</application>, højreklik på panelprogrammet, og vælg <guimenuitem>Indstillinger</guimenuitem>.</para> 
+    <note>
+      <para><application>Lydstyrkekontrol</application> udfylder vinduet <guilabel>Lydstyrkekontrolindstillinger</guilabel> dynamisk, basseret på de funktioner som dit lydkort understøtter.</para>
+    </note>
+
+<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Lydkanaler</guilabel></term> 
+			 <listitem> 
+			 <para>Vælg den udgående lydkannal som du vil kontrollere:</para> 
+			 <itemizedlist>
+			 	<listitem><para><guilabel>Lydstyrke</guilabel></para></listitem>
+			 	<listitem><para><guilabel>PCM</guilabel></para></listitem>
+			 	<listitem><para><guilabel>Højtaler</guilabel></para></listitem>
+				<listitem><para><guilabel>Linje ind</guilabel></para></listitem>
+				<listitem><para><guilabel>Mikrofon</guilabel></para></listitem>
+				<listitem><para><guilabel>Cd</guilabel></para></listitem>
+				<listitem><para><guilabel>Optag</guilabel></para></listitem>
+				<listitem><para><guilabel>Linje-1</guilabel></para></listitem>
+				<listitem><para><guilabel>Linje-2</guilabel></para></listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry> 
+		</variablelist> 
+
+<para>Tryk <guibutton>Luk</guibutton> for at lukke vinduet <guilabel>Lydstyrkekontrolindstillinger</guilabel>.</para>
+
+</sect1>
+</article>

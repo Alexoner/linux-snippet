@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "3.2.0">
+<!ENTITY manrevision "1.0">
+<!ENTITY date "September 2011">
+<!ENTITY app "Invest">
+<!ENTITY panel-help SYSTEM "/usr/share/gnome/help/user-guide/C/user-guide.xml">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ca">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Manual de l'inversions</title>       
+
+    <copyright>
+      <year>2004</year>
+      <year>2005</year>
+      <holder>Raphael Slinckx</holder>
+    </copyright>
+    <copyright> 
+      <year>2007</year>
+      <holder>Terrence Hall</holder> 
+    </copyright> 
+    <copyright>
+      <year>2010</year>
+      <year>2011</year>
+      <holder>Enrico Minack</holder>
+    </copyright><copyright><year>2009</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright>
+
+
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+   -->
+
+    <publisher role="maintainer"> 
+      <publishername>Projecte de documentació del GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Teniu permís per a copiar, distribuir i/o modificar aquest document, sota els termes de la Llicència de documentació lliure GNU (GFDL), versió 1.1 o qualsevol versió publicada posteriorment per la Free Software Foundation, sense seccions invariants, sense texts de portada i sense texts de contraportada. Podeu trobar una còpia de la GFDL en aquest <ulink type="help" url="ghelp:fdl">enllaç</ulink> o en el fitxer COPYING-DOCS distribuït amb aquest manual.</para>
+         <para>Aquest manual forma part d'una col·lecció de manuals del GNOME distribuïts sota la GFDL. Si voleu distribuir aquest manual independentment de la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal com es descriu a la secció 6 de la llicència.</para>
+
+	<para>Molts dels noms que les empreses utilitzen per a distingir els seus productes i serveis es consideren marques comercials. Quan aquests noms apareguin en qualsevol documentació del GNOME, si els membres del Projecte de documentació del GNOME han estat avisats pel que fa a les marques, els noms apareixeran en majúscules o amb les inicials en majúscules.</para>
+
+	<para>EL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT S'OFEREIXEN SOTA ELS TERMES DE LA LLICÈNCIA DE DOCUMENTACIÓ LLIURE DE GNU, TENINT EN COMPTE QUE: <orderedlist>
+		<listitem>
+		  <para>EL DOCUMENT S'OFEREIX «TAL COM ÉS», SENSE CAP TIPUS DE GARANTIA, NI EXPLÍCITA NI IMPLÍCITA; AIXÒ INCLOU, SENSE LIMITAR-S'HI, LES GARANTIES QUE EL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT NO TINGUI DEFECTES, SIGUI COMERCIALITZABLE, SIGUI ADEQUAT PER A UN ÚS CONCRET O NO INFRINGEIXI CAP LLEI. TOT EL RISC PEL QUE FA A LA QUALITAT, EXACTITUD I RENDIMENT DEL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I</para>
+		</listitem>
+		<listitem>
+		  <para>EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT (INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+  <authorgroup> 
+    <author>
+      <firstname/>
+      <surname>Equip de documentació del GNOME</surname>
+    </author>
+    <author> 
+      <firstname>Terrence</firstname> 
+      <surname>Hall</surname> 
+      <affiliation><address><email>teebob21@gmail.com</email></address></affiliation> 
+    </author> 
+    <author>
+      <firstname>Enrico</firstname>
+      <surname>Minack</surname>
+      <affiliation><address><email>enrico-minack@gmx.de</email></address></affiliation>
+    </author>
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+    <othercredit role="translator">
+      <firstname>Latin</firstname> 
+      <surname>Translator 1</surname> 
+      <affiliation> 
+	<orgname>Latin Translation Team</orgname> 
+	<address> <email>translator@gnome.org</email> </address> 
+      </affiliation>
+      <contrib>Latin translation</contrib>
+    </othercredit>
+-->
+    </authorgroup>
+	
+    <revhistory>
+      <revision> 
+	<revnumber/>
+	<date/>
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>This manual describes version 3.2.0 of Invest.
+    </releaseinfo> 
+
+    <legalnotice> 
+      <title>Comentaris</title> 
+      <para>Per a informar d'un error o fer algun suggeriment sobre la miniaplicació de l'inversions o aquest manual, seguiu les indicacions a la <ulink url="ghelp:gnome-feedback" type="help">pàgina de comentaris del GNOME</ulink>.</para>
+
+<!-- Translators may also add here feedback address for translations -->
+
+    </legalnotice> 
+    <abstract role="description">
+      <para>Manual d'usuari de l'inversions</para>
+
+    </abstract>
+
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>Inversions</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>miniaplicació inversions</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+ <!-- ============= Introduction ============================== -->
+
+  <sect1 id="invest-applet-intro">
+    <title>Introducció</title>
+
+    <para>
+      The <application>Invest</application> GNOME panel applet downloads current quotes for stocks, stock indices, currencies and precious metals. Quotes are downloaded from <ulink url="http://finance.yahoo.com">Yahoo! Finance</ulink> and are displayed in a drop-down list.
+    </para>
+    <para>
+      <application>Invest</application> provides the following features:
+    </para>
+	<itemizedlist>
+            <listitem>
+              <para>
+                Retrieve quotes for any stock, stock index, currency or precious metal known by <ulink url="http://finance.yahoo.com">Yahoo! Finance</ulink>
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Quotes are automatically updated every 15 minutes
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                The current price, today's change, and a chart of today's changes are displayed
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+		The currency of the quote is displayed, and if configured, automatically translated into a target currency
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                The amount of the increase or decrease in the price since purchase, also translatable into the target currency
+              </para>
+            </listitem>
+            <listitem>
+              <para>El percentatge guanyat o perdut en la cotització des de la compra</para>
+            </listitem>
+	</itemizedlist>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="invest-applet-getting-started">
+    <title>Primers passos</title>
+
+                                                                                
+<!-- ============= To Start Invest ============================ -->
+    <sect2 id="invest-applet-to-add">
+      <title>Com afegir l'inversions a un quadre</title>
+      <para>Per a afegir l'<application>inversions</application> a un quadre del GNOME, feu clic amb el botó secundari al quadre i trieu <guilabel>Afegeix al quadre</guilabel>. Seleccioneu <application>Inversions</application> al diàleg <guilabel>Afegeix al quadre</guilabel> i feu clic a <guilabel>D'acord</guilabel>. Feu clic a <guilabel>Tanca</guilabel> quan hàgiu acabat.</para>
+    </sect2>
+    <sect2 id="invest-applet-to-remove">
+      <title>Com suprimir l'inversions d'un quadre</title>
+      <para>Per a suprimir l'<application>inversions</application> d'un quadre del GNOME, feu clic amb el botó secundari a la icona i trieu <guilabel>Suprimeix del quadre</guilabel>.</para>
+    </sect2>
+    <sect2 id="additional-applet-help">
+      <title>Més informació</title>
+      <para>Podeu obtenir més informació sobre el quadre del GNOME a la <ulink url="ghelp:user-guide?panels" type="help">documentació del quadre del GNOME</ulink>.</para>
+    </sect2>
+  </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="invest-applet-usage">
+    <title>Com utilitzar l'inversions</title>
+    <para>Before the applet can provide you with recent quotes, you have
+	to configure it. Quotes can come from different stock exchange
+	centers around the world, so the prices can have different currencies.
+	The automatic translation of currencies can be configured, as well as the translation
+	of your purchases done in different countries. Finally, charts are
+	available for each of your configured quote.
+    </para>
+
+    <sect2 id="invest-applet-configure-quotes">
+      <title>Configure your Quotes</title>
+
+    <sect3 id="invest-applet-add-stocks">
+
+      <title>Add New Quotes to the Applet</title>
+
+      <para>
+        To add new quotes to <application>Invest</application>, perform the following steps:
+      </para>
+      <orderedlist>
+        <listitem>
+          <para>Feu clic amb el botó secundari a la icona i seleccioneu <guilabel>Preferències</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>
+            Click <guilabel>Add</guilabel> to add a quote to <application>Invest</application>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            The default quote is GOOG. It is initially selected for editing so that you can instantly change it.
+		Enter the <guilabel>Symbol</guilabel> of the quote here. If you do not know the symbol
+		of your desired quote, see below.
+          </para>
+        </listitem>
+	<listitem>
+	  <para>
+	    Then, click on the <guilabel>Label</guilabel> of the quote and type its proper name.
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    You can also edit the number of shares you own, the purchase price and the commission.
+	  </para>
+	</listitem>
+        <listitem>
+          <para>
+            Click <guilabel>Close</guilabel> when you are finished adding quotes.
+          </para>
+        </listitem>
+      </orderedlist>
+	<para>
+	If you do not know the actual symbol of your quote, go to <ulink url="http://finance.yahoo.com/">http://finance.yahoo.com/</ulink>.
+	Enter the name of the quote in the text field in the upper-left corner of the screen. While typing, it will list
+	you matching quotes. The first column depicts the symbol of the quote, the second column shows the name,
+	and in the third column, the stock exchange of the quote is listed. The currency of the quote may vary among
+	different stock exchange centers, depending on their respective countries. Below, you can see a screenshot of
+	searching for the "yahoo" quote.
+	</para>
+
+	<para>
+	<mediaobject><imageobject>
+	  <imagedata format="PNG" fileref="figures/symbol-search.png"/>
+	</imageobject></mediaobject>
+	Screenshot of Yahoo! Finance when searching a quote.
+	</para>
+
+	<para>
+	Invest supports all quotes that can be found at <ulink url="http://finance.yahoo.com/">Yahoo! Finance</ulink>.
+	In particular, these are of the following type.
+	</para>
+	<formalpara>
+	  <title>Stocks, Bonds and Securities</title>
+          <para> These are the majority of quotes that are available. Search or browse on
+		<ulink url="http://finance.yahoo.com/">Yahoo! Finance</ulink> to find out what is there.
+          </para>
+	</formalpara>
+	<formalpara>
+	  <title>Stock Indices</title>
+          <para> All quotes that start with an ^ are actually indices, a quote that represents a number of other quotes' performance.
+		Examples are the Dow Jones Industrial Average (<ulink url="http://finance.yahoo.com/q?s=^DJI">^DJI</ulink>) and the
+		NASDAQ Composite (<ulink url="http://finance.yahoo.com/q?s=^IXIC">^IXIC</ulink>).
+          </para>
+	</formalpara>
+	<formalpara>
+	  <title>Currencie rates</title>
+          <para> Exchange rates between any two currencies are also available. The respective symbol is constructured as follows.
+		Currency AAA in currency BBB, or in other words, how much does currency AAA cost in currency BBB, has the symbol AAABBB=X.
+		If you want to know how much EUR you get for one USD (how much does one USD cost in EUR),
+		you choose <ulink url="http://finance.yahoo.com/q?s=usdeur%3DX">USDEUR=X</ulink>.
+		You can find more information at the <ulink url="http://finance.yahoo.com/currency-investing">currency page of Yahoo! Finance</ulink>.
+		Currencies are represented using their <ulink url="http://en.wikipedia.org/wiki/Currency_code">ISO 4217 currency code</ulink>.
+          </para>
+	</formalpara>
+	<formalpara>
+	  <title>Precious Metals</title>
+          <para>
+		The <ulink url="http://en.wikipedia.org/wiki/Currency_code">ISO 4217 currency code</ulink> also
+		lists precious metals as currencies. These are Gold, Silver, Palladium and Platinum. Their
+		currency code starts with X, followed by their chemical symbol: XAU, XAG, XPD, and XPT, respectively.
+		With those currency codes, the rate of precious metals in any currency are available via the currency rates described above.
+		To give an example, Gold in USD has the symbol <ulink url="http://finance.yahoo.com/q?s=XAUUSD%3DX">XAUUSD=X</ulink>.
+		You can even get the reverse (<ulink url="http://finance.yahoo.com/q?s=USDXAU%3DX">USDXAU=X</ulink>):
+		how much Gold measured in troy ounce do you get for one USD?
+          </para>
+	</formalpara>
+    </sect3>
+    <sect3 id="invest-applet-to-view-stocks">
+      <title>View Configured Quotes</title>
+      <para>To view your configured quotes, click on the <application>Invest</application> icon on the panel. A list of your quotes will appear. To close the list, click the icon again. Notice that quotes are usually 15 minutes delay.
+      </para>
+    </sect3>
+
+    <sect3 id="invest-applet-to-refresh-stocks">
+
+      <title>Com actualitzar la pantalla</title>
+      <para>Per a actualitzar immediatament la informació que es mostra a la miniaplicació, feu clic amb el botó secundari a la miniaplicació i trieu <guilabel>Actualitza</guilabel>.</para>
+    </sect3>
+    <sect3 id="invest-applet-to-remove-stocks">
+       <title>Remove Quotes from the Applet</title>
+      <para>
+        To remove quotes from <application>Invest</application>, perform the following steps:
+      </para>
+      <orderedlist>
+        <listitem>
+          <para>Feu clic amb el botó secundari a la icona i seleccioneu <guilabel>Preferències</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>
+            Click the row containing the quote you wish to remove.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Feu clic a <guilabel>Suprimeix</guilabel> per a suprimir la llista.</para>
+        </listitem>
+        <listitem>
+          <para>Feu clic a <guilabel>Tanca</guilabel> quan hàgiu acabat.</para>
+        </listitem>
+      </orderedlist> 
+    </sect3>
+   </sect2>
+
+    <sect2 id="invest-applet-configure-currencies">
+      <title>Setup Currency Translation</title>
+      <para>Invest displays all quotes in their original currency as retrieved from Yahoo! Finance.
+	If you wish to have all quotes being displayed in one target currency, this can be configured
+	in the preferences dialog.
+      </para>
+      <orderedlist>
+        <listitem>
+          <para>Feu clic amb el botó secundari a la icona i seleccioneu <guilabel>Preferències</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>
+            Type the target currency into the <guilabel>Currency</guilabel> text field.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            While you type, the text field will suggest currencies that match entered currency.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Choose your target currency.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Notice that in your quote list the new <guilabel>Currency Rate</guilabel> column appears.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            For all purchases where the <guilabel>Price</guilabel> and <guilabel>Commission</guilabel>
+		are given in original currency, the exchange rate at the time of purchase from the origin currency
+		to the target currency has to be given in the <guilabel>Currency Rate</guilabel> field.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Feu clic a <guilabel>Tanca</guilabel> quan hàgiu acabat.</para>
+        </listitem>
+      </orderedlist>
+      <para>
+	Lets look at this example: You bought one Yahoo! share (YHOO) for 10.00 USD at a currency rate of
+	0.75 EUR per USD. In other words, the share cost 7.50 EUR. You further paid 5.00 USD comission,
+	equivalent to 3.75 EUR. When you set the target currency to EUR, you either have to enter the
+	EUR (target currency) values and keep the <guilabel>Currency Rate</guilabel> at 0.00, or you enter
+	the USD (original currency) values and enter the EUR per USD exchange rate
+	(<ulink url="http://finance.yahoo.com/q?s=eurusd%3DX">USDEUR=X</ulink>).
+      </para>
+      <tip>
+        <para>The <guilabel>Price</guilabel> and <guilabel>Commission</guilabel> both have to be given in the same currency.
+        </para>
+      </tip>
+      <para>If you want to remove the target currency again, simply clear the <guilabel>Currency</guilabel> text field.
+      </para>
+   </sect2>
+
+    <sect2 id="invest-applet-stock-charts-options">
+      <title>Opcions de la gràfica</title>
+      <para>For each quote in your list, a financial chart is available. To open the financial chart, view the list of configured quotes, and double-click the quote that you wish to chart. The chart parameters can be customized by clicking <guilabel>Options</guilabel>.
+      </para>
+	<sect3 id="invest-applet-stock-chart-options-date">
+	<title>Rang de les dates</title>
+              <para>
+                The date range, in the top-right corner of the window,
+      selects the length of time to report on. By default, it gives one
+      day of data, but the following ranges can be choosen: <guilabel>Today</guilabel>, <guilabel>5 Days</guilabel>,
+		<guilabel>3 Months</guilabel>, <guilabel>6 Months</guilabel>, <guilabel>1 Year</guilabel>,
+		<guilabel>5 Years</guilabel>, <guilabel>Maximum</guilabel>.
+              </para>
+
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-graph">
+	<title>Estil de la gràfica</title>
+              <para>Es pot mostrar una gràfica de la informació històrica de la cotització de tres maneres diferents. Podeu seleccionar una gràfica de línies, una gràfica de barres o una gràfica d'espelmes.</para>
+	  <itemizedlist>
+            <listitem>
+              <para>
+                <guilabel>Line Chart</guilabel> (<guilabel>l</guilabel>)
+              </para>
+	      <para>This is the default option. This graphs the historical price information in a familiar manner, connecting each day's closing price with a single line. Line charts for graphing quotes are useful if an analyst is interested only in a closing price each time.</para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Bar Chart</guilabel> (<guilabel>b</guilabel>)
+              </para>
+	      <para>A bar chart represents a full day's activity with a single vertical bar. The top of the vertical line indicates the highest price a security traded during the day, and the bottom represents the lowest price. The closing price is displayed on the right side of the bar, and the opening price is shown on the left side of the bar. One bar represents one day of trading.</para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Candlestick Chart</guilabel> (<guilabel>c</guilabel>)
+              </para>
+	      <para>A candlestick chart in which the open and close prices are represented as the top and bottom of a rectangle surrounding a vertical line connecting the high and low prices. The body of the rectangle is filled if the closing price is lower than the opening price and is left blank if the closing price is higher than the opening price.</para>
+
+            </listitem>
+	</itemizedlist>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-ma">
+	<title>Mitjana mòbil</title>
+              <para>
+                A moving average is a statistical series of a security's closing prices throughout consecutive trading days. It is typically shown in the same graph as a line chart to indicate trends in prices.
+              </para>
+	</sect3>
+
+	<sect3 id="invest-applet-stock-chart-options-ema">
+	<title>Mitjana mòbil exponencial</title>
+              <para>La mitjana mòbil exponencial (EMA) es defineix com una mitjana mòbil calculada fent que els valors més recents siguin més importants que els valors antics. Aquest tipus de mitjana mòbil reacciona més ràpidament als canvis recents de la cotització que no pas una mitjana mòbil normal. Les EMA de 12 i 26 dies són mitjanes populars de curt termini, mentre que les EMA de més de 50 dies s'utilitzen per a tendències de llarg termini.</para>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-overlays">
+	<title>Superposicions</title>
+              <para>
+                Overlays allow you to graph multiple statistical measurements onto a single chart. For example, you can compare the performance of a single quote against that of an index such as the NASDAQ or the DJIA.
+              </para>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-indicators">
+	<title>Indicadors</title>
+              <para>Els indicadors s'utilitzen per a intentar predir el futur de les tendències financeres. La utilització adequada dels indicadors del mercat recau fora de l'àmbit del manual de l'inversions.</para>
+
+	</sect3>
+    </sect2>
+  </sect1>
+</article>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.12.0">
+<!ENTITY applet "Battery Charge Monitor">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="bg">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Ръководство за аплета „Заряд на батерията“</title> 
+    <abstract role="description">
+      <para>Аплетът „Заряд на батерията“ показва текущия заряд на батерията и уведомява потребителя при достигането на определени нива на заряда.</para>
+    </abstract>
+    <copyright>
+      <year>2005</year>
+      <holder>Davyd Madeley</holder>
+    </copyright>
+    <copyright>
+      <year>2004</year>
+      <holder>Angela Boyle</holder>
+    </copyright>
+    <copyright>
+      <year>2004</year>
+      <holder>Sun Microsystems</holder>
+    </copyright>
+    <copyright>
+      <year>2002</year>
+      <holder>Trevor Curtis</holder>
+    </copyright>
+    <copyright> 
+      <year>1999</year> 
+      <year>2000</year> 
+      <holder>Jorgen Pehrson</holder> 
+    </copyright><copyright><year>2005.</year><holder>Явор Доганов (yavor@doganov.org)</holder></copyright>
+<!-- translators: uncomment this:
+
+    <copyright>
+     <year>2002</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+   -->
+
+    <publisher role="maintainer"> 
+      <publishername>Проект за документация на GNOME</publishername> 
+    </publisher> 
+  
+      <legalnotice id="legalnotice">
+	<para>Предоставя се разрешение за копиране, разпространение и/или промяна на този документ, съгласно условията на „Лиценза за свободна документация на GNU“, версия 1.1 или всяка следваща версия, издадена от Фондация „Свободен софтуер“; без „Непроменливи раздели“, „Текстове на предната корица“, както и „Текстове на задната корица“. Копие на лиценза може да бъде намерено <ulink type="help" url="ghelp:fdl">тук</ulink> или във файла COPYING-DOCS, разпространяван с това ръководство.</para>
+         <para>Това ръководство е част от колекция ръководства за GNOME, разпространявани под GFDL. Ако искате да разпространявате това ръководство отделно, можете да го направите, като включите копие на лиценза към ръководството, както е описано в раздел 6 от лиценза.</para>
+
+	<para>Много от имената, използвани от компании, за да отличават собствените си продукти и услуги, са регистрирани търговски марки. Когато такива имена присъстват в която и да е документация за GNOME и членовете на проекта за документация на GNOME са осведомени за съответните търговски марки, тогава имената са с главни букви или начални главни букви.</para>
+
+	<para>ДОКУМЕНТЪТ И ПРОМЕНЕНИТЕ МУ ВЕРСИИ СЕ ПРЕДОСТАВЯТ ПОД УСЛОВИЯТА НА ЛИЦЕНЗА ЗА СВОБОДНА ДОКУМЕНТАЦИЯ НА GNU, С ДОПЪЛНИТЕЛНОТО ПОЯСНЕНИЕ, ЧЕ: <orderedlist>
+		<listitem>
+		  <para>ДОКУМЕНТЪТ СЕ ПРЕДОСТАВЯ НА БАЗА „КАКТО Е“, БЕЗ КАКВАТО И ДА Е ГАРАНЦИЯ, ПРЯКА ИЛИ КОСВЕНА, ВКЛЮЧИТЕЛНО БЕЗ ОГРАНИЧЕНИЯ И ГАРАНЦИИ, ЧЕ ДОКУМЕНТЪТ ИЛИ ПРОМЕНЕНАТА МУ ВЕРСИЯ СА БЕЗ ДЕФЕКТИ, ГОДНИ ЗА КОНКРЕТНА УПОТРЕБА ИЛИ НЕНАРУШАВАЩИ. ЦЕЛИЯТ РИСК ОТНОСНО КАЧЕСТВОТО, ТОЧНОСТТА И ХАРАКТЕРИСТИКИТЕ НА ДОКУМЕНТА ИЛИ ПРОМЕНЕНАТА МУ ВЕРСИЯ Е ЗА ВАША СМЕТКА. АКО НЯКОЙ ДОКУМЕНТ ИЛИ ПРОМЕНЕНАТА МУ ВЕРСИЯ СЕ ОКАЖЕ ДЕФЕКТЕН В КАКВОТО И ДА Е ОТНОШЕНИЕ, ВИЕ (НЕ ПЪРВОНАЧАЛНИЯ АВТОР ИЛИ КОЙТО И ДА Е ДОПРИНЕСЪЛ ЗА РАЗРАБОТКАТА) ПОЕМАТЕ РАЗХОДИТЕ ЗА ВСЯКАКВО НЕОБХОДИМО ОБСЛУЖВАНЕ, ПОПРАВКА ИЛИ КОРЕКЦИИ. ТОВА ОТКАЗВАНЕ ОТ ГАРАНЦИЯТА ПРЕДСТАВЛЯВА СЪЩЕСТВЕНА ЧАСТ ОТ ТОЗИ ЛИЦЕНЗ. НЕ Е РАЗРЕШЕНА УПОТРЕБАТА НА КОЙТО И ДА Е ДОКУМЕНТ ИЛИ ПРОМЕНЕНАТА ВЕРСИЯ НА ДОКУМЕНТА, ОСВЕН ПРИ СПАЗВАНЕ НА ТОЗИ ОТКАЗ ОТ ГАРАНЦИЯ; И</para>
+		</listitem>
+		<listitem>
+		  <para>ПРИ НИКАКВИ ОБСТОЯТЕЛСТВА И ПОД НИКАКВА ЮРИДИЧЕСКА ОСНОВА, НЕЗАВИСИМО ДАЛИ Е В НАРУШЕНИЕ (ВКЛЮЧИТЕЛНО ПРИЧИНЕНО ОТ НЕБРЕЖНОСТ), ДОГОВОР ИЛИ ДРУГО, АВТОРЪТ, ПЪРВОНАЧАЛНИЯТ АВТОР ИЛИ КОЙТО И ДА Е ДОПРИНЕСЪЛ ЗА РАЗРАБОТКАТА, ИЛИ КОЙТО И ДА Е ДИСТРИБУТОР НА ДОКУМЕНТА ИЛИ ПРОМЕНЕНАТА МУ ВЕРСИЯ, ИЛИ КОЙТО И ДА Е ДОСТАВЧИК НА КОЯТО И ДА Е ОТ ИЗБРОЕНИТЕ СТРАНИ, НЯМА ДА БЪДЕ ОТГОВОРЕН ПРЕД НИКОГО ЗА ВСИЧКИ ПРЕКИ, КОСВЕНИ, СПЕЦИАЛНИ, СЛУЧАЙНИ ИЛИ ПОСЛЕДСТВЕНИ ЩЕТИ ОТ КАКЪВТО И ДА Е ХАРАКТЕР, ВКЛЮЧИТЕЛНО, БЕЗ ОГРАНИЧЕНИЯ, ЩЕТИ ЗА ЗАГУБА НА ДОБРОЖЕЛАТЕЛНОСТ, СПИРАНЕ НА РАБОТАТА, КОМПЮТЪРНА ПОВРЕДА ИЛИ НЕИЗПРАВНОСТ, ИЛИ ВСЯКАКВИ ДРУГИ ЩЕТИ ИЛИ ЗАГУБИ, ВЪЗНИКНАЛИ ИЛИ СВЪРЗАНИ С УПОТРЕБАТА НА ДОКУМЕНТА ИЛИ ПРОМЕНЕНИТЕ МУ ВЕРСИИ, ДОРИ И КОГАТО ТАЗИ СТРАНА Е БИЛА ИНФОРМИРАНА ЗА ВЪЗМОЖНОСТТА ОТ ТАКИВА ЩЕТИ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+    <authorgroup> 
+      <author>
+        <firstname>Екип на Sun</firstname>
+        <surname>за документация на GNOME</surname>
+        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
+      </author>
+      <author>
+        <firstname>Trevor</firstname>
+        <surname>Curtis</surname>
+        <affiliation>
+          <orgname>Проект за документация на GNOME</orgname>
+          <address> <email>tcurtis@somaradio.ca</email> </address>
+        </affiliation>
+      </author>
+      <author> 
+        <firstname>Jorgen</firstname> 
+        <surname>Pehrson</surname> 
+        <affiliation> 
+          <orgname>Проект за документация на GNOME</orgname> 
+          <address> <email>jp@spektr.eu.org</email> </address> 
+        </affiliation> 
+      </author> 
+      <author>
+	<firstname>Angela</firstname>
+	<surname>Boyle</surname>
+	<affiliation>
+	  <orgname>Проект за документация на GNOME</orgname>
+	</affiliation>
+      </author>
+      <author>
+        <firstname>Davyd</firstname>
+	<surname>Madeley</surname>
+	<affiliation>
+	  <orgname>Проектът GNOME</orgname>
+	</affiliation>
+      </author>
+        <!-- This is appropriate place for other contributors: translators,
+             maintainers,  etc. Commented out by default.
+             <othercredit role="translator">
+	       <firstname>Latin</firstname> 
+	       <surname>Translator 1</surname> 
+	       <affiliation> 
+	         <orgname>Latin Translation Team</orgname> 
+	         <address> <email>translator@gnome.org</email> </address> 
+	       </affiliation>
+	       <contrib>Latin translation</contrib>
+             </othercredit>
+-->
+
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>версия 2.12</revnumber>
+	<date>септември, 2005</date>
+	<revdescription>
+	  <para role="author">Davyd Madeley</para>
+	</revdescription>
+      </revision>
+      <revision>
+        <revnumber>версия 2.10</revnumber>
+	<date>март, 2005</date>
+	<revdescription>
+	 <para role="author">Davyd Madeley</para>
+	</revdescription>
+      </revision>
+      <revision>
+	<revnumber>версия 2.8</revnumber>
+	<date>септември, 2004</date>
+	<revdescription>
+	  <para role="author">Angela Boyle</para>
+	  <para role="publisher">Проект за документация на GNOME</para>
+	</revdescription>
+      </revision>
+      <revision>
+        <revnumber>Ръководство за аплета „Заряд на батерията“, версия 2.2</revnumber>
+        <date>август, 2004</date>
+        <revdescription>
+          <para role="author">Екип на Sun за документация на GNOME</para>
+          <para role="publisher">Проект за документация на GNOME</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>Ръководство за аплета „Заряд на батерията“, версия 2.0</revnumber>
+        <date>май, 2002</date>
+        <revdescription>
+          <para role="author">Trevor Curtis <email>tcurtis@somaradio.ca</email></para>
+          <para role="author">Jorgen Pehrson <email>jp@spektr.eu.org</email></para>
+          <para role="publisher">Проект за документация на GNOME</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+                                                                                                  
+    <releaseinfo>Това ръководство е за версия 2.12.0 на аплета „Заряд на батерията“.</releaseinfo>
+                                                                                                  
+    <legalnotice>
+      <title>Обратна връзка</title>
+      <para>За да докладвате за грешка или да направите предложение относно аплета „Заряд на батерията“ или това ръководство, следвайте указанията, описани в <ulink url="ghelp:gnome-feedback" type="help">Страницата за обратна връзка на GNOME</ulink>.</para>
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+	 <primary>Аплет „Заряд на батерията“</primary> 
+  </indexterm> 
+
+  <indexterm zone="index"> 
+	 <primary>Заряд на батерията</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="battstat-introduction"> 
+    <title>Въведение</title> 
+
+    <figure id="battstat-applet-fig"> 
+      <title>Аплет „Заряд на батерията“</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Аплет „Заряд на батерията“</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+
+    <para>Аплетът <application>Заряд на батерията</application> показва състоянието на батериите на портативния компютър. Аплетът може да показва информацията както визуално, така и изразена в проценти, както и даде оценка за оставащото време за работа при текущото натоварване.</para>
+
+    <sect2 id="battstat-introduction-add">
+      <title>Добавяне на аплета „Заряд на батерията“ към панела</title>
+      <para>За да добавите <application>Заряд на батерията</application> към панела, натиснете с десния бутон на мишката върху панела и изберете <guimenuitem>Добавяне към панела...</guimenuitem>. След това в диалоговия прозорец <application>Добавяне към панела</application> изберете <application>Заряд на батерията</application> и натиснете <guibutton>Добавяне</guibutton>.</para>
+      <para>Външният вид на аплета <application>Заряд на Батерията</application> зависи от размера и типа на панела, в който е добавен.</para>
+    </sect2>
+
+    <sect2 id="battstat-power-backends">
+     <title>Подсистема за управление на захранването</title>
+
+     <para>
+      The battery monitor supports a number of power management backends. If it
+      is available, the monitor will attempt to use the freedesktop.org
+      <ulink url="http://freedesktop.org/Software/hal">HAL (Hardware Abstraction
+      Layer)</ulink>. If it is unavailable or unsupported on your platform, the
+      battery monitor will attempt direct access to the power management system.
+     </para>
+     <para>Не всички производители осигуряват всички подсистеми. Възможно е някои даже да са добавили свои за конкретни платформи и хардуер. Ако аплетът „Заряд на батерията“ дава невярна информация, проверете следните ресурси <xref linkend="battstat-troubleshooting"/>.</para>
+    </sect2>
+
+    <sect2 id="battstat-getting-help">
+      <title>Получаване на помощ</title>
+      <para>Ако имате проблем с аплета „Заряд на батерията“, проверете следните ресурси:</para>
+      <itemizedlist>
+       <listitem><para><xref linkend="battstat-troubleshooting"/>;</para></listitem>
+       <listitem><para>
+        <ulink url="http://mail.gnome.org/archives/">Пощенските списъци на GNOME</ulink>
+       </para></listitem>
+      </itemizedlist>
+    </sect2>
+
+</sect1>
+
+<!-- ================ Customizing the Appearance ========================= -->
+
+  <sect1 id="battstat-appearance">
+    <title>Настройки</title>
+          <para>Натиснете с десния бутон на мишката върху аплета и изберете <guimenuitem>Настройки</guimenuitem>, за да можете да го конфигурирате</para>
+    <figure id="battstat-applet-prefs-menu"> 
+      <title>Контекстно меню на аплета „Заряд на батерията“ (появява се при натискане с десния бутон на мишката върху аплета)</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/context-menu.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Контекстно меню на аплета „Заряд на батерията“</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+    <figure id="battstat-applet-prefs"> 
+      <title>Диалогов прозорец за настройки</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-preferences.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Диалогов прозорец за настройки</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Външен вид</guilabel></term>
+	  <listitem>
+	  <variablelist>
+	    <varlistentry>
+	      <term><guilabel>Компактен изглед</guilabel></term>
+	      <listitem><para>Този изглед съдържа само една картинка в панела - или е батерия, която показва, че мобилният компютър се захранва от батерии, или е щепсел, което показва, че захранването идва от външен източник. <figure id="battstat-applet-compact"> 
+      <title>Компактен изглед</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Компактен изглед</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para>
+	      <para>Компактният изглед се използва по подразбиране от GNOME 2.12.</para></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><guilabel>Разширен изглед</guilabel></term>
+	      <listitem><para>Разширеният изглед е по-старият. Той се използваше в старите версии на GNOME. В него има отделно изображение на батерията, както и друго, което да показва състоянието й. <figure id="battstat-applet-expanded"> 
+      <title>Разширен изглед</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet-expanded.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Разширен изглед</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><guilabel>Показване на оставащото време/проценти</guilabel></term>
+	      <listitem><para>Избирането на тази опция ще доведе до изобразяването на два вида информация. <guilabel>Показване на оставащото време</guilabel> ще показва колко часа и минути остават то пълното разреждане или зареждане на батерията. <guilabel>Показване на оставащите проценти</guilabel> ще показва колко процента заряд остава в батерията.</para></listitem>
+	    </varlistentry>
+	  </variablelist>
+	  </listitem>
+        </varlistentry>
+	<varlistentry>
+	 <term><guilabel>Уведомявания</guilabel></term>
+	  <listitem>
+	  <itemizedlist>
+	   <listitem><para><guilabel>Предупредително съобщение, когато заряда на батерията падне</guilabel></para>
+	   <para>Избирането на тази опция води до показване на диалогов прозорец с предупреждение, когато батерията достигне зададеното ниво в проценти или оставащи минути. Появата на прозореца показва достигане на критично ниско ниво на заряда на бетрията. Този диалогов прозорец може да бъде затворен от потребителя, или ще изчезне автоматично, когато включите лаптопа към захранване от ел.мрежа.</para>
+	   </listitem>
+	   <listitem>
+	    <para><guilabel>Съобщение, когато батерията е напълно презаредена</guilabel></para>
+	    <para>Избирането на тази опция води до показване на диалогов прозорец, уведомяващ, че батерията е напълно презаредена. Ако програмата е компилирана с поддръжката на библиотеката libnotify, то съобщението изскача от аплета в панела и не е толкова набиващо се на очи.</para>
+	   </listitem>
+	  </itemizedlist>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+   </sect1>
+
+   <sect1 id="battstat-troubleshooting">
+    <title>Решаване на проблеми</title>
+    
+    <para>Поради изключителната сложност на управлението на захранването и огромните разлики между различните подсистеми за това, откриването и изчистването на грешки в този аплет е трудно. Първата стъпка е да определите дали сте срещнали грешка точно в аплета или това е проблем на инфорацията, която хардуерът на Вашата машина подава.</para>
+    <para>Следната информация може да се окаже полезна при коригиране на проблемите с батерията. Списъкът е далеч от изчерпателен. Ако откриете проблем с аплета „Заряд на батерията“ (който не се дължи на невярната информация подавана от ACPI), молим Ви да го <ulink url="http://bugzilla.gnome.org/">докладвате</ulink>.</para>
+
+    <sect2 id="battstat-troubleshooting-backends">
+     <title>Определяне на подсистемата</title>
+     <para>Ако използвате слоя за абстракция на хардуера (HAL) (виж <xref linkend="battstat-power-backends"/>), това ще бъде указано в диалоговия прозорец „Относно“ със звездичка до името на автора на подсистемата за HAL. <figure id="battstat-credits-hal"> 
+      <title>Проверете дали използвате подсистемата HAL</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-credits-hal.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Разширен изглед</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para>
+
+     <para>
+      Other backends do not currently give indication they are being used, so
+      you will have to guess based on your hardware. Most modern PC laptops are
+      using ACPI as the backend. This is also the backend with the largest
+      number of inconsistencies.
+     </para>
+    </sect2>
+
+    <sect2 id="battstat-troubleshooting-acpi">
+      <title>Проверка на информацията от ACPI</title>
+      <para>Ако използвате подсистемата ACPI за аплета „Заряд на батерията“, от първостепенна важност е да проверите дали ACPI въобще дава вярна информация. Ако това не е така, може да Ви се наложи да обновите таблицата с описанието на разликите в системата (DSDT) или нещо друго свързано с ACPI.</para>
+      <example><title>Примерен изход от ACPI</title>
+       <screen>
+[rupert@laptop ~]$ cat /proc/acpi/battery/BAT1/info
+present:                 yes
+design capacity:         41040 mWh
+last full capacity:      37044 mWh
+battery technology:      rechargeable
+design voltage:          10800 mV
+design capacity warning: 745 mWh
+design capacity low:     0 mWh
+capacity granularity 1:  10 mWh
+capacity granularity 2:  10 mWh
+model number:            G71C00056110
+serial number:           0000000008
+battery type:            Li-ION
+OEM info:
+[rupert@laptop ~]$ cat /proc/acpi/battery/BAT1/state
+present:                 yes
+capacity state:          ok
+charging state:          discharging
+present rate:            11232 mW
+remaining capacity:      27140 mWh
+present voltage:         11400 mV
+[rupert@laptop ~]$</screen>
+      </example>
+      <para>Можете бързо да изчислите оставащия процент, като разделите стойността от реда <guilabel>remaining capacity</guilabel> (оставащ капацитет) на <guilabel>last full capacity</guilabel> (последен най-висок капацитет). По подобен начин можете да изчислите оставащото време като разделите <guilabel>remaining capacity</guilabel> на <guilabel>present rate</guilabel> (текуща скорост на консумация).</para>
+    </sect2>
+
+    <sect2 id="battstat-troubleshooting-nohal">
+      <title>Слой за абстракция на хардуера</title>
+      <para>Можете да проверите дали батерията Ви се открива от HAL чрез командата <command>hal-device-manager</command>. Ако тя не е засечена или получавате невярна информация за нея, можете да се опитате да изключите подсистемата за HAL чрез ключ в GConf.</para>
+      <para>Изберете <guimenuitem>Настройки на програмите</guimenuitem> в подменюто <guisubmenu>Системни инструменти</guisubmenu> на основното меню <guimenu>Програми</guimenu>. Потърсете следната стойност на ключ <prompt>OAFIID:GNOME_BattstatApplet</prompt>. Тя трябва да се намира в <filename>/apps/panel/applets</filename>.</para>
+      <para>Нека да предположим, че пътят е <filename>/apps/panel/applets/applet_1</filename>. Добавете <guimenuitem>Нов ключ...</guimenuitem> с име <guilabel>no_hal</guilabel> в <filename>/apps/panel/applets/applet_1/prefs</filename> и задайте типът му да е булева стойност, която да е „Лъжа“. Това ще изключи ползването на HAL (виж <xref linkend="battstat-troubleshooting-backends"/> как това може да се провери).</para>
+    </sect2>
+    
+   </sect1>
+
+</article>

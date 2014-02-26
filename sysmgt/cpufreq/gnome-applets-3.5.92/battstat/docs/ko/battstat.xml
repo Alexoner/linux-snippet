@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.12.0">
+<!ENTITY applet "Battery Charge Monitor">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ko">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>배터리 충전 정보 설명서</title> 
+    <abstract role="description">
+      <para>배터리 충전 정보는 배터리의 현재 충전량을 표시하고 충전량이 일정한 수치 밑으로 떨어졌을 때 알립니다.</para>
+    </abstract>
+    <copyright>
+      <year>2005</year>
+      <holder>Davyd Madeley</holder>
+    </copyright>
+    <copyright>
+      <year>2004</year>
+      <holder>Angela Boyle</holder>
+    </copyright>
+    <copyright>
+      <year>2004</year>
+      <holder>Sun Microsystems</holder>
+    </copyright>
+    <copyright>
+      <year>2002</year>
+      <holder>Trevor Curtis</holder>
+    </copyright>
+    <copyright> 
+      <year>1999</year> 
+      <year>2000</year> 
+      <holder>Jorgen Pehrson</holder> 
+    </copyright><copyright><year>2002.</year><holder>Sun Microsystems</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
+<!-- translators: uncomment this:
+
+    <copyright>
+     <year>2002</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+   -->
+
+    <publisher role="maintainer"> 
+      <publishername>그놈 문서 프로젝트</publishername> 
+    </publisher> 
+  
+      <legalnotice id="legalnotice">
+	<para>본 설명서는 프리 소프트웨어 재단(FSF)에서 발행한 GNU 자유 문서 라이센스(GFDL) 버전 1.1 이상의 조항에 따라 변경 불가 부분, 앞 표지 텍스트 및 뒷 표지 텍스트를 제외하고 복사, 수정 및/또는 배포할 수 있습니다. GFDL의 사본은 <ulink type="help" url="ghelp:fdl">링크</ulink> 또는 본 설명서와 함께 배포된 COPYING-DOCS 파일에서 찾을 수 있습니다.</para>
+         <para>본 설명서는 GFDL에 따라 배포된 그놈 설명서 컬렉션의 일부입니다. 본 설명서를 컬렉션과 별도로 배포하려는 경우에는 라이센스 조항 6에 따라 라이센스 사본을 설명서에 추가하면 됩니다.</para>
+
+	<para>기업의 제품과 서비스를 식별하기 위해 사용된 많은 이름은 상표로 간주됩니다. 그놈 문서에 사용된 이름과 그놈 문서 프로젝트의 구성원은 해당 상표로, 모두 대문자로 표시되거나 첫 글자가 대문자로 표시되어 있습니다.</para>
+
+	<para>문서 및 수정판은 다음 GNU 자유 문서 라이센스의 조항에 따라 제공됩니다. <orderedlist>
+		<listitem>
+		  <para>문서는 "있는 그대로"로 제공되며 상품성, 특정 목적에의 적합성 또는 준수에 대한 보증을 비롯한 일체의 명시적 또는 암시적인 보증을 제한 없이 부인합니다. 문서 및 수정판의 품질, 정확성 및 성능에 대한 책임은 전적으로 사용자에게 있습니다. 문서 또는 수정판에 대한 오류를 입증하려면 사용자(원저작자, 저작자 또는 배포자 아님)는 필요한 서비스, 수리 및 수정 비용을 부담해야 합니다. 본 보증 부인은 라이센스의 필수 부분에 해당합니다. 본 보증 부인을 따르지 않는 모든 문서나 수정판은 사용할 수 없습니다.</para>
+		</listitem>
+		<listitem>
+		  <para>또한 불법 행위(부주의 포함), 계약 또는 직접, 간접, 특별, 부수적 및 파생적인 모든 손해(영업권 손실, 작업 중지, 컴퓨터 오류 및 고장 또는 본 문서나 수정판의 사용으로 인해 발생하거나 관련된 기타 모든 손실 및 이러한 손실 가능성에 대해 미리 공지한 경우에도 제한되지 않음)에 대해서는 어떠한 상황이나 법률적인 이론 하에서도 본 문서 또는 수정판의 저작자, 원저자, 모든 배포자 또는 공급자는 책임을 지지 않습니다.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+    <authorgroup> 
+      <author>
+        <firstname>Sun</firstname>
+        <surname>그놈 문서 팀</surname>
+        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
+      </author>
+      <author>
+        <firstname>Trevor</firstname>
+        <surname>Curtis</surname>
+        <affiliation>
+          <orgname>그놈 문서 프로젝트</orgname>
+          <address> <email>tcurtis@somaradio.ca</email> </address>
+        </affiliation>
+      </author>
+      <author> 
+        <firstname>Jorgen</firstname> 
+        <surname>Pehrson</surname> 
+        <affiliation> 
+          <orgname>그놈 문서 프로젝트</orgname> 
+          <address> <email>jp@spektr.eu.org</email> </address> 
+        </affiliation> 
+      </author> 
+      <author>
+	<firstname>Angela</firstname>
+	<surname>Boyle</surname>
+	<affiliation>
+	  <orgname>그놈 문서 프로젝트</orgname>
+	</affiliation>
+      </author>
+      <author>
+        <firstname>Davyd</firstname>
+	<surname>Madeley</surname>
+	<affiliation>
+	  <orgname>그놈 프로젝트</orgname>
+	</affiliation>
+      </author>
+        <!-- This is appropriate place for other contributors: translators,
+             maintainers,  etc. Commented out by default.
+             <othercredit role="translator">
+	       <firstname>Latin</firstname> 
+	       <surname>Translator 1</surname> 
+	       <affiliation> 
+	         <orgname>Latin Translation Team</orgname> 
+	         <address> <email>translator@gnome.org</email> </address> 
+	       </affiliation>
+	       <contrib>Latin translation</contrib>
+             </othercredit>
+-->
+
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>버전 2.12</revnumber>
+	<date>2005년 9월</date>
+	<revdescription>
+	  <para role="author">Davyd Madeley</para>
+	</revdescription>
+      </revision>
+      <revision>
+        <revnumber>버전 2.10</revnumber>
+	<date>2005년 3월</date>
+	<revdescription>
+	 <para role="author">Davyd Madeley</para>
+	</revdescription>
+      </revision>
+      <revision>
+	<revnumber>버전 2.8</revnumber>
+	<date>2004년 9월</date>
+	<revdescription>
+	  <para role="author">Angela Boyle</para>
+	  <para role="publisher">그놈 문서 프로젝트</para>
+	</revdescription>
+      </revision>
+      <revision>
+        <revnumber>배터리 충전 정보 애플릿 설명서 버전 2.2</revnumber>
+        <date>2004년 8월</date>
+        <revdescription>
+          <para role="author">Sun 그놈 문서 팀</para>
+          <para role="publisher">그놈 문서 프로젝트</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>배터리 충전 정보 애플릿 설명서 버전 2.0</revnumber>
+        <date>2002년 5월</date>
+        <revdescription>
+          <para role="author">Trevor Curtis <email>tcurtis@somaradio.ca</email></para>
+          <para role="author">Jorgen Pehrson <email>jp@spektr.eu.org</email></para>
+          <para role="publisher">그놈 문서 프로젝트</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+                                                                                                  
+    <releaseinfo>이 설명서는 배터리 충전 정보 버전 2.12.0에 대해 설명합니다.</releaseinfo>
+                                                                                                  
+    <legalnotice>
+      <title>피드백</title>
+      <para>배터리 충전 정보 애플릿 또는 이 설명서에 대한 버그를 보고하거나 의견을 제시하려면 <ulink url="ghelp:gnome-feedback" type="help">그놈 피드백 페이지</ulink>에 있는 대로 하십시오.</para>
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+	 <primary>배터리 충전 정보 애플릿</primary> 
+  </indexterm> 
+
+  <indexterm zone="index"> 
+	 <primary>배터리 상태 애플릿</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="battstat-introduction"> 
+    <title>소개</title> 
+
+    <figure id="battstat-applet-fig"> 
+      <title>배터리 충전 정보 애플릿</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>배터리 충전 정보 애플릿.</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+
+    <para><application>배터리 충전 정보</application> 애플릿은 노트북 컴퓨터의 배터리 상태를 표시합니다. 남은 용량을 그림과 퍼센트 값으로 표시하고, 또 현재 소모하는 속도에 따라 남은 시간을 예측해서 표시합니다.</para>
+
+    <sect2 id="battstat-introduction-add">
+      <title>배터리 충전 정보를 패널에 추가하려면</title>
+      <para><application>배터리 충전 정보</application>를 패널에 추가하려면, 패널에 마우스 오른쪽 단추를 눌러 <guimenuitem>패널에 추가</guimenuitem>를 선택하십시오. <application>패널에 추가</application> 대화 상자에서 <application>배터리 충전 정보</application>를 선택하고, <guibutton>확인</guibutton>을 누르십시오.</para>
+      <para><application>배터리 충전 정보</application> 애플릿의 모양은 애플릿이 들어 있는 패널의 크기와 종류에 따라 달라집니다.</para>
+    </sect2>
+
+    <sect2 id="battstat-power-backends">
+     <title>전원 관리 백엔드</title>
+
+     <para>
+      The battery monitor supports a number of power management backends. If it
+      is available, the monitor will attempt to use the freedesktop.org
+      <ulink url="http://freedesktop.org/Software/hal">HAL (Hardware Abstraction
+      Layer)</ulink>. If it is unavailable or unsupported on your platform, the
+      battery monitor will attempt direct access to the power management system.
+     </para>
+     <para>모든 제조사의 제품에 모든 종류의 전원 관리 백엔드를 사용할 수는 없습니다. 그리고 일부 제조사들은 특정 플랫폼과 하드웨어에 따라 백엔드를 추가로 직접 만들어 넣기도 합니다. 배터리 정보 애플릿에서 배터리의 정보를 잘못 읽는 경우 <xref linkend="battstat-troubleshooting"/> 부분을 참고하십시오.</para>
+    </sect2>
+
+    <sect2 id="battstat-getting-help">
+      <title>도움 받기</title>
+      <para>배터리 정보 애플릿이 동작하지 않으면, 다음에서 기타 정보를 참고하십시오:</para>
+      <itemizedlist>
+       <listitem><para><xref linkend="battstat-troubleshooting"/>;</para></listitem>
+       <listitem><para>
+        <ulink url="http://mail.gnome.org/archives/">그놈 메일링 리스트</ulink>
+       </para></listitem>
+      </itemizedlist>
+    </sect2>
+
+</sect1>
+
+<!-- ================ Customizing the Appearance ========================= -->
+
+  <sect1 id="battstat-appearance">
+    <title>기본 설정</title>
+          <para>배터리 정보 애플릿의 기본 설정을 열려면, 패널의 애플릿에 마우스 오른쪽 단추를 누르고 <guimenuitem>기본 설정</guimenuitem>을 선택하십시오.</para>
+    <figure id="battstat-applet-prefs-menu"> 
+      <title>배터리 충전 정보 컨텍스트 (오른쪽 단추) 메뉴</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/context-menu.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>배터리 충전 정보 컨텍스트 메뉴</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+    <figure id="battstat-applet-prefs"> 
+      <title>기본 설정 대화 상자</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-preferences.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>기본 설정 대화 상자</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>모양</guilabel></term>
+	  <listitem>
+	  <variablelist>
+	    <varlistentry>
+	      <term><guilabel>간략히 보기</guilabel></term>
+	      <listitem><para>이 모드에서는 패널에 한 개의 그림만 표시합니다. 세로로 된 배터리로 남은 용량을 표시하거나, 노트북을 외부 전원에 연결한 경우 플러그를 표시합니다. <figure id="battstat-applet-compact"> 
+      <title>간략히 보기</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>간략히 보기</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para>
+	      <para>그놈 2.12부터 간략히 보기가 배터리 정보 애플릿의 기본값입니다.</para></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><guilabel>늘려 보기</guilabel></term>
+	      <listitem><para>늘려 보기는 예전 버전의 그놈에서 기본값 모양입니다. 배터리 그래픽도 더 크고, 배터리가 연결된 상태를 알리는 그래픽이 따로 있습니다. <figure id="battstat-applet-expanded"> 
+      <title>늘려 보기</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet-expanded.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>늘려 보기</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><guilabel>시간/퍼센트 표시</guilabel></term>
+	      <listitem><para>이 옵션을 선택하면 둘 중의 한 가지 정보를 표시합니다. <guilabel>남은 시간 표시</guilabel>를 사용하면 배터리가 완전히 방전 혹은 충전될때까지 몇 시간 몇 분이 남았는 지 표시하고, <guilabel>남은 퍼센트 표시</guilabel>를 사용하면 배터리의 남은 충전량을 퍼센트로 표시합니다.</para></listitem>
+	    </varlistentry>
+	  </variablelist>
+	  </listitem>
+        </varlistentry>
+	<varlistentry>
+	 <term><guilabel>알림</guilabel></term>
+	  <listitem>
+	  <itemizedlist>
+	   <listitem><para><guilabel>배터리 충전량이 다음까지 떨어지면 경고</guilabel></para>
+	   <para>이 옵션을 사용하면 노트북의 배터리가 지정한 값이 (퍼센트 혹은 남은 시간이) 되면 경고 대화 상자를 표시합니다. 이 대화 상자는 배터리의 남은 충전량이 위험하게 낮다는 뜻입니다. 이 대화 상자를 직접 닫을 수도 있고, 노트북의 전원을 연결해도 자동으로 사라집니다.</para>
+	   </listitem>
+	   <listitem>
+	    <para><guilabel>배터리가 완전히 충전되면 알림</guilabel></para>
+	    <para>이 옵션을 사용하면 배터리를 완전히 충전했을 때 알립니다. 배터리 충전 정보를 libnotify 기능을 넣어서 컴파일한 경우 패널의 애플릿에서 알림 메세지를 표시합니다.</para>
+	   </listitem>
+	  </itemizedlist>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+   </sect1>
+
+   <sect1 id="battstat-troubleshooting">
+    <title>문제 해결</title>
+    
+    <para>전원 관리는 복잡하고 여러가지 전원 관리 시스템마다 많은 차이가 있기 때문에, 배터리 정보 애플릿의 오류는 디버깅하기 힘들 수도 있습니다. 먼저 해당 오류가 배터리 정보 애플릿의 오류인지 컴퓨터에서 읽은 정보의 버그인지 확인해야 합니다.</para>
+    <para>배터리 정보 애플릿이 잘못되었을 때 문제 해결에 다음 정보가 유용할 수 있습니다. 전혀 긴 내용이 아닙니다. 배터리 충전량 정보 애플릿의 버그를 발견하면 (ACPI에서 읽은 정보가 잘못되더라도 버그가 발생하지 않습니다), <ulink url="http://bugzilla.gnome.org/">알려 주십시오</ulink>.</para>
+
+    <sect2 id="battstat-troubleshooting-backends">
+     <title>백엔드 설정하기</title>
+     <para>HAL(Hardware Abstraction Layer)을 사용한다면 (<xref linkend="battstat-power-backends"/> 참고), 정보 대화 상자에 HAL 백엔드 개발자 옆에 별표가 붙어 있는 걸로 확인할 수 있습니다. <figure id="battstat-credits-hal"> 
+      <title>HAL 백엔드를 사용하는지 확인</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-credits-hal.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>늘려 보기</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para>
+
+     <para>
+      Other backends do not currently give indication they are being used, so
+      you will have to guess based on your hardware. Most modern PC laptops are
+      using ACPI as the backend. This is also the backend with the largest
+      number of inconsistencies.
+     </para>
+    </sect2>
+
+    <sect2 id="battstat-troubleshooting-acpi">
+      <title>ACPI 정보 검사하기</title>
+      <para>배터리 충전 정보에 ACPI 백엔드를 사용한다면, ACPI에서 올바른 정보를 검사하는 지 확인하는 게 중요합니다. 그렇지 않은 경우에 DSDT나 기타 ACPI와 관련된 사항의 업그레이드를 고려해 보아야 합니다.</para>
+      <example><title>예제 ACPI 출력</title>
+       <screen>
+[rupert@laptop ~]$ cat /proc/acpi/battery/BAT1/info
+present:                 yes
+design capacity:         41040 mWh
+last full capacity:      37044 mWh
+battery technology:      rechargeable
+design voltage:          10800 mV
+design capacity warning: 745 mWh
+design capacity low:     0 mWh
+capacity granularity 1:  10 mWh
+capacity granularity 2:  10 mWh
+model number:            G71C00056110
+serial number:           0000000008
+battery type:            Li-ION
+OEM info:
+[rupert@laptop ~]$ cat /proc/acpi/battery/BAT1/state
+present:                 yes
+capacity state:          ok
+charging state:          discharging
+present rate:            11232 mW
+remaining capacity:      27140 mWh
+present voltage:         11400 mV
+[rupert@laptop ~]$</screen>
+      </example>
+      <para>남은 퍼센트를 계산하려면 <guilabel>remaining capacity</guilabel>를 <guilabel>last full capacity</guilabel>로 나눕니다. 남은 시간을 계산하려면 <guilabel>remaining capacity</guilabel>를 <guilabel>present rate</guilabel>로 나눕니다.</para>
+    </sect2>
+
+    <sect2 id="battstat-troubleshooting-nohal">
+      <title>하드웨어 추상화 레이어</title>
+      <para><command>hal-device-manager</command> 명령으로 HAL이 배터리를 인식했는 지 확인할 수 있습니다. HAL에서 배터리를 인식하지 못했거나 잘못된 정보를 읽는 경우, GConf 키를 설정해서 HAL을 사용하지 않게 만들 수 있습니다.</para>
+      <para><guimenu>프로그램</guimenu> 메뉴의 <guisubmenu>시스템 도구</guisubmenu>에서 <guimenu>설정 편집기</guimenu>를 선택하십시오. <filename>/apps/panel/applets</filename> 경로 밑에 들어 있는 <prompt>OAFIID:GNOME_BattstatApplet</prompt> 키 값을 찾으십시오.</para>
+      <para>경로가 <filename>/apps/panel/applets/applet_1</filename>이라고 가정합니다. <filename>/apps/panel/applets/applet_1/prefs</filename>에서 <guilabel>no_hal</guilabel>이라는 <guimenuitem>새 키...</guimenuitem>를 추가하고 그 값을 불리언 값 참으로 설정하십시오. 그러면 HAL을 사용하지 않게 됩니다. (확인하는 방법은 <xref linkend="battstat-troubleshooting-backends"/> 부분을 참고하십시오.)</para>
+    </sect2>
+    
+   </sect1>
+
+</article>

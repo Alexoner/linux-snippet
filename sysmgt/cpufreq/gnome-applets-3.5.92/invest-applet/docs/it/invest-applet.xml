@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "3.2.0">
+<!ENTITY manrevision "1.0">
+<!ENTITY date "September 2011">
+<!ENTITY app "Invest">
+<!ENTITY panel-help SYSTEM "/usr/share/gnome/help/user-guide/C/user-guide.xml">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="it">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Manuale di Investimenti</title>       
+
+    <copyright>
+      <year>2004</year>
+      <year>2005</year>
+      <holder>Raphael Slinckx</holder>
+    </copyright>
+    <copyright> 
+      <year>2007</year>
+      <holder>Terrence Hall</holder> 
+    </copyright> 
+    <copyright>
+      <year>2010</year>
+      <year>2011</year>
+      <holder>Enrico Minack</holder>
+    </copyright><copyright><year>2010</year><holder>Giuseppe D'Andrea (cryptstudent@yahoo.com)</holder></copyright>
+
+
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+   -->
+
+    <publisher role="maintainer"> 
+      <publishername>GNOME Documentation Project</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>È concessa l'autorizzazione di copiare, distribuire e/o modificare questo documento sotto i termini della GNU Free Documentation License (GFDL), Versione 1.1 o qualsiasi altra versione pubblicata dalla Free Software Foundation senza sezioni invariabili, frontespizi e testi di copertina. Potete trovare copia della GFDL a questo <ulink type="help" url="ghelp:fdl">link</ulink> o nel file COPYNG-DOCS distribuito con questo manuale.</para>
+         <para>Questo manuale fa parte della collana di manuali di GNOME distribuita sotto GFDL. La distribuzione di questo testo separatamente dalla suddetta collana è permesso allegando copia della licenza al manuale, come descritto nella sezione 6 della licenza stessa.</para>
+
+	<para>Molti dei nomi usati dalle compagnie per contraddistinguere i propri prodotti e servizi sono rivendicati come marchi di fabbrica. Quando questi nomi appaiono in una qualsiasi documentazione GNOME ed i membri del GNOME Documentation Project sono coscienti di trovarsi in presenza di marchi di fabbrica, questi nomi verranno indicati in lettere maiuscole o con la lettera iniziale in maiuscolo.</para>
+
+	<para>IL DOCUMENTO E LE VERSIONI MODIFICATE SONO FORNITE SOTTO I TERMINI DELLA GNU FREE DOCUMENTATION LICENSE CON L'INTESA CHE: <orderedlist>
+		<listitem>
+		  <para>IL DOCUMENTO È PROVVISTO SULLA BASE DEL "VISTO E PIACIUTO", SENZA GARANZIE DI NESSUN TIPO, SIANO ESSE IMPLICITE O ESPRESSE, SENZA LIMITAZIONI, SENZA GARANZIE CHE IL DOCUMENTO O LA SUA VERSIONE MODIFICATA SIANO PRIVI DI DIFETTI COMMERCIALIZZABILI, IDONEI AD UN DETERMINATO SCOPO O CHE NON VIOLINO DIRITTI DI TERZI. I RISCHI INERENTI LA QUALITÀ, L'ACCURATEZZA E LA RESA DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA SONO DA CONSIDERARSI A CARICO DELL' UTENTE. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA SI DIMOSTRASSERO NON IDONEI SOTTO UN QUALSIASI ASPETTO, OGNI SPESA INERENTE A COSTI DI ASSISTENZA, RIPARAZIONE O CORREZIONE GRAVERÀ SULL' UTENTE (NON DEL REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I TERMINI DI SUDDETTA LIMITAZIONE.</para>
+		</listitem>
+		<listitem>
+		  <para>IN NESSUNA CIRCOSTANZA E PER NESSUNA RAGIONE LEGALE, OVVERO COLPA (NEGLIGENZA COMPRESA), ACCORDO CONTRATTUALE O ALTRO, SARÀ POSSIBILE CONSIDERARE L'AUTORE, IL REDATTORE INIZIALE, GLI ALTRI COLLABORATORI, QUALSIASI DISTRIBUTORE DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA O QUALUNQUE FORNITORE DELLE PERSONE CITATE, RESPONSABILE NEI CONFRONTI DI QUALSIASI SOGGETTO PER DANNI DIRETTI, INDIRETTI, SPECIALI, INCIDENTALI O CONSEGUENTI DI QUALUNQUE NATURA, INCLUSI, MA SENZA LIMITAZIONE, I DANNI PER PERDITA DI AVVIAMENTO, INTERRUZIONE DEL LAVORO, GUASTO O MALFUNZIONAMENTO DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE CITATE FOSSERO STATE INFORMATE DELLA POSSIBILITÀ DI TALI DANNI.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+  <authorgroup> 
+    <author>
+      <firstname/>
+      <surname>GNOME Documentation Team</surname>
+    </author>
+    <author> 
+      <firstname>Terrence</firstname> 
+      <surname>Hall</surname> 
+      <affiliation><address><email>teebob21@gmail.com</email></address></affiliation> 
+    </author> 
+    <author>
+      <firstname>Enrico</firstname>
+      <surname>Minack</surname>
+      <affiliation><address><email>enrico-minack@gmx.de</email></address></affiliation>
+    </author>
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+    <othercredit role="translator">
+      <firstname>Latin</firstname> 
+      <surname>Translator 1</surname> 
+      <affiliation> 
+	<orgname>Latin Translation Team</orgname> 
+	<address> <email>translator@gnome.org</email> </address> 
+      </affiliation>
+      <contrib>Latin translation</contrib>
+    </othercredit>
+-->
+    </authorgroup>
+	
+    <revhistory>
+      <revision> 
+	<revnumber/>
+	<date/>
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>This manual describes version 3.2.0 of Invest.
+    </releaseinfo> 
+
+    <legalnotice> 
+      <title>Commenti</title> 
+      <para>Per segnalare un bug o indicare suggerimenti riguardanti Investimenti o questo manuale, seguire le indicazioni nella <ulink url="ghelp:gnome-feedback" type="help">pagina commenti di GNOME </ulink>.</para>
+
+<!-- Translators may also add here feedback address for translations -->
+
+    </legalnotice> 
+    <abstract role="description">
+      <para>Manuale utente di Investimenti</para>
+
+    </abstract>
+
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>Investimenti</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>Applet Investimenti</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+ <!-- ============= Introduction ============================== -->
+
+  <sect1 id="invest-applet-intro">
+    <title>Introduzione</title>
+
+    <para>
+      The <application>Invest</application> GNOME panel applet downloads current quotes for stocks, stock indices, currencies and precious metals. Quotes are downloaded from <ulink url="http://finance.yahoo.com">Yahoo! Finance</ulink> and are displayed in a drop-down list.
+    </para>
+    <para>
+      <application>Invest</application> provides the following features:
+    </para>
+	<itemizedlist>
+            <listitem>
+              <para>
+                Retrieve quotes for any stock, stock index, currency or precious metal known by <ulink url="http://finance.yahoo.com">Yahoo! Finance</ulink>
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Quotes are automatically updated every 15 minutes
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                The current price, today's change, and a chart of today's changes are displayed
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+		The currency of the quote is displayed, and if configured, automatically translated into a target currency
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                The amount of the increase or decrease in the price since purchase, also translatable into the target currency
+              </para>
+            </listitem>
+            <listitem>
+              <para>La percentuale di incremento o decremento del prezzo dal momento dell'acquisto</para>
+            </listitem>
+	</itemizedlist>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="invest-applet-getting-started">
+    <title>Per iniziare</title>
+
+                                                                                
+<!-- ============= To Start Invest ============================ -->
+    <sect2 id="invest-applet-to-add">
+      <title>Aggiungere Investimenti ad un pannello</title>
+      <para>Per aggiungere <application>Investimenti</application> a un pannello di GNOME, fare clic con il tasto destro del mouse su un pannello e scegliere <guilabel>Aggiungi al pannello</guilabel>. Selezionare <application>Investimenti</application> nella schermata <guilabel>Aggiungi al pannello</guilabel>, poi fare clic su <guilabel>OK</guilabel>. Fare clic su <guilabel>Chiudi</guilabel> quando finito.</para>
+    </sect2>
+    <sect2 id="invest-applet-to-remove">
+      <title>Rimuovere Investimenti da un pannello</title>
+      <para>Per rimuovere <application>Investimenti</application> da un pannello di GNOME, fare clic con il tasto destro del mouse sull'icona presente sul pannello, poi selezionare <guilabel>Rimuovi dal pannello</guilabel>.</para>
+    </sect2>
+    <sect2 id="additional-applet-help">
+      <title>Ulteriori informazioni</title>
+      <para>Ulteriori informazioni riguardanti il pannello di GNOME possono essere trovate nella <ulink url="ghelp:user-guide?panels" type="help">Documentazione del pannelloGNOME</ulink>.</para>
+    </sect2>
+  </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="invest-applet-usage">
+    <title>Usare Investimenti</title>
+    <para>Before the applet can provide you with recent quotes, you have
+	to configure it. Quotes can come from different stock exchange
+	centers around the world, so the prices can have different currencies.
+	The automatic translation of currencies can be configured, as well as the translation
+	of your purchases done in different countries. Finally, charts are
+	available for each of your configured quote.
+    </para>
+
+    <sect2 id="invest-applet-configure-quotes">
+      <title>Configure your Quotes</title>
+
+    <sect3 id="invest-applet-add-stocks">
+
+      <title>Add New Quotes to the Applet</title>
+
+      <para>
+        To add new quotes to <application>Invest</application>, perform the following steps:
+      </para>
+      <orderedlist>
+        <listitem>
+          <para>Fare clic con il tasto destro del mouse sull'icona e selezionare <guilabel>Preferenze</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>
+            Click <guilabel>Add</guilabel> to add a quote to <application>Invest</application>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            The default quote is GOOG. It is initially selected for editing so that you can instantly change it.
+		Enter the <guilabel>Symbol</guilabel> of the quote here. If you do not know the symbol
+		of your desired quote, see below.
+          </para>
+        </listitem>
+	<listitem>
+	  <para>
+	    Then, click on the <guilabel>Label</guilabel> of the quote and type its proper name.
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    You can also edit the number of shares you own, the purchase price and the commission.
+	  </para>
+	</listitem>
+        <listitem>
+          <para>
+            Click <guilabel>Close</guilabel> when you are finished adding quotes.
+          </para>
+        </listitem>
+      </orderedlist>
+	<para>
+	If you do not know the actual symbol of your quote, go to <ulink url="http://finance.yahoo.com/">http://finance.yahoo.com/</ulink>.
+	Enter the name of the quote in the text field in the upper-left corner of the screen. While typing, it will list
+	you matching quotes. The first column depicts the symbol of the quote, the second column shows the name,
+	and in the third column, the stock exchange of the quote is listed. The currency of the quote may vary among
+	different stock exchange centers, depending on their respective countries. Below, you can see a screenshot of
+	searching for the "yahoo" quote.
+	</para>
+
+	<para>
+	<mediaobject><imageobject>
+	  <imagedata format="PNG" fileref="figures/symbol-search.png"/>
+	</imageobject></mediaobject>
+	Screenshot of Yahoo! Finance when searching a quote.
+	</para>
+
+	<para>
+	Invest supports all quotes that can be found at <ulink url="http://finance.yahoo.com/">Yahoo! Finance</ulink>.
+	In particular, these are of the following type.
+	</para>
+	<formalpara>
+	  <title>Stocks, Bonds and Securities</title>
+          <para> These are the majority of quotes that are available. Search or browse on
+		<ulink url="http://finance.yahoo.com/">Yahoo! Finance</ulink> to find out what is there.
+          </para>
+	</formalpara>
+	<formalpara>
+	  <title>Stock Indices</title>
+          <para> All quotes that start with an ^ are actually indices, a quote that represents a number of other quotes' performance.
+		Examples are the Dow Jones Industrial Average (<ulink url="http://finance.yahoo.com/q?s=^DJI">^DJI</ulink>) and the
+		NASDAQ Composite (<ulink url="http://finance.yahoo.com/q?s=^IXIC">^IXIC</ulink>).
+          </para>
+	</formalpara>
+	<formalpara>
+	  <title>Currencie rates</title>
+          <para> Exchange rates between any two currencies are also available. The respective symbol is constructured as follows.
+		Currency AAA in currency BBB, or in other words, how much does currency AAA cost in currency BBB, has the symbol AAABBB=X.
+		If you want to know how much EUR you get for one USD (how much does one USD cost in EUR),
+		you choose <ulink url="http://finance.yahoo.com/q?s=usdeur%3DX">USDEUR=X</ulink>.
+		You can find more information at the <ulink url="http://finance.yahoo.com/currency-investing">currency page of Yahoo! Finance</ulink>.
+		Currencies are represented using their <ulink url="http://en.wikipedia.org/wiki/Currency_code">ISO 4217 currency code</ulink>.
+          </para>
+	</formalpara>
+	<formalpara>
+	  <title>Precious Metals</title>
+          <para>
+		The <ulink url="http://en.wikipedia.org/wiki/Currency_code">ISO 4217 currency code</ulink> also
+		lists precious metals as currencies. These are Gold, Silver, Palladium and Platinum. Their
+		currency code starts with X, followed by their chemical symbol: XAU, XAG, XPD, and XPT, respectively.
+		With those currency codes, the rate of precious metals in any currency are available via the currency rates described above.
+		To give an example, Gold in USD has the symbol <ulink url="http://finance.yahoo.com/q?s=XAUUSD%3DX">XAUUSD=X</ulink>.
+		You can even get the reverse (<ulink url="http://finance.yahoo.com/q?s=USDXAU%3DX">USDXAU=X</ulink>):
+		how much Gold measured in troy ounce do you get for one USD?
+          </para>
+	</formalpara>
+    </sect3>
+    <sect3 id="invest-applet-to-view-stocks">
+      <title>View Configured Quotes</title>
+      <para>To view your configured quotes, click on the <application>Invest</application> icon on the panel. A list of your quotes will appear. To close the list, click the icon again. Notice that quotes are usually 15 minutes delay.
+      </para>
+    </sect3>
+
+    <sect3 id="invest-applet-to-refresh-stocks">
+
+      <title>Aggiornare la visualizzazione</title>
+      <para>Per aggiornare immediatamente le informazioni mostrate in Investimenti, fare clic con il tasto destro del mouse sull'icona del pannello, quindi selezionare <guilabel>Aggiorna</guilabel>.</para>
+    </sect3>
+    <sect3 id="invest-applet-to-remove-stocks">
+       <title>Remove Quotes from the Applet</title>
+      <para>
+        To remove quotes from <application>Invest</application>, perform the following steps:
+      </para>
+      <orderedlist>
+        <listitem>
+          <para>Fare clic con il tasto destro del mouse sull'icona e selezionare <guilabel>Preferenze</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>
+            Click the row containing the quote you wish to remove.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Fare clic su <guilabel>Rimuovi</guilabel> per cancellare la quotazione dall'elenco.</para>
+        </listitem>
+        <listitem>
+          <para>Fare clic su<guilabel>Chiudi</guilabel> quando terminato.</para>
+        </listitem>
+      </orderedlist> 
+    </sect3>
+   </sect2>
+
+    <sect2 id="invest-applet-configure-currencies">
+      <title>Setup Currency Translation</title>
+      <para>Invest displays all quotes in their original currency as retrieved from Yahoo! Finance.
+	If you wish to have all quotes being displayed in one target currency, this can be configured
+	in the preferences dialog.
+      </para>
+      <orderedlist>
+        <listitem>
+          <para>Fare clic con il tasto destro del mouse sull'icona e selezionare <guilabel>Preferenze</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>
+            Type the target currency into the <guilabel>Currency</guilabel> text field.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            While you type, the text field will suggest currencies that match entered currency.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Choose your target currency.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Notice that in your quote list the new <guilabel>Currency Rate</guilabel> column appears.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            For all purchases where the <guilabel>Price</guilabel> and <guilabel>Commission</guilabel>
+		are given in original currency, the exchange rate at the time of purchase from the origin currency
+		to the target currency has to be given in the <guilabel>Currency Rate</guilabel> field.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Fare clic su<guilabel>Chiudi</guilabel> quando terminato.</para>
+        </listitem>
+      </orderedlist>
+      <para>
+	Lets look at this example: You bought one Yahoo! share (YHOO) for 10.00 USD at a currency rate of
+	0.75 EUR per USD. In other words, the share cost 7.50 EUR. You further paid 5.00 USD comission,
+	equivalent to 3.75 EUR. When you set the target currency to EUR, you either have to enter the
+	EUR (target currency) values and keep the <guilabel>Currency Rate</guilabel> at 0.00, or you enter
+	the USD (original currency) values and enter the EUR per USD exchange rate
+	(<ulink url="http://finance.yahoo.com/q?s=eurusd%3DX">USDEUR=X</ulink>).
+      </para>
+      <tip>
+        <para>The <guilabel>Price</guilabel> and <guilabel>Commission</guilabel> both have to be given in the same currency.
+        </para>
+      </tip>
+      <para>If you want to remove the target currency again, simply clear the <guilabel>Currency</guilabel> text field.
+      </para>
+   </sect2>
+
+    <sect2 id="invest-applet-stock-charts-options">
+      <title>Opzioni grafico</title>
+      <para>For each quote in your list, a financial chart is available. To open the financial chart, view the list of configured quotes, and double-click the quote that you wish to chart. The chart parameters can be customized by clicking <guilabel>Options</guilabel>.
+      </para>
+	<sect3 id="invest-applet-stock-chart-options-date">
+	<title>Intervallo di tempo</title>
+              <para>
+                The date range, in the top-right corner of the window,
+      selects the length of time to report on. By default, it gives one
+      day of data, but the following ranges can be choosen: <guilabel>Today</guilabel>, <guilabel>5 Days</guilabel>,
+		<guilabel>3 Months</guilabel>, <guilabel>6 Months</guilabel>, <guilabel>1 Year</guilabel>,
+		<guilabel>5 Years</guilabel>, <guilabel>Maximum</guilabel>.
+              </para>
+
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-graph">
+	<title>Stile del grafico</title>
+              <para>I dati storici riguardanti il prezzo possono essere rappresentati graficamente in tre modi diversi. È possibile scegliere fra grafici a linee, grafici a barre e grafici a candela.</para>
+	  <itemizedlist>
+            <listitem>
+              <para>
+                <guilabel>Line Chart</guilabel> (<guilabel>l</guilabel>)
+              </para>
+	      <para>This is the default option. This graphs the historical price information in a familiar manner, connecting each day's closing price with a single line. Line charts for graphing quotes are useful if an analyst is interested only in a closing price each time.</para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Bar Chart</guilabel> (<guilabel>b</guilabel>)
+              </para>
+	      <para>A bar chart represents a full day's activity with a single vertical bar. The top of the vertical line indicates the highest price a security traded during the day, and the bottom represents the lowest price. The closing price is displayed on the right side of the bar, and the opening price is shown on the left side of the bar. One bar represents one day of trading.</para>
+            </listitem>
+            <listitem>
+              <para>
+                <guilabel>Candlestick Chart</guilabel> (<guilabel>c</guilabel>)
+              </para>
+	      <para>Nel grafico a candela, il prezzo di apertura e quello di chiusura vengono collocati ai vertici opposti di un rettangolo, dai quali vengono tracciate singole linee verticali, che indicheranno la fluttuazione massima e quella minima del prezzo azionario durante la contrattazione giornaliera. Se l'interno del rettangolo è colorato il prezzo di chiusura è più basso del prezzo di apertura, se il corpo del rettangolo è vuoto il prezzo di chiusura è più alto rispetto a quello apertura.</para>
+
+            </listitem>
+	</itemizedlist>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-ma">
+	<title>Media mobile</title>
+              <para>
+                A moving average is a statistical series of a security's closing prices throughout consecutive trading days. It is typically shown in the same graph as a line chart to indicate trends in prices.
+              </para>
+	</sect3>
+
+	<sect3 id="invest-applet-stock-chart-options-ema">
+	<title>Media mobile esponenziale</title>
+              <para>La media mobile esponenziale (EMA) è una media mobile calcolata dando maggior rilevanza ai valori recenti rispetto a quelli più vecchi. Questo tipo di media mobile reagisce in maniera più rapida alla variazione dei prezzi, rispetto alla media mobile semplice. Le EMA calcolate su 12 e 26 giorni sono famose medie a breve termine, mentre quelle superiori ai 50 giorni sono utilizzate per indicare gli andamenti di lungo periodo.</para>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-overlays">
+	<title>Sovrapposizioni</title>
+              <para>
+                Overlays allow you to graph multiple statistical measurements onto a single chart. For example, you can compare the performance of a single quote against that of an index such as the NASDAQ or the DJIA.
+              </para>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-indicators">
+	<title>Indicatori</title>
+              <para>Gli indicatori sono usati per cercare di predire futuri trend finanziari. Il corretto uso degli indicatori di mercato è argomento che va al di là dello scopo del manuale di Investimenti.</para>
+
+	</sect3>
+    </sect2>
+  </sect1>
+</article>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.12.0">
+<!ENTITY applet "Battery Charge Monitor">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sv">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Handbok för Batteriövervakare</title> 
+    <abstract role="description">
+      <para>Batteriövervakaren visar aktuell laddning av batteriet och tillhandahåller notifieringar om laddningen går under ett förinställt värde.</para>
+    </abstract>
+    <copyright>
+      <year>2005</year>
+      <holder>Davyd Madeley</holder>
+    </copyright>
+    <copyright>
+      <year>2004</year>
+      <holder>Angela Boyle</holder>
+    </copyright>
+    <copyright>
+      <year>2004</year>
+      <holder>Sun Microsystems</holder>
+    </copyright>
+    <copyright>
+      <year>2002</year>
+      <holder>Trevor Curtis</holder>
+    </copyright>
+    <copyright> 
+      <year>1999</year> 
+      <year>2000</year> 
+      <holder>Jorgen Pehrson</holder> 
+    </copyright><copyright><year>2006, 2008</year><holder>Daniel Nylander (po@danielnylander.se)</holder></copyright>
+<!-- translators: uncomment this:
+
+    <copyright>
+     <year>2002</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+   -->
+
+    <publisher role="maintainer"> 
+      <publishername>Dokumentationsprojekt för GNOME</publishername> 
+    </publisher> 
+  
+      <legalnotice id="legalnotice">
+	<para>Tillstånd att kopiera, distribuera och/eller modifiera detta dokument ges under villkoren i GNU Free Documentation License (GFDL), version 1.1 eller senare, utgivet av Free Software Foundation utan standardavsnitt och omslagstexter.  En kopia av GFDL finns att hämta på denna <ulink type="help" url="ghelp:fdl">länk</ulink> eller i filen COPYING-DOCS som medföljer denna handbok.</para>
+         <para>Denna handbok utgör en av flera GNOME-handböcker som distribueras under villkoren i GFDL.  Om du vill distribuera denna handbok separat från övriga handböcker kan du göra detta genom att lägga till en kopia av licensavtalet i handboken enligt instruktionerna i avsnitt 6 i licensavtalet.</para>
+
+	<para>Flera namn på produkter och tjänster är registrerade varumärken. I de fall dessa namn förekommer i GNOME-dokumentation - och medlemmarna i GNOME-dokumentationsprojektet är medvetna om dessa varumärken - är de skrivna med versaler eller med inledande versal.</para>
+
+	<para>DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET TILLHANDAHÅLLS UNDER VILLKOREN I GNU FREE DOCUMENTATION LICENSE ENDAST UNDER FÖLJANDE FÖRUTSÄTTNINGAR: <orderedlist>
+		<listitem>
+		  <para>DOKUMENTET TILLHANDAHÅLLS I "BEFINTLIGT SKICK" UTAN NÅGRA SOM HELST GARANTIER, VARE SIG UTTRYCKLIGA ELLER UNDERFÖRSTÅDDA, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, GARANTIER ATT DOKUMENTET ELLER EN MODIFIERAD VERSION AV DOKUMENTET INTE INNEHÅLLER NÅGRA FELAKTIGHETER, ÄR LÄMPLIGT FÖR ETT VISST ÄNDAMÅL ELLER INTE STRIDER MOT LAG. HELA RISKEN VAD GÄLLER KVALITET, EXAKTHET OCH UTFÖRANDE AV DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET LIGGER HELT OCH HÅLLET PÅ ANVÄNDAREN. OM ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT SKULLE VISA SIG INNEHÅLLA FELAKTIGHETER I NÅGOT HÄNSEENDE ÄR DET DU (INTE DEN URSPRUNGLIGA SKRIBENTEN, FÖRFATTAREN ELLER NÅGON ANNAN MEDARBETARE) SOM FÅR STÅ FÖR ALLA EVENTUELLA KOSTNADER FÖR SERVICE, REPARATIONER ELLER KORRIGERINGAR. DENNA GARANTIFRISKRIVNING UTGÖR EN VÄSENTLIG DEL AV DETTA LICENSAVTAL. DETTA INNEBÄR ATT ALL ANVÄNDNING AV ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT BEVILJAS ENDAST UNDER DENNA ANSVARSFRISKRIVNING;</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER INGA OMSTÄNDIGHETER ELLER INOM RAMEN FÖR NÅGON LAGSTIFTNING, OAVSETT OM DET GÄLLER KRÄNKNING (INKLUSIVE VÅRDSLÖSHET), KONTRAKT ELLER DYLIKT, SKA FÖRFATTAREN, DEN URSPRUNGLIGA SKRIBENTEN ELLER ANNAN MEDARBETARE ELLER ÅTERFÖRSÄLJARE AV DOKUMENTET ELLER AV EN MODIFIERAD VERSION AV DOKUMENTET ELLER NÅGON LEVERANTÖR TILL NÅGON AV NÄMNDA PARTER STÄLLAS ANSVARIG GENTEMOT NÅGON FÖR NÅGRA DIREKTA, INDIREKTA, SÄRSKILDA ELLER OFÖRUTSEDDA SKADOR ELLER FÖLJDSKADOR AV NÅGOT SLAG, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, SKADOR BETRÄFFANDE FÖRLORAD GOODWILL, HINDER I ARBETET, DATORHAVERI ELLER NÅGRA ANDRA TÄNKBARA SKADOR ELLER FÖRLUSTER SOM KAN UPPKOMMA PÅ GRUND AV ELLER RELATERAT TILL ANVÄNDNINGEN AV DOKUMENTET ELLER MODIFIERADE VERSIONER AV DOKUMENTET, ÄVEN OM PART SKA HA BLIVIT INFORMERAD OM MÖJLIGHETEN TILL SÅDANA SKADOR.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+    <authorgroup> 
+      <author>
+        <firstname>Suns</firstname>
+        <surname>GNOME-dokumentationsteam</surname>
+        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
+      </author>
+      <author>
+        <firstname>Trevor</firstname>
+        <surname>Curtis</surname>
+        <affiliation>
+          <orgname>Dokumentationsprojekt för GNOME</orgname>
+          <address> <email>tcurtis@somaradio.ca</email> </address>
+        </affiliation>
+      </author>
+      <author> 
+        <firstname>Jorgen</firstname> 
+        <surname>Pehrson</surname> 
+        <affiliation> 
+          <orgname>Dokumentationsprojekt för GNOME</orgname> 
+          <address> <email>jp@spektr.eu.org</email> </address> 
+        </affiliation> 
+      </author> 
+      <author>
+	<firstname>Angela</firstname>
+	<surname>Boyle</surname>
+	<affiliation>
+	  <orgname>Dokumentationsprojekt för GNOME</orgname>
+	</affiliation>
+      </author>
+      <author>
+        <firstname>Davyd</firstname>
+	<surname>Madeley</surname>
+	<affiliation>
+	  <orgname>GNOME-projektet</orgname>
+	</affiliation>
+      </author>
+        <!-- This is appropriate place for other contributors: translators,
+             maintainers,  etc. Commented out by default.
+             <othercredit role="translator">
+	       <firstname>Latin</firstname> 
+	       <surname>Translator 1</surname> 
+	       <affiliation> 
+	         <orgname>Latin Translation Team</orgname> 
+	         <address> <email>translator@gnome.org</email> </address> 
+	       </affiliation>
+	       <contrib>Latin translation</contrib>
+             </othercredit>
+-->
+
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>Version 2.12</revnumber>
+	<date>September 2005</date>
+	<revdescription>
+	  <para role="author">Davyd Madeley</para>
+	</revdescription>
+      </revision>
+      <revision>
+        <revnumber>Version 2.10</revnumber>
+	<date>Mars 2005</date>
+	<revdescription>
+	 <para role="author">Davyd Madeley</para>
+	</revdescription>
+      </revision>
+      <revision>
+	<revnumber>Version 2.8</revnumber>
+	<date>September 2004</date>
+	<revdescription>
+	  <para role="author">Angela Boyle</para>
+	  <para role="publisher">Dokumentationsprojekt för GNOME</para>
+	</revdescription>
+      </revision>
+      <revision>
+        <revnumber>Handbok för panelprogrammet Batteriövervakare v2.2</revnumber>
+        <date>Augusti 2004</date>
+        <revdescription>
+          <para role="author">Suns GNOME-dokumentationsteam</para>
+          <para role="publisher">Dokumentationsprojekt för GNOME</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>Handbok för panelprogrammet Batteriövervakare v2.0</revnumber>
+        <date>Maj 2002</date>
+        <revdescription>
+          <para role="author">Trevor Curtis <email>tcurtis@somaradio.ca</email></para>
+          <para role="author">Jorgen Pehrson <email>jp@spektr.eu.org</email></para>
+          <para role="publisher">Dokumentationsprojekt för GNOME</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+                                                                                                  
+    <releaseinfo>Denna handbok beskriver version 2.12.0 av Batteriövervakare.</releaseinfo>
+                                                                                                  
+    <legalnotice>
+      <title>Återkoppling</title>
+      <para>För att rapportera ett fel eller komma med förslag angående panelprogrammet Batteriövervakare eller denna handbok, följ anvisningarna på <ulink url="ghelp:gnome-feedback" type="help">GNOME:s återkopplingssida</ulink>.</para>
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+	 <primary>Panelprogrammet Batteriövervakare</primary> 
+  </indexterm> 
+
+  <indexterm zone="index"> 
+	 <primary>Panelprogrammet Battstat</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="battstat-introduction"> 
+    <title>Introduktion</title> 
+
+    <figure id="battstat-applet-fig"> 
+      <title>Panelprogrammet Batteriövervakare</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Panelprogrammet Batteriövervakare.</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+
+    <para><application>Batteriövervakaren</application> visar statusen för de batterier som finns i din bärbara dator. Övervakaren berättar för dig om återstående kapacitet, både visuellt och som en procentandel, såväl som att erbjuda dig en uppskattning av återstående tid baserat på aktuell användning.</para>
+
+    <sect2 id="battstat-introduction-add">
+      <title>Lägg till Batteriövervakare till en panel</title>
+      <para>För att lägga till <application>Batteriövervakaren</application> till en panel, högerklicka på panelen, välj sedan <guimenuitem>Lägg till i panel</guimenuitem>. Välj <application>Batteriövervakare</application> i dialogen <application>Lägg till i panelen</application>, klicka sedan på <guibutton>OK</guibutton>.</para>
+      <para>Utseendet på panelprogrammet <application>Batteriövervakaren</application> varierar beroende på storleken och typen av panel som panelprogrammet används i.</para>
+    </sect2>
+
+    <sect2 id="battstat-power-backends">
+     <title>Bakändor för strömhantering</title>
+
+     <para>Batteriövervakaren har stöd för ett antal strömhanteringsbakändar. Om den finns tillgängligt kommer övervakaren att försöka använda <ulink url="http://freedesktop.org/Software/hal">HAL (Hardware Abstraction Layer)</ulink> från freedesktop.org. Om det inte finns tillgängligt eller inte stöds på din plattform så kommer batteriövervakaren att försöka med direkt åtkomst till strömhanteringssystemet.</para>
+     <para>Inte alla strömhanteringsbakändor finns tillgängliga från alla tillverkare, och vissa tillverkare lägger till sina egna bakändor för specifika plattformar och hårdvara. Om batteriövervakaren rapporterar fel information från ditt batteri, se <xref linkend="battstat-troubleshooting"/>.</para>
+    </sect2>
+
+    <sect2 id="battstat-getting-help">
+      <title>Få hjälp</title>
+      <para>Om batteriövervakaren inte fungerar för dig, se dessa ytterligare resurser:</para>
+      <itemizedlist>
+       <listitem><para><xref linkend="battstat-troubleshooting"/>;</para></listitem>
+       <listitem><para>
+        <ulink url="http://mail.gnome.org/archives/">GNOME-sändlistor</ulink>
+       </para></listitem>
+      </itemizedlist>
+    </sect2>
+
+</sect1>
+
+<!-- ================ Customizing the Appearance ========================= -->
+
+  <sect1 id="battstat-appearance">
+    <title>Inställningar</title>
+          <para>För att ta fram inställningarna för övervakaren, högerklicka på övervakaren i panelen och välj <guimenuitem>Inställningar</guimenuitem></para>
+    <figure id="battstat-applet-prefs-menu"> 
+      <title>Sammanhangsmeny för Batteriövervakare (högerklick)</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/context-menu.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Sammanhangsmeny för Batteriövervakare</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+    <figure id="battstat-applet-prefs"> 
+      <title>Inställningsdialogen</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-preferences.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Inställningsdialogen</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Utseende</guilabel></term>
+	  <listitem>
+	  <variablelist>
+	    <varlistentry>
+	      <term><guilabel>Kompakt vy</guilabel></term>
+	      <listitem><para>Denna vy visar endast en enda grafisk avbild i panelen, antingen ett stående batteri för att indikera återstående kapacitet eller en stickkontakt för att indikera att din bärbara dator är ansluten till en extern strömkälla. <figure id="battstat-applet-compact"> 
+      <title>Kompakt vy</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Kompakt vy</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para>
+	      <para>Den kompakta vyn är standardvyn för övervakaren från och med GNOME 2.12.</para></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><guilabel>Expanderad vy</guilabel></term>
+	      <listitem><para>Den expanderade vyn är ett gammalt utseende från tidigare versioner av GNOME. Den har en större grafisk avbild för batteriet såväl som en separat grafisk avbild för att indikera tillståndet för batteriet. <figure id="battstat-applet-expanded"> 
+      <title>Expanderad vy</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet-expanded.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Expanderad vy</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><guilabel>Visa tid/procentandel</guilabel></term>
+	      <listitem><para>Välja detta alternativ kommer att visa en eller två delar av information. <guilabel>Visa återstående tid</guilabel> berättar för dig hur många timmar och minuter det är kvar tills batteriet är fullständigt urladdat eller uppladdat. <guilabel>Visa återstående som procentandel</guilabel> berättar för dig procentandelen av återstående laddning i batteriet.</para></listitem>
+	    </varlistentry>
+	  </variablelist>
+	  </listitem>
+        </varlistentry>
+	<varlistentry>
+	 <term><guilabel>Notifieringar</guilabel></term>
+	  <listitem>
+	  <itemizedlist>
+	   <listitem><para><guilabel>Varna när batteriladdning minskar till</guilabel></para>
+	   <para>Välja detta alternativ kommer att orsaka att en varningsdialog visas när batteriet i din bärbara dator når ett specificerat värde, antingen som en procentandel eller ett antal minuter av återstående tid. Detta indikerar att mängden av återstående spänning i ditt batteri är kritiskt låg. Du kan stänga denna varningsdialog själv, annars kommer den att försvinna automatiskt när du ansluter din bärbara dator till en extern strömkälla.</para>
+	   </listitem>
+	   <listitem>
+	    <para><guilabel>Notifiera när batteriet är fullständigt återuppladdat</guilabel></para>
+	    <para>Välja detta alternativ notifierar dig när ditt batteri är fullständigt uppladdat. Om du har byggt in stöd för libnotify i Batteriövervakaren kommer en snäll notifiering att poppa upp från övervakaren.</para>
+	   </listitem>
+	  </itemizedlist>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+   </sect1>
+
+   <sect1 id="battstat-troubleshooting">
+    <title>Problemlösning</title>
+    
+    <para>På grund av komplexiteten hos strömhantering och det stora antalet skillnader mellan var och en av de olika tillgängliga strömhanteringssystemen, kan felsökning av fel i batteriövervakare vara svårt. Du behöver fastställa om felet finns i batteriövervakaren eller om det är ett fel i informationen som tillhandahålls av din dator.</para>
+    <para>Följande information kan vara användbar för att felsöka vad som är fel med din batteriövervakare. Det är inte på något sätt fullständig information. Om du hittar ett fel i Batteriövervakaren (som inte orsakats av felaktig information rapporterad från ACPI), vänligen <ulink url="http://bugzilla.gnome.org/">rapportera det</ulink>.</para>
+
+    <sect2 id="battstat-troubleshooting-backends">
+     <title>Fastställ bakänden</title>
+     <para>Om du använder Hardware Abstraction Layer (se <xref linkend="battstat-power-backends"/>) kommer det att indikeras i Om-dialogen genom att en stjärna placerats ut bredvid upphovsmannen för HAL-bakändan. <figure id="battstat-credits-hal"> 
+      <title>Kontrollera om du använder HAL-bakänden</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-credits-hal.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Expanderad vy</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para>
+
+     <para>Andra bakändar indikerar inte för tillfället att de används så du måste gissa det baserat på din hårdvara. De flesta moderna bärbara PC-datorer använder ACPI som bakände. Det är också den bakände med störst antal felrapporteringar.</para>
+    </sect2>
+
+    <sect2 id="battstat-troubleshooting-acpi">
+      <title>Kontrollera ACPI-informationen</title>
+      <para>Om du använder ACPI-bakänden för Batteriövervakaren är det viktigt att kontrollera att ACPI ger dig korrekt information. Om den inte gör det behöver du fundera på att uppgradera din DSDT eller någonting annat som relaterar till ACPI.</para>
+      <example><title>Exempel på ACPI-utskrift</title>
+       <screen>
+[rupert@laptop ~]$ cat /proc/acpi/battery/BAT1/info
+present:                 yes
+design capacity:         41040 mWh
+last full capacity:      37044 mWh
+battery technology:      rechargeable
+design voltage:          10800 mV
+design capacity warning: 745 mWh
+design capacity low:     0 mWh
+capacity granularity 1:  10 mWh
+capacity granularity 2:  10 mWh
+model number:            G71C00056110
+serial number:           0000000008
+battery type:            Li-ION
+OEM info:
+[rupert@laptop ~]$ cat /proc/acpi/battery/BAT1/state
+present:                 yes
+capacity state:          ok
+charging state:          discharging
+present rate:            11232 mW
+remaining capacity:      27140 mWh
+present voltage:         11400 mV
+[rupert@laptop ~]$</screen>
+      </example>
+      <para>Du kan snabbt beräkna procentandelen som återstår genom att dela <guilabel>återstående kapacitet</guilabel> med <guilabel>senaste fullständiga kapacitet</guilabel>, du kan beräkna tiden som återstår genom att dela <guilabel>återstående kapacitet</guilabel> med <guilabel>aktuell hastighet</guilabel>.</para>
+    </sect2>
+
+    <sect2 id="battstat-troubleshooting-nohal">
+      <title>Hardware Abstraction Layer</title>
+      <para>Du kan kontrollera att ditt batteri har identifierats av HAL med kommandot <command>hal-device-manager</command>. Om ditt batteri inte har identifierats av HAL eller fel information har rapporterats kan du försöka att inaktivera HAL:s bakände genom att ställa in en GConf-nyckel.</para>
+      <para>Välj <guimenuitem>Konfigurationsredigerare</guimenuitem> från menyn <guimenu>Program</guimenu>, under <guisubmenu>Systemverktyg</guisubmenu>. Sök efter nyckelvärdet <prompt>OAFIID:GNOME_BattstatApplet</prompt> som bör finnas i sökvägen <filename>/apps/panel/applets</filename>.</para>
+      <para>Anta att sökvägen är <filename>/apps/panel/applets/applet_1</filename>. Lägg till en <guimenuitem>Ny nyckel...</guimenuitem> kallad <guilabel>no_hal</guilabel> i <filename>/apps/panel/applets/applet_1/prefs</filename>  och ställ in den till det booleska värdet true. Detta kommer att inaktivera användningen av HAL (se <xref linkend="battstat-troubleshooting-backends"/> för att lära dig hur man kontrollerar detta).</para>
+    </sect2>
+    
+   </sect1>
+
+</article>

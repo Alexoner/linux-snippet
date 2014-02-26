@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "3.2.0">
+<!ENTITY manrevision "1.0">
+<!ENTITY date "September 2011">
+<!ENTITY app "Invest">
+<!ENTITY panel-help SYSTEM "/usr/share/gnome/help/user-guide/C/user-guide.xml">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="es">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Manual de Inversiones</title>       
+
+    <copyright>
+      <year>2004</year>
+      <year>2005</year>
+      <holder>Raphael Slinckx</holder>
+    </copyright>
+    <copyright> 
+      <year>2007</year>
+      <holder>Terrence Hall</holder> 
+    </copyright> 
+    <copyright>
+      <year>2010</year>
+      <year>2011</year>
+      <holder>Enrico Minack</holder>
+    </copyright><copyright><year>2008-2010</year><holder>Jorge González (jorgegonz@svn.gnome.org)</holder></copyright>
+
+
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+   -->
+
+    <publisher role="maintainer"> 
+      <publishername>Proyecto de documentación de GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Se concede autorización para copiar, distribuir o modificar este documento según los términos de la GFDL (GNU Free Documentation License), Versión 1.1, o cualquier otra versión posterior publicada por Free Software Foundation sin secciones invariables, textos de portada ni textos de contraportada. Podrá encontrar una copia de la GFDL en este <ulink type="help" url="ghelp:fdl">enlace</ulink> o en el archivo COPYING-DOCS distribuido con este manual.</para>
+         <para>Este manual es parte de la colección de manuales GNOME distribuidos bajo el GFDL. Si quiere distribuir este manual separadamente de la colección, puede hacerlo añadiendo una copia de la licencia al manual, como está descrito en la sección 6 de la licencia.</para>
+
+	<para>Muchos de los nombres usados por empresas para distinguir sus productos y servicios se mencionan como marcas comerciales. Donde aparezcan dichos nombres en cualquier documentación GNOME,y para que los miembros del proyecto de documentación reconozcan dichas marcas comerciales, dichos nombres se imprimen en mayúsculas o iniciales mayúsculas.</para>
+
+	<para>EL DOCUMENTO Y VERSIONES MODIFICADAS SE PROPORCIONAN BAJO LOS TÉRMINOS DE LA LICENCIA LIBRE DE DOCUMENTACIÓN DE GNU Y TENIENDO EN CUENTA QUE: <orderedlist>
+		<listitem>
+		  <para>EL DOCUMENTO SE PROPORCIONA \"TAL CUAL\", SIN GARANTÍA DE NINGÚN TIPO, NI EXPLÍCITA NI IMPLÍCITA INCLUYENDO, SIN LIMITACIÓN, GARANTÍA DE QUE EL DOCUMENTO O VERSIÓN MODIFICADA DE ÉSTE CAREZCA DE DEFECTOS COMERCIALES, SEA ADECUADO A UN FIN CONCRETO O INCUMPLA ALGUNA NORMATIVA. TODO EL RIESGO RELATIVO A LA CALIDAD, PRECISIÓN Y UTILIDAD DEL DOCUMENTO O SU VERSIÓN MODIFICADA RECAE EN USTED. SI CUALQUIER DOCUMENTO O VERSIÓN MODIFICADA DE AQUÉL RESULTARA DEFECTUOSO EN CUALQUIER ASPECTO, USTED (Y NO EL REDACTOR INICIAL, AUTOR O CONTRIBUYENTE) ASUMIRÁ LOS COSTES DE TODA REPARACIÓN, MANTENIMIENTO O CORRECCIÓN NECESARIOS. ESTA RENUNCIA DE GARANTÍA ES UNA PARTE ESENCIAL DE ESTA LICENCIA. NO SE AUTORIZA EL USO DE NINGÚN DOCUMENTO NI VERSIÓN MODIFICADA DE ÉSTE POR EL PRESENTE, SALVO DENTRO DEL CUMPLIMIENTO DE LA RENUNCIA;Y</para>
+		</listitem>
+		<listitem>
+		  <para>BAJO NINGUNA CIRCUNSTANCIA NI BAJO NINGUNA TEORÍA LEGAL, SEA POR ERROR (INCLUYENDO NEGLIGENCIA), CONTRATO O DE ALGÚN OTRO MODO, EL AUTOR, EL ESCRITOR INICIAL, CUALQUIER CONTRIBUIDOR, O CUALQUIER DISTRIBUIDOR DEL DOCUMENTO O VERSIÓN MODIFICADA DEL DOCUMENTO, O CUALQUIER PROVEEDOR DE CUALQUIERA DE ESAS PARTES, SERÁ RESPONSABLE ANTE NINGUNA PERSONA POR NINGÚN DAÑO DIRECTO, INDIRECTO, ESPECIAL, INCIDENTAL O DERIVADO DE NINGÚN TIPO, INCLUYENDO, SIN LIMITACIÓN DAÑOS POR PÉRDIDA DE MERCANCÍAS, PARO TÉCNICO, FALLO INFORMÁTICO O MAL FUNCIONAMIENTO O CUALQUIER OTRO POSIBLE DAÑO O PÉRDIDAS DERIVADAS O RELACIONADAS CON EL USO DEL DOCUMENTO O SUS VERSIONES MODIFICADAS, AUNQUE DICHA PARTE HAYA SIDO INFORMADA DE LA POSIBILIDAD DE QUE SE PRODUJESEN DICHOS DAÑOS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+  <authorgroup> 
+    <author>
+      <firstname/>
+      <surname>Proyecto de documentación de GNOME</surname>
+    </author>
+    <author> 
+      <firstname>Terrence</firstname> 
+      <surname>Hall</surname> 
+      <affiliation><address><email>teebob21@gmail.com</email></address></affiliation> 
+    </author> 
+    <author>
+      <firstname>Enrico</firstname>
+      <surname>Minack</surname>
+      <affiliation><address><email>enrico-minack@gmx.de</email></address></affiliation>
+    </author>
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+    <othercredit role="translator">
+      <firstname>Latin</firstname> 
+      <surname>Translator 1</surname> 
+      <affiliation> 
+	<orgname>Latin Translation Team</orgname> 
+	<address> <email>translator@gnome.org</email> </address> 
+      </affiliation>
+      <contrib>Latin translation</contrib>
+    </othercredit>
+-->
+    </authorgroup>
+	
+    <revhistory>
+      <revision> 
+	<revnumber/>
+	<date/>
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Este manual describe la versión 3.2.0 de Inversiones.</releaseinfo> 
+
+    <legalnotice> 
+      <title>Comentarios</title> 
+      <para>Para informar de un fallo, o hacer alguna sugerencia concerniente a la miniaplicación Inversiones, o este manual, siga las instrucciones en la <ulink url="ghelp:gnome-feedback" type="help">página de comentarios de GNOME</ulink>.</para>
+
+<!-- Translators may also add here feedback address for translations -->
+
+    </legalnotice> 
+    <abstract role="description">
+      <para>Manual de usuario para Inversiones</para>
+
+    </abstract>
+
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>Inversiones</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>invest-applet</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+ <!-- ============= Introduction ============================== -->
+
+  <sect1 id="invest-applet-intro">
+    <title>Introducción</title>
+
+    <para>La miniaplicación del panel de GNOME <application>Inversiones</application> descarga los valores de los índices de bolsa, divisas y metales preciosos. Los valores se descargan de <ulink url="http://finance.yahoo.com">Yahoo! Finance</ulink> y se muestran en una lista desplegable.</para>
+    <para><application>Inversiones</application> proporciona las siguientes características:</para>
+	<itemizedlist>
+            <listitem>
+              <para>Obtener el valor de cualquier acción, índice, divisa o metal precioso conocido por <ulink url="http://finance.yahoo.com">Yahoo! Finance</ulink></para>
+            </listitem>
+            <listitem>
+              <para>Los valores se actualizan automáticamente cada 15 minutos</para>
+            </listitem>
+            <listitem>
+              <para>Se muestra el precio actual, el cambio de hoy y una gráfica con los cambios del día</para>
+            </listitem>
+            <listitem>
+              <para>La divisa en la que se muestra el valor y, si está configurado, automáticamente lo cambia a otra divisa</para>
+            </listitem>
+            <listitem>
+              <para>La cantidad ganada o perdida en el precio desde su compra, que también es posible obtenerla en otra divisa</para>
+            </listitem>
+            <listitem>
+              <para>El porcentaje de ganancia o pérdida sobre el precio desde su compra</para>
+            </listitem>
+	</itemizedlist>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="invest-applet-getting-started">
+    <title>Inicio</title>
+
+                                                                                
+<!-- ============= To Start Invest ============================ -->
+    <sect2 id="invest-applet-to-add">
+      <title>Añadir Inversiones al panel</title>
+      <para>Para añadir <application>Inversiones</application> a un panel de GNOME, pulse con el botón derecho en el panel, después elija <guilabel>Añadir al panel...</guilabel>. Seleccione <application>Inversiones</application> en el diálogo <guilabel>Añadir al panel</guilabel>, después pulse <guilabel>Aceptar</guilabel>. Pulse <guilabel>Cerrar</guilabel> cuanbdo haya terminado.</para>
+    </sect2>
+    <sect2 id="invest-applet-to-remove">
+      <title>Quitar Inversiones de un panel</title>
+      <para>Para quitar <application>Inversiones</application> de un panel de GNOME, pulse con el botón derecho del ratón sobre el icono, después elija <guilabel>Quitar del panel</guilabel>.</para>
+    </sect2>
+    <sect2 id="additional-applet-help">
+      <title>Más información</title>
+      <para>Se puede encontrar más información acerca del panel de GNOME en la <ulink url="ghelp:user-guide?panels" type="help">documentación del Panel de GNOME</ulink></para>
+    </sect2>
+  </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="invest-applet-usage">
+    <title>Usar Inversiones</title>
+    <para>Antes de que la miniaplicación pueda proporcionarle valores actuales, debe configurarla. Los valores pueden provenir de diferentes bolsas de valores en todo el mundo, de forma que los precios pueden estar en diferentes divisas. Se puede configurar un cambio automático entre divisas, así como el cambio de sus compras en diferentes países. Por último, las gráficas están disponibles para cada valor configurado.</para>
+
+    <sect2 id="invest-applet-configure-quotes">
+      <title>Configurar sus valores</title>
+
+    <sect3 id="invest-applet-add-stocks">
+
+      <title>Añadir valores nuevas a la miniaplicación</title>
+
+      <para>Para añadir nuevos valores en <application>Inversiones</application>, realice los siguientes pasos:</para>
+      <orderedlist>
+        <listitem>
+          <para>Pulse con el botón derecho sobre el icono y seleccione <guilabel>Preferencias</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Pulse <guilabel>Añadir</guilabel> para añadir un valor en <application>Inversiones</application>.</para>
+        </listitem>
+        <listitem>
+          <para>El valor predeterminado es GOOG. Está seleccionado inicialmente para ser editado, de tal forma que pueda cambiarlo instantáneamente. Introduzca el <guilabel>Símbolo</guilabel> aquí. Si no conoce el símbolo del valor deseado, consulte más abajo.</para>
+        </listitem>
+	<listitem>
+	  <para>Después, pulse en la <guilabel>Etiqueta</guilabel> del valor y escriba su nombre.</para>
+	</listitem>
+	<listitem>
+	  <para>También puede introducir el número de las acciones que posee de ese valor, el precio de compra y la comisión.</para>
+	</listitem>
+        <listitem>
+          <para>Pulse <guilabel>Cerrar</guilabel> cuando haya terminado de añadir valores.</para>
+        </listitem>
+      </orderedlist>
+	<para>No si conoce el símbolo actual de su valor, vaya a <ulink url="http://finance.yahoo.com/">http://finance.yahoo.com/</ulink>. Introduzca el nombre del valor en el campo de texto en la esquina superior izquierda de la pantalla. Al escribir, listará los valores coincidentes. La primera columna describe el símbolo del valor, la segunda columna muestra el nombre y la tercera columna, el valor de bolsa del valor listado. La divisa del valor puede variar a lo largo de diferentes bolsas de valores, dependiendo de sus respectivos países. Debajo, puede ver una captura de pantalla de la búsqueda para el valor «yahoo».</para>
+
+	<para><mediaobject><imageobject>
+	  <imagedata format="PNG" fileref="figures/symbol-search.png"/>
+	</imageobject></mediaobject> Captura de pantalla de Yahoo! Finance al buscar un valor.</para>
+
+	<para>Invest soporta todos los valores que se pueden encontrar en <ulink url="http://finance.yahoo.com/">Yahoo! Finance</ulink>. En particular, éstos son de los siguientes tipos.</para>
+	<formalpara>
+	  <title>Valores, bonos y capital social</title>
+          <para>Estos son la mayoría de los valores disponibles. Busque o examine en <ulink url="http://finance.yahoo.com/">Yahoo! Finance</ulink> para encontrar qué hay allí.</para>
+	</formalpara>
+	<formalpara>
+	  <title>Índices de valores</title>
+          <para>Todos los valores que comienzan con un ^ son en realidad índices, un valor que representa un número del rendimiento de otros valores. Los ejemplos son la Media Industrial del Dow Jones (<ulink url="http://finance.yahoo.com/q?s=^DJI">^DJI</ulink>) y el NASDAQ Composite (<ulink url="http://finance.yahoo.com/q?s=^IXIC">^IXIC</ulink>).</para>
+	</formalpara>
+	<formalpara>
+	  <title>Tasas de divisas</title>
+          <para>También están disponibles las tasas de cambio entre dos divisas. El símbolo correspondiente se construye tal y como sigue. La divisa AAA en la divisa BBB, o en otras palabras, cuánto cuesta la divisa AAA en la divisa BBB, tiene el símbolo AAABBB=X. Si quiere saber cuántos EUR puede obtener por un USD (cuánto cuesta un USD en EUR), elija <ulink url="http://finance.yahoo.com/q?s=usdeur%3DX">USDEUR=X</ulink>. Puede encontrar más información en la  <ulink url="http://finance.yahoo.com/currency-investing">página de divisas de Yahoo! Finance</ulink>. Las divisas se representan usando su <ulink url="http://en.wikipedia.org/wiki/Currency_code">código de divisa ISO 4217</ulink>.</para>
+	</formalpara>
+	<formalpara>
+	  <title>Metales preciosos</title>
+          <para>El <ulink url="http://en.wikipedia.org/wiki/Currency_code">código de divisas ISO 4217</ulink> también lista metales preciosos como divisas. Estos son, oro, plata, palado y platino. Su código de divisa comienza por X, seguido por su símbolo químico: XAU, XAG, XPD y XPT, respectivamente. Con esos códigos de divisas, están disponibles las tasas de los metales preciosos en cualquer divisa, a través de las tasas de divisa descritas anteriormente. Como ejemplo, el oro en USD tiene el símbolo <ulink url="http://finance.yahoo.com/q?s=XAUUSD%3DX">XAUUSD=X</ulink>. Puede obtener lo inverso (<ulink url="http://finance.yahoo.com/q?s=USDXAU%3DX">USDXAU=X</ulink>): ¿cuánto oro, medido en onzas troy, puede obtener por un USD?</para>
+	</formalpara>
+    </sect3>
+    <sect3 id="invest-applet-to-view-stocks">
+      <title>Ver valores configurados</title>
+      <para>Para ver sus valores configurados, pulse en el icono de <application>Inversiones</application> en el panel. Aparecerá una lista de sus valores. Para cerrar la lista, pulse sobre el icono de nuevo. Note que los valores tienen generalmente un retardo de 15 minutos.</para>
+    </sect3>
+
+    <sect3 id="invest-applet-to-refresh-stocks">
+
+      <title>Actualizar la pantalla</title>
+      <para>Para actualizar inmediatamente la información mostrada en la miniaplicación, pulse con el botón derecho del ratón sobre la aplicación, después elija <guilabel>Actualizar</guilabel>.</para>
+    </sect3>
+    <sect3 id="invest-applet-to-remove-stocks">
+       <title>Quitar vaolres de la miniaplicación</title>
+      <para>Para quitar valores de <application>Inversiones</application>, realice los siguientes pasos:</para>
+      <orderedlist>
+        <listitem>
+          <para>Pulse con el botón derecho sobre el icono y seleccione <guilabel>Preferencias</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Pulse la fila que contiene el valor que quiere quitar.</para>
+        </listitem>
+        <listitem>
+          <para>Pulse <guilabel>Quitar</guilabel> para borrar la lista.</para>
+        </listitem>
+        <listitem>
+          <para>Pulse <guilabel>Cerrar</guilabel> cuando haya terminado.</para>
+        </listitem>
+      </orderedlist> 
+    </sect3>
+   </sect2>
+
+    <sect2 id="invest-applet-configure-currencies">
+      <title>Establecer el cambio de divisa</title>
+      <para>Invest muestra todos los valores en su divisa original, tal y como se obtienen de Yahoo! Finance. Si quiere que los valores se muestren en una divisa distinta, se puede configurar en el diálogo de preferencias.</para>
+      <orderedlist>
+        <listitem>
+          <para>Pulse con el botón derecho sobre el icono y seleccione <guilabel>Preferencias</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Escribir la divisa objetivo en el campo de texto <guilabel>Divisa</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Mientras escribe, el campo de texto sugerirá divisas que coincidan con la divisa que está escribiendo.</para>
+        </listitem>
+        <listitem>
+          <para>Elija su divisa de destino.</para>
+        </listitem>
+        <listitem>
+          <para>Note que en su lista de valores aparecerá la nueva columna <guilabel>Tipo de cambio</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Para todas las compras donde el <guilabel>Precio</guilabel> y la <guilabel>Comisión</guilabel> se dan en la divisa original, se debe proporcionar la tasa de cambio, en el momento de compra, de la divisa original en la divisa objetivo, en el campo <guilabel>Tipo de cambio</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Pulse <guilabel>Cerrar</guilabel> cuando haya terminado.</para>
+        </listitem>
+      </orderedlist>
+      <para>Veamos el siguiente ejemplo: compró una acción de Yahoo! (YHOO) por 10.00 USD a una tasa de 0.75 EUR por USD. En otras palabras, la acción cuesta 7.50 EUR. Pagó 5.00 USD en comisiones, equivalente a 3.75 EUR. Cuando establece la divisa objetivo a EUR, o introduce los valores en EUR (la divisa objetivo) y mantiene el <guilabel>Tipo de cambio</guilabel> a 0.00, o introduce los valores en USD (divisa original) e introduce el tipo de cambio entre EUR y USD (<ulink url="http://finance.yahoo.com/q?s=eurusd%3DX">USDEUR=X</ulink>).</para>
+      <tip>
+        <para>Tanto el <guilabel>Precio</guilabel> como la <guilabel>Comisión</guilabel> se deben proporcionar en la misma divisa.</para>
+      </tip>
+      <para>Si quiere quitar la divisa objetivo, simplemente limpie el campo de texto <guilabel>Divisa</guilabel>.</para>
+   </sect2>
+
+    <sect2 id="invest-applet-stock-charts-options">
+      <title>Opciones de las gráficas</title>
+      <para>Para usar las gráficas financieras, vea la lista de los valores seleccionados y pulse dos veces sobre el valor que quiera representar. Los parámetros de la gráfica se pueden personalizar pulsando <guilabel>Opciones</guilabel>.</para>
+	<sect3 id="invest-applet-stock-chart-options-date">
+	<title>Rango de los datos</title>
+              <para>El rango de fechas, en la esquina superior derecha de la ventana, selecciona la duración de tiempo de la que informar. De forma predeterminada proporciona un día de datos, pero se pueden elegir los siguientes rangos: <guilabel>Hoy</guilabel>, <guilabel>5 días</guilabel>, <guilabel>3 meses</guilabel>, <guilabel>6 meses</guilabel>, <guilabel>1 año</guilabel>, <guilabel>5 años</guilabel>, <guilabel>Máximo</guilabel>.</para>
+
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-graph">
+	<title>Estilo de la gráfica</title>
+              <para>Se puede mostrar una gráfica de la información histórica del precio de tres formas diferentes. Puede seleccionar un gráfico de líneas, de barras o de velas.</para>
+	  <itemizedlist>
+            <listitem>
+              <para><guilabel>Gráfico de líneas</guilabel> (<guilabel>l</guilabel>)</para>
+	      <para>Esta es la opción predeterminada. Muestra la información del precio histórico de una forma familiar, conectando el precio de cierre de cada día con una sola línea. Los gráficos de línea para mostrar los precios de los valores son útiles si un analista está interesado sólo en el precio de cierre de cada valor.</para>
+            </listitem>
+            <listitem>
+              <para><guilabel>Gráfico de barras</guilabel> (<guilabel>b</guilabel>)</para>
+	      <para>Un gráfico de barras representa la actividad completa durante un día con una sola barra vertical. La parte superior de la línea vertical indica el precio más alto al que se comerció con el valor durante el día, y el inferior representa el precio más bajo. El precio de cierre está mostrado en la parte derecha de la barra, y el precio de apertura está mostrado en la parte izquierda de la barra. Una barra representa un día de operaciones comerciales.</para>
+            </listitem>
+            <listitem>
+              <para><guilabel>Gráfico de velas</guilabel> (<guilabel>c</guilabel>)</para>
+	      <para>Un gráfico de velas en el que los precios de apertura y cierre se representan como la parte inicial y final de un rectángulo alrededor de una línea vertical que conecta los precios más alto y más bajo. El cuerpo del rectángulo se rellena si el precio de cierre es más bajo que el de apertura y se deja en blanco si el precio de cierre es mayor que el de apertura.</para>
+
+            </listitem>
+	</itemizedlist>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-ma">
+	<title>Media de movimiento</title>
+              <para>Una media de movimiento es una serie estadística de precios de cierre de seguridad a través de días de operaciones consecutivos. Generalmente se muestra en la misma gráfica que la gráfica de líneas para indicar las tendencias de los precios de los valores.</para>
+	</sect3>
+
+	<sect3 id="invest-applet-stock-chart-options-ema">
+	<title>Media de movimiento exponencial</title>
+              <para>La media de movimiento exponencial (EMA) está definida como la media de movimiento calculada siendo los valores recientes más importantes que los antiguos. Este tipo de media de movimiento reacciona más rápidamente a los cambios en los precios que una simple media de movimiento. Las EMA de 12 y 26 días son términos populares a corto plazo, mientras que las EMA mayores de 50 días se usan para largo plazo.</para>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-overlays">
+	<title>Overlays</title>
+              <para>Los «overlays» le permiten dibujar múltiples mediciones estadísticas en una sola gráfica. Por ejemplo, puede comparar el rendimiento de un solo valor con un índice tal como el NASDAQ o el DJIA.</para>
+	</sect3>
+	<sect3 id="invest-applet-stock-chart-options-indicators">
+	<title>Índices</title>
+              <para>Los índices se usan para intentar predecir el futuro de las tendencias financieras. El uso adecuado de los indicadores de mercado está fuera del ámbito del manual de Inversiones.</para>
+
+	</sect3>
+    </sect2>
+  </sect1>
+</article>

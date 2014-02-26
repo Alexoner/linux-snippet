@@ -1,0 +1,26 @@
+First you need to find out PID of process. Simply use any one of the following command to obtain process id:
+# ps aux | grep {program-name}
+
+OR
+$ ps -C {program-name} -o pid=
+
+For example, find out PID of firefox web-browser, enter:
+$ ps -C firefox -o pid=
+
+Output:
+
+ 7857
+To list opne files for firefox process, enter:
+$ ls -l /proc/7857/fd
+
+Sample output:
+
+total 0
+lr-x------ 1 vivek vivek 64 2008-03-05 22:31 0 -> /dev/null
+l-wx------ 1 vivek vivek 64 2008-03-05 22:31 1 -> pipe:[18371]
+lr-x------ 1 vivek vivek 64 2008-03-05 22:31 10 -> /usr/lib/firefox/firefox
+l-wx------ 1 vivek vivek 64 2008-03-05 22:31 2 -> pipe:[18371]
+lsof command
+
+lsof command list open files under all Linux distributions or UNIX like operating system. Type the following command to list open file for process ID 351:
+$ lsof -p 351

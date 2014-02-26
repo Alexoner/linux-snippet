@@ -1,0 +1,30 @@
+Index: gnome-applets-3.4.1/Makefile.am
+===================================================================
+--- gnome-applets-3.4.1.orig/Makefile.am	2012-04-15 14:02:07.843003328 -0400
++++ gnome-applets-3.4.1/Makefile.am	2012-04-15 14:02:10.263015331 -0400
+@@ -36,11 +36,14 @@
+ mixer_applet_SUBDIR = mixer
+ endif
+ 
++if BUILD_MINICOMMANDER_APPLET
++minicommander_applet_SUBDIR = mini-commander
++endif
++
+ always_built_SUBDIRS =  \
+ 	charpick	\
+ 	drivemount	\
+ 	geyes		\
+-	mini-commander	\
+ 	stickynotes	\
+ 	trashapplet	\
+ 	null_applet
+@@ -56,7 +59,8 @@
+ 	$(accessx_status_SUBDIR)\
+ 	$(invest_applet_SUBDIR)	\
+ 	$(cpufreq_SUBDIR) \
+-	$(mixer_applet_SUBDIR)
++	$(mixer_applet_SUBDIR) \
++	$(minicommander_applet_SUBDIR)
+ 
+ DIST_SUBDIRS = \
+ 	po		\

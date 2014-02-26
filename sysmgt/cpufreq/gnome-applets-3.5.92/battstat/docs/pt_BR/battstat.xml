@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.12.0">
+<!ENTITY applet "Battery Charge Monitor">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="pt_BR">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Manual do Monitor de Carga de Bateria</title> 
+    <abstract role="description">
+      <para>O Monitor de Carga de Bateria mostra a carga atual da bateria e avisa quando a carga chega a um certo limite.</para>
+    </abstract>
+    <copyright>
+      <year>2005</year>
+      <holder>Davyd Madeley</holder>
+    </copyright>
+    <copyright>
+      <year>2004</year>
+      <holder>Angela Boyle</holder>
+    </copyright>
+    <copyright>
+      <year>2004</year>
+      <holder>Sun Microsystems</holder>
+    </copyright>
+    <copyright>
+      <year>2002</year>
+      <holder>Trevor Curtis</holder>
+    </copyright>
+    <copyright> 
+      <year>1999</year> 
+      <year>2000</year> 
+      <holder>Jorgen Pehrson</holder> 
+    </copyright><copyright><year>2008.</year><holder>Amadeu A. Barbosa Jr (amadeu@gmail.com)</holder></copyright><copyright><year>2008.</year><holder>Leonardo Ferreira Fontenelle (leonardof@gnome.org)</holder></copyright>
+<!-- translators: uncomment this:
+
+    <copyright>
+     <year>2002</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+   -->
+
+    <publisher role="maintainer"> 
+      <publishername>Projeto de Documentação do GNOME</publishername> 
+    </publisher> 
+  
+      <legalnotice id="legalnotice">
+	<para>Permissão concedida para copiar, distribuir e/ou modificar este documento dentro dos termos da GNU Free Documentation License (GFDL), Versão 1.1 ou qualquer versão superior publicada pela Free Software Foundation sem nenhuma seção imutável, texto de capa e contracapa. Você pode achar uma cópia do GFDL neste <ulink type="help" url="ghelp:fdl">link</ulink> ou no arquivo COPYING-DOCS distribuído com este manual.</para>
+         <para>Este manual é parte da coleção dos manuais do GNOME, distribuídos pela GFDL. Se você quiser distribuir este manual separadamente da coleção, você pode fazê-lo ao adicionar uma cópia da licença ao manual, como descrito na seção 6 da licença.</para>
+
+	<para>Muitos dos nomes usados por empresas para distinguir seus produtos e serviços são marcas registradas. Quando esses nomes aparecem em qualquer documentação GNOME e os membros do Projeto de Documentação do GNOME estão cientes dessas marcas registradas, os nomes aparecem em letras maiúsculas ou com iniciais em maiúsculas.</para>
+
+	<para>DOCUMENTO E VERSÕES MODIFICADAS DO DOCUMENTO SÃO FORNECIDAS PELOS TERMOS DA GNU FREE DOCUMENTATION LICENSE COM O CONHECIMENTO ADICIONAL DE QUE: <orderedlist>
+		<listitem>
+		  <para>O DOCUMENTO É FORNECIDO "NO ESTADO", SEM GARANTIA DE QUALQUER TIPO, TANTO EXPRESSA QUANTO IMPLÍCITA, INCLUINDO, SEM LIMITAÇÕES, GARANTIAS DE QUE O DOCUMENTO OU VERSÃO MODIFICADA DO MESMO É COMERCIALIZADO LIVRE DE DEFEITOS, PRÓPRIO PARA UM PROPÓSITO ESPECÍFICO OU QUE NÃO HÁ INFRAÇÕES. TODO RISCO DE QUALIDADE, PRECISÃO E PERFORMANCE DO DOCUMENTO OU VERSÃO MODIFICADA É COM VOCÊ. SE ALGUM DOCUMENTO OU VERSÃO MODIFICADA É PROVADO DEFEITUOSO EM QUALQUER ASPECTO, VOCÊ (NÃO O ESCRITOR INICIAL, AUTOR OU QUALQUER CONTRIBUIDOR) ASSUME O CUSTO DE QUALQUER SERVIÇO NECESSÁRIO, REPARO OU CORREÇÃO. ESTE AVISO DE GARANTIA CONSTITUI UMA PARTE ESSENCIAL DA LICENÇA. NENHUM USO DE QUALQUER DOCUMENTO OU VERSÃO MODIFICADA DO DOCUMENTO É AUTORIZADO EXCETO SOB ESTA CONDIÇÃO; E</para>
+		</listitem>
+		<listitem>
+		  <para>SOB NENHUMA CIRCUNSTÂNCIA E SOB NENHUMA TEORIA LEGAL, TANTO EM DANOS (INCLUINDO POR NEGLIGÊNCIA), CONTRATO OU OUTROS, DEVE O AUTOR, ESCRITOR INICIAL OU CONTRIBUIDOR OU QUALQUER DISTRIBUIDOR DO DOCUMENTO, VERSÃO MODIFICADA OU QUALQUER FORNECEDOR DE QUALQUER DESSES GRUPOS, SER CONSIDERADO RESPONSÁVEL A QUALQUER PESSOA POR QUALQUER DANO DIRETO, INDIRETO, ESPECIAL, INCIDENTAL OU CONSEQÜENCIAL DE QUALQUER INDIVÍDUO, INCLUINDO, SEM LIMITAÇÕES, DANOS POR PERDA DE BOA VONTADE, PARADA DE TRABALHO, FALHA DE COMPUTADOR, MAL-FUNCIONAMENTO OU QUALQUER E TODOS OS OUTROS DANOS OU PERDAS RESULTANTES OU RELACIONADAS AO USO DO DOCUMENTO E VERSÕES MODIFICADAS, MESMO QUE ESSE GRUPO TENHA SIDO INFORMADO DA POSSIBILIDADE DE TAIS DANOS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+    <authorgroup> 
+      <author>
+        <firstname>Sun</firstname>
+        <surname>Equipe de Documentação do GNOME</surname>
+        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
+      </author>
+      <author>
+        <firstname>Trevor</firstname>
+        <surname>Curtis</surname>
+        <affiliation>
+          <orgname>Projeto de Documentação do GNOME</orgname>
+          <address> <email>tcurtis@somaradio.ca</email> </address>
+        </affiliation>
+      </author>
+      <author> 
+        <firstname>Jorgen</firstname> 
+        <surname>Pehrson</surname> 
+        <affiliation> 
+          <orgname>Projeto de Documentação do GNOME</orgname> 
+          <address> <email>jp@spektr.eu.org</email> </address> 
+        </affiliation> 
+      </author> 
+      <author>
+	<firstname>Angela</firstname>
+	<surname>Boyle</surname>
+	<affiliation>
+	  <orgname>Projeto de Documentação do GNOME</orgname>
+	</affiliation>
+      </author>
+      <author>
+        <firstname>Davyd</firstname>
+	<surname>Madeley</surname>
+	<affiliation>
+	  <orgname>Projeto GNOME</orgname>
+	</affiliation>
+      </author>
+        <!-- This is appropriate place for other contributors: translators,
+             maintainers,  etc. Commented out by default.
+             <othercredit role="translator">
+	       <firstname>Latin</firstname> 
+	       <surname>Translator 1</surname> 
+	       <affiliation> 
+	         <orgname>Latin Translation Team</orgname> 
+	         <address> <email>translator@gnome.org</email> </address> 
+	       </affiliation>
+	       <contrib>Latin translation</contrib>
+             </othercredit>
+-->
+
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>Versão 2.12</revnumber>
+	<date>Setembro de 2005</date>
+	<revdescription>
+	  <para role="author">Davyd Madeley</para>
+	</revdescription>
+      </revision>
+      <revision>
+        <revnumber>Versão 2.10</revnumber>
+	<date>Março de 2005</date>
+	<revdescription>
+	 <para role="author">Davyd Madeley</para>
+	</revdescription>
+      </revision>
+      <revision>
+	<revnumber>Versão 2.8</revnumber>
+	<date>Setembro de 2004</date>
+	<revdescription>
+	  <para role="author">Angela Boyle</para>
+	  <para role="publisher">Projeto de Documentação do GNOME</para>
+	</revdescription>
+      </revision>
+      <revision>
+        <revnumber>Manual do Miniaplicativo do Monitor de Carga de Bateria V2.2</revnumber>
+        <date>Agosto de 2004</date>
+        <revdescription>
+          <para role="author">Equipe de Documentação do GNOME da Sun</para>
+          <para role="publisher">Projeto de Documentação do GNOME</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>Manual do Miniaplicativo do Monitor de Carga de Bateria V2.0</revnumber>
+        <date>Maio de 2002</date>
+        <revdescription>
+          <para role="author">Trevor Curtis <email>tcurtis@somaradio.ca</email></para>
+          <para role="author">Jorgen Pehrson <email>jp@spektr.eu.org</email></para>
+          <para role="publisher">Projeto de Documentação do GNOME</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+                                                                                                  
+    <releaseinfo>Este manual descreve a versão 2.12.0 do Monitor de Carga de Bateria.</releaseinfo>
+                                                                                                  
+    <legalnotice>
+      <title>Retorno</title>
+      <para>Para relatar um erro ou fazer um sugestão a respeito do miniaplicativo do Monitor de Carga de Bateria, siga as indicações na <ulink url="ghelp:gnome-feedback" type="help">Página de Feedback do GNOME</ulink>.</para>
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+	 <primary>Miniaplicativo do Monitor de Carga de Bateria</primary> 
+  </indexterm> 
+
+  <indexterm zone="index"> 
+	 <primary>Miniaplicativo Estado da Bateria</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="battstat-introduction"> 
+    <title>Introdução</title> 
+
+    <figure id="battstat-applet-fig"> 
+      <title>Miniaplicativo do Monitor de Carga de Bateria</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>O miniaplicativo do Monitor de Carga de Bateria.</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+
+    <para>O <application>Monitor de Carga de Bateria</application> mostra o estado de quaisquer baterias em seu laptop. O monitor pode lhe avisar sobre a capacidade restante tanto visualmente quanto por um percentual, além de oferece uma estimativa de tempo restante baseada na energia que está sendo consumida.</para>
+
+    <sect2 id="battstat-introduction-add">
+      <title>Para Adicionar o Monitor de Carga de Bateria ao Painel</title>
+      <para>Para adicionar o <application>Monitor de Carga de Bateria</application> ao painel, clique com o botão direito do mouse sobre o painel e escolha <guimenuitem>Adicionar ao Painel</guimenuitem>. Selecione o <application>Monitor de Carga de Bateria</application> no diálogo <application>Adicionar ao painel</application> e então clique em <guibutton>OK</guibutton>.</para>
+      <para>A disposição do miniaplicativo do <application>Monitor de Carga de Bateria</application> varia dependendo do tamanho e tamanho do painel no qual ele reside.</para>
+    </sect2>
+
+    <sect2 id="battstat-power-backends">
+     <title>Backends de Gerenciamento de Energia</title>
+
+     <para>O monitor de bateria tem suporte a vários backends (recursos externos ao aplicativo) de gerenciamento de energia. Se estiver disponível, o monitor tentará usar o <ulink url="http://freedesktop.org/Software/hal">HAL (Camada de Abstração de Hardware)</ulink>. Caso não esteja disponível ou não exista suporte em sua plataforma, o monitor de carga de bateria tentará o acesso direto ao sistema de gerenciamento de energia.</para>
+     <para>Nem todos os fabricantes dão suporte a todos os backends de gerenciamento de energia, e alguns fabricantes adicionam seus próprios backends para certas plataformas e hardware. Se o monitor de carga de bateria está relatando informações incorretas sobre a sua bateria, veja a <xref linkend="battstat-troubleshooting"/>.</para>
+    </sect2>
+
+    <sect2 id="battstat-getting-help">
+      <title>Obtendo Ajuda</title>
+      <para>Se o monitor de bateria não funcionar, veja estes recursos adicionais:</para>
+      <itemizedlist>
+       <listitem><para><xref linkend="battstat-troubleshooting"/>;</para></listitem>
+       <listitem><para>
+        <ulink url="http://mail.gnome.org/archives/">Lista de discussão do GNOME</ulink>
+       </para></listitem>
+      </itemizedlist>
+    </sect2>
+
+</sect1>
+
+<!-- ================ Customizing the Appearance ========================= -->
+
+  <sect1 id="battstat-appearance">
+    <title>Preferências</title>
+          <para>Para configurar as preferência do Monitor de Carga de Bateria, clique com o botão direito do mouse no painel e então escolha <guimenuitem>Preferências</guimenuitem></para>
+    <figure id="battstat-applet-prefs-menu"> 
+      <title>Menu de contexto (clique com botão direito) do Monitor de Carga de Bateria</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/context-menu.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Menu de contexto do Monitor de Carga de Bateria</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+    <figure id="battstat-applet-prefs"> 
+      <title>Diálogo de Preferências</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-preferences.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Diálogo de Preferências</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure>
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Aparência</guilabel></term>
+	  <listitem>
+	  <variablelist>
+	    <varlistentry>
+	      <term><guilabel>Visualização compacta</guilabel></term>
+	      <listitem><para>Esta visualização mostra uma única imagem no painel, no caso a de uma bateria na horizontal para indicar a carga restante ou uma tomada para indicar que seu laptop está conectado a uma fonte de energia externa. <figure id="battstat-applet-compact"> 
+      <title>Visualização compacta</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Visualização Compacta</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para>
+	      <para>A visualização compacta é o padrão para este monitor desde o GNOME 2.12.</para></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><guilabel>Visualização expandida</guilabel></term>
+	      <listitem><para>A visualização expandida é baseada na aparência antiga do GNOME. Usa duas imagens, uma da bateria na horizontal para indicar a carga e outra para indicar o estado da conexão à energia externa. <figure id="battstat-applet-expanded"> 
+      <title>Visualização expandida</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-applet-expanded.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Visualização Expandida</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><guilabel>Mostrar tempo/percentual</guilabel></term>
+	      <listitem><para>Selecionando esta opção serão mostradas duas partes da informação. <guilabel>Mostrar tempo restante</guilabel> irá notificá-lo de quantas horas e minutos restam até a bateria ser totalmente descarregada ou recarregada. <guilabel>Mostrar percentual restante</guilabel> irá notificá-lo sobre a carga restante na bateria.</para></listitem>
+	    </varlistentry>
+	  </variablelist>
+	  </listitem>
+        </varlistentry>
+	<varlistentry>
+	 <term><guilabel>Notificações</guilabel></term>
+	  <listitem>
+	  <itemizedlist>
+	   <listitem><para><guilabel>Avisar quando a carga da bateria chegar a</guilabel></para>
+	   <para>Selecionando esta opção você será notificado por um diálogo de aviso quando sua carga de bateria chegar a um certo valor, seja um percentual ou uma quantidade de minutos restantes. Isto indica que a quantidade de carga restante em sua bateria está muito baixa. Você pode fechar esta notificação, mas de toda forma, ela desaparecerá automaticamente quando você conectar seu laptop à fonte de energia externa.</para>
+	   </listitem>
+	   <listitem>
+	    <para><guilabel>Notificar quando a carga da bateria estiver totalmente recarregada</guilabel></para>
+	    <para>Selecionando esta opção você será notificado quando sua bateria estiver completamente carregada. Se o Monitor de Carga de Bateria estiver compilado com suporte a libnotify, um aviso não intrusivo será exibido a partir miniaplicativo no painel.</para>
+	   </listitem>
+	  </itemizedlist>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+   </sect1>
+
+   <sect1 id="battstat-troubleshooting">
+    <title>Solução de problemas</title>
+    
+    <para>Devido a complexidade do gerenciamento de energia e às grandes diferenças entre cada sistema de gerência de energia disponíveis, a depuração de erros no monitor de bateria pode ser difícil. Você precisará determinar se o erro existe no monitor de bateria ou se é um problema com a informação provida pelo seu sistema.</para>
+    <para>As informações a seguir podem ser úteis para solucionar um problema com o seu monitor de bateria. Se você encontrar um erro com o Monitor de Carga de Bateria (que não seja causado por erros das informações reportadas pelo ACPI), por favor <ulink url="http://bugzilla.gnome.org/">nos avise</ulink>.</para>
+
+    <sect2 id="battstat-troubleshooting-backends">
+     <title>Determinando o backend</title>
+     <para>Se você está usando a Camada de Abstração de Hardware (HAL) (veja <xref linkend="battstat-power-backends"/>) então isto será indicado no diálogo de sobre, com uma estrela perto do autor do HAL. <figure id="battstat-credits-hal"> 
+      <title>Verifique se você está usando o backend do HAL</title> 
+      <screenshot> 
+        <mediaobject> 
+          <imageobject><imagedata fileref="figures/battstat-credits-hal.png" format="PNG"/> 
+          </imageobject>
+          <textobject> 
+            <phrase>Visualização Expandida</phrase>
+          </textobject> 
+        </mediaobject> 
+      </screenshot> 
+    </figure></para>
+
+     <para>Atualmente outros backends não indicam quando estão sendo usados, então você terá de adivinhar com base em seu hardware. A maioria dos laptops modernos usam o ACPI como backend. Esse é também o backend com a maior quantidade de inconsistências.</para>
+    </sect2>
+
+    <sect2 id="battstat-troubleshooting-acpi">
+      <title>Verificando a informação do ACPI</title>
+      <para>Se você está usando o backend do ACPI para o Monitor de Carga de Bateria, é importante verificar que o ACPI está fornecendo as informações corretas. Caso contrário, então você deve ficar atento para atualizar seu DSDT ou algo relacionado ao ACPI.</para>
+      <example><title>Exemplo de saída do ACPI</title>
+       <screen>
+[rupert@laptop ~]$ cat /proc/acpi/battery/BAT1/info
+present:                 yes
+design capacity:         41040 mWh
+last full capacity:      37044 mWh
+battery technology:      rechargeable
+design voltage:          10800 mV
+design capacity warning: 745 mWh
+design capacity low:     0 mWh
+capacity granularity 1:  10 mWh
+capacity granularity 2:  10 mWh
+model number:            G71C00056110
+serial number:           0000000008
+battery type:            Li-ION
+OEM info:
+[rupert@laptop ~]$ cat /proc/acpi/battery/BAT1/state
+present:                 yes
+capacity state:          ok
+charging state:          discharging
+present rate:            11232 mW
+remaining capacity:      27140 mWh
+present voltage:         11400 mV
+[rupert@laptop ~]$</screen>
+      </example>
+      <para>Você pode rapidamente calcular o percentual restante dividindo a <guilabel>capacidade restante</guilabel> pela <guilabel>última capacidade completa</guilabel>, você pode calcular o tempo restante dividindo a <guilabel>capacidade restante</guilabel> pela <guilabel>taxa atual</guilabel>.</para>
+    </sect2>
+
+    <sect2 id="battstat-troubleshooting-nohal">
+      <title>HAL (Camada de Abstração de Hardware)</title>
+      <para>Você pode verificar se sua bateria foi detectada pelo HAL usando o comando <command>hal-device-manager</command>. Se sua bateria não for detectada pelo HAL ou alguma informação estiver sendo reportada, você pode tentar desabilitar o suporte do HAL através de uma configuração no GConf.</para>
+      <para>Selecione o <guimenuitem>Editor de Configurações</guimenuitem> do menu <guimenu>Aplicações</guimenu> e submenu <guisubmenu>Ferramentas do Sistema</guisubmenu>. Localize pelo valor de chave <prompt>OAFIID:GNOME_BattstatApplet</prompt> que deve estar localizado no caminho <filename>/apps/panel/applets</filename>.</para>
+      <para>Considerando que o caminho seja <filename>/apps/panel/applets/applet_1</filename>: no caminho <filename>/apps/panel/applets/applet_1/prefs</filename>, adicione uma nova chave <guilabel>no_hal</guilabel> através do menu <guimenuitem>Nova Chave...</guimenuitem>, e defina como um valor booleano verdadeiro. Isso desabilitará o uso do HAL (veja <xref linkend="battstat-troubleshooting-backends"/> para aprender como verificar isso).</para>
+    </sect2>
+    
+   </sect1>
+
+</article>

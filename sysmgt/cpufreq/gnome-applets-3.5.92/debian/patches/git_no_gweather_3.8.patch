@@ -1,0 +1,24 @@
+From 890044b0b9d601e6701126bb354fe4f229e4240c Mon Sep 17 00:00:00 2001
+From: Balló György <ballogyor@gmail.com>
+Date: Mon, 20 May 2013 14:34:32 +0000
+Subject: Disable gweather applet with libgweather 3.8
+
+Disable gweather applet, because it's not compatible with libgweather 3.8.
+Upstream dropped GWeatherXML, which is used by the gweather applet.
+---
+diff --git a/configure.in b/configure.in
+index 3e13732..aad9fb5 100644
+--- a/configure.in
++++ b/configure.in
+@@ -276,7 +276,7 @@ AC_SUBST(XML2_LIBS)
+ 
+  dnl -- check for libgweather (required for gweather applet) ------------------
+ build_libgweather_applets=false
+-PKG_CHECK_MODULES(LIBGWEATHER, gweather-3.0 >= $GWEATHER_REQUIRED,
++PKG_CHECK_MODULES(LIBGWEATHER, gweather-3.0 >= $GWEATHER_REQUIRED gweather-3.0 <= 3.7,
+ 	          build_libgweather_applets=true,
+ 		  AC_MSG_WARN([libgweather not found. Not building the weather applet.]))
+ AC_SUBST(LIBGWEATHER_CFLAGS)
+--
+cgit v0.9.2
+

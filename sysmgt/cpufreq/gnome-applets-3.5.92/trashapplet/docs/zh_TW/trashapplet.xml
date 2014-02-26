@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.14">
+<!ENTITY manrevision "2.11">
+<!ENTITY date "August 2006">
+<!ENTITY applet "Panel Trash">
+]>
+<article id="index" lang="zh_TW">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Panel Trash 手冊</title> 
+	 <abstract role="description">
+	   <para>Panel Trash 讓您可以在面板上管理您的回收筒。</para>
+	 </abstract>
+	 <copyright>
+	   <year>2006</year>
+	   <holder>GNOME 文件計畫</holder>
+	 </copyright>	 
+	 <copyright>
+	   <year>2005</year>
+	   <holder>Davyd Madeley</holder>
+	 </copyright>
+	 <copyright> 
+		<year>2004</year>
+		<holder>Michiel Sikkes</holder> 
+	 </copyright><copyright><year>2008.</year><holder>Chao-Hsiung Liao (j_h_liau@yahoo.com.tw)</holder></copyright> 
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+	 <publisher role="maintainer"> 
+		<publishername>GNOME 文件計畫</publishername> 
+	 </publisher> 
+
+
+<legalnotice id="legalnotice">
+<para>根據自由軟體基金會 (Free Software Foundation) 所發佈 的 GNU 自由文件授權 (GNU Free Documentation License, GFDL) 1.1 (含) 以後版本， 使用者可以複製、散佈，或修改本文件，但不得增刪章節，不得加上封面文字， 亦不得加上封底文字。 如要取得 GFDL 的副本，請參閱此<ulink type="help" url="ghelp:fdl">連結</ulink>，或是參閱與本手冊一同隨附的 COPYING-DOCS 檔案。</para>
+<para>本手冊是屬於依 GFDL 授權所發佈之 GNOME 手冊集中的一部份。 如果您只要單獨散佈本手冊，依據授權聲明第六節之敘述， 您必須另外將授權聲明加入本手冊中。</para>
+<para>許多公司為了突顯其產品與服務，會使用特別名稱，並亦已聲明這些 名稱為其商標。當這些名稱出現在 GNOME 文件中，同時 GNOME 文件 專案小組成員亦明白這些名稱為商標時， 這些名稱會以大寫字母或是首字母大寫表示。</para>
+<para>文件以及此文件的修改版本必須遵循 GNU 自由文件許可證，進一步資訊請見： <orderedlist><listitem>
+<para>文件提供是以其「原樣」呈現，不管明示或暗示，皆不具任何保證，包括 (但不限於) 文件或修正版毫無錯誤、可販售、 具特殊用途，或不侵權。關於本文件與修正版文件之品質、正確性及功用， 其風險您必須自行承擔。 若本文件或修正版有任何缺陷，任何必須之保養，修理及更正， 應由您自行承擔，原始作者、作者或任何散佈者無須負責。 本免責聲明是本授權聲明極重要與必要的一部份，因此任何文件或 修正版的授權，皆須在同意本免責聲明的情況下進行；同時</para>
+</listitem>
+<listitem>
+<para>在任何情況或法律理論下，亦即不管是在侵權 (包括疏忽)、契約或其他情形，或是已預先告知會有下列損害之可能時，本文件 或修正版的任何作者、原始作者、投稿人以及散佈者，或是任何提供單位，對於因使用本文件及修正版，或與本文件及修正版使用相關所造成的任何直接、間接、特殊、偶然或必然之損害，包括 (但不限於) 信譽受損、工作停止、電腦當 機或不正常運作，或任何所有其他損害，上述人等皆不需負 任何責任。</para>
+</listitem>
+</orderedlist></para>
+</legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Michiel</firstname> 
+		  <surname>Sikkes</surname> 
+		  <affiliation> 
+			 <orgname>GNOME 文件計畫</orgname> 
+			 <address> <email>michiel@eyesopened.nl</email> </address> 
+		  </affiliation> 
+		</author> 
+		<author>
+		  <firstname>Davyd</firstname><surname>Madeley</surname>
+		  <affiliation>
+		    <orgname>GNOME 計畫</orgname>
+		    <address><email>davyd@madeley.id.au</email></address>
+		  </affiliation>
+		</author>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Michiel</firstname> 
+	     <surname>Sikkes</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	 <releaseinfo revision="2.26" role="review"/>
+	 
+	 <revhistory>
+	   <revision>
+	     <revnumber>2.10 版</revnumber>
+	     <date>2005 年三月</date>
+	     <revdescription>
+	       <para role="author">Davyd Madeley</para>
+         <para role="publisher">GNOME 文件計畫</para> 	       
+	     </revdescription>
+	   </revision>
+		<revision> 
+		  <revnumber>2.8 面板程式手冊 V2.11</revnumber> 
+		  <date>2004 年七月</date> 
+		  <revdescription> 
+			 <para role="author">Michiel Sikkes</para> 
+			 <para role="publisher">GNOME 文件計畫</para> 
+		  </revdescription> 
+		</revision>
+	  </revhistory>
+	 <releaseinfo>這本手冊是為 Panel Trash 面板程式 2.14 版所寫。</releaseinfo>
+	 <legalnotice> 
+		<title>回饋</title> 
+		<para>要回報 Panel Trash 面板程式或這本手冊的錯誤或給予建議，請依照 <ulink url="ghelp:user-guide?feedback" type="help">GNOME 回饋頁面</ulink> 中的指示。</para>
+		
+	 </legalnotice> 
+  </articleinfo>
+  <indexterm> 
+	 <primary>回收筒</primary> 
+  </indexterm>
+
+  <sect1 id="trash-introduction"> 
+	 <title>引言</title> 
+<para><application>Panel Trash</application> 面板程式讓您可以在面板上管理您的回收筒。</para>
+<para>在面板上的回收筒與桌面上的回收筒功能是相同的，但是它的好處是在面板上是隨時都可以看到的。</para>
+
+<sect2 id="trash-introduction-add">
+<title>將 Panel Trash 加入面板</title> 
+  <para>要把 <application>Panel Trash</application> 面板程式加入面板中，請進行下列步驟：</para>
+    <orderedlist>
+      <listitem>
+        <para>在面板上您希望加入此面板程式的地方按右鍵。</para>
+      </listitem>
+      <listitem>
+        <para>選擇 <guimenuitem>加入面板</guimenuitem>。</para>
+      </listitem>
+      <listitem>
+        <para>在 <guilabel>加入面板</guilabel> 對話盒的項目清單中往下捲動，接著選擇 <guilabel>回收筒</guilabel>。</para>
+      </listitem>
+      <listitem>
+        <para>按下 <guibutton>加入</guibutton>。</para>
+      </listitem>
+    </orderedlist>
+  <para>需要更多使用面板的資訊，請參閱 <ulink type="help" url="ghelp:user-guide?panels">桌面使用者指南</ulink>。</para>
+
+</sect2>
+</sect1>
+
+<sect1 id="trash-usage">
+	<title>使用方法</title>
+         <figure id="cpufreq-applet-figure">
+            <title>Panel Trash</title>
+                <screenshot>
+                  <mediaobject>
+                     <imageobject>
+                        <imagedata fileref="figures/trash-applet.png" format="PNG"/>
+                     </imageobject>
+                  </mediaobject>
+               </screenshot>
+         </figure>
+
+	<sect2 id="trash-usage-moving">
+	<title>移動項目至回收筒</title>
+	<para>要把任何項目丟進回收筒，只要把它們從檔案管理程式拖曳到 <application>Panel Trash</application> 面板程式即可。</para>
+	</sect2>
+
+	<sect2 id="trash-usage-emptying">
+	<title>清理回收筒</title>
+	<para>要永久刪除回收筒裡所有的項目，在面板程式上按右鍵，接著選擇 <menuchoice><guimenuitem>清理回收筒</guimenuitem></menuchoice>。</para>
+	</sect2>
+
+	<sect2 id="trash-usage-opening">
+	<title>開啟回收筒</title>
+	<para>要開啟回收筒，在面板程式上按右鍵，接著選擇 <menuchoice><guimenuitem>開啟</guimenuitem></menuchoice>。回收筒視窗會在 <application>Nautilus</application> 檔案管理程式中開啟。</para>
+	</sect2>
+</sect1>
+</article>

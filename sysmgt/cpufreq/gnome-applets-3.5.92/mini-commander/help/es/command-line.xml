@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- -*- indent-tabs-mode: nil -*- -->
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.12">
+<!ENTITY applet "Command Line">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp 
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="es">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo> 
+  <title>Manual de la Línea de comandos</title> 
+  <abstract role="description">
+    <para>La Linea de comandos permite ejecutar comandos desde un panel, e incluye acceso rápido a un visor de archivos e histórico de comandos.</para>
+  </abstract>
+  <copyright>
+    <year>2005</year>
+    <holder>Davyd Madeley</holder>
+  </copyright>
+  <copyright>
+    <year>2004</year>
+    <holder>Angela Boyle</holder>
+  </copyright>
+  <copyright> 
+    <year>2002</year>
+    <year>2003</year> 
+    <year>2004</year> 
+    <holder>Sun Microsystems</holder> 
+  </copyright>    
+  <copyright> 
+    <year>1998</year> 
+    <holder>Oliver Maruhn</holder> 
+  </copyright>
+  <copyright> 
+    <year>1998</year> 
+    <holder>Dan Mueth</holder> 
+  </copyright><copyright><year>2007-2008.</year><holder>Jorge González (jorge.gonzalez.gonzalez@hispalinux.es)</holder></copyright><copyright><year>2005.</year><holder>Francisco Javier F. Serrador (serrador@cvs.gnome.org)</holder></copyright>
+  <!-- translators: uncomment this:
+       <copyright>
+       <year>2003</year>
+       <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+       </copyright>
+  -->
+  <publisher role="maintainer"> 
+    <publishername>Proyecto de documentación de Gnome</publishername> 
+  </publisher>
+
+     <legalnotice id="legalnotice">
+         <para>Se concede permiso para copiar, distribuir o modificar este documento según las condiciones de la GNU Free Documentation License (GFDL), Versión 1.1 o cualquier versión posterior publicada por la Free Software Foundation sin Secciones invariantes, Textos de portada y Textos de contraportada. Encontrará una copia de la GFDL en este <ulink type="help" url="ghelp:fdl">enlace</ulink> o en el archivo COPYING-DOCS distribuido con este manual.</para>
+          <para>Este manual forma parte de una colección de documentos de GNOME distribuidos según la GFDL. Si desea distribuir este manual de forma independiente de la colección, puede hacerlo agregando una copia de la licencia al documento, según se describe en la sección 6 de la misma.</para>
+ 
+         <para>Muchos de los nombres utilizados por las empresas para distinguir sus productos y servicios se consideran marcas comerciales. Cuando estos nombres aparezcan en la documentación de GNOME, y siempre que se haya informado a los miembros del Proyecto de documentación de GNOME de dichas marcas comerciales, los nombres aparecerán en mayúsculas o con las iniciales en mayúsculas.</para>
+ 
+         <para>ESTE DOCUMENTO Y LAS VERSIONES MODIFICADAS DEL MISMO SE OFRECEN SEGÚN LAS CONDICIONES ESTABLECIDAS EN LA LICENCIA DE DOCUMENTACIÓN LIBRE DE GNU (GFDL) Y TENIENDO EN CUENTA QUE: <orderedlist>
+                 <listitem>
+                   <para>EL DOCUMENTO SE ENTREGA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, NI EXPLÍCITA NI IMPLÍCITA INCLUYENDO, SIN LIMITACIÓN, GARANTÍA DE QUE EL DOCUMENTO O VERSIÓN MODIFICADA DE ÉSTE CAREZCA DE DEFECTOS EN EL MOMENTO DE SU VENTA, SEA ADECUADO A UN FIN CONCRETO O INCUMPLA ALGUNA NORMATIVA. TODO EL RIESGO RELATIVO A LA CALIDAD, PRECISIÓN Y UTILIDAD DEL DOCUMENTO O SU VERSIÓN MODIFICADA RECAE EN USTED. SI CUALQUIER DOCUMENTO O VERSIÓN MODIFICADA DE AQUÉL RESULTARA DEFECTUOSO EN CUALQUIER ASPECTO, USTED (Y NO EL REDACTOR INICIAL, AUTOR O AUTOR DE APORTACIONES) ASUMIRÁ LOS COSTES DE TODA REPARACIÓN, MANTENIMIENTO O CORRECCIÓN NECESARIOS. ESTA EXENCIÓN DE RESPONSABILIDAD SOBRE LA GARANTÍA ES UNA PARTE ESENCIAL DE ESTA LICENCIA. NO SE AUTORIZA EL USO DE NINGÚN DOCUMENTO NI VERSIÓN MODIFICADA DE ÉSTE POR EL PRESENTE, SALVO DENTRO DEL CUMPLIMIENTO DE LA EXENCIÓN DE RESPONSABILIDAD;Y</para>
+                 </listitem>
+                 <listitem>
+                   <para>EN NINGUNA CIRCUNSTANCIA NI BAJO NINGUNA TEORÍA LEGAL, SEA POR ERROR (INCLUYENDO NEGLIGENCIA) CONTRATO O DOCUMENTO DE OTRO TIPO, EL AUTOR, EL ESCRITOR INICIAL, EL AUTOR DE APORTACIONES NI NINGÚN DISTRIBUIDOR DEL DOCUMENTO O VERSIÓN MODIFICADA DEL DOCUMENTO, NI NINGÚN PROVEEDOR DE NINGUNA DE ESAS PARTES, SERÁ RESPONSABLE ANTE NINGUNA PERSONA POR NINGÚN DAÑO DIRECTO, INDIRECTO, ESPECIAL, INCIDENTAL O DERIVADO DE NINGÚN TIPO, INCLUYENDO, SIN LIMITACIÓN DAÑOS POR PÉRDIDA DE FONDO DE COMERCIO, PARO TÉCNICO, FALLO INFORMÁTICO O AVERÍA O CUALQUIER OTRO POSIBLE DAÑO O AVERÍA DERIVADO O RELACIONADO CON EL USO DEL DOCUMENTO O SUS VERSIONES MODIFICADAS, AUNQUE DICHA PARTE HAYA SIDO INFORMADA DE LA POSIBILIDAD DE QUE SE PRODUJESEN ESOS DAÑOS.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+ 
+
+  <authorgroup>
+    <author>
+      <firstname>Sun</firstname>
+      <surname>Equipo de documentación de Gnome</surname>
+      <affiliation>
+        <orgname>Sun Microsystems</orgname>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Oliver</firstname>
+      <surname>Maruhn</surname>
+      <affiliation>
+        <orgname>Proyecto de documentación de Gnome</orgname>
+	<address><email>oliver@maruhn.com</email></address>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Dan</firstname>
+      <surname>Mueth</surname>
+      <affiliation>
+        <orgname>Proyecto de documentación de Gnome</orgname>
+	<address><email>d-mueth@uchicago.edu</email></address>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Angela</firstname>
+      <surname>Boyle</surname>
+      <affiliation>
+        <orgname>Proyecto de documentación de Gnome</orgname>
+      </affiliation>
+    </author>
+    <author>
+      <firstname>Davyd</firstname><surname>Madeley</surname>
+      <affiliation>
+        <orgname>Proyecto Gnome</orgname>
+	<address><email>davyd@madeley.id.au</email></address>
+      </affiliation>
+    </author>
+    <!-- This is appropriate place for other contributors: translators,
+         maintainers,  etc. Commented out by default.
+         <othercredit role="translator">
+         <firstname>Latin</firstname> 
+         <surname>Translator 1</surname> 
+         <affiliation> 
+         <orgname>Latin Translation Team</orgname> 
+         <address> <email>translator@gnome.org</email> </address> 
+         </affiliation>
+         <contrib>Latin translation</contrib>
+         </othercredit>
+    -->
+  </authorgroup> 
+  <revhistory>
+    <revision>
+      <revnumber>Versión 2.12</revnumber>
+      <date>Septiembre de 2005</date>
+      <revdescription>
+        <para role="author">Davyd Madeley</para>
+      </revdescription>
+    </revision>
+    <revision>
+      <revnumber>Versión 2.10</revnumber>
+      <date>Marzo de 2005</date>
+      <revdescription>
+        <para role="author">Davyd Madeley</para>
+      </revdescription>
+    </revision>
+    <revision>
+      <revnumber>Versión 2.8</revnumber>
+      <date>Septiembre de 2004</date>
+      <revdescription>
+        <para role="author">Angela Boyle</para>
+        <para role="publisher">Proyecto de documentación de Gnome</para>
+      </revdescription>
+    </revision>
+    <revision> 
+      <revnumber>Manual de la miniaplicación Línea de comandos V2.7</revnumber> 
+      <date>Agosto de 2004</date> 
+      <revdescription> 
+        <para role="author">Sun Microsystems</para>
+        <para role="publisher">Proyecto de documentación de Gnome</para>
+      </revdescription> 
+    </revision>
+    <revision> 
+      <revnumber>Manual de la miniaplicación Línea de comandos V2.3</revnumber> 
+      <date>Septiembre de 2003</date> 
+      <revdescription> 
+        <para role="author">Sun Microsystems</para>
+        <para role="publisher">Proyecto de documentación de Gnome</para>
+      </revdescription> 
+    </revision>
+    <revision> 
+      <revnumber>Manual de la miniaplicación Línea de comandos V2.5</revnumber> 
+      <date>Agosto de 2003</date> 
+      <revdescription> 
+        <para role="author">Sun Microsystems</para>
+        <para role="publisher">Proyecto de documentación de Gnome</para>
+      </revdescription> 
+    </revision>
+    <revision> 
+      <revnumber>Manual de la miniaplicación Línea de comandos V2.4</revnumber> 
+          <date>Abril de 2003</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Proyecto de documentación de Gnome</para>
+          </revdescription> 
+        </revision>
+        
+			<revision> 
+          <revnumber>Manual de la miniaplicación Línea de comandos V2.3</revnumber> 
+          <date>Enero de 2003</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Proyecto de documentación de Gnome</para>
+          </revdescription> 
+        </revision> 
+
+        <revision> 
+          <revnumber>Manual de la miniaplicación Línea de comandos V2.2</revnumber> 
+          <date>Agosto de 2002</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Proyecto de documentación de Gnome</para>
+          </revdescription> 
+        </revision> 
+        
+         
+        <revision> 
+          <revnumber>Manual de la miniaplicación Línea de comandos V2.1</revnumber> 
+          <date>Julio de 2002</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Proyecto de documentación de Gnome</para>
+          </revdescription> 
+        </revision> 
+        <revision> 
+          <revnumber>Manual de la miniaplicación Línea de comandos V2.0</revnumber> 
+          <date>Marzo de 2002</date> 
+          <revdescription> 
+             <para role="author">Sun Microsystems</para>
+             <para role="publisher">Proyecto de documentación de Gnome</para>
+          </revdescription> 
+        </revision> 
+        <revision> 
+          <revnumber>Manual de la miniaplicación Mini-Commander</revnumber> 
+          <date>1998</date> 
+          <revdescription> 
+             <para role="author">Oliver Maruhn <email>oliver@maruhn.com</email></para>
+             <para role="publisher">Proyecto de documentación de Gnome</para>
+             <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para>
+             <para role="publisher">Proyecto de documentación de Gnome</para>
+          </revdescription> 
+        </revision> 
+     </revhistory> 
+     <releaseinfo>Este manual describe la versión 2.12 de la Línea de comandos.</releaseinfo> 
+     <legalnotice> 
+        <title>Comentarios</title> 
+        <para>Para informar sobre un fallo o hacer sugerencias sobre la miniaplicación Línea de comandos o sobre este manual, siga las indicaciones en la <ulink url="ghelp:gnome-feedback" type="help">Página de sugerencias de Gnome</ulink>.</para>
+     </legalnotice> 
+  </articleinfo> 
+  <indexterm zone="index"> 
+     <primary>Línea de comandos</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+     <primary>Línea de comandos</primary> 
+  </indexterm>
+
+<!-- ============= Introduction =====-->
+  <sect1 id="command-line-introduction"> 
+     <title>Introducción</title> 
+     
+     <!-- ==== Figure ==================-->
+     <figure id="applet-fig"> 
+        <title>Línea de comandos</title> 
+        <screenshot> 
+          <mediaobject> 
+             <imageobject><imagedata fileref="figures/command-line.png" format="PNG"/> 
+             </imageobject> 
+             <textobject> 
+                <phrase>Muestra la Línea de comandos.</phrase> 
+             </textobject> 
+          </mediaobject> 
+        </screenshot> 
+     </figure> 
+     <para>La <application>Línea de comandos</application> proporciona una línea de comandos que puede usar dentro de cualquier panel del escritorio.</para>
+     <para>La  <application>Línea de comandos</application> contiene los siguientes elementos interactivos:</para>
+        
+        <variablelist>
+          <varlistentry>
+             <term>Campo de <guilabel>Entrada</guilabel></term>
+             <listitem>
+                <para>Puede introducir comandos, macros, y programas en el <guilabel>campo de entrada</guilabel>.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Botón <guilabel>Examinar</guilabel> &mdash; el punto</term>
+             <listitem>
+                <para>Puede usar el botón <guibutton>Examinar</guibutton> para buscar programas por su sistema de archivos. Un círculo sólido identifica el botón <guibutton>Examinar</guibutton>.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Botón <guibutton>Histórico</guibutton> &mdash; la flecha hacia abajo</term>
+             <listitem>
+                <para>Puede usar el botón  <guibutton>Histórico</guibutton> para volver a llamar a comandos anteriores. Un icono con una flecha hacia abajo identifica el botón <guibutton>Histórico</guibutton>.</para>
+             </listitem>
+          </varlistentry>
+        </variablelist> 
+        <sect2 id="features">
+	<title>Características</title>        
+        <variablelist>
+          <varlistentry>
+             <term>Lista del histórico de los comandos anteriormente ejecutados</term>
+             <listitem>
+                <para>Puede ejecutar comandos directamente desde el visor de la lista del histórico. Puede también ciclar el contenido de la lista del histórico a través del <guilabel>campo de entradas</guilabel> para mostrar y después ejecutar un comando. Una barra de desplazamiento vertical aparece cuando hay más de 20 comandos en la lista del histórico. Vea la <xref linkend="command-line-histlist"/> para más información.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Función de autocompletado basada en histórico</term>
+             <listitem>
+                <para>La <application>Línea de comandos</application> usa una función de autocompletado basada en el histórico para completar los comandos en el <guilabel>campo de entrada</guilabel>. Esta función compara el contenido del campo del <guilabel>campo de entrada</guilabel> con la lista del histórico. Si la <application>Línea de comandos</application> encuentra alguna coincidencia, entonces la miniaplicación completa el comando. Vea la nota en la <xref linkend="command-line-histlist"/> para más información.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Función de completado de comandos a petición del usuario</term>
+             <listitem>
+                <para>Esta función de completado de comandos compara los caracteres de las cadenas en el <guilabel>campo de entrada</guilabel> con comandos en la ruta del usuario. La función de completado es útil s no sabe la secuencia de caracteres completa de un comando. Después de que teclee las primeras letras del nombre del comando, pulse la tecla <keycap>Tabulador</keycap>. Si la <application>Línea de comandos</application> reconoce la secuencia de caracteres como única, entonces la miniaplicación completa el nombre del comando. Vea la <xref linkend="command-line-run"/> para más información.</para>
+             </listitem>
+          </varlistentry>
+          <varlistentry>
+             <term>Utilidad de macros</term>
+             <listitem>
+                <para>La utilidad de macros proporciona hasta 99 atajos a comandos . Además de los comandos predefinidos puede crear sus propios comandos para usarlos con la <application>Línea de comandos</application>. Vea la <xref linkend="command-line-macros"/> para más información.</para>
+             </listitem>
+          </varlistentry>
+        </variablelist>
+	</sect2>
+
+      <sect2 id="command-line-introduction-add">       
+        <title>Para añadir la Línea de comandos al panel</title>
+        <para>Para añadir la <application>Línea de comandos</application> a un panel, pulse con el botón derecho en el panel, después elija <guimenuitem>Añadir al panel</guimenuitem>. Seleccione <application>Línea de comandos</application> en el diálogo <application>Añadir al panel</application>, después pulse <guibutton>Aceptar</guibutton>.</para>
+      </sect2>
+
+  </sect1>
+<!-- ================ Running Commands =======-->
+  <sect1 id="command-line-usage"> 
+     <title>Ejecutar comandos</title>
+	<!-- ================ To Run Command =======-->
+     <sect2 id="command-line-run">
+        <title>Para ejecutar un comando desde el campo de entrada</title>
+        <para>Para ejecutar un comando desde el <guilabel>campo de entrada</guilabel>, realice los pasos siguientes:</para>
+        <orderedlist> 
+          <listitem>
+             <para>Teclee el comando en el <guilabel>campo de entrada</guilabel>.</para>
+             <para>Para ordenar a la <application>Línea de comandos</application> que intente completar el nombre del comando, pulse la tecla <keycap>Tabulador</keycap>.</para>
+          </listitem> 
+          <listitem>
+             <para>Teclee las opciones de la línea de comandos, si hay alguna, en el <guilabel>campo de entrada</guilabel>.</para>
+          </listitem> 
+          <listitem>
+             <para>Pulse la tecla <keycap>Retorno</keycap>.</para>
+          </listitem> 
+        </orderedlist>
+	<para>Si el comando que introdujo no se pudo ejecutar, el equipo emitirá un pitido de advertencia y la miniaplicación indicará que el comando no se pudo ejecutar mostrando un símbolo de interrogación (?) antes del comando. Compruebe que haya especificado el comando correctamente. Pulsar en la línea de comandos hará que desaparezca la interrogación.</para>
+	<tip>
+        <para>Si la opción de autocompletado está seleccionada, <application>Línea de comandos</application> busca una coincidencia en la lista del histórico durante los pasos 1 y dos. Vea la <xref linkend="command-line-histauto"/> para más información.</para>
+	</tip>
+	</sect2>
+<sect2 id="command-line-histauto">
+		<title>Autocompletado basado en histórico</title>
+		<para>Puede activar o desactivar esta opción bajo el menú <guimenu>Preferencias</guimenu> en la solapa <guilabel>General</guilabel> bajo <guilabel>Autocompletado</guilabel>. Seleccione <guilabel>Activar autocompletado basado en histórico</guilabel> para indicar a la <application>Línea de comandos</application> que compara el <guilabel>campo de entrada</guilabel> con la lista del histórico, y complete los comandos cuando haya una coincidencia.</para>
+	        <para>Si la opción de autocompletado está seleccionada, <application>Línea de comandos</application> busca una coincidencia en la lista del histórico durante los pasos 1 y 2 en la <xref linkend="command-line-run"/>. Si hay una coincidencia en la lista del histórico, <application>Línea de comandos</application> completa el comando. Para aceptar el comando, pulse <keycap>Retorno</keycap>. si no quiere aceptar el comando, teclee más caracteres en el <guilabel>campo de entrada</guilabel>.</para>
+     </sect2>
+	<!-- ================ To Run Program =======-->
+     <sect2 id="command-line-filesys"> 
+        <title>Para ejecutar un programa desde su sistema de archivos</title> 
+        <para>Pulse en el botón <guibutton>Examinar</guibutton> para mostrar el sistema de archivos, después pulse dos veces en el programa que quiera ejecutar.</para>
+        <para>Puede usar la <application>Línea de comandos</application> para ejecutar scripts, comandos, u otros programas de su sistema de archivos.</para>
+     </sect2> 
+     <sect2 id="command-line-histlist"> 
+        <title>Para ejecutar un comando anterior, macro o programa desde la lista del histórico</title> 
+        <para>Puede ejecutar un comando ejecutado anteriormente, una macro o un programa desde la lista del histórico o de las siguientes maneras: <itemizedlist> 
+             <listitem>
+                <para>Pulse en el botón <guibutton>Historia</guibutton> para mostrar la lista del histórico. Pulse en un elemento de la lista del histórico para ejecutar el comando, macro o programa que quiera.</para>
+             </listitem> 
+             <listitem>
+                <para>Pulse en el <guilabel>campo de entrada</guilabel>, después use las teclas con las flechas arriba y abajo del teclado para ciclar por la lista del histórico. Pulse <keycap>Retorno</keycap> para ejecutar un comando, macro o programa específico cuando el elemento de la lista del histórico que quiera se muestre en el <guilabel>campo de entrada</guilabel>.</para>
+             </listitem> 
+          </itemizedlist></para>
+
+	<note>
+		<title>Autocompletado basado en histórico</title>
+		<para>Puede activar o desactivar esta opción bajo el menú <guimenu>Preferencias</guimenu> en la solapa <guilabel>General</guilabel> bajo <guilabel>Autocompletado</guilabel>. Seleccione <guilabel>Activar autocompletado basado en histórico</guilabel> para indicar a la <application>Línea de comandos</application> que compara el <guilabel>campo de entrada</guilabel> con la lista del histórico, y complete los comandos cuando haya una coincidencia.</para>
+	</note>
+     </sect2> 
+</sect1>
+<!-- ================ Using Macros =======-->
+<sect1 id="command-line-macros">
+	<title>Usar atajos o macros</title>
+                <para>La utilidad de macros proporciona hasta 99 comandos con atajos. Además de los comandos predefinidos puede crear sus propios comandos para usarlos con la <application>Línea de comandos</application>.</para>
+     <sect2 id="command-line-runmacro"> 
+        <title>Para ejecutar una macro desde el campo de entrada</title> 
+        <para>Para ejecutar una macro que esté definida en la lista de la<application>Línea de órdenes</application><xref linkend="command-line-prefs-2"/>, teclee la macro en el <guilabel>campo de entrada</guilabel>, después pulse <keycap>Retorno</keycap>.</para>
+        <para>La función  <xref linkend="command-line-histauto"/> también funciona para las macros.</para>
+        <para>La lista siguiente muestra algunos ejemplos de macros de <application>Línea de comandos</application>:</para>
+        <informaltable frame="none"> 
+          <tgroup cols="2" colsep="0" rowsep="0"><colspec colwidth="29.29*"/><colspec colwidth="70.71*"/> 
+             <tbody> 
+                <row valign="top"> 
+                  <entry><para><userinput>http://</userinput> o <userinput>www.</userinput></para></entry> 
+                  <entry><para>Cualquier cosa que empiece por <userinput>http://</userinput> o <userinput>www.</userinput> e tratará como un URL y se cargará en su navegador web.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>ftp://</userinput> o <userinput>ftp.</userinput></para></entry> 
+                  <entry><para>Cualquier cosa que empiece por <userinput>ftp://</userinput> o <userinput>ftp.</userinput> e tratará como un URL y se cargará en su software predeterminado de FTP.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>dictionary:</userinput></para></entry> 
+                  <entry><para>Use <userinput>dictionary:</userinput> para buscar una palabra en el<application>Diccionario de Gnome</application>.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>google:</userinput></para></entry> 
+                  <entry><para>Use <userinput>google:</userinput> para buscar algo usando el motor de búsqueda Google.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>av:</userinput></para></entry> 
+                  <entry><para>Use <userinput>av:</userinput> para buscar algo usando el motor de búsqueda Altavista.</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>yahoo:</userinput></para></entry> 
+                  <entry><para>Use <userinput>yahoo:</userinput> para buscar algo usando el motor de búsqueda Yahoo!</para></entry> 
+                </row> 
+                <row valign="top"> 
+                  <entry><para><userinput>fm:</userinput></para></entry> 
+                  <entry><para>Use <userinput>fm:</userinput> para buscar paquetes en la base de datos de paquetes Freshmeat.</para></entry> 
+                </row> 
+             </tbody> 
+          </tgroup> 
+        </informaltable>
+     </sect2> 
+    <sect2 id="command-line-prefs-2"> 
+        <title>Personalizar sus macros</title> 
+     <figure id="applet-macro-fig"> 
+        <title>Configurar sus macros</title> 
+        <screenshot> 
+          <mediaobject> 
+             <imageobject><imagedata fileref="figures/prefs-macros.png" format="PNG"/> 
+             </imageobject> 
+             <textobject> 
+                <phrase>Configurar sus macros</phrase> 
+             </textobject> 
+          </mediaobject> 
+        </screenshot> 
+     </figure> 
+        <para>Esta sección contiene una lista de macros que puede usar con la<application>Línea de comandos</application>. La lista contiene la siguiente información:</para>
+          <itemizedlist> 
+             <listitem>
+                <para>Una lista de expresiones regulares UNIX en la columna <guilabel>Patrón</guilabel>.</para>
+                <para>Una expresión regular es un patrón de caracteres o números que puede usar para coincidir con cadenas. Vea la página man de <command>regex</command> para más información acerca de cómo construir expresiones regulares.</para>
+             </listitem> 
+             <listitem>
+                <para>Una lista de comandos en la columna <guilabel>Comando</guilabel>.</para>
+                <para>Un comando se ejecuta si el patrón correspondiente coincide con el texto que teclea en el <guilabel>campo de entrada</guilabel>. Las macros son comandos que toman parámetros analizados por la expresión regular.</para>
+             </listitem> 
+          </itemizedlist> 
+		<para>Para añadir una macro nueva, pulse en el botón <guibutton>Añadir macro</guibutton>. Para borrar una macro, seleccione la macro, después pulse en el botón <guibutton>Borrar macro</guibutton>.</para>
+     </sect2> 
+</sect1>
+
+<!-- ============= Appearance ============================= -->
+  <sect1 id="command-line-apperance"> 
+     <title>Personalizar la apariencia</title> 
+     <para><figure id="applet-prefs-fig"> 
+        <title>Preferencias</title> 
+        <screenshot> 
+          <mediaobject> 
+             <imageobject><imagedata fileref="figures/prefs.png" format="PNG"/> 
+             </imageobject> 
+             <textobject> 
+                <phrase>Diálogo de preferencias</phrase> 
+             </textobject> 
+          </mediaobject> 
+        </screenshot> 
+     </figure>Para configurar la apariencia de la <application>Línea de comandos</application>, pulse con el botón derecho del ratón sobre un área de la miniaplicación fuera de elementos interactivos, después elija <guimenuitem>Preferencias</guimenuitem> y seleccione la solapa <guilabel>General</guilabel>.</para>
+        <variablelist>
+		<varlistentry>
+		<term>Para mover la línea de comandos:</term>
+		<listitem>
+		<para>Seleccione  <guilabel>Mostrar tirador</guilabel> para adjuntar un tirador al borde de la miniaplicación. Puede usar el tirador para arrastrar el visor de la <application>Línea de comandos</application> a cualquier lugar del escritorio.</para>
+		</listitem>
+		</varlistentry>
+		<varlistentry>
+		<term>Para añadir un borde:</term>
+		<listitem>
+		<para>Seleccione esta opción para mostrar un marco alrededor de la <application>Línea de comandos</application>.</para>
+		</listitem>
+		</varlistentry>
+		<varlistentry>
+		<term>Para cambiar la anchura:</term>
+		<listitem>
+		<para>Use el contador incrementable <guilabel>Anchura . . . píxeles</guilabel> para especificar la anchura de la miniaplicación.</para>
+		</listitem>
+		</varlistentry>
+		<varlistentry>
+		<term>Para ajustar el tema del color:</term>
+		<listitem>
+			<itemizedlist>
+				<listitem><para>Seleccione <guilabel>Usar colores predeterminados del tema</guilabel> para usar los colores del tema predeterminado de Gnome.</para></listitem>
+				<listitem><para>Pulse en el botón <guilabel>Color de la tipografía</guilabel> para seleccionar un color para el texto de la línea de comandos. Este botón no esta disponible si la casilla <guilabel>Usar los colores predeterminados del tema</guilabel> está seleccionada.</para></listitem>
+				<listitem><para>Pulse en el botón <guilabel>Color de fondo</guilabel> para seleccionar un color para el fondo del <guilabel>campo de entrada</guilabel>. Este botón no está disponible si la casilla <guilabel>Usar colores predeterminados del tema</guilabel> está seleccionada.</para></listitem>
+			</itemizedlist>
+		</listitem>
+		</varlistentry>	
+	</variablelist>
+
+  </sect1> 
+</article>

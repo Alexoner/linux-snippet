@@ -1,0 +1,51 @@
+Index: gnome-applets-3.1.2/null_applet/null_applet.c
+===================================================================
+--- gnome-applets-3.1.2.orig/null_applet/null_applet.c	2011-06-28 21:34:30.193797314 -0400
++++ gnome-applets-3.1.2/null_applet/null_applet.c	2011-06-28 21:37:06.457721276 -0400
+@@ -59,11 +59,13 @@
+ 			     "OAFIID:GNOME_KeyboardApplet", _("Keyboard Indicator"));
+ }
+ 
++/*
+ static void
+ response_cb (GtkWidget *dialog, gint arg1, gpointer user_data)
+ {
+ 	gtk_widget_destroy (dialog);
+ }
++*/
+ 
+ static char
+ *get_all_applets (void)
+@@ -142,13 +144,16 @@
+ 		gpointer     user_data)
+ {
+ 	char *applet_list;
++	/*
+ 	GtkWidget *dialog;
++	*/
+ 
+ 	if (!g_str_equal (iid, "NullApplet"))
+ 	    return FALSE;
+ 
+ 	applet_list = get_all_applets ();
+ 
++	/*
+ 	dialog = gtk_message_dialog_new_with_markup (NULL,
+ 			GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
+ 			GTK_MESSAGE_INFO, GTK_BUTTONS_OK,
+@@ -163,12 +168,15 @@
+ 			_("You will not receive this message again.")
+ 			);
+ 
++	*/
+ 	g_free (applet_list);
+ 
++	/*
+ 	g_signal_connect (G_OBJECT (dialog), "response",
+ 			G_CALLBACK (response_cb), applet);
+ 	
+ 	gtk_widget_show_all (dialog);
++	*/
+ 		
+ 	return TRUE;
+ }
