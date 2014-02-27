@@ -13,6 +13,11 @@
  * Sleep Button entry:
  * [    34.744] (II) config/udev: Adding input device Sleep Button (/dev/input/event1)
  *
+ *
+ * POLL:
+ *
+ * inotify:
+ *
  */
 
 #include <linux/input.h>
