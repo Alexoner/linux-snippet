@@ -64,6 +64,8 @@ int open_inputfile(const char *filename)
     if (fd >= 0)
     {
         char evname[256];
+        char phys[256];
+        struct input_id device_info;
 
         /* if this file doesn't have events we need, indicate failure */
         /*if (!has_event(fd))*/
@@ -75,8 +77,33 @@ int open_inputfile(const char *filename)
         /* get this event file's name for debugging */
         strcpy(evname, "Unknown");
         printf("opened file %s (%s)\n", filename, evname);
+        /* suck oout some device information*/
         ioctl(fd, EVIOCGNAME(sizeof(evname)), evname);
+        ioctl(fd, EVIOCGPHYS(sizeof(phys)), phys);
+        ioctl(fd, EVIOCGID, &device_info);
 
+        /* the EVIOCGID ioctl() returns input_deviceinfo
+         * structure - see <linux/input.h>
+         * So we work through the various elements,
+         * displays each of them
+         */
+        printf("vendor %04hx product %04hx version %04hx",
+               device_info.vendor,
+               device_info.product,
+               device_info.version);
+        switch (device_info.bustype)
+        {
+        case BUS_PCI:
+            printf(" is on a PCI bus\n");
+            break;
+        case BUS_USB:
+            printf(" is on a Universal Serial Bus\n");
+            break;
+        default:
+            printf(" is on an unknown bus\n");
+        }
+
+        printf("The device's path is %s\n", phys);
         /*acpid_log(LOG_DEBUG, "input layer %s (%s) "*/
         printf( "input layer %s (%s) "
                 "opened successfully, fd %d\n", filename, evname, fd);
