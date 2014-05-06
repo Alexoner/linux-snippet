@@ -1,4 +1,4 @@
-CFLAGS=-lpthread
+CFLAGS=-lpthread -Wall -g
 thread1:thread1.c
 	$(CC) -o $@ $^  $(CFLAGS)
 thread2:thread2.c
@@ -16,4 +16,6 @@ thread7:thread7.c
 printtid:printtid.c
 	$(CC) -o $@ $^ $(CFLAGS)
 thread_exit:thread_exit.c
+	$(CC) -o $@ $^ $(CFLAGS)
+sum:sum.c
 	$(CC) -o $@ $^ $(CFLAGS)
