@@ -1,0 +1,37 @@
+# Maintainer: wenLiangcan <boxeed at gmail dot com>
+# Maintainer: onehao
+
+pkgname=rjsupplicant
+pkgver=1.31
+pkgrel=2
+pkgdesc="Ruijie client for Linux."
+arch=('x86_64' 'i686')
+url=''
+license=('Unkown')
+depends=()
+source=("Su for Linux V1.31.tar.gz"
+        "${pkgname}.sh"
+        "${pkgname}.service")
+md5sums=('f524ee57e80de1ca0148b1e52205e973'
+         '6831ba9de82285924ac068432601cbef'
+         'ca4e47ca61e866db789f6e3788226330')
+options=('!strip')
+
+package() {
+    cd "${srcdir}"
+    _arch=""
+    if [[ ${CARCH} == "x86_64" ]]; then
+        _arch="x64"
+    elif [[ ${CARCH} == "i686" ]]; then
+        _arch="x86"
+    fi
+
+    mkdir -p "${pkgdir}/opt/${pkgname}"
+
+    mv -T "Su for Linux V1.31" "${pkgdir}/opt/${pkgname}"
+    chmod -R 755 "${pkgdir}/opt/${pkgname}"
+
+    install -Dm755 "${pkgname}.sh" "${pkgdir}/usr/bin/${pkgname}"
+
+    install -Dm644 "${pkgname}.service" "${pkgdir}/usr/lib/systemd/system/${pkgname}.service"
+}

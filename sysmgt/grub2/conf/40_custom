@@ -12,3 +12,16 @@ menuentry "Ubuntu 13.04 ISO" {
 	initrd (loop)/casper/initrd.lz
 }
 
+menuentry "Android 4.4 iso" {
+insmod ext2
+set isofile="/administrator/packages/iso/android/android-x86-4.4-RC2.iso"
+loopback loop (hd0,6)$isofile
+linux (loop)/kernel  boot=/ iso-scan/filename=$isofile noeject
+initrd (loop)/initrd.img
+}
+
+menuentry "Android 4.3" {
+set root=(hd0,8)
+linux /android-4.3-test/kernel quiet root=/dev/ram0 androidboot.hardware=android_x86 SRC=/android-4.3-test DATA= video=-16
+initrd /android-4.3-test/initrd.img
+}
