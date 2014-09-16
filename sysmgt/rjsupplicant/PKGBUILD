@@ -13,7 +13,7 @@ source=("Su for Linux V1.31.tar.gz"
         "${pkgname}.sh"
         "${pkgname}.service")
 md5sums=('f524ee57e80de1ca0148b1e52205e973'
-         '6831ba9de82285924ac068432601cbef'
+         'd47012e3f44bc2737aeb8ab92048d204'
          'ca4e47ca61e866db789f6e3788226330')
 options=('!strip')
 

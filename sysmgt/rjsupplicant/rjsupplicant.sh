@@ -16,7 +16,7 @@ function main()
 {
     cd "/opt/rjsupplicant"
     #sh -c "/opt/rjsupplicant/rjsupplicant $arg"
-    sh -c "/opt/rjsupplicant/rjsupplicant.sh --nic enp4s0f0 -uU201114507 -p145265 -d1"
+    sh -c "/opt/rjsupplicant/rjsupplicant.sh --nic enp4s0f0 -s internet -uU201114507 -p145265 -d1"
 }
 
 main;
