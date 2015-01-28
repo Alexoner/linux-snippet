@@ -1,0 +1,10 @@
+# boot an iso with grub
+menuentry "Ubuntu 14.10 ISO" {
+        set version="14.10"
+        set isofile="/path/to/ubuntu-$version-desktop-amd64.iso"
+        # or set isofile="/<username>/Downloads/ubuntu-12.04.2-desktop-i386.iso"
+        # if you use a single partition for your $HOME
+        loopback loop (hd0,5)$isofile
+        linux (loop)/casper/vmlinuz.efi boot=casper iso-scan/filename=$isofile noprompt noeject
+        initrd (loop)/casper/initrd.lz
+}
