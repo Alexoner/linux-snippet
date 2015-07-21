@@ -2,9 +2,16 @@
 
 # export CATALINA_HOME=~/
 for i in `ls $CATALINA_HOME/deploy`
-  if [ "$i" != "taobao-hsf.sar"
-    do rm $CATALINA_HOME/deploy/$i -v
-  fi
+do
+    if [ `basename $i` != "taobao-hsf.sar" ]
+    then
+        rm -v $CATALINA_HOME/deploy/$i
+    else
+        echo $i
+    fi
 done
 
-rsync -aAxv $1 $CATALINA_HOME/deploy/
+if [ "$1" != "" ]
+then
+    rsync -av $1 $CATALINA_HOME/deploy/
+fi
