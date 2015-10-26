@@ -1,0 +1,17 @@
+#!/bin/sh
+# merge files of two directory by difference  
+echo "src and dest: $1,$2"
+# substitute trailing slash of directory names
+src=`echo $1 | sed 's/\/$//'`
+dst=`echo $2 | sed 's/\/$//'`
+for file in `find $src -type f`
+do
+    #diff $file `echo $file | sed 's/src/dest/'` && rm $file || echo $file;
+    # not  's/'$src'/'$dst'/g'
+    original=`echo $file | sed 's/'$src'/'$dst'/'`
+    if [ -f $original ]
+    then
+        touch $original
+    fi
+    diff $original $file > /tmp/$file.patch && patch $original -i /tmp/$file.patch -o $original.patched || echo $file | sed 's/'$src'/'$dst'/'
+done
