@@ -29,10 +29,12 @@ SocksListenAddress      127.0.0.1
 VirtualAddrNetworkIPv4 10.0.0.0/10
 AutomapHostsOnResolve 1
 TransPort {}
+#  DNSPort 53
 
 MaxCircuitDirtiness     30
-RunAsDaemon 1
 
+RunAsDaemon 1
+DataDirectory /var/lib/tor/{}
 Log notice file {}
     """
 
@@ -48,32 +50,39 @@ socksProxyType = socks5
 authCredentials=username:password
     """
     run_tpl_polipo = """
-tor -f {}
+polipo -c {} pidFile={} daemonise=true logFile={} forbiddenFile=/etc/polipo/forbidden
     """
     print('generating conf for {} instances of tor'.format(numOfInstances))
     with open('{}/run.sh'.format(CONF_DIR), 'w') as f:
-        f.write('#!bin/sh\n\n')
+        f.write('#!/bin/sh\n\n')
     with open('{}/run.sh'.format(CONF_DIR_POLIPO), 'w') as f:
-        f.write('#!bin/sh\n\n')
+        f.write('#!/bin/sh\n\n')
     for i in range(numOfInstances):
         # generating tor conf
-        with open('{}/{}'.format(CONF_DIR, 'torrc.%s'%i), 'w') as f:
-            f.write(conf_tpl.format(9050 + i,
-                                    8740 + i,
-                                    '/var/log/tor/notices.log.%s'%i))
+        with open('{}/{}'.format(CONF_DIR, 'torrc.%s' % i), 'w') as f:
+            f.write(conf_tpl.format(
+                9050 + i,  # listening port
+                8740 + i,  # transparent port
+                i,
+                '/var/log/tor/notices.log.%s' % i,  # log file
+            ))
 
         with open('{}/run.sh'.format(CONF_DIR), 'a') as f:
-            f.write(run_tpl.format('./torrc.%s'%i))
+            f.write(run_tpl.format('./torrc.%s' % i))
 
         # generating polipo conf for redirecting traffics to socks5 proxy
         # that tor listen on
-        with open('{}/{}'.format(CONF_DIR_POLIPO, 'config.%s'%i), 'w') as f:
+        with open('{}/{}'.format(CONF_DIR_POLIPO, 'config.%s' % i), 'w') as f:
             f.write(conf_tpl_polipo.format(8123 + i, 9050 + i))
         with open('{}/run.sh'.format(CONF_DIR_POLIPO), 'a') as f:
-            f.write(run_tpl_polipo.format('./torrc.%s'%i))
+            f.write(run_tpl_polipo.format(
+                'config.%s' % i,  # config file
+                '/var/run/polipo/polipo.pid.%s' % i,  # pid file
+                '/var/log/polipo/polipo.log.%s' % i),  # log file
+            )
 
-    os.chmod('{}/run.sh'.format(CONF_DIR), 0755)
-    os.chmod('{}/run.sh'.format(CONF_DIR_POLIPO), 0755)
+    os.chmod('{}/run.sh'.format(CONF_DIR), 0o755)
+    os.chmod('{}/run.sh'.format(CONF_DIR_POLIPO), 0o755)
     print('Now you can run run.sh in tor and polipo directory to start your proxy service!')
 
 
@@ -82,4 +91,3 @@ if __name__ == "__main__":
         main(numOfInstances=int(sys.argv[1]))
     else:
         main()
-
