@@ -1,0 +1,4 @@
+#!/bin/sh
+
+#netstat -nlp | grep :$1
+lsof -t -i tcp:$1
